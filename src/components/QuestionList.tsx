@@ -68,8 +68,20 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
     }));
   }
 
-  function setCorrectOption(index: number) {
-    setEdited((prev) => ({ ...prev, correctOption: index }));
+  async function setCorrectOption(optionIndex: number) {
+    setEdited((prev) => ({ ...prev, correctOption: optionIndex }));
+    try {
+      const res = await fetch(`/api/questions/${question.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ correctOption: optionIndex }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const updated = await res.json();
+      onSaved(updated);
+    } catch (err) {
+      console.error("Save correct answer failed:", err);
+    }
   }
 
   function updateOption(i: number, field: keyof TranslatedText, value: string) {
