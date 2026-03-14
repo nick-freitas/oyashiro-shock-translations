@@ -16,10 +16,14 @@ function AutoTextarea({
   className,
   value,
   onChange,
+  onBlur,
+  autoFocus,
 }: {
   className: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onBlur?: () => void;
+  autoFocus?: boolean;
 }) {
   const resize = useAutoResize();
   const ref = useRef<HTMLTextAreaElement | null>(null);
@@ -33,10 +37,12 @@ function AutoTextarea({
       className={className}
       value={value}
       rows={1}
+      autoFocus={autoFocus}
       onChange={(e) => {
         onChange(e);
         resize(e.target);
       }}
+      onBlur={onBlur}
     />
   );
 }
@@ -59,6 +65,7 @@ interface QuestionRowProps {
 function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) {
   const [edited, setEdited] = useState<Question>(question);
   const [saving, setSaving] = useState(false);
+  const [editingField, setEditingField] = useState<string | null>(null);
 
   const dirty = JSON.stringify(edited) !== JSON.stringify(question);
 
@@ -143,12 +150,22 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
         <div className="question-number">
           {KANJI_NUMS[index] ?? String(index + 1)}
         </div>
-        <AutoTextarea
-          className={`inline-input input-ja${edited.question.ja !== question.question.ja ? " modified" : ""}`}
-          value={edited.question.ja}
-          onChange={(e) => updateQuestion("ja", e.target.value)}
-        />
-        <div className="ruby-preview">{parseRuby(edited.question.ja)}</div>
+        {editingField === "question-ja" ? (
+          <AutoTextarea
+            className={`inline-input input-ja${edited.question.ja !== question.question.ja ? " modified" : ""}`}
+            value={edited.question.ja}
+            onChange={(e) => updateQuestion("ja", e.target.value)}
+            onBlur={() => setEditingField(null)}
+            autoFocus
+          />
+        ) : (
+          <div
+            className={`ruby-display input-ja${edited.question.ja !== question.question.ja ? " modified" : ""}`}
+            onClick={() => setEditingField("question-ja")}
+          >
+            {parseRuby(edited.question.ja)}
+          </div>
+        )}
         <AutoTextarea
           className={`inline-input input-en${edited.question.en !== question.question.en ? " modified" : ""}`}
           value={edited.question.en}
@@ -171,13 +188,23 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
               >
                 {OPTION_COUNTERS[oi]}
               </button>
-              <AutoTextarea
-                className={`inline-input input-ja option-input${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
-                value={opt.ja}
-                onChange={(e) => updateOption(oi, "ja", e.target.value)}
-              />
+              {editingField === `option-ja-${oi}` ? (
+                <AutoTextarea
+                  className={`inline-input input-ja option-input${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
+                  value={opt.ja}
+                  onChange={(e) => updateOption(oi, "ja", e.target.value)}
+                  onBlur={() => setEditingField(null)}
+                  autoFocus
+                />
+              ) : (
+                <div
+                  className={`ruby-display ruby-display-option input-ja${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
+                  onClick={() => setEditingField(`option-ja-${oi}`)}
+                >
+                  {parseRuby(opt.ja)}
+                </div>
+              )}
             </div>
-            <div className="ruby-preview ruby-preview-option">{parseRuby(opt.ja)}</div>
             <AutoTextarea
               className={`inline-input input-en option-input${opt.en !== question.options[oi].en ? " modified" : ""}`}
               value={opt.en}

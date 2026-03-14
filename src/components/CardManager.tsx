@@ -50,6 +50,7 @@ export function CardManager() {
   // cardKey of the card currently adding a new distractor (local-only, not saved until blur)
   const [editingDistractor, setEditingDistractor] = useState<string | null>(null);
   // Format: "q1-o0-3" (cardKey + distractor index)
+  const [editingJa, setEditingJa] = useState<string | null>(null);
   const cancelledRef = useRef(false);
 
   function toggleCard(cardKey: string) {
@@ -150,21 +151,30 @@ export function CardManager() {
                     <span className="acc-id">{`${toKanji(card.questionId)}問の${toKanji(card.optionIndex + 1)}`}</span>
                     {card.isCorrect && <span className="acc-correct-dot" />}
                   </div>
-                  <div className="acc-ja-cell">
+                  {editingJa === cardKey ? (
                     <input
                       className="acc-stem-input"
                       defaultValue={card.ja}
+                      autoFocus
                       onBlur={(e) => {
+                        setEditingJa(null);
                         if (e.target.value !== card.ja) {
                           saveOption(card.questionId, card.optionIndex, "ja", e.target.value);
                         }
                       }}
                       onClick={(e) => e.stopPropagation()}
                     />
-                    <div className="acc-ruby-preview" onClick={(e) => e.stopPropagation()}>
+                  ) : (
+                    <div
+                      className="acc-ruby-display"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setEditingJa(cardKey);
+                      }}
+                    >
                       {parseRuby(card.ja)}
                     </div>
-                  </div>
+                  )}
                   <input
                     className="acc-answer-input"
                     defaultValue={card.en}

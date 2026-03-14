@@ -349,26 +349,42 @@
   background: rgba(128, 64, 64, 0.1);
 }
 
-/* ===== FURIGANA PREVIEW ===== */
-.ruby-preview {
+/* ===== FURIGANA DISPLAY (click-to-edit) ===== */
+.ruby-display {
   font-family: var(--font-ja);
-  font-size: 18px;
   color: var(--text-ja);
   line-height: 2;
-  padding: 2px 8px;
-  opacity: 0.6;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: text;
   min-height: 1.5em;
+  transition: border-color 0.2s ease;
 }
 
-.ruby-preview rt {
-  font-size: 0.5em;
-  color: #888;
+.ruby-display:hover {
+  border-color: var(--border-row);
 }
 
-.question-col .ruby-preview {
-  font-size: 20px;
+.ruby-display.modified {
+  border-color: var(--accent-gold);
+  background: rgba(154, 138, 72, 0.08);
 }
 
-.ruby-preview-option {
-  margin-left: 36px;
+.ruby-display rt {
+  font-size: 0.45em;
+  color: #a09890;
+}
+
+.question-col .ruby-display {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.ruby-display-option {
+  flex: 1;
+  font-size: 22px;
+  font-weight: 400;
 }
