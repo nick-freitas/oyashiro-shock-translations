@@ -73,8 +73,8 @@ Each question in `db.json`:
 ```
 
 Fields:
-- `id`: Sequential integer (json-server uses this for REST operations)
-- `filename`: Links back to the source screenshot in `public/screenshots/`
+- `id`: Sequential integer assigned in filename sort order (json-server uses this for REST operations)
+- `filename`: Links back to the source screenshot in `public/screenshots/` (URL-encoded in `<img src>` attributes to handle spaces in filenames)
 - `question.ja`: Japanese question text extracted via OCR
 - `question.en`: English translation of the question
 - `options`: Array of exactly 4 items, each with `ja` (Japanese) and `en` (English)
@@ -89,7 +89,7 @@ Fields:
 
 1. Uses `Glob` tool to discover all `.png` files in `screenshots/`
 2. For each screenshot, the agent:
-   - Reads the image file using the built-in `Read` tool
+   - Reads the image file using the built-in `Read` tool (which presents images visually to Claude as a multimodal LLM, enabling OCR)
    - Extracts the question text and 4 options in Japanese
    - Translates each to English
    - Returns structured JSON
@@ -100,7 +100,13 @@ Fields:
 - `allowedTools`: `["Read", "Glob"]`
 - `permissionMode`: `"acceptEdits"`
 - System prompt: Instructs the agent to act as a Japanese OCR + translation specialist
-- Structured output enforces consistent JSON shape
+- `outputFormat`: JSON schema matching the data model to enforce consistent structure
+
+### Error Handling
+
+- Images are processed sequentially
+- If extraction fails for a screenshot, the error is logged and that image is skipped
+- Re-running the script only processes images not already present in `db.json`
 
 ## React App
 
@@ -135,6 +141,18 @@ db.json <--json-server--> React App
                    GET /questions (load all)
                    PATCH /questions/:id (save edits)
 ```
+
+## npm Scripts
+
+```json
+{
+  "process": "tsx scripts/process-screenshots.ts",
+  "dev": "concurrently \"json-server --watch db.json --port 3001\" \"vite\"",
+  "build": "tsc -b && vite build"
+}
+```
+
+Dependencies: `tsx`, `concurrently`, `json-server`
 
 ## Running the Project
 
