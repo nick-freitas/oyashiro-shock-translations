@@ -70,11 +70,11 @@ function Editor() {
   }, []);
 
   const handleEscape = useCallback((e: KeyboardEvent) => {
-    if (e.key === "Escape" && popoverOpen) {
+    if (e.key === "Escape") {
       setPopoverOpen(false);
       triggerRef.current?.focus();
     }
-  }, [popoverOpen]);
+  }, []);
 
   useEffect(() => {
     fetchQuestions();
