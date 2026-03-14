@@ -118,30 +118,6 @@ body {
   letter-spacing: 0.2em;
 }
 
-/* ===== PAGE HEADER ===== */
-.page-header {
-  padding: 36px 24px 28px;
-  border-bottom: 1px solid var(--border-row);
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-}
-
-.header-label {
-  font-family: var(--font-en);
-  font-size: 15px;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--text-en-sub);
-  letter-spacing: 0.08em;
-}
-
-.header-count {
-  font-family: var(--font-ja);
-  font-size: 15px;
-  color: var(--accent-gold);
-  letter-spacing: 0.2em;
-}
 
 /* ===== LOADING / ERROR ===== */
 .center {
@@ -183,77 +159,7 @@ body {
     font-size: 22px;
   }
 
-  .page-header {
-    padding: 24px 12px 20px;
-  }
+
 }
 
-/* ===== REPROCESS BUTTON ===== */
-.reprocess-btn {
-  background: var(--accent-indigo);
-  border: 1px solid var(--accent-indigo-light);
-  color: #e0ddd8;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: var(--font-en);
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
-}
 
-.reprocess-btn:hover:not(:disabled) {
-  background: var(--accent-indigo-light);
-}
-
-.reprocess-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.reprocess-msg {
-  font-family: var(--font-en);
-  font-size: 13px;
-  color: var(--text-en-sub);
-  font-style: italic;
-  white-space: nowrap;
-}
-
-/* ===== STUDY MODE LINK ===== */
-.study-link {
-  margin-left: auto;
-  font-family: var(--font-en);
-  font-size: 13px;
-  color: var(--accent-gold);
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  border: 1px solid var(--accent-gold);
-  padding: 8px 20px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
-}
-
-.study-link:hover {
-  background: rgba(154, 138, 72, 0.15);
-  color: var(--accent-gold-bright);
-}
-
-.manage-link {
-  font-family: var(--font-en);
-  font-size: 13px;
-  color: var(--accent-gold);
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  border: 1px solid var(--accent-gold);
-  padding: 8px 20px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
-}
-
-.manage-link:hover {
-  background: rgba(154, 138, 72, 0.15);
-  color: var(--accent-gold-bright);
-}
