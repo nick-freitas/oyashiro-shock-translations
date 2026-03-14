@@ -1,6 +1,44 @@
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import type { Question, TranslatedText } from "../types";
 import "./QuestionList.css";
+
+function useAutoResize() {
+  const resize = useCallback((el: HTMLTextAreaElement | null) => {
+    if (!el) return;
+    el.style.height = "auto";
+    el.style.height = el.scrollHeight + "px";
+  }, []);
+  return resize;
+}
+
+function AutoTextarea({
+  className,
+  value,
+  onChange,
+}: {
+  className: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+}) {
+  const resize = useAutoResize();
+  const ref = useRef<HTMLTextAreaElement | null>(null);
+
+  return (
+    <textarea
+      ref={(el) => {
+        ref.current = el;
+        resize(el);
+      }}
+      className={className}
+      value={value}
+      rows={1}
+      onChange={(e) => {
+        onChange(e);
+        resize(e.target);
+      }}
+    />
+  );
+}
 
 const KANJI_NUMS = [
   "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
@@ -92,14 +130,12 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
         <div className="question-number">
           {KANJI_NUMS[index] ?? String(index + 1)}
         </div>
-        <input
-          type="text"
+        <AutoTextarea
           className={`inline-input input-ja${edited.question.ja !== question.question.ja ? " modified" : ""}`}
           value={edited.question.ja}
           onChange={(e) => updateQuestion("ja", e.target.value)}
         />
-        <input
-          type="text"
+        <AutoTextarea
           className={`inline-input input-en${edited.question.en !== question.question.en ? " modified" : ""}`}
           value={edited.question.en}
           onChange={(e) => updateQuestion("en", e.target.value)}
@@ -121,15 +157,13 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
               >
                 {OPTION_LETTERS[oi]}
               </button>
-              <input
-                type="text"
+              <AutoTextarea
                 className={`inline-input input-ja option-input${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
                 value={opt.ja}
                 onChange={(e) => updateOption(oi, "ja", e.target.value)}
               />
             </div>
-            <input
-              type="text"
+            <AutoTextarea
               className={`inline-input input-en option-input${opt.en !== question.options[oi].en ? " modified" : ""}`}
               value={opt.en}
               onChange={(e) => updateOption(oi, "en", e.target.value)}
