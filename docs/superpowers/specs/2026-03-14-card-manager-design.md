@@ -8,7 +8,8 @@ A new `/manage` route that displays a flat list of all study cards (one per ques
 
 - New route: `/manage`
 - Sits alongside `/` (editor) and `/study` (study mode) via React Router
-- Navigation link added to the existing page header in `App.tsx` (same style as the existing "Study" link)
+- Navigation link to `/manage` added in the Editor's page header (same row as the existing "Study" link, same styling)
+- The CardManager page itself includes a back-navigation link in the sidebar bottom area (e.g., "← Editor") to return to `/`
 - Uses the same app shell layout as the main page
 
 ## Page Structure
@@ -39,7 +40,7 @@ Scrollable flat list of accordion rows with no header above.
 
 | Column | Content |
 |--------|---------|
-| Card ID | `q1-o0` style label in Cormorant, gold accent, with green dot if correct answer |
+| Card ID | `q1-o0` style label in Cormorant, gold accent. Green dot shown if this option's index matches the parent question's `correctOption` field (which is optional — no dot if `correctOption` is undefined) |
 | Stem | Japanese text in Zen Old Mincho, 21px, inline-editable |
 | Answer | English text in Cormorant italic, 17px, inline-editable |
 | Chevron | Dropdown arrow, rotates 180° when open, indigo when expanded |
@@ -107,7 +108,7 @@ Chips in a wrapping flex row. Each chip:
 
 ### Save mechanism
 
-All distractor changes go through `PATCH /api/questions/:questionId`, sending the full updated `distractors` array for that option.
+All distractor changes go through `PATCH /api/questions/:questionId`, sending `{ options: [allFourOptions] }` with the modified distractors array embedded in the relevant option (same pattern as stem/answer saves — always send the complete options tuple).
 
 ### No minimum enforcement
 
@@ -122,8 +123,9 @@ Study mode already handles cards with fewer than 3 distractors gracefully (exclu
 
 ### Save
 
-- Stem/answer edits: `PATCH /api/questions/:questionId` with updated option text
-- Distractor edits: same endpoint, send full updated `distractors` array for that option
+All saves go through `PATCH /api/questions/:questionId`. The endpoint accepts `{ question?, options?, correctOption? }` — partial fields are merged server-side. However, `options` must always be the full 4-element array (all four options), not a partial update to one option. So any edit to a single card's stem, answer, or distractors requires sending `{ options: [allFourOptions] }` with the modified field embedded in the relevant option.
+
+**Concurrency**: The component keeps the full questions array in React state. On blur, it reads the current state for that question's options array, applies the edit, and PATCHes. This avoids race conditions — all edits operate on the same in-memory state, and React state updates are serialized.
 
 ### No new endpoints
 
