@@ -112,9 +112,9 @@ body {
 
 .sidebar-count {
   position: absolute;
-  bottom: 28px;
+  bottom: 12px;
   font-family: var(--font-en);
-  font-size: 13px;
+  font-size: 7px;
   font-weight: 400;
   color: var(--accent-gold);
   letter-spacing: 0.2em;
