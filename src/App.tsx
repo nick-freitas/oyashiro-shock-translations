@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import type { Question } from "./types";
 import { QuestionList } from "./components/QuestionList";
+import { StudyMode } from "./components/StudyMode";
 import "./App.css";
 
 const KANJI_NUMS = [
@@ -13,12 +15,14 @@ function toKanjiCount(n: number): string {
   return KANJI_NUMS[n - 1] ?? String(n);
 }
 
-function App() {
+function Editor() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [reprocessing, setReprocessing] = useState(false);
   const [reprocessMsg, setReprocessMsg] = useState<string | null>(null);
+  const [generating, setGenerating] = useState(false);
+  const [generateMsg, setGenerateMsg] = useState<string | null>(null);
 
   function fetchQuestions() {
     setLoading(true);
@@ -76,6 +80,36 @@ function App() {
     }
   }
 
+  async function handleGenerateDistractors() {
+    setGenerating(true);
+    setGenerateMsg(null);
+    try {
+      const res = await fetch("/api/questions/generate-distractors", { method: "POST" });
+      const text = await res.text();
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch {
+        setGenerateMsg(`Server error: ${text}`);
+        return;
+      }
+      if (!res.ok) {
+        setGenerateMsg(data.error || "Failed");
+        return;
+      }
+      const parts = [`Generated ${data.generated}`, `skipped ${data.skipped}`];
+      if (data.failed > 0) parts.push(`failed ${data.failed}`);
+      setGenerateMsg(`${parts.join(", ")} (${data.total} total)`);
+      if (data.generated > 0) {
+        fetchQuestions();
+      }
+    } catch (err) {
+      setGenerateMsg(err instanceof Error ? err.message : "Failed");
+    } finally {
+      setGenerating(false);
+    }
+  }
+
   if (loading) return <div className="center">読み込み中&hellip;</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
@@ -87,6 +121,17 @@ function App() {
           <span className="header-count">
             {toKanjiCount(questions.length)}問
           </span>
+          <Link to="/study" className="study-link">Study Mode</Link>
+          <button
+            className="reprocess-btn"
+            onClick={handleGenerateDistractors}
+            disabled={generating}
+          >
+            {generating ? "Generating\u2026" : "Generate Study Distractors"}
+          </button>
+          {generateMsg && (
+            <span className="reprocess-msg">{generateMsg}</span>
+          )}
           <button
             className="reprocess-btn"
             onClick={handleReprocess}
@@ -115,6 +160,15 @@ function App() {
         </div>
       </aside>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Editor />} />
+      <Route path="/study" element={<StudyMode />} />
+    </Routes>
   );
 }
 

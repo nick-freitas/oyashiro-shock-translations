@@ -1,0 +1,211 @@
+/* ===== STUDY MODE LAYOUT ===== */
+.study-container {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.study-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: #484450;
+  letter-spacing: 0.15em;
+}
+
+.study-error {
+  color: #a05050;
+}
+
+/* ===== STUDY HEADER ===== */
+.study-header {
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border-row);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.study-back-link {
+  font-family: var(--font-en);
+  font-size: 13px;
+  color: var(--accent-gold);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.study-back-link:hover {
+  color: var(--accent-gold-bright);
+}
+
+/* ===== PROGRESS INDICATOR ===== */
+.study-progress {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-en);
+  font-size: 13px;
+}
+
+.study-due {
+  color: var(--accent-gold-bright);
+  font-weight: 500;
+}
+
+.study-total {
+  color: var(--text-en-sub);
+}
+
+.study-buckets {
+  display: flex;
+  gap: 4px;
+}
+
+.bucket-pip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 11px;
+  background: rgba(42, 41, 48, 0.6);
+  color: #484450;
+}
+
+.bucket-pip.active {
+  background: var(--accent-indigo);
+  color: #b0add0;
+}
+
+/* ===== CARD AREA ===== */
+.study-card-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  gap: 40px;
+}
+
+.study-japanese {
+  font-family: var(--font-ja);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--text-ja);
+  text-align: center;
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+/* ===== CHOICE BUTTONS ===== */
+.study-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.study-choice-btn {
+  font-family: var(--font-en);
+  font-size: 18px;
+  font-weight: 400;
+  color: #d0ccc4;
+  background: rgba(42, 41, 48, 0.5);
+  border: 1px solid var(--border-row);
+  border-radius: 6px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  text-align: center;
+}
+
+.study-choice-btn:hover:not(:disabled) {
+  background: rgba(58, 58, 110, 0.2);
+  border-color: var(--accent-indigo-light);
+}
+
+.study-choice-btn:disabled {
+  cursor: default;
+}
+
+.study-choice-btn.correct {
+  background: rgba(64, 128, 64, 0.25);
+  border-color: #408040;
+  color: #80d080;
+}
+
+.study-choice-btn.wrong {
+  background: rgba(128, 64, 64, 0.25);
+  border-color: #804040;
+  color: #c06060;
+}
+
+/* ===== NEXT BUTTON ===== */
+.study-next-btn {
+  font-family: var(--font-en);
+  font-size: 15px;
+  color: #e0ddd8;
+  background: var(--accent-indigo);
+  border: 1px solid var(--accent-indigo-light);
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s ease;
+}
+
+.study-next-btn:hover {
+  background: var(--accent-indigo-light);
+}
+
+/* ===== EMPTY / WAITING STATES ===== */
+.study-empty,
+.study-waiting {
+  text-align: center;
+  color: var(--text-en-sub);
+  font-family: var(--font-en);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.study-empty-sub,
+.study-waiting-sub {
+  font-size: 14px;
+  color: #484450;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .study-japanese {
+    font-size: 32px;
+  }
+
+  .study-choices {
+    grid-template-columns: 1fr;
+  }
+
+  .study-choice-btn {
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+
+  .study-header {
+    padding: 16px 16px;
+  }
+
+  .study-card-area {
+    padding: 24px 16px;
+  }
+}

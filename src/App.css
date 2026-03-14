@@ -190,7 +190,6 @@ body {
 
 /* ===== REPROCESS BUTTON ===== */
 .reprocess-btn {
-  margin-left: auto;
   background: var(--accent-indigo);
   border: 1px solid var(--accent-indigo-light);
   color: #e0ddd8;
@@ -219,4 +218,24 @@ body {
   color: var(--text-en-sub);
   font-style: italic;
   white-space: nowrap;
+}
+
+/* ===== STUDY MODE LINK ===== */
+.study-link {
+  margin-left: auto;
+  font-family: var(--font-en);
+  font-size: 13px;
+  color: var(--accent-gold);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--accent-gold);
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.study-link:hover {
+  background: rgba(154, 138, 72, 0.15);
+  color: var(--accent-gold-bright);
 }
