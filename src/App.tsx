@@ -208,6 +208,8 @@ function Editor() {
 
       <aside className="title-sidebar">
         <div className="sidebar-nav-links">
+          <Link to="/study" className="sidebar-nav-link">学習</Link>
+          <Link to="/manage" className="sidebar-nav-link">管理</Link>
           <button
             ref={triggerRef}
             className="sidebar-actions-trigger"
@@ -215,10 +217,8 @@ function Editor() {
             aria-expanded={popoverOpen}
             aria-haspopup="true"
           >
-            ⋯
+            ⋮
           </button>
-          <Link to="/study" className="sidebar-nav-link">学習</Link>
-          <Link to="/manage" className="sidebar-nav-link">管理</Link>
         </div>
         {popoverOpen && (
           <div ref={popoverRef} className="sidebar-popover" role="dialog">
