@@ -119,6 +119,13 @@ body {
 }
 
 /* ===== SIDEBAR NAV LINKS ===== */
+.sidebar-nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
 .sidebar-nav-link {
   writing-mode: vertical-rl;
   text-orientation: mixed;
