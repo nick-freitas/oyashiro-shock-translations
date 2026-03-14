@@ -130,7 +130,7 @@ body {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: var(--font-ja);
-  font-size: 13px;
+  font-size: 7px;
   color: var(--accent-gold);
   text-decoration: none;
   letter-spacing: 0.2em;
@@ -182,7 +182,7 @@ body {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: var(--font-ja);
-  font-size: 13px;
+  font-size: 7px;
   color: var(--accent-gold);
   letter-spacing: 0.2em;
   padding: 8px 4px;
