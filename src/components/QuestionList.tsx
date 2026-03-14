@@ -70,6 +70,8 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const updated = await res.json();
       onSaved(updated);
+    } catch (err) {
+      console.error("Save failed:", err);
     } finally {
       setSaving(false);
     }

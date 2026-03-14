@@ -162,7 +162,10 @@ app.patch("/questions/:id", (req, res) => {
     res.status(404).json({ error: "Question not found" });
     return;
   }
-  db.questions[idx] = { ...db.questions[idx], ...req.body };
+  const { question, options, correctOption } = req.body;
+  if (question !== undefined) db.questions[idx].question = question;
+  if (options !== undefined) db.questions[idx].options = options;
+  if (correctOption !== undefined) db.questions[idx].correctOption = correctOption;
   writeDb(db);
   res.json(db.questions[idx]);
 });

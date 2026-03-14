@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "process": "tsx scripts/process-screenshots.ts",
     "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
     "server": "tsx server/index.ts",
     "build": "tsc -b && vite build",
