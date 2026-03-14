@@ -8,4 +8,5 @@ export interface Question {
   filename: string;
   question: TranslatedText;
   options: [TranslatedText, TranslatedText, TranslatedText, TranslatedText];
+  correctOption?: number;
 }

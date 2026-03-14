@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react";
 import type { Question } from "./types";
 import { QuestionList } from "./components/QuestionList";
-import { QuestionCard } from "./components/QuestionCard";
 import "./App.css";
+
+const KANJI_NUMS = [
+  "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
+  "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十",
+  "二十一", "二十二", "二十三", "二十四",
+];
+
+function toKanjiCount(n: number): string {
+  return KANJI_NUMS[n - 1] ?? String(n);
+}
 
 function App() {
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [selected, setSelected] = useState<Question | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
+  function fetchQuestions() {
+    setLoading(true);
     fetch("/api/questions")
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -19,42 +28,47 @@ function App() {
       .then(setQuestions)
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
+  }
+
+  useEffect(() => {
+    fetchQuestions();
   }, []);
 
-  async function handleSave(updated: Question) {
-    const res = await fetch(`/api/questions/${updated.id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        question: updated.question,
-        options: updated.options,
-      }),
-    });
-
-    if (!res.ok) throw new Error(`Save failed: HTTP ${res.status}`);
-
-    const saved: Question = await res.json();
+  function handleQuestionSaved(updated: Question) {
     setQuestions((prev) =>
-      prev.map((q) => (q.id === saved.id ? saved : q))
+      prev.map((q) => (q.id === updated.id ? updated : q))
     );
-    setSelected(saved);
   }
 
-  if (loading) return <div className="center">Loading...</div>;
+  if (loading) return <div className="center">読み込み中&hellip;</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
-  if (selected) {
-    return (
-      <QuestionCard
-        key={selected.id}
-        question={selected}
-        onBack={() => setSelected(null)}
-        onSave={handleSave}
-      />
-    );
-  }
+  return (
+    <div className="app-layout">
+      <div className="main-content">
+        <header className="page-header">
+          <span className="header-label">Shin Oyashiro Shock!</span>
+          <span className="header-count">
+            {toKanjiCount(questions.length)}問
+          </span>
+        </header>
+        <QuestionList
+          questions={questions}
+          onQuestionSaved={handleQuestionSaved}
+        />
+      </div>
 
-  return <QuestionList questions={questions} onSelect={setSelected} />;
+      <aside className="title-sidebar">
+        <div className="sidebar-titles">
+          <div className="sidebar-subtitle">新・クイズ・ショック</div>
+          <div className="sidebar-title">おやしろさま</div>
+        </div>
+        <div className="sidebar-count">
+          {toKanjiCount(questions.length)}
+        </div>
+      </aside>
+    </div>
+  );
 }
 
 export default App;
