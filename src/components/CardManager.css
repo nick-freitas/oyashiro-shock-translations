@@ -370,6 +370,10 @@
   .manage-sidebar-title {
     font-size: 28px;
   }
+
+  .acc-panel-inner {
+    padding: 0 16px 20px 16px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -379,5 +383,14 @@
 
   .acc-row {
     padding: 12px 12px;
+  }
+
+  .acc-panel-inner {
+    padding: 0 12px 16px 12px;
+  }
+
+  .d-chip {
+    font-size: 12px;
+    padding: 4px 8px;
   }
 }
