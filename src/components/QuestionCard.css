@@ -107,3 +107,9 @@
   border-color: #f0a500;
   background: #1a1a0e;
 }
+
+.save-error {
+  color: #ff6b6b;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}

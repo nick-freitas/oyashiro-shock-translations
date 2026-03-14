@@ -12,6 +12,7 @@ export function QuestionCard({ question, onBack, onSave }: QuestionCardProps) {
   const [edited, setEdited] = useState<Question>(question);
   const [dirty, setDirty] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
 
   function updateQuestion(field: keyof TranslatedText, value: string) {
     setEdited((prev) => ({
@@ -36,9 +37,12 @@ export function QuestionCard({ question, onBack, onSave }: QuestionCardProps) {
 
   async function handleSave() {
     setSaving(true);
+    setSaveError(null);
     try {
       await onSave(edited);
       setDirty(false);
+    } catch (err) {
+      setSaveError(err instanceof Error ? err.message : "Save failed");
     } finally {
       setSaving(false);
     }
@@ -58,6 +62,8 @@ export function QuestionCard({ question, onBack, onSave }: QuestionCardProps) {
           {saving ? "Saving..." : "Save"}
         </button>
       </div>
+
+      {saveError && <p className="save-error">{saveError}</p>}
 
       <img
         src={`/screenshots/${encodeURIComponent(question.filename)}`}

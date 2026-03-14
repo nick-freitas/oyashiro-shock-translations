@@ -46,6 +46,7 @@ function App() {
   if (selected) {
     return (
       <QuestionCard
+        key={selected.id}
         question={selected}
         onBack={() => setSelected(null)}
         onSave={handleSave}
