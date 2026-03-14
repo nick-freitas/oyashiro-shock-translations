@@ -180,6 +180,10 @@ Rules:
 
 // PATCH a question (text edits + correctOption)
 app.patch("/questions/:id", (req, res) => {
+  if (processing) {
+    res.status(409).json({ error: "Processing in progress, try again later" });
+    return;
+  }
   const id = parseInt(req.params.id, 10);
   const db = readDb();
   const idx = db.questions.findIndex((q) => q.id === id);
@@ -197,6 +201,10 @@ app.patch("/questions/:id", (req, res) => {
 
 // DELETE a question + screenshot files
 app.delete("/questions/:id", (req, res) => {
+  if (processing) {
+    res.status(409).json({ error: "Processing in progress, try again later" });
+    return;
+  }
   const id = parseInt(req.params.id, 10);
   const db = readDb();
   const idx = db.questions.findIndex((q) => q.id === id);
@@ -220,6 +228,24 @@ app.delete("/questions/:id", (req, res) => {
     } catch {
       // File may not exist in one of the directories
     }
+  }
+
+  // Clean up study progress (best effort, skip if file doesn't exist)
+  try {
+    const progress = readStudyProgress();
+    let changed = false;
+    for (let oi = 0; oi < 4; oi++) {
+      const cardId = `q${id}-o${oi}`;
+      if (cardId in progress.cards) {
+        delete progress.cards[cardId];
+        changed = true;
+      }
+    }
+    if (changed) {
+      writeStudyProgress(progress);
+    }
+  } catch {
+    // study-progress.json may not exist yet
   }
 
   res.json({ deleted: id });
