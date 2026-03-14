@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import type { Question, CardProgress, StudyProgress } from "../types";
 import { computeNewState, selectNextCard, pickDistractors } from "../srs";
+import { parseRuby } from "../utils/parseRuby";
 import "./StudyMode.css";
 
 function getCardId(questionId: number, optionIndex: number): string {
@@ -178,20 +179,16 @@ export function StudyMode() {
     presentCard(studyCards, progressRef.current);
   }
 
-  // Compute bucket stats for progress indicator
-  const bucketCounts = [0, 0, 0, 0, 0, 0];
-  let dueCount = 0;
-  const now = Date.now();
+  // Compute correct/incorrect counts (unseen cards are not counted)
+  let correctCount = 0;
+  let incorrectCount = 0;
   for (const card of studyCards) {
     const cp = progress.cards[card.cardId];
-    if (!cp || cp.bucket === 0) {
-      bucketCounts[0]++;
-      dueCount++;
+    if (!cp) continue; // unseen — don't count
+    if (cp.bucket > 0) {
+      correctCount++;
     } else {
-      bucketCounts[cp.bucket]++;
-      if (cp.nextDue && now >= new Date(cp.nextDue).getTime()) {
-        dueCount++;
-      }
+      incorrectCount++;
     }
   }
 
@@ -216,25 +213,10 @@ export function StudyMode() {
 
   return (
     <div className="study-container">
-      <header className="study-header">
-        <Link to="/" className="study-back-link">Back to Editor</Link>
-        <div className="study-progress">
-          <span className="study-due">{dueCount} due</span>
-          <span className="study-total">{studyCards.length} cards</span>
-          <span className="study-buckets">
-            {bucketCounts.map((count, i) => (
-              <span key={i} className={`bucket-pip${count > 0 ? " active" : ""}`} title={`Bucket ${i}: ${count}`}>
-                {count}
-              </span>
-            ))}
-          </span>
-        </div>
-      </header>
-
       <main className="study-card-area">
         {currentCard ? (
           <>
-            <div className="study-japanese">{currentCard.ja}</div>
+            <div className="study-japanese">{parseRuby(currentCard.ja)}</div>
             <div className="study-choices">
               {choices.map((choice, i) => {
                 let btnClass = "study-choice-btn";
@@ -268,15 +250,26 @@ export function StudyMode() {
             <p className="study-waiting-sub">
               Next card due in {formatWaitTime(waitMs)}
             </p>
-            <Link to="/" className="study-back-link">Back to Editor</Link>
           </div>
         ) : (
           <div className="study-waiting">
             <p>No cards to review.</p>
-            <Link to="/" className="study-back-link">Back to Editor</Link>
           </div>
         )}
       </main>
+
+      <aside className="study-sidebar">
+        <div className="sidebar-nav-links">
+          <Link to="/" className="sidebar-nav-link">編集</Link>
+          <Link to="/manage" className="sidebar-nav-link">管理</Link>
+        </div>
+        <div className="study-sidebar-title">学習</div>
+        <div className="study-sidebar-stats">
+          <div className="study-sidebar-correct" title="Correct">○ {correctCount}</div>
+          <div className="study-sidebar-incorrect" title="Incorrect">✕ {incorrectCount}</div>
+          <div className="study-sidebar-remaining" title="Remaining">{studyCards.length - correctCount - incorrectCount}残</div>
+        </div>
+      </aside>
     </div>
   );
 }

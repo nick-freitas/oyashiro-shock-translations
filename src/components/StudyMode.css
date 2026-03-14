@@ -1,9 +1,9 @@
 /* ===== STUDY MODE LAYOUT ===== */
 .study-container {
-  min-height: 100vh;
-  background: var(--bg);
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .study-center {
@@ -20,67 +20,66 @@
   color: #a05050;
 }
 
-/* ===== STUDY HEADER ===== */
-.study-header {
-  padding: 20px 32px;
-  border-bottom: 1px solid var(--border-row);
+/* ===== STUDY SIDEBAR ===== */
+.study-sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  right: 0;
+  background: var(--bg-sidebar);
+  border-left: 1px solid var(--border-row);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 20px 0 40px;
   flex-shrink: 0;
 }
 
-.study-back-link {
-  font-family: var(--font-en);
-  font-size: 13px;
-  color: var(--accent-gold);
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: color 0.2s ease;
+.study-sidebar-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-ja);
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  text-shadow: 0 0 50px rgba(58, 58, 110, 0.25);
+  user-select: none;
+  margin-top: 20px;
 }
 
-.study-back-link:hover {
-  color: var(--accent-gold-bright);
-}
-
-/* ===== PROGRESS INDICATOR ===== */
-.study-progress {
+.study-sidebar-stats {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
-  font-family: var(--font-en);
-  font-size: 13px;
-}
-
-.study-due {
-  color: var(--accent-gold-bright);
-  font-weight: 500;
-}
-
-.study-total {
-  color: var(--text-en-sub);
-}
-
-.study-buckets {
-  display: flex;
   gap: 4px;
+  margin-top: auto;
 }
 
-.bucket-pip {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 20px;
-  border-radius: 3px;
-  font-size: 11px;
-  background: rgba(42, 41, 48, 0.6);
-  color: #484450;
+.study-sidebar-correct {
+  font-family: var(--font-ja);
+  font-size: 13px;
+  color: #80d080;
+  letter-spacing: 0.1em;
 }
 
-.bucket-pip.active {
-  background: var(--accent-indigo);
-  color: #b0add0;
+.study-sidebar-incorrect {
+  font-family: var(--font-ja);
+  font-size: 13px;
+  color: #c06060;
+  letter-spacing: 0.1em;
+}
+
+.study-sidebar-remaining {
+  font-family: var(--font-ja);
+  font-size: 13px;
+  color: var(--text-en-sub);
+  letter-spacing: 0.1em;
+  margin-top: 4px;
 }
 
 /* ===== CARD AREA ===== */
@@ -92,6 +91,8 @@
   justify-content: center;
   padding: 40px 32px;
   gap: 40px;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .study-japanese {
@@ -100,8 +101,18 @@
   font-weight: 500;
   color: var(--text-ja);
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.8;
   max-width: 800px;
+}
+
+.study-japanese rt {
+  font-size: 0.35em;
+  color: #a09890;
+  font-weight: 400;
+}
+
+.study-japanese ruby {
+  ruby-position: over;
 }
 
 /* ===== CHOICE BUTTONS ===== */
@@ -201,11 +212,11 @@
     padding: 14px 16px;
   }
 
-  .study-header {
-    padding: 16px 16px;
-  }
-
   .study-card-area {
     padding: 24px 16px;
+  }
+
+  .study-sidebar-title {
+    font-size: 22px;
   }
 }
