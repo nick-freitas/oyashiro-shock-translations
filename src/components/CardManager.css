@@ -154,21 +154,6 @@
   flex-shrink: 0;
 }
 
-.acc-stem {
-  font-family: var(--font-ja);
-  font-size: 21px;
-  color: var(--text-ja);
-  line-height: 1.4;
-}
-
-.acc-answer {
-  font-family: var(--font-en);
-  font-size: 17px;
-  font-style: italic;
-  color: var(--text-en);
-  line-height: 1.4;
-}
-
 .acc-chevron {
   display: flex;
   align-items: center;
@@ -209,7 +194,7 @@
 }
 
 .acc-item.open .acc-panel {
-  max-height: 300px;
+  max-height: 600px;
   opacity: 1;
 }
 

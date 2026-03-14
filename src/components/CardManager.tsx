@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Question } from "../types";
 import { Link } from "react-router-dom";
 import "./CardManager.css";
@@ -39,6 +39,7 @@ export function CardManager() {
   // cardKey of the card currently adding a new distractor (local-only, not saved until blur)
   const [editingDistractor, setEditingDistractor] = useState<string | null>(null);
   // Format: "q1-o0-3" (cardKey + distractor index)
+  const cancelledRef = useRef(false);
 
   function toggleCard(cardKey: string) {
     setOpenCards((prev) => {
@@ -172,6 +173,11 @@ export function CardManager() {
                                 defaultValue={d}
                                 autoFocus
                                 onBlur={(e) => {
+                                  if (cancelledRef.current) {
+                                    cancelledRef.current = false;
+                                    setEditingDistractor(null);
+                                    return;
+                                  }
                                   setEditingDistractor(null);
                                   const newVal = e.target.value.trim();
                                   if (newVal && newVal !== d) {
@@ -182,7 +188,10 @@ export function CardManager() {
                                 }}
                                 onKeyDown={(e) => {
                                   if (e.key === "Enter") (e.target as HTMLInputElement).blur();
-                                  if (e.key === "Escape") setEditingDistractor(null);
+                                  if (e.key === "Escape") {
+                                    cancelledRef.current = true;
+                                    (e.target as HTMLInputElement).blur();
+                                  }
                                 }}
                                 onClick={(e) => e.stopPropagation()}
                               />
@@ -217,6 +226,11 @@ export function CardManager() {
                             autoFocus
                             placeholder="new distractor"
                             onBlur={(e) => {
+                              if (cancelledRef.current) {
+                                cancelledRef.current = false;
+                                setAddingTo(null);
+                                return;
+                              }
                               setAddingTo(null);
                               const val = e.target.value.trim();
                               if (val) {
@@ -228,7 +242,10 @@ export function CardManager() {
                             }}
                             onKeyDown={(e) => {
                               if (e.key === "Enter") (e.target as HTMLInputElement).blur();
-                              if (e.key === "Escape") setAddingTo(null);
+                              if (e.key === "Escape") {
+                                cancelledRef.current = true;
+                                (e.target as HTMLInputElement).blur();
+                              }
                             }}
                             onClick={(e) => e.stopPropagation()}
                           />
