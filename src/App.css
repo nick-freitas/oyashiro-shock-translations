@@ -111,8 +111,7 @@ body {
 }
 
 .sidebar-count {
-  position: absolute;
-  bottom: 12px;
+  margin-top: auto;
   font-family: var(--font-en);
   font-size: 7px;
   font-weight: 400;
