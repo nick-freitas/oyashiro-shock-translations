@@ -273,6 +273,110 @@ Example output: ["Distractor1", "Distractor2", "Distractor3", "Distractor4", "Di
   }
 });
 
+const FURIGANA_PATTERN = /\[.+?\]\{.+?\}/;
+
+// POST /questions/add-furigana — must be before /:id routes
+app.post("/questions/add-furigana", async (_req, res) => {
+  if (processing) {
+    res.status(409).json({ error: "Processing already in progress" });
+    return;
+  }
+
+  processing = true;
+  try {
+    const db = readDb();
+    let annotated = 0;
+    let skipped = 0;
+    let failed = 0;
+    let total = 0;
+
+    for (const question of db.questions) {
+      total++;
+
+      // Collect unannotated ja fields: question + 4 options = up to 5
+      const fields: { key: string; text: string; target: { obj: TranslatedText } }[] = [];
+
+      if (!FURIGANA_PATTERN.test(question.question.ja)) {
+        fields.push({ key: "q", text: question.question.ja, target: { obj: question.question } });
+      }
+      for (let oi = 0; oi < question.options.length; oi++) {
+        if (!FURIGANA_PATTERN.test(question.options[oi].ja)) {
+          fields.push({ key: `o${oi}`, text: question.options[oi].ja, target: { obj: question.options[oi] } });
+        }
+      }
+
+      if (fields.length === 0) {
+        skipped++;
+        continue;
+      }
+
+      // Build numbered input object
+      const input: Record<string, string> = {};
+      const fieldMap: Record<string, { obj: TranslatedText }> = {};
+      fields.forEach((f, i) => {
+        const numKey = String(i + 1);
+        input[numKey] = f.text;
+        fieldMap[numKey] = f.target;
+      });
+
+      try {
+        let result = "";
+
+        for await (const message of query({
+          prompt: `Add furigana readings to the following Japanese text using [漢字]{かな} syntax.
+Only annotate kanji characters — leave katakana, hiragana, and punctuation as-is.
+Return ONLY a JSON object with the same numbered keys, where each value is the annotated text.
+
+Input: ${JSON.stringify(input)}
+
+Example:
+Input: {"1": "店内に響いたのは何コール？", "2": "可愛い"}
+Output: {"1": "[店内]{てんない}に[響]{ひび}いたのは[何]{なに}コール？", "2": "[可愛]{かわい}い"}
+
+Return ONLY the JSON object, nothing else.`,
+          options: {
+            maxTurns: 1,
+            permissionMode: "acceptEdits",
+            systemPrompt:
+              "You are a Japanese language specialist. You add furigana readings to kanji using [漢字]{かな} bracket notation. You always return valid JSON and nothing else.",
+          },
+        })) {
+          if (message.type === "result" && "result" in message) {
+            result = (message as { result: string }).result;
+          }
+        }
+
+        const jsonMatch = result.match(/\{[\s\S]*\}/);
+        if (!jsonMatch) {
+          console.error(`  Failed to extract furigana JSON for question ${question.id}`);
+          failed++;
+          continue;
+        }
+
+        const parsed: Record<string, string> = JSON.parse(jsonMatch[0]);
+
+        // Apply results back to the question
+        for (const [numKey, target] of Object.entries(fieldMap)) {
+          if (parsed[numKey] && typeof parsed[numKey] === "string") {
+            target.obj.ja = parsed[numKey];
+          }
+        }
+
+        writeDb(db);
+        annotated++;
+        console.log(`  Added furigana for question ${question.id}`);
+      } catch (err) {
+        console.error(`  Error adding furigana for question ${question.id}:`, err);
+        failed++;
+      }
+    }
+
+    res.json({ annotated, skipped, failed, total });
+  } finally {
+    processing = false;
+  }
+});
+
 // PATCH a question (text edits + correctOption)
 app.patch("/questions/:id", (req, res) => {
   if (processing) {
