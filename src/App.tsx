@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import type { Question } from "./types";
 import { QuestionList } from "./components/QuestionList";
@@ -24,6 +24,10 @@ function Editor() {
   const [reprocessMsg, setReprocessMsg] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
   const [generateMsg, setGenerateMsg] = useState<string | null>(null);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const toastTimeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
+  const popoverRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   function fetchQuestions() {
     setLoading(true);
@@ -41,6 +45,23 @@ function Editor() {
     fetchQuestions();
   }, []);
 
+  useEffect(() => {
+    if (popoverOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+        document.removeEventListener("keydown", handleEscape);
+      };
+    }
+  }, [popoverOpen, handleClickOutside, handleEscape]);
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
+    };
+  }, []);
+
   function handleQuestionSaved(updated: Question) {
     setQuestions((prev) =>
       prev.map((q) => (q.id === updated.id ? updated : q))
@@ -50,6 +71,31 @@ function Editor() {
   function handleQuestionDeleted(id: number) {
     setQuestions((prev) => prev.filter((q) => q.id !== id));
   }
+
+  function showToast(setter: (msg: string | null) => void, message: string) {
+    if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
+    // Clear both message states so only one toast shows at a time
+    setReprocessMsg(null);
+    setGenerateMsg(null);
+    setter(message);
+    toastTimeoutRef.current = setTimeout(() => setter(null), 3000);
+  }
+
+  const handleClickOutside = useCallback((e: MouseEvent) => {
+    if (
+      popoverRef.current && !popoverRef.current.contains(e.target as Node) &&
+      triggerRef.current && !triggerRef.current.contains(e.target as Node)
+    ) {
+      setPopoverOpen(false);
+    }
+  }, []);
+
+  const handleEscape = useCallback((e: KeyboardEvent) => {
+    if (e.key === "Escape" && popoverOpen) {
+      setPopoverOpen(false);
+      triggerRef.current?.focus();
+    }
+  }, [popoverOpen]);
 
   async function handleReprocess() {
     setReprocessing(true);
@@ -61,23 +107,24 @@ function Editor() {
       try {
         data = JSON.parse(text);
       } catch {
-        setReprocessMsg(`Server error: ${text}`);
+        showToast(setReprocessMsg, `Server error: ${text}`);
         return;
       }
       if (!res.ok) {
-        setReprocessMsg(data.error || "Failed");
+        showToast(setReprocessMsg, data.error || "Failed");
         return;
       }
       if (data.processed > 0) {
-        setReprocessMsg(`Processed ${data.processed} new screenshot(s)`);
+        showToast(setReprocessMsg, `Processed ${data.processed} new screenshot(s)`);
         fetchQuestions();
       } else {
-        setReprocessMsg(data.message || "No new screenshots");
+        showToast(setReprocessMsg, data.message || "No new screenshots");
       }
     } catch (err) {
-      setReprocessMsg(err instanceof Error ? err.message : "Failed");
+      showToast(setReprocessMsg, err instanceof Error ? err.message : "Failed");
     } finally {
       setReprocessing(false);
+      setPopoverOpen(false);
     }
   }
 
@@ -91,23 +138,24 @@ function Editor() {
       try {
         data = JSON.parse(text);
       } catch {
-        setGenerateMsg(`Server error: ${text}`);
+        showToast(setGenerateMsg, `Server error: ${text}`);
         return;
       }
       if (!res.ok) {
-        setGenerateMsg(data.error || "Failed");
+        showToast(setGenerateMsg, data.error || "Failed");
         return;
       }
       const parts = [`Generated ${data.generated}`, `skipped ${data.skipped}`];
       if (data.failed > 0) parts.push(`failed ${data.failed}`);
-      setGenerateMsg(`${parts.join(", ")} (${data.total} total)`);
+      showToast(setGenerateMsg, `${parts.join(", ")} (${data.total} total)`);
       if (data.generated > 0) {
         fetchQuestions();
       }
     } catch (err) {
-      setGenerateMsg(err instanceof Error ? err.message : "Failed");
+      showToast(setGenerateMsg, err instanceof Error ? err.message : "Failed");
     } finally {
       setGenerating(false);
+      setPopoverOpen(false);
     }
   }
 
@@ -117,34 +165,6 @@ function Editor() {
   return (
     <div className="app-layout">
       <div className="main-content">
-        <header className="page-header">
-          <span className="header-label">Shin Oyashiro Shock!</span>
-          <span className="header-count">
-            {toKanjiCount(questions.length)}問
-          </span>
-          <Link to="/study" className="study-link">Study Mode</Link>
-          <Link to="/manage" className="manage-link">Manage Cards</Link>
-          <button
-            className="reprocess-btn"
-            onClick={handleGenerateDistractors}
-            disabled={generating}
-          >
-            {generating ? "Generating\u2026" : "Generate Study Distractors"}
-          </button>
-          {generateMsg && (
-            <span className="reprocess-msg">{generateMsg}</span>
-          )}
-          <button
-            className="reprocess-btn"
-            onClick={handleReprocess}
-            disabled={reprocessing}
-          >
-            {reprocessing ? "Processing\u2026" : "Process New Screenshots"}
-          </button>
-          {reprocessMsg && (
-            <span className="reprocess-msg">{reprocessMsg}</span>
-          )}
-        </header>
         <QuestionList
           questions={questions}
           onQuestionSaved={handleQuestionSaved}
@@ -153,6 +173,39 @@ function Editor() {
       </div>
 
       <aside className="title-sidebar">
+        <Link to="/study" className="sidebar-nav-link">
+          学習<span className="nav-arrow"> →</span>
+        </Link>
+        <Link to="/manage" className="sidebar-nav-link">
+          管理<span className="nav-arrow"> →</span>
+        </Link>
+        <button
+          ref={triggerRef}
+          className="sidebar-actions-trigger"
+          onClick={() => setPopoverOpen((prev) => !prev)}
+          aria-expanded={popoverOpen}
+          aria-haspopup="true"
+        >
+          ⋯
+        </button>
+        {popoverOpen && (
+          <div ref={popoverRef} className="sidebar-popover" role="dialog">
+            <button
+              className="sidebar-popover-action"
+              onClick={handleGenerateDistractors}
+              disabled={generating}
+            >
+              {generating ? "生成中…" : "練習問題を生成"}
+            </button>
+            <button
+              className="sidebar-popover-action"
+              onClick={handleReprocess}
+              disabled={reprocessing}
+            >
+              {reprocessing ? "処理中…" : "画像を処理"}
+            </button>
+          </div>
+        )}
         <div className="sidebar-titles">
           <div className="sidebar-subtitle">新・クイズ・ショック</div>
           <div className="sidebar-title">おやしろさま</div>
@@ -161,6 +214,11 @@ function Editor() {
           {toKanjiCount(questions.length)}
         </div>
       </aside>
+      {(reprocessMsg || generateMsg) && (
+        <div className="toast-message" role="status">
+          {reprocessMsg || generateMsg}
+        </div>
+      )}
     </div>
   );
 }
