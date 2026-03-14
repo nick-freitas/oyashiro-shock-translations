@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from "react";
 import type { Question, TranslatedText } from "../types";
+import { parseRuby } from "../utils/parseRuby";
 import "./QuestionList.css";
 
 function useAutoResize() {
@@ -46,7 +47,7 @@ const KANJI_NUMS = [
   "二十一", "二十二", "二十三", "二十四",
 ];
 
-const OPTION_LETTERS = ["A", "B", "C", "D"];
+const OPTION_COUNTERS = ["一", "二", "三", "四"];
 
 interface QuestionRowProps {
   question: Question;
@@ -147,6 +148,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
           value={edited.question.ja}
           onChange={(e) => updateQuestion("ja", e.target.value)}
         />
+        <div className="ruby-preview">{parseRuby(edited.question.ja)}</div>
         <AutoTextarea
           className={`inline-input input-en${edited.question.en !== question.question.en ? " modified" : ""}`}
           value={edited.question.en}
@@ -167,7 +169,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
                 title="Mark as correct answer"
                 type="button"
               >
-                {OPTION_LETTERS[oi]}
+                {OPTION_COUNTERS[oi]}
               </button>
               <AutoTextarea
                 className={`inline-input input-ja option-input${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
@@ -175,6 +177,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
                 onChange={(e) => updateOption(oi, "ja", e.target.value)}
               />
             </div>
+            <div className="ruby-preview ruby-preview-option">{parseRuby(opt.ja)}</div>
             <AutoTextarea
               className={`inline-input input-en option-input${opt.en !== question.options[oi].en ? " modified" : ""}`}
               value={opt.en}
