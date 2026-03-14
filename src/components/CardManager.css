@@ -301,6 +301,64 @@
   background: rgba(58, 58, 110, 0.08);
 }
 
+/* ===== CHIP INTERACTIONS ===== */
+.d-chip-text {
+  cursor: text;
+}
+
+.d-chip-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  color: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.d-chip:hover .d-chip-x {
+  color: #605868;
+}
+
+.d-chip-x:hover {
+  color: #c06060 !important;
+  background: rgba(128, 64, 64, 0.15);
+}
+
+.d-add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px dashed rgba(58, 58, 110, 0.3);
+  border-radius: 3px;
+  background: transparent;
+  color: rgba(80, 80, 160, 0.35);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.d-add:hover {
+  border-color: var(--accent-indigo-light);
+  color: var(--accent-indigo-light);
+}
+
+.d-chip-edit {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-en);
+  font-size: 14px;
+  color: #b8b6d4;
+  width: 100px;
+  padding: 0;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   .acc-row {

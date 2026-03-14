@@ -35,6 +35,8 @@ export function CardManager() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [openCards, setOpenCards] = useState<Set<string>>(new Set());
+  const [addingTo, setAddingTo] = useState<string | null>(null);
+  // cardKey of the card currently adding a new distractor (local-only, not saved until blur)
 
   function toggleCard(cardKey: string) {
     setOpenCards((prev) => {
@@ -68,6 +70,31 @@ export function CardManager() {
       setQuestions((prev) => prev.map((q) => (q.id === updated.id ? updated : q)));
     } catch (err) {
       console.error("Save failed:", err);
+    }
+  }
+
+  async function saveDistractors(
+    questionId: number,
+    optionIndex: number,
+    distractors: string[]
+  ) {
+    const question = questions.find((q) => q.id === questionId);
+    if (!question) return;
+
+    const newOptions = [...question.options] as Question["options"];
+    newOptions[optionIndex] = { ...newOptions[optionIndex], distractors };
+
+    try {
+      const res = await fetch(`/api/questions/${questionId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ options: newOptions }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const updated: Question = await res.json();
+      setQuestions((prev) => prev.map((q) => (q.id === updated.id ? updated : q)));
+    } catch (err) {
+      console.error("Save distractors failed:", err);
     }
   }
 
@@ -133,8 +160,54 @@ export function CardManager() {
                     </div>
                     <div className="panel-chips">
                       {card.distractors.map((d, di) => (
-                        <span key={di} className="d-chip">{d}</span>
+                        <span key={di} className="d-chip">
+                          <span className="d-chip-text">{d}</span>
+                          <span
+                            className="d-chip-x"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              const updated = card.distractors.filter((_, i) => i !== di);
+                              saveDistractors(card.questionId, card.optionIndex, updated);
+                            }}
+                          >
+                            ×
+                          </span>
+                        </span>
                       ))}
+                      {addingTo === cardKey ? (
+                        <span className="d-chip">
+                          <input
+                            className="d-chip-edit"
+                            autoFocus
+                            placeholder="new distractor"
+                            onBlur={(e) => {
+                              setAddingTo(null);
+                              const val = e.target.value.trim();
+                              if (val) {
+                                saveDistractors(card.questionId, card.optionIndex, [
+                                  ...card.distractors,
+                                  val,
+                                ]);
+                              }
+                            }}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter") (e.target as HTMLInputElement).blur();
+                              if (e.key === "Escape") setAddingTo(null);
+                            }}
+                            onClick={(e) => e.stopPropagation()}
+                          />
+                        </span>
+                      ) : (
+                        <button
+                          className="d-add"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setAddingTo(cardKey);
+                          }}
+                        >
+                          +
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
