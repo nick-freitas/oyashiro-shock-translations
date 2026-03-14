@@ -34,6 +34,16 @@ export function CardManager() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [openCards, setOpenCards] = useState<Set<string>>(new Set());
+
+  function toggleCard(cardKey: string) {
+    setOpenCards((prev) => {
+      const next = new Set(prev);
+      if (next.has(cardKey)) next.delete(cardKey);
+      else next.add(cardKey);
+      return next;
+    });
+  }
 
   useEffect(() => {
     fetch("/api/questions")
@@ -57,18 +67,32 @@ export function CardManager() {
         {cards.map((card, idx) => {
           const prevCard = idx > 0 ? cards[idx - 1] : null;
           const showDivider = prevCard && prevCard.questionId !== card.questionId;
+          const cardKey = `q${card.questionId}-o${card.optionIndex}`;
+          const isOpen = openCards.has(cardKey);
           return (
-            <div key={`q${card.questionId}-o${card.optionIndex}`}>
+            <div key={cardKey}>
               {showDivider && <div className="acc-q-divider" />}
-              <div className={`acc-item${idx % 2 === 1 ? " alt-row" : ""}`}>
-                <div className="acc-row">
+              <div className={`acc-item${isOpen ? " open" : ""}${idx % 2 === 1 ? " alt-row" : ""}`}>
+                <div className="acc-row" onClick={() => toggleCard(cardKey)}>
                   <div className="acc-id-cell">
-                    <span className="acc-id">q{card.questionId}-o{card.optionIndex}</span>
+                    <span className="acc-id">{cardKey}</span>
                     {card.isCorrect && <span className="acc-correct-dot" />}
                   </div>
                   <div className="acc-stem">{card.ja}</div>
                   <div className="acc-answer">{card.en}</div>
                   <div className="acc-chevron">▼</div>
+                </div>
+                <div className="acc-panel">
+                  <div className="acc-panel-inner">
+                    <div className="panel-label">
+                      Distractors ({card.distractors.length})
+                    </div>
+                    <div className="panel-chips">
+                      {card.distractors.map((d, di) => (
+                        <span key={di} className="d-chip">{d}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
