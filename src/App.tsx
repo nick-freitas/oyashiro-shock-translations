@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Question } from "./types";
+import type { Question } from "./types";
 import { QuestionList } from "./components/QuestionList";
 import { QuestionCard } from "./components/QuestionCard";
 import "./App.css";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Question, TranslatedText } from "../types";
+import type { Question, TranslatedText } from "../types";
 import "./QuestionCard.css";
 
 interface QuestionCardProps {

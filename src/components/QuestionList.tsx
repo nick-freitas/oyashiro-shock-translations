@@ -1,4 +1,4 @@
-import { Question } from "../types";
+import type { Question } from "../types";
 import "./QuestionList.css";
 
 interface QuestionListProps {

@@ -89,8 +89,8 @@ Rules:
           systemPrompt: "You are a Japanese OCR and translation specialist. You read images of Japanese quiz games, extract the text, and translate it to English. You always return valid JSON and nothing else.",
         },
       })) {
-        if (message.type === "result") {
-          result = message.result;
+        if (message.type === "result" && "result" in message) {
+          result = (message as { result: string }).result;
         }
       }
 
