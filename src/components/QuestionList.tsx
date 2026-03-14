@@ -29,6 +29,10 @@ function QuestionRow({ question, index, onSaved }: QuestionRowProps) {
     }));
   }
 
+  function setCorrectOption(index: number) {
+    setEdited((prev) => ({ ...prev, correctOption: index }));
+  }
+
   function updateOption(i: number, field: keyof TranslatedText, value: string) {
     setEdited((prev) => {
       const newOptions = [...prev.options] as Question["options"];
@@ -88,9 +92,19 @@ function QuestionRow({ question, index, onSaved }: QuestionRowProps) {
 
       <div className="options-col">
         {edited.options.map((opt, oi) => (
-          <div key={oi} className="option-item">
+          <div
+            key={oi}
+            className={`option-item${edited.correctOption === oi ? " correct" : ""}`}
+          >
             <div className="option-input-row">
-              <span className="option-letter">{OPTION_LETTERS[oi]}</span>
+              <button
+                className={`correct-toggle${edited.correctOption === oi ? " is-correct" : ""}`}
+                onClick={() => setCorrectOption(oi)}
+                title="Mark as correct answer"
+                type="button"
+              >
+                {OPTION_LETTERS[oi]}
+              </button>
               <input
                 type="text"
                 className={`inline-input input-ja option-input${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
