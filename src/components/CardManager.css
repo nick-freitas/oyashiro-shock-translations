@@ -41,7 +41,7 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: var(--font-ja);
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0.15em;
@@ -54,7 +54,7 @@
   position: absolute;
   bottom: 28px;
   font-family: var(--font-en);
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--accent-gold);
   letter-spacing: 0.2em;
@@ -64,7 +64,7 @@
   position: absolute;
   top: 20px;
   font-family: var(--font-en);
-  font-size: 12px;
+  font-size: 18px;
   color: var(--accent-gold);
   text-decoration: none;
   letter-spacing: 0.05em;
@@ -134,7 +134,7 @@
 
 .acc-id {
   font-family: var(--font-en);
-  font-size: 12px;
+  font-size: 18px;
   color: var(--accent-gold);
   letter-spacing: 0.08em;
   opacity: 0.5;
@@ -161,7 +161,7 @@
   width: 28px;
   height: 28px;
   color: #38354a;
-  font-size: 10px;
+  font-size: 15px;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;
   justify-self: end;
 }
@@ -204,7 +204,7 @@
 
 .panel-label {
   font-family: var(--font-en);
-  font-size: 9px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #4a4656;
@@ -237,7 +237,7 @@
   background: rgba(58, 58, 110, 0.12);
   border: 1px solid rgba(58, 58, 110, 0.2);
   font-family: var(--font-en);
-  font-size: 14px;
+  font-size: 21px;
   color: #9896b8;
   cursor: text;
   transition: border-color 0.2s, color 0.2s;
@@ -262,14 +262,14 @@
 
 .acc-stem-input {
   font-family: var(--font-ja);
-  font-size: 21px;
+  font-size: 32px;
   color: var(--text-ja);
   line-height: 1.4;
 }
 
 .acc-answer-input {
   font-family: var(--font-en);
-  font-size: 17px;
+  font-size: 26px;
   font-style: italic;
   color: var(--text-en);
   line-height: 1.4;
@@ -297,7 +297,7 @@
   justify-content: center;
   width: 14px;
   height: 14px;
-  font-size: 12px;
+  font-size: 18px;
   color: transparent;
   cursor: pointer;
   border-radius: 2px;
@@ -323,7 +323,7 @@
   border-radius: 3px;
   background: transparent;
   color: rgba(80, 80, 160, 0.35);
-  font-size: 14px;
+  font-size: 21px;
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
 }
@@ -338,7 +338,7 @@
   border: none;
   outline: none;
   font-family: var(--font-en);
-  font-size: 14px;
+  font-size: 21px;
   color: #b8b6d4;
   width: 100px;
   padding: 0;
@@ -347,7 +347,7 @@
 /* ===== FURIGANA DISPLAY (click-to-edit) ===== */
 .acc-ruby-display {
   font-family: var(--font-ja);
-  font-size: 21px;
+  font-size: 32px;
   color: var(--text-ja);
   line-height: 2;
   padding: 3px 8px;
@@ -375,7 +375,7 @@
   }
 
   .manage-sidebar-title {
-    font-size: 28px;
+    font-size: 42px;
   }
 
   .acc-panel-inner {
@@ -385,7 +385,7 @@
 
 @media (max-width: 500px) {
   .manage-sidebar-title {
-    font-size: 22px;
+    font-size: 33px;
   }
 
   .acc-row {
@@ -397,7 +397,7 @@
   }
 
   .d-chip {
-    font-size: 12px;
+    font-size: 18px;
     padding: 4px 8px;
   }
 }

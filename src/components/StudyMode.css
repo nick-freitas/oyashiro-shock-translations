@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #484450;
   letter-spacing: 0.15em;
 }
@@ -42,7 +42,7 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: var(--font-ja);
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0.15em;
@@ -62,21 +62,21 @@
 
 .study-sidebar-correct {
   font-family: var(--font-ja);
-  font-size: 13px;
+  font-size: 20px;
   color: #80d080;
   letter-spacing: 0.1em;
 }
 
 .study-sidebar-incorrect {
   font-family: var(--font-ja);
-  font-size: 13px;
+  font-size: 20px;
   color: #c06060;
   letter-spacing: 0.1em;
 }
 
 .study-sidebar-remaining {
   font-family: var(--font-ja);
-  font-size: 13px;
+  font-size: 20px;
   color: var(--text-en-sub);
   letter-spacing: 0.1em;
   margin-top: 4px;
@@ -97,7 +97,7 @@
 
 .study-japanese {
   font-family: var(--font-ja);
-  font-size: 48px;
+  font-size: 72px;
   font-weight: 500;
   color: var(--text-ja);
   text-align: center;
@@ -126,7 +126,7 @@
 
 .study-choice-btn {
   font-family: var(--font-en);
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 400;
   color: #d0ccc4;
   background: rgba(42, 41, 48, 0.5);
@@ -162,7 +162,7 @@
 /* ===== NEXT BUTTON ===== */
 .study-next-btn {
   font-family: var(--font-en);
-  font-size: 15px;
+  font-size: 22px;
   color: #e0ddd8;
   background: var(--accent-indigo);
   border: 1px solid var(--accent-indigo-light);
@@ -183,7 +183,7 @@
   text-align: center;
   color: var(--text-en-sub);
   font-family: var(--font-en);
-  font-size: 18px;
+  font-size: 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,7 +192,7 @@
 
 .study-empty-sub,
 .study-waiting-sub {
-  font-size: 14px;
+  font-size: 21px;
   color: #484450;
   font-style: italic;
 }
@@ -200,7 +200,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   .study-japanese {
-    font-size: 32px;
+    font-size: 48px;
   }
 
   .study-choices {
@@ -208,7 +208,7 @@
   }
 
   .study-choice-btn {
-    font-size: 16px;
+    font-size: 24px;
     padding: 14px 16px;
   }
 
@@ -217,6 +217,6 @@
   }
 
   .study-sidebar-title {
-    font-size: 22px;
+    font-size: 33px;
   }
 }
