@@ -54,19 +54,26 @@ export function CardManager() {
   return (
     <div className="manage-layout">
       <div className="manage-content">
-        {cards.map((card) => (
-          <div key={`q${card.questionId}-o${card.optionIndex}`} className="acc-item">
-            <div className="acc-row">
-              <div className="acc-id-cell">
-                <span className="acc-id">q{card.questionId}-o{card.optionIndex}</span>
-                {card.isCorrect && <span className="acc-correct-dot" />}
+        {cards.map((card, idx) => {
+          const prevCard = idx > 0 ? cards[idx - 1] : null;
+          const showDivider = prevCard && prevCard.questionId !== card.questionId;
+          return (
+            <div key={`q${card.questionId}-o${card.optionIndex}`}>
+              {showDivider && <div className="acc-q-divider" />}
+              <div className={`acc-item${idx % 2 === 1 ? " alt-row" : ""}`}>
+                <div className="acc-row">
+                  <div className="acc-id-cell">
+                    <span className="acc-id">q{card.questionId}-o{card.optionIndex}</span>
+                    {card.isCorrect && <span className="acc-correct-dot" />}
+                  </div>
+                  <div className="acc-stem">{card.ja}</div>
+                  <div className="acc-answer">{card.en}</div>
+                  <div className="acc-chevron">▼</div>
+                </div>
               </div>
-              <div className="acc-stem">{card.ja}</div>
-              <div className="acc-answer">{card.en}</div>
-              <div className="acc-chevron">▼</div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <aside className="manage-sidebar">
         <div className="manage-sidebar-title">管理</div>
