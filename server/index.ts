@@ -56,6 +56,36 @@ app.patch("/questions/:id", (req, res) => {
   res.json(db.questions[idx]);
 });
 
+// DELETE a question + screenshot files
+app.delete("/questions/:id", (req, res) => {
+  const id = parseInt(req.params.id, 10);
+  const db = readDb();
+  const idx = db.questions.findIndex((q) => q.id === id);
+  if (idx === -1) {
+    res.status(404).json({ error: "Question not found" });
+    return;
+  }
+
+  const question = db.questions[idx];
+  const filename = question.filename;
+
+  // Remove from database
+  db.questions.splice(idx, 1);
+  writeDb(db);
+
+  // Delete screenshot files (best effort)
+  for (const dir of [SCREENSHOTS_DIR, PUBLIC_SCREENSHOTS_DIR]) {
+    const filePath = path.join(dir, filename);
+    try {
+      fs.unlinkSync(filePath);
+    } catch {
+      // File may not exist in one of the directories
+    }
+  }
+
+  res.json({ deleted: id });
+});
+
 app.listen(3001, () => {
   console.log("API server running on http://localhost:3001");
 });

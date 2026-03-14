@@ -40,6 +40,10 @@ function App() {
     );
   }
 
+  function handleQuestionDeleted(id: number) {
+    setQuestions((prev) => prev.filter((q) => q.id !== id));
+  }
+
   if (loading) return <div className="center">読み込み中&hellip;</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
@@ -55,6 +59,7 @@ function App() {
         <QuestionList
           questions={questions}
           onQuestionSaved={handleQuestionSaved}
+          onQuestionDeleted={handleQuestionDeleted}
         />
       </div>
 

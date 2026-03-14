@@ -14,9 +14,10 @@ interface QuestionRowProps {
   question: Question;
   index: number;
   onSaved: (updated: Question) => void;
+  onDeleted: (id: number) => void;
 }
 
-function QuestionRow({ question, index, onSaved }: QuestionRowProps) {
+function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) {
   const [edited, setEdited] = useState<Question>(question);
   const [saving, setSaving] = useState(false);
 
@@ -39,6 +40,19 @@ function QuestionRow({ question, index, onSaved }: QuestionRowProps) {
       newOptions[i] = { ...newOptions[i], [field]: value };
       return { ...prev, options: newOptions };
     });
+  }
+
+  async function handleDelete() {
+    if (!confirm("Delete this question and its screenshot?")) return;
+    try {
+      const res = await fetch(`/api/questions/${question.id}`, {
+        method: "DELETE",
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      onDeleted(question.id);
+    } catch (err) {
+      console.error("Delete failed:", err);
+    }
   }
 
   async function handleSave() {
@@ -122,17 +136,16 @@ function QuestionRow({ question, index, onSaved }: QuestionRowProps) {
         ))}
       </div>
 
-      {dirty && (
-        <div className="row-actions">
-          <button
-            className="save-btn"
-            onClick={handleSave}
-            disabled={saving}
-          >
+      <div className="row-actions">
+        {dirty && (
+          <button className="save-btn" onClick={handleSave} disabled={saving}>
             {saving ? "Saving…" : "Save"}
           </button>
-        </div>
-      )}
+        )}
+        <button className="delete-btn" onClick={handleDelete} title="Delete question" type="button">
+          ✕
+        </button>
+      </div>
     </div>
   );
 }
@@ -140,9 +153,10 @@ function QuestionRow({ question, index, onSaved }: QuestionRowProps) {
 interface QuestionListProps {
   questions: Question[];
   onQuestionSaved: (updated: Question) => void;
+  onQuestionDeleted: (id: number) => void;
 }
 
-export function QuestionList({ questions, onQuestionSaved }: QuestionListProps) {
+export function QuestionList({ questions, onQuestionSaved, onQuestionDeleted }: QuestionListProps) {
   return (
     <main>
       {questions.map((q, idx) => (
@@ -151,6 +165,7 @@ export function QuestionList({ questions, onQuestionSaved }: QuestionListProps) 
           question={q}
           index={idx}
           onSaved={onQuestionSaved}
+          onDeleted={onQuestionDeleted}
         />
       ))}
     </main>
