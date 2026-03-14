@@ -263,6 +263,44 @@
   color: #b8b6d4;
 }
 
+/* ===== INLINE EDITING ===== */
+.acc-stem-input,
+.acc-answer-input {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 3px 8px;
+  width: 100%;
+  transition: border-color 0.2s, background-color 0.2s;
+  outline: none;
+}
+
+.acc-stem-input {
+  font-family: var(--font-ja);
+  font-size: 21px;
+  color: var(--text-ja);
+  line-height: 1.4;
+}
+
+.acc-answer-input {
+  font-family: var(--font-en);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--text-en);
+  line-height: 1.4;
+}
+
+.acc-stem-input:hover,
+.acc-answer-input:hover {
+  border-color: var(--border-row);
+}
+
+.acc-stem-input:focus,
+.acc-answer-input:focus {
+  border-color: var(--accent-indigo-light);
+  background: rgba(58, 58, 110, 0.08);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   .acc-row {

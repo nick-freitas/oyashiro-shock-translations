@@ -45,6 +45,32 @@ export function CardManager() {
     });
   }
 
+  async function saveOption(
+    questionId: number,
+    optionIndex: number,
+    field: "ja" | "en",
+    value: string
+  ) {
+    const question = questions.find((q) => q.id === questionId);
+    if (!question) return;
+
+    const newOptions = [...question.options] as Question["options"];
+    newOptions[optionIndex] = { ...newOptions[optionIndex], [field]: value };
+
+    try {
+      const res = await fetch(`/api/questions/${questionId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ options: newOptions }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const updated: Question = await res.json();
+      setQuestions((prev) => prev.map((q) => (q.id === updated.id ? updated : q)));
+    } catch (err) {
+      console.error("Save failed:", err);
+    }
+  }
+
   useEffect(() => {
     fetch("/api/questions")
       .then((res) => {
@@ -78,8 +104,26 @@ export function CardManager() {
                     <span className="acc-id">{cardKey}</span>
                     {card.isCorrect && <span className="acc-correct-dot" />}
                   </div>
-                  <div className="acc-stem">{card.ja}</div>
-                  <div className="acc-answer">{card.en}</div>
+                  <input
+                    className="acc-stem-input"
+                    defaultValue={card.ja}
+                    onBlur={(e) => {
+                      if (e.target.value !== card.ja) {
+                        saveOption(card.questionId, card.optionIndex, "ja", e.target.value);
+                      }
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                  />
+                  <input
+                    className="acc-answer-input"
+                    defaultValue={card.en}
+                    onBlur={(e) => {
+                      if (e.target.value !== card.en) {
+                        saveOption(card.questionId, card.optionIndex, "en", e.target.value);
+                      }
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                  />
                   <div className="acc-chevron">▼</div>
                 </div>
                 <div className="acc-panel">
