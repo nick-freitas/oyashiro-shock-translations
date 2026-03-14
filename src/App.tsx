@@ -17,6 +17,8 @@ function App() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [reprocessing, setReprocessing] = useState(false);
+  const [reprocessMsg, setReprocessMsg] = useState<string | null>(null);
 
   function fetchQuestions() {
     setLoading(true);
@@ -44,6 +46,29 @@ function App() {
     setQuestions((prev) => prev.filter((q) => q.id !== id));
   }
 
+  async function handleReprocess() {
+    setReprocessing(true);
+    setReprocessMsg(null);
+    try {
+      const res = await fetch("/api/questions/reprocess", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) {
+        setReprocessMsg(data.error || "Failed");
+        return;
+      }
+      if (data.processed > 0) {
+        setReprocessMsg(`Processed ${data.processed} new screenshot(s)`);
+        fetchQuestions();
+      } else {
+        setReprocessMsg(data.message || "No new screenshots");
+      }
+    } catch (err) {
+      setReprocessMsg(err instanceof Error ? err.message : "Failed");
+    } finally {
+      setReprocessing(false);
+    }
+  }
+
   if (loading) return <div className="center">読み込み中&hellip;</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
@@ -55,6 +80,16 @@ function App() {
           <span className="header-count">
             {toKanjiCount(questions.length)}問
           </span>
+          <button
+            className="reprocess-btn"
+            onClick={handleReprocess}
+            disabled={reprocessing}
+          >
+            {reprocessing ? "Processing\u2026" : "Process New Screenshots"}
+          </button>
+          {reprocessMsg && (
+            <span className="reprocess-msg">{reprocessMsg}</span>
+          )}
         </header>
         <QuestionList
           questions={questions}
