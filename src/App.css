@@ -239,3 +239,21 @@ body {
   background: rgba(154, 138, 72, 0.15);
   color: var(--accent-gold-bright);
 }
+
+.manage-link {
+  font-family: var(--font-en);
+  font-size: 13px;
+  color: var(--accent-gold);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--accent-gold);
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.manage-link:hover {
+  background: rgba(154, 138, 72, 0.15);
+  color: var(--accent-gold-bright);
+}

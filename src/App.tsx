@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import type { Question } from "./types";
 import { QuestionList } from "./components/QuestionList";
 import { StudyMode } from "./components/StudyMode";
+import { CardManager } from "./components/CardManager";
 import "./App.css";
 
 const KANJI_NUMS = [
@@ -122,6 +123,7 @@ function Editor() {
             {toKanjiCount(questions.length)}問
           </span>
           <Link to="/study" className="study-link">Study Mode</Link>
+          <Link to="/manage" className="manage-link">Manage Cards</Link>
           <button
             className="reprocess-btn"
             onClick={handleGenerateDistractors}
@@ -168,6 +170,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Editor />} />
       <Route path="/study" element={<StudyMode />} />
+      <Route path="/manage" element={<CardManager />} />
     </Routes>
   );
 }
