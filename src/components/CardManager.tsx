@@ -1,7 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import type { Question } from "../types";
 import { Link } from "react-router-dom";
+import { parseRuby } from "../utils/parseRuby";
 import "./CardManager.css";
+
+const KANJI_NUMS = [
+  "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
+  "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十",
+  "二十一", "二十二", "二十三", "二十四",
+];
+
+function toKanji(n: number): string {
+  return KANJI_NUMS[n - 1] ?? String(n);
+}
 
 interface Card {
   questionId: number;
@@ -34,7 +45,7 @@ export function CardManager() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [openCards, setOpenCards] = useState<Set<string>>(new Set());
+  const [openCards, setOpenCards] = useState<Set<string> | null>(null);
   const [addingTo, setAddingTo] = useState<string | null>(null);
   // cardKey of the card currently adding a new distractor (local-only, not saved until blur)
   const [editingDistractor, setEditingDistractor] = useState<string | null>(null);
@@ -114,6 +125,11 @@ export function CardManager() {
 
   const cards = flattenToCards(questions);
 
+  // Default all cards to expanded on first load
+  if (openCards === null && cards.length > 0) {
+    setOpenCards(new Set(cards.map((c) => `q${c.questionId}-o${c.optionIndex}`)));
+  }
+
   if (loading) return <div className="center">読み込み中…</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
@@ -124,26 +140,31 @@ export function CardManager() {
           const prevCard = idx > 0 ? cards[idx - 1] : null;
           const showDivider = prevCard && prevCard.questionId !== card.questionId;
           const cardKey = `q${card.questionId}-o${card.optionIndex}`;
-          const isOpen = openCards.has(cardKey);
+          const isOpen = openCards?.has(cardKey) ?? false;
           return (
             <div key={cardKey}>
               {showDivider && <div className="acc-q-divider" />}
               <div className={`acc-item${isOpen ? " open" : ""}${idx % 2 === 1 ? " alt-row" : ""}`}>
                 <div className="acc-row" onClick={() => toggleCard(cardKey)}>
                   <div className="acc-id-cell">
-                    <span className="acc-id">{cardKey}</span>
+                    <span className="acc-id">{`${toKanji(card.questionId)}問の${toKanji(card.optionIndex + 1)}`}</span>
                     {card.isCorrect && <span className="acc-correct-dot" />}
                   </div>
-                  <input
-                    className="acc-stem-input"
-                    defaultValue={card.ja}
-                    onBlur={(e) => {
-                      if (e.target.value !== card.ja) {
-                        saveOption(card.questionId, card.optionIndex, "ja", e.target.value);
-                      }
-                    }}
-                    onClick={(e) => e.stopPropagation()}
-                  />
+                  <div className="acc-ja-cell">
+                    <input
+                      className="acc-stem-input"
+                      defaultValue={card.ja}
+                      onBlur={(e) => {
+                        if (e.target.value !== card.ja) {
+                          saveOption(card.questionId, card.optionIndex, "ja", e.target.value);
+                        }
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                    />
+                    <div className="acc-ruby-preview" onClick={(e) => e.stopPropagation()}>
+                      {parseRuby(card.ja)}
+                    </div>
+                  </div>
                   <input
                     className="acc-answer-input"
                     defaultValue={card.en}
@@ -271,7 +292,7 @@ export function CardManager() {
       </div>
       <aside className="manage-sidebar">
         <div className="manage-sidebar-title">管理</div>
-        <Link to="/" className="manage-back-link">← Editor</Link>
+        <Link to="/" className="manage-back-link">編集</Link>
         <div className="manage-sidebar-count">{cards.length}</div>
       </aside>
     </div>

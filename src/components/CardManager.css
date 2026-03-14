@@ -344,6 +344,27 @@
   padding: 0;
 }
 
+/* ===== FURIGANA PREVIEW ===== */
+.acc-ja-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.acc-ruby-preview {
+  font-family: var(--font-ja);
+  font-size: 14px;
+  color: var(--text-ja);
+  line-height: 2;
+  padding: 0 8px;
+  opacity: 0.5;
+  min-height: 1.2em;
+}
+
+.acc-ruby-preview rt {
+  font-size: 0.5em;
+  color: #888;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   .acc-row {
