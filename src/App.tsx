@@ -51,7 +51,14 @@ function App() {
     setReprocessMsg(null);
     try {
       const res = await fetch("/api/questions/reprocess", { method: "POST" });
-      const data = await res.json();
+      const text = await res.text();
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch {
+        setReprocessMsg(`Server error: ${text}`);
+        return;
+      }
       if (!res.ok) {
         setReprocessMsg(data.error || "Failed");
         return;
