@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shin Oyashiro Shock!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #222 #000;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #222; }
+
+::selection {
+  background: rgba(240, 240, 240, 0.15);
+  color: #f0f0f0;
+}
+
+body {
+  background: #000;
+  color: #f0f0f0;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Header — Film Slate === */
+.header {
+  padding: 64px 0 0 0;
+  width: 100%;
+}
+
+.header-inner {
+  padding: 0 24px 40px;
+}
+
+.header-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #f0f0f0;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.header-meta {
+  font-family: 'Outfit', monospace;
+  font-weight: 300;
+  font-size: 13px;
+  color: #555;
+  margin-top: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header-line {
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
+
+/* === Quiz Timeline === */
+.quiz-timeline {
+  width: 100%;
+}
+
+/* === Film Frame Row === */
+.frame-row {
+  width: 100%;
+  position: relative;
+}
+
+.letterbox-bar {
+  width: 100%;
+  height: 6px;
+  background: #000;
+}
+
+.frame-content {
+  display: grid;
+  grid-template-columns: 43% 30% 27%;
+  width: 100%;
+  background: #0a0a0a;
+  min-height: 200px;
+  position: relative;
+  transition: background 0.5s ease;
+}
+
+.frame-row:hover .frame-content {
+  background: #0c0a0a;
+}
+
+.frame-row:hover .letterbox-bar {
+  background: #0f0a0a;
+  transition: background 0.5s ease;
+}
+
+/* === Scene Number === */
+.scene-number {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: 'Outfit', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  color: #444;
+  letter-spacing: 0.08em;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+/* === Screenshot Column === */
+.screenshot-col {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.screenshot-col img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.85) contrast(1.05);
+}
+
+/* === Question Column === */
+.question-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 28px;
+  gap: 10px;
+}
+
+.q-text-ja {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #f0f0f0;
+  line-height: 1.7;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.q-text-en {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #999;
+  line-height: 1.55;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* === Options Column === */
+.options-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 24px 24px 16px;
+  gap: 14px;
+}
+
+.option-item {
+  padding: 0;
+}
+
+.opt-label {
+  font-family: 'Outfit', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.opt-ja {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f0f0f0;
+  line-height: 1.55;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.opt-en {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.45;
+  margin-top: 1px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* === Loading === */
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.loading-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* === Error === */
+.error-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 10px;
+}
+
+.error-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f0f0f0;
+}
+
+.error-detail {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #555;
+}
+
+/* === Footer === */
+.footer {
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.footer-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1a1a1a;
+  letter-spacing: 0.15em;
+}
+
+/* === Responsive === */
+@media (max-width: 1000px) {
+  .frame-content {
+    grid-template-columns: 40% 32% 28%;
+    min-height: 180px;
+  }
+
+  .screenshot-col {
+    min-height: 180px;
+  }
+
+  .q-text-ja {
+    font-size: 15px;
+  }
+
+  .q-text-en {
+    font-size: 12px;
+  }
+
+  .opt-ja {
+    font-size: 13px;
+  }
+
+  .opt-en {
+    font-size: 11px;
+  }
+
+  .header-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    padding: 0 16px 32px;
+  }
+
+  .header-title {
+    font-size: 28px;
+  }
+
+  .header-meta {
+    font-size: 11px;
+  }
+
+  .frame-content {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .screenshot-col {
+    min-height: 0;
+    height: 220px;
+  }
+
+  .screenshot-col img {
+    height: 220px;
+  }
+
+  .question-col {
+    padding: 20px 16px 12px;
+  }
+
+  .options-col {
+    padding: 8px 16px 24px;
+  }
+
+  .scene-number {
+    top: 8px;
+    left: 8px;
+    background: rgba(0,0,0,0.6);
+    padding: 2px 6px;
+  }
+
+  .q-text-ja {
+    font-size: 16px;
+  }
+
+  .q-text-en {
+    font-size: 13px;
+  }
+
+  .opt-ja {
+    font-size: 14px;
+  }
+
+  .opt-en {
+    font-size: 12px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header — Film Slate -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-title">Oyashiro Shock</div>
+    <div class="header-meta">Reel: 01 &nbsp;&bull;&nbsp; Scenes: 24 &nbsp;&bull;&nbsp; Take: Final</div>
+  </div>
+  <div class="header-line"></div>
+</header>
+
+<!-- Quiz Timeline -->
+<main id="quiz-container">
+  <div class="loading-screen" id="loading">
+    <div class="loading-text">Loading footage&hellip;</div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-text">雛見沢</div>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  var LETTERS = ['A', 'B', 'C', 'D'];
+
+  function esc(str) {
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function padNum(n) {
+    return n < 10 ? '0' + n : '' + n;
+  }
+
+  function buildFrame(q, index) {
+    var frame = document.createElement('div');
+    frame.className = 'frame-row';
+
+    // Top letterbox
+    var topBar = document.createElement('div');
+    topBar.className = 'letterbox-bar';
+    frame.appendChild(topBar);
+
+    // Content area
+    var content = document.createElement('div');
+    content.className = 'frame-content';
+
+    // Scene number
+    var sceneNum = document.createElement('div');
+    sceneNum.className = 'scene-number';
+    sceneNum.textContent = 'SC. ' + padNum(index + 1);
+    content.appendChild(sceneNum);
+
+    // Screenshot
+    var ssCol = document.createElement('div');
+    ssCol.className = 'screenshot-col';
+    var img = document.createElement('img');
+    img.src = '/screenshots/' + encodeURIComponent(q.filename);
+    img.alt = 'Scene ' + (index + 1);
+    img.loading = 'lazy';
+    ssCol.appendChild(img);
+    content.appendChild(ssCol);
+
+    // Question text
+    var qCol = document.createElement('div');
+    qCol.className = 'question-col';
+    var qJa = document.createElement('div');
+    qJa.className = 'q-text-ja';
+    qJa.textContent = q.question.ja;
+    var qEn = document.createElement('div');
+    qEn.className = 'q-text-en';
+    qEn.textContent = q.question.en;
+    qCol.appendChild(qJa);
+    qCol.appendChild(qEn);
+    content.appendChild(qCol);
+
+    // Options
+    var optCol = document.createElement('div');
+    optCol.className = 'options-col';
+    for (var i = 0; i < q.options.length; i++) {
+      var opt = q.options[i];
+      var item = document.createElement('div');
+      item.className = 'option-item';
+
+      var label = document.createElement('div');
+      label.className = 'opt-label';
+      label.textContent = LETTERS[i] + '.';
+
+      var jaSpan = document.createElement('div');
+      jaSpan.className = 'opt-ja';
+      jaSpan.textContent = opt.ja;
+
+      var enDiv = document.createElement('div');
+      enDiv.className = 'opt-en';
+      enDiv.textContent = opt.en;
+
+      item.appendChild(label);
+      item.appendChild(jaSpan);
+      item.appendChild(enDiv);
+      optCol.appendChild(item);
+    }
+    content.appendChild(optCol);
+
+    frame.appendChild(content);
+
+    // Bottom letterbox
+    var bottomBar = document.createElement('div');
+    bottomBar.className = 'letterbox-bar';
+    frame.appendChild(bottomBar);
+
+    return frame;
+  }
+
+  fetch('/api/questions')
+    .then(function(res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(questions) {
+      var container = document.getElementById('quiz-container');
+      container.innerHTML = '';
+
+      var timeline = document.createElement('div');
+      timeline.className = 'quiz-timeline';
+
+      for (var i = 0; i < questions.length; i++) {
+        timeline.appendChild(buildFrame(questions[i], i));
+      }
+
+      container.appendChild(timeline);
+    })
+    .catch(function(err) {
+      var container = document.getElementById('quiz-container');
+      container.innerHTML =
+        '<div class="error-screen">' +
+        '<div class="error-text">Signal lost</div>' +
+        '<div class="error-detail">' + esc(err.message) + '</div>' +
+        '</div>';
+    });
+})();
+</script>
+</body>
+</html>

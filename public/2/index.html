@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shin Oyashiro Shock! — Brutalist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+  :root{
+    --bg:#000;
+    --white:#fff;
+    --accent:#39ff14;
+    --accent-dark:#0a1a02;
+    --font-display:'Bebas Neue',sans-serif;
+    --font-jp:'Noto Sans JP',sans-serif;
+    --font-mono:'JetBrains Mono',monospace;
+    --border-thick:3px solid var(--accent);
+    --border-white:3px solid var(--white);
+    --num-width:80px;
+  }
+
+  html{scroll-behavior:smooth}
+
+  body{
+    font-family:var(--font-jp);
+    font-weight:700;
+    background:var(--bg);
+    color:var(--white);
+    min-height:100vh;
+    line-height:1.4;
+    overflow-x:hidden;
+  }
+
+  /* === HEADER === */
+  .header{
+    padding:20px 16px 16px;
+  }
+
+  .header h1{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(60px,10vw,100px);
+    color:var(--white);
+    line-height:0.9;
+    letter-spacing:0.02em;
+    text-transform:uppercase;
+  }
+
+  .header-jp{
+    font-family:var(--font-jp);
+    font-weight:700;
+    font-size:clamp(18px,3vw,28px);
+    color:var(--white);
+    margin-top:4px;
+  }
+
+  .header-count{
+    font-family:var(--font-mono);
+    font-weight:700;
+    font-size:clamp(12px,1.5vw,16px);
+    color:var(--accent);
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    margin-top:6px;
+  }
+
+  .header-line{
+    width:100%;
+    height:4px;
+    background:var(--accent);
+    margin-top:12px;
+  }
+
+  /* === LOADING === */
+  .loading{
+    text-align:center;
+    padding:80px 16px;
+    font-family:var(--font-mono);
+    font-size:14px;
+    color:var(--accent);
+  }
+  .loading .spinner{
+    display:inline-block;
+    width:32px;height:32px;
+    border:3px solid #222;
+    border-top-color:var(--accent);
+    border-radius:50%;
+    animation:spin 0.8s linear infinite;
+    margin-bottom:16px;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* === GRID === */
+  .grid{
+    width:100%;
+    border-collapse:collapse;
+  }
+
+  .question-row{
+    display:grid;
+    grid-template-columns:var(--num-width) 25% 1fr 35%;
+    width:100%;
+    border-bottom:var(--border-thick);
+    transition:background 0.05s;
+  }
+
+  .question-row:first-child{
+    border-top:var(--border-thick);
+  }
+
+  .question-row:hover{
+    background:var(--accent-dark);
+  }
+
+  /* Cell borders */
+  .cell{
+    border-right:var(--border-thick);
+    padding:10px;
+    min-height:0;
+  }
+
+  .cell:last-child{
+    border-right:none;
+  }
+
+  /* === NUMBER COLUMN === */
+  .cell-num{
+    background:var(--accent);
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding:8px 4px;
+    border-right:var(--border-thick);
+  }
+
+  .cell-num span{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(80px,8vw,140px);
+    color:#000;
+    line-height:0.85;
+    letter-spacing:-0.02em;
+  }
+
+  /* === SCREENSHOT COLUMN === */
+  .cell-photo{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding:8px;
+    overflow:hidden;
+  }
+
+  .cell-photo img{
+    width:100%;
+    max-width:200px;
+    height:auto;
+    display:block;
+  }
+
+  /* === QUESTION COLUMN === */
+  .cell-question{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding:10px 12px;
+  }
+
+  .q-ja{
+    font-family:var(--font-jp);
+    font-weight:700;
+    font-size:clamp(14px,1.4vw,18px);
+    color:var(--white);
+    line-height:1.6;
+    margin-bottom:6px;
+  }
+
+  .q-en{
+    font-family:var(--font-mono);
+    font-weight:400;
+    font-size:clamp(11px,1vw,13px);
+    color:var(--accent);
+    line-height:1.5;
+  }
+
+  /* === OPTIONS COLUMN === */
+  .cell-options{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    padding:0;
+  }
+
+  .option-item{
+    padding:6px 10px 6px 10px;
+    border-bottom:1px solid #333;
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+  }
+
+  .option-item:last-child{
+    border-bottom:none;
+  }
+
+  .opt-ja{
+    font-family:var(--font-jp);
+    font-weight:700;
+    font-size:clamp(12px,1.1vw,15px);
+    color:var(--white);
+    line-height:1.5;
+  }
+
+  .opt-label{
+    font-family:var(--font-mono);
+    font-weight:700;
+    font-size:inherit;
+    color:var(--accent);
+    margin-right:4px;
+  }
+
+  .opt-en{
+    font-family:var(--font-mono);
+    font-weight:400;
+    font-size:clamp(10px,0.9vw,12px);
+    color:var(--accent);
+    line-height:1.4;
+    padding-left:22px;
+  }
+
+  /* === ERROR === */
+  .error-state{
+    text-align:center;
+    padding:60px 16px;
+    font-family:var(--font-mono);
+    color:var(--accent);
+  }
+  .error-state p{
+    margin-bottom:16px;
+    font-size:14px;
+  }
+  .error-state button{
+    font-family:var(--font-mono);
+    font-weight:700;
+    background:var(--accent);
+    color:#000;
+    border:none;
+    padding:10px 28px;
+    cursor:pointer;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+  }
+  .error-state button:hover{
+    background:var(--white);
+  }
+
+  /* === RESPONSIVE: TABLET === */
+  @media(max-width:1024px){
+    :root{
+      --num-width:60px;
+    }
+    .cell-num span{
+      font-size:clamp(60px,8vw,100px);
+    }
+    .cell-photo img{
+      max-width:160px;
+    }
+  }
+
+  /* === RESPONSIVE: MOBILE === */
+  @media(max-width:768px){
+    .question-row{
+      grid-template-columns:1fr;
+      border-bottom:var(--border-thick);
+    }
+
+    .cell{
+      border-right:none;
+      border-bottom:2px solid #333;
+    }
+
+    .cell:last-child{
+      border-bottom:none;
+    }
+
+    .cell-num{
+      padding:4px 12px;
+      justify-content:flex-start;
+      border-right:none;
+    }
+
+    .cell-num span{
+      font-size:60px;
+    }
+
+    .cell-photo{
+      justify-content:flex-start;
+      padding:8px 12px;
+    }
+
+    .cell-photo img{
+      max-width:240px;
+    }
+
+    .cell-question{
+      padding:8px 12px;
+    }
+
+    .cell-options{
+      padding:0 12px 8px;
+    }
+
+    .option-item{
+      padding:6px 0;
+    }
+  }
+
+  @media(max-width:480px){
+    .header h1{
+      font-size:48px;
+    }
+    .q-ja{
+      font-size:14px;
+    }
+    .q-en{
+      font-size:11px;
+    }
+    .opt-ja{
+      font-size:12px;
+    }
+    .opt-en{
+      font-size:10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>OYASHIRO SHOCK</h1>
+  <div class="header-jp">おやしろショック</div>
+  <div class="header-count">24 Questions</div>
+  <div class="header-line"></div>
+</header>
+
+<main id="app">
+  <div class="loading">
+    <div class="spinner"></div>
+    <div>LOADING...</div>
+  </div>
+</main>
+
+<script>
+(function(){
+  'use strict';
+
+  var LABELS = ['A.','B.','C.','D.'];
+
+  function esc(str){
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function encName(filename){
+    return encodeURIComponent(filename);
+  }
+
+  function buildRow(q, idx){
+    var num = idx + 1;
+    var imgSrc = '/screenshots/' + encName(q.filename);
+
+    var optsHTML = '';
+    q.options.forEach(function(opt, i){
+      optsHTML +=
+        '<div class="option-item">' +
+          '<div class="opt-ja"><span class="opt-label">' + LABELS[i] + '</span>' + esc(opt.ja) + '</div>' +
+          '<div class="opt-en">' + esc(opt.en) + '</div>' +
+        '</div>';
+    });
+
+    return '' +
+      '<div class="question-row">' +
+        '<div class="cell cell-num"><span>' + num + '</span></div>' +
+        '<div class="cell cell-photo"><img src="' + imgSrc + '" alt="Q' + num + '" loading="lazy"></div>' +
+        '<div class="cell cell-question">' +
+          '<div class="q-ja">' + esc(q.question.ja) + '</div>' +
+          '<div class="q-en">' + esc(q.question.en) + '</div>' +
+        '</div>' +
+        '<div class="cell cell-options">' +
+          optsHTML +
+        '</div>' +
+      '</div>';
+  }
+
+  function render(questions){
+    var app = document.getElementById('app');
+    var html = '<div class="grid">';
+    questions.forEach(function(q, i){
+      html += buildRow(q, i);
+    });
+    html += '</div>';
+    app.innerHTML = html;
+  }
+
+  function showError(msg){
+    var app = document.getElementById('app');
+    app.innerHTML =
+      '<div class="error-state">' +
+        '<p>' + msg + '</p>' +
+        '<button onclick="location.reload()">RETRY</button>' +
+      '</div>';
+  }
+
+  fetch('/api/questions')
+    .then(function(res){
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(data){
+      if(!Array.isArray(data) || data.length === 0){
+        showError('NO DATA FOUND.');
+        return;
+      }
+      render(data);
+    })
+    .catch(function(err){
+      console.error('Failed to load questions:', err);
+      showError('FAILED TO LOAD QUIZ DATA.');
+    });
+})();
+</script>
+</body>
+</html>

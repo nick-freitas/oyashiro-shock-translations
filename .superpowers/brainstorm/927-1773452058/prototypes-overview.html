@@ -1,0 +1,212 @@
+<h2>Five Prototype Directions</h2>
+<p class="subtitle">Each mockup shows the collapsed state and a sample expanded question. Click to select your favorites.</p>
+
+<div class="cards" data-multiselect>
+
+  <!-- Prototype 1: Curse of Oyashiro -->
+  <div class="card" data-choice="1" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:20px;font-family:serif;min-height:320px;position:relative;">
+        <!-- Glitch/horror header -->
+        <div style="text-align:center;margin-bottom:16px;">
+          <div style="font-size:22px;color:#8b0000;font-weight:bold;text-shadow:0 0 10px rgba(139,0,0,0.5), 2px 2px 0 #1a0000;letter-spacing:4px;">嗚呼、オヤシロさま</div>
+          <div style="font-size:10px;color:#444;letter-spacing:6px;margin-top:4px;">SHIN OYASHIRO SHOCK</div>
+        </div>
+        <!-- Staggered cards -->
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="background:#111;border-left:3px solid #8b0000;padding:10px 12px;margin-left:0px;">
+            <div style="color:#666;font-size:9px;letter-spacing:2px;">問 01</div>
+            <div style="color:#c0c0c0;font-size:12px;margin-top:4px;">デザートフェスタ、店内に響いたのは何コール?</div>
+          </div>
+          <!-- Expanded card -->
+          <div style="background:#1a0808;border-left:3px solid #cc0000;padding:10px 12px;margin-left:20px;box-shadow:0 0 20px rgba(139,0,0,0.2);">
+            <div style="color:#cc0000;font-size:9px;letter-spacing:2px;">問 02 ▼</div>
+            <div style="color:#e0e0e0;font-size:12px;margin-top:4px;">本格推理ゲームに挑んだ圭一、自分をなんと呼称した?</div>
+            <div style="margin-top:10px;display:flex;flex-direction:column;gap:5px;">
+              <div style="background:#220808;padding:6px 10px;color:#999;font-size:11px;border:1px solid #330000;">A. 江戸川ケーイチ</div>
+              <div style="background:#220808;padding:6px 10px;color:#999;font-size:11px;border:1px solid #330000;">B. 前原コゴロウ</div>
+              <div style="background:#220808;padding:6px 10px;color:#999;font-size:11px;border:1px solid #330000;">C. アルセーヌ前原</div>
+              <div style="background:#220808;padding:6px 10px;color:#999;font-size:11px;border:1px solid #330000;">D. シャーロック前原</div>
+            </div>
+          </div>
+          <div style="background:#111;border-left:3px solid #8b0000;padding:10px 12px;margin-left:0px;">
+            <div style="color:#666;font-size:9px;letter-spacing:2px;">問 03</div>
+            <div style="color:#c0c0c0;font-size:12px;margin-top:4px;">沙都子、遅れてきた圭一を何に例えた?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>1. "Curse of Oyashiro"</h3>
+      <p>Dark horror atmosphere. Staggered vertical cards with uneven indentation. Blood red accents, glitch effects, eerie glow. Expanded cards "tear open" with a red shadow.</p>
+    </div>
+  </div>
+
+  <!-- Prototype 2: Shrine Maiden -->
+  <div class="card" data-choice="2" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#f5efe0;padding:20px;font-family:serif;min-height:320px;">
+        <!-- Traditional header -->
+        <div style="text-align:center;margin-bottom:16px;">
+          <div style="font-size:11px;color:#8b6914;letter-spacing:8px;border-bottom:1px solid #d4c5a0;border-top:1px solid #d4c5a0;padding:6px 0;">新・おやしろショック</div>
+          <div style="font-size:9px;color:#a09070;margin-top:4px;">御 神 籤 二 十 四 問</div>
+        </div>
+        <!-- Ofuda grid -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+          <div style="background:#faf6eb;border:1px solid #d4c5a0;padding:10px;text-align:center;box-shadow:2px 2px 4px rgba(0,0,0,0.1);">
+            <div style="color:#8b6914;font-size:16px;font-weight:bold;">壱</div>
+            <div style="color:#5a4a2a;font-size:9px;margin-top:6px;line-height:1.4;">デザートフェスタ...</div>
+          </div>
+          <div style="background:#faf6eb;border:1px solid #d4c5a0;padding:10px;text-align:center;box-shadow:2px 2px 4px rgba(0,0,0,0.1);">
+            <div style="color:#8b6914;font-size:16px;font-weight:bold;">弐</div>
+            <div style="color:#5a4a2a;font-size:9px;margin-top:6px;line-height:1.4;">本格推理ゲーム...</div>
+          </div>
+          <!-- Expanded/flipped card -->
+          <div style="background:#8b6914;border:1px solid #6b4914;padding:10px;text-align:center;box-shadow:2px 2px 4px rgba(0,0,0,0.2);grid-column:span 1;color:#faf6eb;">
+            <div style="font-size:9px;letter-spacing:2px;opacity:0.7;">答</div>
+            <div style="font-size:8px;margin-top:4px;line-height:1.3;">A. プリキー！<br>B. フキフキ！<br>C. ヌギヌギ！<br>D. ブギウギ！</div>
+          </div>
+          <div style="background:#faf6eb;border:1px solid #d4c5a0;padding:10px;text-align:center;box-shadow:2px 2px 4px rgba(0,0,0,0.1);">
+            <div style="color:#8b6914;font-size:16px;font-weight:bold;">参</div>
+            <div style="color:#5a4a2a;font-size:9px;margin-top:6px;line-height:1.4;">沙都子、遅れてきた...</div>
+          </div>
+          <div style="background:#faf6eb;border:1px solid #d4c5a0;padding:10px;text-align:center;box-shadow:2px 2px 4px rgba(0,0,0,0.1);">
+            <div style="color:#8b6914;font-size:16px;font-weight:bold;">四</div>
+            <div style="color:#5a4a2a;font-size:9px;margin-top:6px;line-height:1.4;">レナが見つけた...</div>
+          </div>
+          <div style="background:#faf6eb;border:1px solid #d4c5a0;padding:10px;text-align:center;box-shadow:2px 2px 4px rgba(0,0,0,0.1);">
+            <div style="color:#8b6914;font-size:16px;font-weight:bold;">五</div>
+            <div style="color:#5a4a2a;font-size:9px;margin-top:6px;line-height:1.4;">魅音の正体は...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>2. "Shrine Maiden"</h3>
+      <p>Traditional Japanese aesthetic. Warm parchment tones, brush-style accents. Questions as ofuda prayer tablets in a grid. Clicked cards flip to reveal answer options on the back.</p>
+    </div>
+  </div>
+
+  <!-- Prototype 3: Club Activity -->
+  <div class="card" data-choice="3" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#f0e6d3;padding:20px;font-family:sans-serif;min-height:320px;background-image:repeating-linear-gradient(45deg,transparent,transparent 35px,rgba(0,0,0,0.02) 35px,rgba(0,0,0,0.02) 36px);">
+        <!-- Fun header -->
+        <div style="text-align:center;margin-bottom:14px;">
+          <div style="background:#ff6b9d;color:white;display:inline-block;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:bold;transform:rotate(-2deg);">部活メンバーのクイズ大会！</div>
+        </div>
+        <!-- Corkboard cards -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div style="background:#fffacd;padding:10px;box-shadow:2px 3px 6px rgba(0,0,0,0.15);transform:rotate(-1deg);">
+            <div style="color:#ff6b9d;font-size:10px;font-weight:bold;">Q1 ✦</div>
+            <div style="color:#333;font-size:11px;margin-top:4px;">デザートフェスタ、店内に響いたのは何コール?</div>
+          </div>
+          <!-- Expanded sticky note -->
+          <div style="background:#c8e6ff;padding:10px;box-shadow:2px 3px 6px rgba(0,0,0,0.15);transform:rotate(1deg);grid-row:span 2;">
+            <div style="color:#4a90d9;font-size:10px;font-weight:bold;">Q2 ✦ OPEN!</div>
+            <div style="color:#333;font-size:10px;margin-top:4px;">本格推理ゲームに挑んだ圭一は?</div>
+            <div style="margin-top:8px;display:flex;flex-direction:column;gap:4px;">
+              <div style="background:rgba(255,255,255,0.6);padding:4px 8px;border-radius:10px;font-size:10px;color:#333;">🅐 江戸川ケーイチ</div>
+              <div style="background:rgba(255,255,255,0.6);padding:4px 8px;border-radius:10px;font-size:10px;color:#333;">🅑 前原コゴロウ</div>
+              <div style="background:rgba(255,255,255,0.6);padding:4px 8px;border-radius:10px;font-size:10px;color:#333;">🅒 アルセーヌ前原</div>
+              <div style="background:rgba(255,255,255,0.6);padding:4px 8px;border-radius:10px;font-size:10px;color:#333;">🅓 シャーロック前原</div>
+            </div>
+          </div>
+          <div style="background:#d4f5d4;padding:10px;box-shadow:2px 3px 6px rgba(0,0,0,0.15);transform:rotate(0.5deg);">
+            <div style="color:#4caf50;font-size:10px;font-weight:bold;">Q3 ✦</div>
+            <div style="color:#333;font-size:11px;margin-top:4px;">沙都子、遅れてきた圭一を何に例えた?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>3. "Club Activity"</h3>
+      <p>Bright, playful school club vibe. Corkboard background with colorful sticky notes at slight angles. Expanded notes unfold downward with rounded pill-shaped answer options. Fun and casual.</p>
+    </div>
+  </div>
+
+  <!-- Prototype 4: Fragment -->
+  <div class="card" data-choice="4" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#0c0c14;padding:20px;font-family:'Courier New',monospace;min-height:320px;position:relative;overflow:hidden;">
+        <!-- Scanline overlay -->
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.15) 2px,rgba(0,0,0,0.15) 4px);pointer-events:none;"></div>
+        <!-- VN header -->
+        <div style="border-bottom:1px solid #2a2a4a;padding-bottom:8px;margin-bottom:12px;">
+          <div style="color:#7070ff;font-size:11px;letter-spacing:3px;">FRAGMENT_LOADER v2.04</div>
+          <div style="color:#4a4a6a;font-size:9px;margin-top:2px;">// oyashiro_quiz.dat — 24 entries loaded</div>
+        </div>
+        <!-- Menu list -->
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="padding:6px 8px;color:#8888aa;font-size:11px;border-left:2px solid #333;">
+            <span style="color:#4a4a6a;">[01]</span> デザートフェスタ、店内に響いたのは何コール?
+          </div>
+          <!-- Expanded -->
+          <div style="padding:6px 8px;background:#12122a;border-left:2px solid #7070ff;margin-left:0;">
+            <span style="color:#7070ff;">[02]</span> <span style="color:#c0c0e0;font-size:11px;">本格推理ゲームに挑んだ圭一、自分をなんと呼称した?</span>
+            <div style="margin-top:8px;margin-left:20px;display:flex;flex-direction:column;gap:3px;">
+              <div style="color:#6a6aaa;font-size:10px;">> A: 江戸川ケーイチ</div>
+              <div style="color:#6a6aaa;font-size:10px;">> B: 前原コゴロウ</div>
+              <div style="color:#6a6aaa;font-size:10px;">> C: アルセーヌ前原</div>
+              <div style="color:#6a6aaa;font-size:10px;">> D: シャーロック前原</div>
+            </div>
+            <div style="color:#4a4a6a;font-size:9px;margin-top:6px;margin-left:20px;">// click to collapse</div>
+          </div>
+          <div style="padding:6px 8px;color:#8888aa;font-size:11px;border-left:2px solid #333;">
+            <span style="color:#4a4a6a;">[03]</span> 沙都子、遅れてきた圭一を何に例えた?
+          </div>
+          <div style="padding:6px 8px;color:#8888aa;font-size:11px;border-left:2px solid #333;">
+            <span style="color:#4a4a6a;">[04]</span> レナが宝探しで見つけたものは?
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>4. "Fragment"</h3>
+      <p>Retro visual novel / game terminal aesthetic. Scanline overlay, monospace font, indigo accents. Sequential list like a data loader. Expanded entries reveal inline with a code-terminal feel.</p>
+    </div>
+  </div>
+
+  <!-- Prototype 5: Watanagashi -->
+  <div class="card" data-choice="5" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:linear-gradient(160deg,#1a1a2e,#16213e);padding:20px;font-family:system-ui,sans-serif;min-height:320px;">
+        <!-- Minimal header -->
+        <div style="margin-bottom:16px;">
+          <div style="color:#e0e0e0;font-size:16px;font-weight:300;letter-spacing:1px;">Oyashiro Quiz</div>
+          <div style="color:#4a6fa5;font-size:10px;margin-top:2px;">24 questions</div>
+        </div>
+        <!-- Masonry-ish grid -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:rgba(255,255,255,0.05);border-radius:8px;padding:12px;border:1px solid rgba(255,255,255,0.08);">
+            <div style="color:#4a6fa5;font-size:9px;font-weight:600;">01</div>
+            <div style="color:#c0c8d8;font-size:11px;margin-top:6px;line-height:1.4;">デザートフェスタ、店内に響いたのは何コール?</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border-radius:8px;padding:12px;border:1px solid rgba(255,255,255,0.08);">
+            <div style="color:#4a6fa5;font-size:9px;font-weight:600;">03</div>
+            <div style="color:#c0c8d8;font-size:11px;margin-top:6px;line-height:1.4;">沙都子、遅れてきた圭一を何に例えた?</div>
+          </div>
+          <!-- Expanded card spanning full width -->
+          <div style="background:rgba(74,111,165,0.1);border-radius:8px;padding:12px;border:1px solid rgba(74,111,165,0.3);grid-column:span 2;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div style="color:#4a6fa5;font-size:9px;font-weight:600;">02</div>
+              <div style="color:#4a6fa5;font-size:9px;">▲ collapse</div>
+            </div>
+            <div style="color:#e0e8f0;font-size:12px;margin-top:6px;">本格推理ゲームに挑んだ圭一、自分をなんと呼称した?</div>
+            <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+              <div style="background:rgba(255,255,255,0.05);padding:8px;border-radius:6px;color:#a0b0c8;font-size:10px;">A. 江戸川ケーイチ</div>
+              <div style="background:rgba(255,255,255,0.05);padding:8px;border-radius:6px;color:#a0b0c8;font-size:10px;">B. 前原コゴロウ</div>
+              <div style="background:rgba(255,255,255,0.05);padding:8px;border-radius:6px;color:#a0b0c8;font-size:10px;">C. アルセーヌ前原</div>
+              <div style="background:rgba(255,255,255,0.05);padding:8px;border-radius:6px;color:#a0b0c8;font-size:10px;">D. シャーロック前原</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>5. "Watanagashi"</h3>
+      <p>Modern minimal with subtle atmosphere. Dark gradient background, soft blues, rounded cards with glass-like transparency. Expanded cards span full width with a 2-column answer grid. Clean and elegant.</p>
+    </div>
+  </div>
+
+</div>
