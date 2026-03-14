@@ -61,15 +61,20 @@ Furigana is always shown — no toggle.
 
 ### Editor / QuestionList (`QuestionList.tsx`)
 
-- **Display mode** (not editing): Question and option `ja` text rendered via `parseRuby()` — furigana appears above kanji
-- **Edit mode** (textarea focused): Shows raw `[漢字]{かな}` markup in the textarea
-- **Live preview**: A preview element below each Japanese textarea renders `parseRuby()` output in real-time as the user types, so they can verify markup correctness
-- CSS updates in `QuestionList.css`: Styles for ruby text and the preview area
+The current QuestionList is a fully inline editor — all `ja` fields are always rendered as `<textarea>` elements (via `AutoTextarea`). There is no display/edit mode toggle.
+
+To support furigana:
+- **Textareas** continue to show raw `[漢字]{かな}` markup (this is what the user edits)
+- **Live preview**: A preview element below each Japanese textarea (`question.ja` and each `option.ja`) renders `parseRuby()` output in real-time as the user types, so they can verify the furigana looks correct
+- CSS updates in `QuestionList.css`: Styles for ruby text in preview areas, including appropriate `line-height` for ruby annotation
 
 ### Card Manager (`CardManager.tsx`)
 
-- Display text for card `ja` fields rendered via `parseRuby()`
-- Editable inputs continue to show raw markup
+The CardManager uses the same always-editable pattern as QuestionList — the `ja` field is an `<input>` element inside the accordion row.
+
+To support furigana:
+- **Inputs** continue to show raw `[漢字]{かな}` markup
+- **Live preview**: A preview element below the `ja` input renders `parseRuby()` output, matching the QuestionList approach
 
 ### English text
 
@@ -85,25 +90,35 @@ The existing `POST /questions/reprocess` endpoint's Claude prompt is updated to 
 
 > "For all Japanese text fields (question and options), annotate kanji with furigana using `[漢字]{かな}` syntax. Only annotate kanji characters, not katakana or hiragana. Example: `[店内]{てんない}に[響]{ひび}いた`"
 
-Same endpoint, same flow, same response format — just richer `ja` output.
+This applies to all `ja` fields in the returned JSON — both `question.ja` and each `options[].ja`. Same endpoint, same flow, same response format — just richer `ja` output.
 
 ### Bulk Migration: New Endpoint `POST /questions/add-furigana`
 
 Iterates through all questions in `db.json` and adds furigana markup to `ja` fields that don't already have it.
 
+**UI trigger:** A new "Add Furigana" button is added to the existing popover menu in `App.tsx` (alongside "Process Screenshots" and "Generate Distractors"). It calls this endpoint and shows a toast with the results. An `addingFurigana` state variable disables the button during processing, matching the existing `reprocessing`/`generating` pattern.
+
+**Concurrency:** The endpoint uses the existing `processing` mutex (shared with `/questions/reprocess` and `/questions/generate-distractors`) to prevent concurrent modifications to `db.json`. Returns 409 if another operation is in progress.
+
 **Flow:**
 1. Read all questions from `db.json`
 2. For each question, collect the `ja` text from the question and all 4 options (5 fields per question)
-3. Skip fields that already contain `[` followed by `]{` followed by `}` (already annotated)
-4. Send the unannotated fields to Claude in a single call per question, asking it to add `[漢字]{かな}` markup
+3. Skip fields that already contain `[` followed by `]{` followed by `}` (already annotated). If all 5 fields in a question are already annotated, skip the entire question.
+4. Send the unannotated fields to Claude in a single call per question
 5. Write results back to `db.json` incrementally after each question
 
-**Skip logic:** A field is considered already annotated if it matches the regex `/\[.+?\]\{.+?\}/`.
+**Skip logic:** A field is considered already annotated if it matches the regex `/\[.+?\]\{.+?\}/`. If a field matches the regex, it is skipped — even if only partially annotated. This keeps the logic simple and avoids re-processing fields that may have been manually corrected. To force re-annotation of a field, the user can remove the existing markup first.
 
-**Prompt:**
-> "Add furigana readings to the following Japanese text using `[漢字]{かな}` syntax. Only annotate kanji characters — leave katakana, hiragana, and punctuation as-is. Return the annotated text only, preserving the exact original text except for the added markup."
+**Prompt and response format:** The prompt sends a JSON object with numbered keys for each unannotated field, and asks Claude to return a JSON object with the same keys:
 
-**Batching:** All 5 `ja` fields per question are sent in one Claude call to reduce API round-trips (~100 calls total for the full database).
+```
+Input:  {"1": "店内に響いたのは何コール？", "2": "可愛い", "3": "プリキー！"}
+Output: {"1": "[店内]{てんない}に[響]{ひび}いたのは[何]{なに}コール？", "2": "[可愛]{かわい}い", "3": "プリキー！"}
+```
+
+This makes it unambiguous which response maps to which field. If Claude returns malformed JSON, the entire question is skipped and counted as failed.
+
+**Response format:** `{ annotated: number, skipped: number, failed: number, total: number }` — consistent with the existing `/questions/generate-distractors` endpoint pattern.
 
 **Idempotent:** Running the endpoint multiple times is safe — already-annotated fields are skipped.
 
@@ -114,7 +129,8 @@ Iterates through all questions in `db.json` and adds furigana markup to `ja` fie
 | `src/utils/parseRuby.tsx` | **New** — `parseRuby()` utility function |
 | `src/components/StudyMode.tsx` | Use `parseRuby()` for question text |
 | `src/components/StudyMode.css` | Line-height and `rt` styling for ruby text |
-| `src/components/QuestionList.tsx` | Display mode: `parseRuby()`. Edit mode: raw markup + live preview |
+| `src/components/QuestionList.tsx` | Add live furigana preview below each `ja` textarea |
+| `src/App.tsx` | Add "Add Furigana" button to popover menu |
 | `src/components/QuestionList.css` | Ruby text and preview area styles |
 | `src/components/CardManager.tsx` | Use `parseRuby()` for display text |
 | `server/index.ts` | Updated OCR prompt; new `POST /questions/add-furigana` endpoint |
