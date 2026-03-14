@@ -65,7 +65,7 @@ body {
 .title-sidebar {
   width: var(--sidebar-width);
   min-width: var(--sidebar-width);
-  height: 100vh;
+  height: calc(100vh / 1.5);
   position: fixed;
   top: 0;
   right: 0;
