@@ -114,14 +114,14 @@ app.post("/questions/reprocess", async (_req, res) => {
 
 {
   "question": {
-    "ja": "<the question text in Japanese>",
+    "ja": "<the question text in Japanese with [漢字]{かな} furigana markup>",
     "en": "<English translation of the question>"
   },
   "options": [
-    { "ja": "<option 1 in Japanese>", "en": "<English translation>" },
-    { "ja": "<option 2 in Japanese>", "en": "<English translation>" },
-    { "ja": "<option 3 in Japanese>", "en": "<English translation>" },
-    { "ja": "<option 4 in Japanese>", "en": "<English translation>" }
+    { "ja": "<option 1 in Japanese with [漢字]{かな} furigana markup>", "en": "<English translation>" },
+    { "ja": "<option 2 in Japanese with [漢字]{かな} furigana markup>", "en": "<English translation>" },
+    { "ja": "<option 3 in Japanese with [漢字]{かな} furigana markup>", "en": "<English translation>" },
+    { "ja": "<option 4 in Japanese with [漢字]{かな} furigana markup>", "en": "<English translation>" }
   ]
 }
 
@@ -130,6 +130,7 @@ Rules:
 - Extract ALL Japanese text visible for the question and each of the 4 answer options
 - Ignore any X marks, circles, timers, character art, or UI elements
 - Translate naturally, not literally
+- For all Japanese text in "ja" fields (question and options), annotate kanji with furigana using [漢字]{かな} syntax. Only annotate kanji characters, not katakana or hiragana. Example: [店内]{てんない}に[響]{ひび}いた
 - Return ONLY the JSON object, nothing else`,
           options: {
             allowedTools: ["Read"],
