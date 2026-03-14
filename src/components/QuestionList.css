@@ -47,7 +47,7 @@
 /* ===== SCREENSHOT ===== */
 
 .screenshot-img {
-  width: 80%;
+  width: 56%;
   height: auto;
   display: block;
   border: 1px solid var(--border-row);
