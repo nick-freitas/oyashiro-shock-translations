@@ -24,6 +24,8 @@ function Editor() {
   const [reprocessMsg, setReprocessMsg] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
   const [generateMsg, setGenerateMsg] = useState<string | null>(null);
+  const [addingFurigana, setAddingFurigana] = useState(false);
+  const [furiganaMsg, setFuriganaMsg] = useState<string | null>(null);
   const [popoverOpen, setPopoverOpen] = useState(false);
   const toastTimeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
@@ -53,9 +55,10 @@ function Editor() {
 
   function showToast(setter: (msg: string | null) => void, message: string) {
     if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
-    // Clear both message states so only one toast shows at a time
+    // Clear all message states so only one toast shows at a time
     setReprocessMsg(null);
     setGenerateMsg(null);
+    setFuriganaMsg(null);
     setter(message);
     toastTimeoutRef.current = setTimeout(() => setter(null), 3000);
   }
@@ -159,6 +162,37 @@ function Editor() {
     }
   }
 
+  async function handleAddFurigana() {
+    setAddingFurigana(true);
+    setFuriganaMsg(null);
+    try {
+      const res = await fetch("/api/questions/add-furigana", { method: "POST" });
+      const text = await res.text();
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch {
+        showToast(setFuriganaMsg, `Server error: ${text}`);
+        return;
+      }
+      if (!res.ok) {
+        showToast(setFuriganaMsg, data.error || "Failed");
+        return;
+      }
+      const parts = [`Annotated ${data.annotated}`, `skipped ${data.skipped}`];
+      if (data.failed > 0) parts.push(`failed ${data.failed}`);
+      showToast(setFuriganaMsg, `${parts.join(", ")} (${data.total} total)`);
+      if (data.annotated > 0) {
+        fetchQuestions();
+      }
+    } catch (err) {
+      showToast(setFuriganaMsg, err instanceof Error ? err.message : "Failed");
+    } finally {
+      setAddingFurigana(false);
+      setPopoverOpen(false);
+    }
+  }
+
   if (loading) return <div className="center">読み込み中&hellip;</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
@@ -173,21 +207,19 @@ function Editor() {
       </div>
 
       <aside className="title-sidebar">
-        <Link to="/study" className="sidebar-nav-link">
-          学習<span className="nav-arrow"> →</span>
-        </Link>
-        <Link to="/manage" className="sidebar-nav-link">
-          管理<span className="nav-arrow"> →</span>
-        </Link>
-        <button
-          ref={triggerRef}
-          className="sidebar-actions-trigger"
-          onClick={() => setPopoverOpen((prev) => !prev)}
-          aria-expanded={popoverOpen}
-          aria-haspopup="true"
-        >
-          ⋯
-        </button>
+        <div className="sidebar-nav-links">
+          <button
+            ref={triggerRef}
+            className="sidebar-actions-trigger"
+            onClick={() => setPopoverOpen((prev) => !prev)}
+            aria-expanded={popoverOpen}
+            aria-haspopup="true"
+          >
+            ⋯
+          </button>
+          <Link to="/study" className="sidebar-nav-link">学習</Link>
+          <Link to="/manage" className="sidebar-nav-link">管理</Link>
+        </div>
         {popoverOpen && (
           <div ref={popoverRef} className="sidebar-popover" role="dialog">
             <button
@@ -204,19 +236,26 @@ function Editor() {
             >
               {reprocessing ? "処理中…" : "画像を処理"}
             </button>
+            <button
+              className="sidebar-popover-action"
+              onClick={handleAddFurigana}
+              disabled={addingFurigana}
+            >
+              {addingFurigana ? "振仮名追加中…" : "振仮名を追加"}
+            </button>
           </div>
         )}
         <div className="sidebar-titles">
           <div className="sidebar-subtitle">新・クイズ・ショック</div>
-          <div className="sidebar-title">おやしろさま</div>
+          <div className="sidebar-title">おやしろさまショック</div>
         </div>
         <div className="sidebar-count">
           {toKanjiCount(questions.length)}
         </div>
       </aside>
-      {(reprocessMsg || generateMsg) && (
+      {(reprocessMsg || generateMsg || furiganaMsg) && (
         <div className="toast-message" role="status">
-          {reprocessMsg || generateMsg}
+          {reprocessMsg || generateMsg || furiganaMsg}
         </div>
       )}
     </div>
