@@ -20,7 +20,7 @@ function buildStudyCards(questions: Question[]): StudyCard[] {
   for (const q of questions) {
     for (let oi = 0; oi < q.options.length; oi++) {
       const opt = q.options[oi];
-      if (!opt.distractors || opt.distractors.length === 0) continue;
+      if (!opt.distractors || opt.distractors.length < 3) continue;
       cards.push({
         cardId: getCardId(q.id, oi),
         ja: opt.ja,
@@ -88,6 +88,8 @@ export function StudyMode() {
   }, []);
 
   const studyCards = buildStudyCards(questions);
+  const studyCardsRef = useRef(studyCards);
+  studyCardsRef.current = studyCards;
 
   const presentCard = useCallback(
     (cards: StudyCard[], prog: StudyProgress) => {
@@ -165,7 +167,7 @@ export function StudyMode() {
       setAnswerState({ type: "correct", selectedIndex });
       // Auto-advance after 400ms
       setTimeout(() => {
-        presentCard(studyCards, newProgress);
+        presentCard(studyCardsRef.current, newProgress);
       }, 400);
     } else {
       setAnswerState({ type: "wrong", selectedIndex, correctIndex });

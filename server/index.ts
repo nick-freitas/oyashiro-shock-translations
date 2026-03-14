@@ -354,8 +354,20 @@ app.get("/study/progress", (_req, res) => {
 // PATCH study progress — update a single card's SRS state
 app.patch("/study/progress", (req, res) => {
   const { cardId, bucket, nextDue, lastReviewed } = req.body;
-  if (!cardId) {
+  if (!cardId || typeof cardId !== "string") {
     res.status(400).json({ error: "cardId is required" });
+    return;
+  }
+  if (typeof bucket !== "number" || bucket < 0 || bucket > 5) {
+    res.status(400).json({ error: "bucket must be a number 0-5" });
+    return;
+  }
+  if (nextDue !== null && typeof nextDue !== "string") {
+    res.status(400).json({ error: "nextDue must be a string or null" });
+    return;
+  }
+  if (lastReviewed !== null && typeof lastReviewed !== "string") {
+    res.status(400).json({ error: "lastReviewed must be a string or null" });
     return;
   }
   const progress = readStudyProgress();
