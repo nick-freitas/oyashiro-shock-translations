@@ -2,7 +2,7 @@
 
 ## Overview
 
-Remove the Editor page's top bar (`.page-header`) entirely and relocate its controls into the existing right sidebar (`.title-sidebar`). This matches the pattern already established by the CardManager page, which uses sidebar-only navigation with no top bar.
+Remove the Editor page's top bar (`.page-header`) entirely and relocate its controls into the existing right sidebar (`.title-sidebar`). This is inspired by the CardManager page's sidebar-only navigation pattern, adapted to the Editor's existing sidebar structure.
 
 ## What Gets Removed
 
@@ -18,14 +18,15 @@ The entire `.page-header` element and its contents:
 
 ## Sidebar Layout
 
-The sidebar (`.title-sidebar`) gains new elements at the top. Order from top to bottom:
+The sidebar (`.title-sidebar`) gains new elements at the top, placed **outside** the existing `.sidebar-titles` wrapper div. Order from top to bottom:
 
-1. **学習 →** — vertical text nav link to `/study` (gold, `var(--accent-gold)`)
-2. **管理 →** — vertical text nav link to `/manage` (gold, `var(--accent-gold)`)
-3. **⋯ button** — small square trigger that opens the actions popover (gold text on dark background)
-4. **おやしろさま** — existing vertical title (unchanged)
-5. **新・クイズ・ショック** — existing vertical subtitle (unchanged)
-6. **二四** (kanji count) — existing count at bottom (unchanged)
+1. **学習 →** — vertical text nav link to `/study` (gold, `var(--accent-gold)`) — new, outside `.sidebar-titles`
+2. **管理 →** — vertical text nav link to `/manage` (gold, `var(--accent-gold)`) — new, outside `.sidebar-titles`
+3. **⋯ button** — small square trigger that opens the actions popover — new, outside `.sidebar-titles`
+4. **`.sidebar-titles`** wrapper (existing, unchanged internally):
+   - **新・クイズ・ショック** — existing vertical subtitle
+   - **おやしろさま** — existing vertical title
+5. **二四** (kanji count) — existing `.sidebar-count`, pinned to bottom
 
 ### Nav Links
 
@@ -37,7 +38,7 @@ The sidebar (`.title-sidebar`) gains new elements at the top. Order from top to 
 ### ⋯ Trigger Button
 
 - Small square (roughly 28x28px), centered in sidebar
-- Background: `var(--bg-row-alt)` (#24232c)
+- Background: `var(--bg-row-hover)` (#24232c)
 - Border: 1px solid `var(--border-row)`
 - Gold text color for the ⋯ character
 - On click: toggles the actions popover
@@ -63,12 +64,16 @@ Two vertical-text links, separated by a subtle border:
 
 - `writing-mode: vertical-rl` with letter-spacing
 - Gold color, same hover behavior as nav links
-- On click: triggers the API call, shows loading state, then displays status as a toast
+- On click: triggers the API call and shows loading state
+- **Loading state:** text color dims to `var(--text-en-sub)` and pointer-events disabled (prevents double-firing). Reuses existing `generating` and `reprocessing` boolean state variables.
+- **After completion:** popover closes automatically, status appears as a toast over main content
 
 ### Behavior
 
 - Closes on click outside the popover
 - Closes on Escape key
+- Closes automatically after an action completes (once the API response is received)
+- **Stays open** while an action is in-flight so the user can see the loading state
 - ⋯ button highlights (brighter background) when popover is open
 - Popover positioned anchored to the ⋯ button, opening leftward
 
@@ -78,8 +83,10 @@ Currently, status messages (`reprocessMsg`, `generateMsg`) display inline in the
 
 - Position: fixed or absolute, near the top-right of the main content area (left of the sidebar)
 - Gold text on dark background, matching theme
-- Auto-dismiss after a few seconds
+- Auto-dismiss after 3 seconds via `setTimeout` that clears the state variable
 - Appears after an action completes (success or error)
+- **Error toasts** also auto-dismiss (errors are transient — user can retry from the popover)
+- **One toast at a time:** a new toast replaces any existing one (reset the timeout). Since both actions share a server-side mutex and one will fail if the other is running, concurrent toasts are unlikely, but replacement keeps the UI simple.
 
 ## CSS Changes
 
@@ -89,7 +96,7 @@ Currently, status messages (`reprocessMsg`, `generateMsg`) display inline in the
 
 ### Modify
 
-- `.title-sidebar` — add padding-top for nav links, adjust internal layout to accommodate new elements above the title
+- `.title-sidebar` — change from `justify-content: center` to `justify-content: flex-start` with `padding-top` for nav links. The `.sidebar-count` already uses `position: absolute; bottom: 28px` — leave that as-is since it already handles bottom-pinning.
 
 ### Add
 
@@ -104,7 +111,7 @@ Currently, status messages (`reprocessMsg`, `generateMsg`) display inline in the
 ### `App.tsx`
 
 - Remove the `.page-header` JSX block (lines ~120-147)
-- Remove the `reprocessMsg` and `generateMsg` state management from the header
+- Repurpose `reprocessMsg` and `generateMsg` state variables to drive toast notifications instead of inline header text. Add `setTimeout` auto-dismiss (clear state after ~3 seconds).
 - Add nav links and ⋯ trigger to the `.title-sidebar` JSX
 - Add popover component (can be inline state-managed, no library needed)
 - Add toast notification for status messages
@@ -127,7 +134,7 @@ At smaller widths:
 - Nav link font size decreases slightly
 - ⋯ button shrinks proportionally
 - Popover still opens to the left, unaffected by sidebar width changes
-- Arrow text on nav links can be dropped at smallest breakpoint
+- Drop arrow text (→) from nav links at the 500px breakpoint
 
 ## Accessibility
 
