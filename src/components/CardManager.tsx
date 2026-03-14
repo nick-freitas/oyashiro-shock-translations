@@ -37,6 +37,8 @@ export function CardManager() {
   const [openCards, setOpenCards] = useState<Set<string>>(new Set());
   const [addingTo, setAddingTo] = useState<string | null>(null);
   // cardKey of the card currently adding a new distractor (local-only, not saved until blur)
+  const [editingDistractor, setEditingDistractor] = useState<string | null>(null);
+  // Format: "q1-o0-3" (cardKey + distractor index)
 
   function toggleCard(cardKey: string) {
     setOpenCards((prev) => {
@@ -159,21 +161,55 @@ export function CardManager() {
                       Distractors ({card.distractors.length})
                     </div>
                     <div className="panel-chips">
-                      {card.distractors.map((d, di) => (
-                        <span key={di} className="d-chip">
-                          <span className="d-chip-text">{d}</span>
-                          <span
-                            className="d-chip-x"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              const updated = card.distractors.filter((_, i) => i !== di);
-                              saveDistractors(card.questionId, card.optionIndex, updated);
-                            }}
-                          >
-                            ×
+                      {card.distractors.map((d, di) => {
+                        const chipKey = `${cardKey}-${di}`;
+                        const isEditing = editingDistractor === chipKey;
+                        return (
+                          <span key={di} className="d-chip">
+                            {isEditing ? (
+                              <input
+                                className="d-chip-edit"
+                                defaultValue={d}
+                                autoFocus
+                                onBlur={(e) => {
+                                  setEditingDistractor(null);
+                                  const newVal = e.target.value.trim();
+                                  if (newVal && newVal !== d) {
+                                    const updated = [...card.distractors];
+                                    updated[di] = newVal;
+                                    saveDistractors(card.questionId, card.optionIndex, updated);
+                                  }
+                                }}
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter") (e.target as HTMLInputElement).blur();
+                                  if (e.key === "Escape") setEditingDistractor(null);
+                                }}
+                                onClick={(e) => e.stopPropagation()}
+                              />
+                            ) : (
+                              <span
+                                className="d-chip-text"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setEditingDistractor(chipKey);
+                                }}
+                              >
+                                {d}
+                              </span>
+                            )}
+                            <span
+                              className="d-chip-x"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const updated = card.distractors.filter((_, i) => i !== di);
+                                saveDistractors(card.questionId, card.optionIndex, updated);
+                              }}
+                            >
+                              ×
+                            </span>
                           </span>
-                        </span>
-                      ))}
+                        );
+                      })}
                       {addingTo === cardKey ? (
                         <span className="d-chip">
                           <input
