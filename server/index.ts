@@ -37,6 +37,31 @@ function writeDb(db: DbJson): void {
   fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2));
 }
 
+const STUDY_PROGRESS_PATH = path.join(PROJECT_ROOT, "study-progress.json");
+
+interface CardProgress {
+  bucket: number;
+  nextDue: string | null;
+  lastReviewed: string | null;
+}
+
+interface StudyProgress {
+  cards: Record<string, CardProgress>;
+}
+
+function readStudyProgress(): StudyProgress {
+  try {
+    const raw = fs.readFileSync(STUDY_PROGRESS_PATH, "utf-8");
+    return JSON.parse(raw);
+  } catch {
+    return { cards: {} };
+  }
+}
+
+function writeStudyProgress(progress: StudyProgress): void {
+  fs.writeFileSync(STUDY_PROGRESS_PATH, JSON.stringify(progress, null, 2));
+}
+
 // GET all questions
 app.get("/questions", (_req, res) => {
   const db = readDb();
@@ -198,6 +223,25 @@ app.delete("/questions/:id", (req, res) => {
   }
 
   res.json({ deleted: id });
+});
+
+// GET study progress
+app.get("/study/progress", (_req, res) => {
+  const progress = readStudyProgress();
+  res.json(progress);
+});
+
+// PATCH study progress — update a single card's SRS state
+app.patch("/study/progress", (req, res) => {
+  const { cardId, bucket, nextDue, lastReviewed } = req.body;
+  if (!cardId) {
+    res.status(400).json({ error: "cardId is required" });
+    return;
+  }
+  const progress = readStudyProgress();
+  progress.cards[cardId] = { bucket, nextDue, lastReviewed };
+  writeStudyProgress(progress);
+  res.json({ cardId, bucket, nextDue, lastReviewed });
 });
 
 app.listen(3001, () => {
