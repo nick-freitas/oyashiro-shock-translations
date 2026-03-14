@@ -150,7 +150,7 @@ body {
   background: var(--bg-row-hover);
   border: 1px solid var(--border-row);
   color: var(--accent-gold);
-  font-size: 16px;
+  font-size: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   padding: 4px 2px;
