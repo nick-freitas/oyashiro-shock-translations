@@ -80,7 +80,7 @@ body {
 .sidebar-titles {
   display: flex;
   align-items: flex-start;
-  gap: 0;
+  gap: 20px;
 }
 
 .sidebar-title {
