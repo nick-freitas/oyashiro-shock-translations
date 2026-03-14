@@ -202,7 +202,6 @@ body {
 .sidebar-popover-action:disabled {
   color: var(--text-en-sub);
   cursor: not-allowed;
-  pointer-events: none;
 }
 
 /* ===== TOAST NOTIFICATION ===== */
