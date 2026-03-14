@@ -41,27 +41,6 @@ function Editor() {
       .finally(() => setLoading(false));
   }
 
-  useEffect(() => {
-    fetchQuestions();
-  }, []);
-
-  useEffect(() => {
-    if (popoverOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.addEventListener("keydown", handleEscape);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-        document.removeEventListener("keydown", handleEscape);
-      };
-    }
-  }, [popoverOpen, handleClickOutside, handleEscape]);
-
-  useEffect(() => {
-    return () => {
-      if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
-    };
-  }, []);
-
   function handleQuestionSaved(updated: Question) {
     setQuestions((prev) =>
       prev.map((q) => (q.id === updated.id ? updated : q))
@@ -96,6 +75,27 @@ function Editor() {
       triggerRef.current?.focus();
     }
   }, [popoverOpen]);
+
+  useEffect(() => {
+    fetchQuestions();
+  }, []);
+
+  useEffect(() => {
+    if (popoverOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+        document.removeEventListener("keydown", handleEscape);
+      };
+    }
+  }, [popoverOpen, handleClickOutside, handleEscape]);
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
+    };
+  }, []);
 
   async function handleReprocess() {
     setReprocessing(true);
