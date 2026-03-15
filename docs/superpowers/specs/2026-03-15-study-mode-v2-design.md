@@ -38,7 +38,7 @@ interface TranslatedText {
 - Option cards: `q{questionId}-o{optionIndex}` (unchanged)
 - Question cards: `q{questionId}` (new)
 
-Both types use the same `CardProgress` type and live in `study-progress.json`. No changes to `CardProgress` or `StudyProgress` types.
+Both types use the same `CardProgress` type and live in `study-progress.json`. No changes to `CardProgress` or `StudyProgress` types. Existing option card progress entries carry over unchanged. New question card entries (`q{id}`) are treated as bucket 0 (unseen) automatically — no migration needed.
 
 ### Orphaned Card Cleanup
 
@@ -50,17 +50,12 @@ Both types use the same `CardProgress` type and live in `study-progress.json`. N
 
 ### StudyCard type (updated)
 
+Uses a discriminated union so each variant's fields are required, not optional:
+
 ```typescript
-interface StudyCard {
-  cardId: string;
-  ja: string;
-  correctEn: string;
-  type: 'option' | 'question';
-  // For option cards: all 4 sibling English translations (including correct)
-  siblingChoices?: string[];
-  // For question cards: the question ID (to exclude self when picking distractors)
-  questionId?: number;
-}
+type StudyCard =
+  | { cardId: string; ja: string; correctEn: string; type: 'option'; siblingChoices: string[] }
+  | { cardId: string; ja: string; correctEn: string; type: 'question'; questionId: number };
 ```
 
 ### Option cards (4 per question)
@@ -87,7 +82,13 @@ At presentation: pick 3 random English translations from other questions, combin
 
 ### Total cards
 
-~96 questions × 5 cards each (4 options + 1 question) = ~480 cards.
+N questions × 5 cards each (4 options + 1 question). Currently 21 questions = 105 cards.
+
+### Edge cases
+
+**Duplicate sibling translations**: If two options in the same question have identical English translations, option cards would show duplicate choices. The current data has no duplicates. If this occurs via manual editing, the card is still functional (two choices map to "correct") but the spec assumes distinct translations per question.
+
+**Small question pool**: Question cards require at least 4 questions total (1 correct + 3 distractors). If fewer than 4 questions exist, question cards are not generated — only option cards are produced.
 
 ## Presentation Logic
 
@@ -116,14 +117,14 @@ No visual changes. Both card types render identically:
 - Japanese prompt at 72px with furigana
 - 2×2 choice grid with 4 English options
 - Same correct/wrong feedback (green flash 400ms / red+green highlight)
-- Same sidebar stats (counts increase from ~384 to ~480 total cards)
+- Same sidebar stats (total count increases to N×5 cards)
 
 The empty state message ("no distractors yet, generate from editor") is removed since all cards are always studyable.
 
 ## Server Changes
 
 ### Removed
-- `POST /questions/generate-distractors` endpoint and all associated code (Claude Agent SDK import, processing mutex usage for distractors, prompt construction)
+- `POST /questions/generate-distractors` endpoint and all associated code (processing mutex usage for distractors, prompt construction). The Claude Agent SDK import stays — it's still used by `reprocess` and `add-furigana` endpoints.
 
 ### Modified
 - `DELETE /questions/:id`: Also clean up `q{id}` from `study-progress.json` (in addition to existing `q{id}-o0` through `q{id}-o3`)
@@ -133,12 +134,16 @@ The empty state message ("no distractors yet, generate from editor") is removed 
 
 ## CardManager Changes
 
-Remove the distractor-related UI:
-- Distractor chip display
-- Add/edit/delete distractor buttons
-- Any distractor count indicators
+Remove all distractor-related code:
+- `distractors` field from the local `Card` interface and `flattenToCards`
+- `saveDistractors` function
+- `addingTo`, `editingDistractor`, `cancelledRef` state variables
+- Distractor chip display, add/edit/delete buttons in the accordion panel
+- The accordion expand/collapse panel itself — with distractors removed, the panel content is empty. Cards become flat rows showing Japanese text and English translation with inline editing.
 
-Keep the rest of CardManager intact for editing Japanese/English text of options.
+Remove distractor-related styles from `CardManager.css` (the `/* ===== DISTRACTOR CHIPS ===== */` section and accordion panel styles).
+
+Keep CardManager intact for editing Japanese/English text of options.
 
 ## File Changes
 
@@ -148,7 +153,8 @@ Keep the rest of CardManager intact for editing Japanese/English text of options
 | `src/srs.ts` | Remove `pickDistractors` function |
 | `src/srs.test.ts` | Remove `pickDistractors` tests |
 | `src/components/StudyMode.tsx` | Replace `buildStudyCards`, update `StudyCard` type, change `presentCard` logic, remove empty state about distractors |
-| `src/components/CardManager.tsx` | Remove distractor chip UI and related handlers |
-| `src/App.tsx` | Remove "Generate Study Distractors" button |
+| `src/components/CardManager.tsx` | Remove distractor UI, accordion panel, related state/handlers |
+| `src/components/CardManager.css` | Remove distractor chip styles and accordion panel styles |
+| `src/App.tsx` | Remove "Generate Study Distractors" button, `handleGenerateDistractors`, `generating`/`generateMsg` state |
 | `server/index.ts` | Remove generate-distractors endpoint, update delete cleanup |
 | `db.json` | Strip all `distractors` arrays |
