@@ -16,7 +16,7 @@ interface TranslatedText {
   en: string;
 }
 
-interface QuestionData {
+interface EntryData {
   id: number;
   filename: string;
   question: TranslatedText;
@@ -25,7 +25,7 @@ interface QuestionData {
 }
 
 interface DbJson {
-  questions: QuestionData[];
+  entries: EntryData[];
 }
 
 function readDb(): DbJson {
@@ -37,41 +37,16 @@ function writeDb(db: DbJson): void {
   fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2));
 }
 
-const STUDY_PROGRESS_PATH = path.join(PROJECT_ROOT, "study-progress.json");
-
-interface CardProgress {
-  bucket: number;
-  nextDue: string | null;
-  lastReviewed: string | null;
-}
-
-interface StudyProgress {
-  cards: Record<string, CardProgress>;
-}
-
-function readStudyProgress(): StudyProgress {
-  try {
-    const raw = fs.readFileSync(STUDY_PROGRESS_PATH, "utf-8");
-    return JSON.parse(raw);
-  } catch {
-    return { cards: {} };
-  }
-}
-
-function writeStudyProgress(progress: StudyProgress): void {
-  fs.writeFileSync(STUDY_PROGRESS_PATH, JSON.stringify(progress, null, 2));
-}
-
-// GET all questions
-app.get("/questions", (_req, res) => {
+// GET all entries
+app.get("/entries", (_req, res) => {
   const db = readDb();
-  res.json(db.questions);
+  res.json(db.entries);
 });
 
 let processing = false;
 
-// POST /questions/reprocess — must be registered before /:id routes
-app.post("/questions/reprocess", async (_req, res) => {
+// POST /entries/reprocess — must be registered before /:id routes
+app.post("/entries/reprocess", async (_req, res) => {
   if (processing) {
     res.status(409).json({ error: "Processing already in progress" });
     return;
@@ -80,7 +55,7 @@ app.post("/questions/reprocess", async (_req, res) => {
   processing = true;
   try {
     const db = readDb();
-    const existingFilenames = new Set(db.questions.map((q) => q.filename));
+    const existingFilenames = new Set(db.entries.map((q) => q.filename));
 
     const allFiles = fs
       .readdirSync(SCREENSHOTS_DIR)
@@ -95,8 +70,8 @@ app.post("/questions/reprocess", async (_req, res) => {
     }
 
     let nextId =
-      db.questions.length > 0
-        ? Math.max(...db.questions.map((q) => q.id)) + 1
+      db.entries.length > 0
+        ? Math.max(...db.entries.map((q) => q.id)) + 1
         : 1;
 
     let processed = 0;
@@ -152,7 +127,7 @@ Rules:
 
         const parsed = JSON.parse(jsonMatch[0]);
 
-        db.questions.push({
+        db.entries.push({
           id: nextId++,
           filename,
           question: parsed.question,
@@ -173,7 +148,7 @@ Rules:
       }
     }
 
-    res.json({ processed, total: db.questions.length });
+    res.json({ processed, total: db.entries.length });
   } finally {
     processing = false;
   }
@@ -182,8 +157,8 @@ Rules:
 
 const FURIGANA_PATTERN = /\[.+?\]\{.+?\}/;
 
-// POST /questions/add-furigana — must be before /:id routes
-app.post("/questions/add-furigana", async (_req, res) => {
+// POST /entries/add-furigana — must be before /:id routes
+app.post("/entries/add-furigana", async (_req, res) => {
   if (processing) {
     res.status(409).json({ error: "Processing already in progress" });
     return;
@@ -197,18 +172,18 @@ app.post("/questions/add-furigana", async (_req, res) => {
     let failed = 0;
     let total = 0;
 
-    for (const question of db.questions) {
+    for (const entry of db.entries) {
       total++;
 
       // Collect unannotated ja fields: question + 4 options = up to 5
       const fields: { key: string; text: string; target: { obj: TranslatedText } }[] = [];
 
-      if (!FURIGANA_PATTERN.test(question.question.ja)) {
-        fields.push({ key: "q", text: question.question.ja, target: { obj: question.question } });
+      if (!FURIGANA_PATTERN.test(entry.question.ja)) {
+        fields.push({ key: "q", text: entry.question.ja, target: { obj: entry.question } });
       }
-      for (let oi = 0; oi < question.options.length; oi++) {
-        if (!FURIGANA_PATTERN.test(question.options[oi].ja)) {
-          fields.push({ key: `o${oi}`, text: question.options[oi].ja, target: { obj: question.options[oi] } });
+      for (let oi = 0; oi < entry.options.length; oi++) {
+        if (!FURIGANA_PATTERN.test(entry.options[oi].ja)) {
+          fields.push({ key: `o${oi}`, text: entry.options[oi].ja, target: { obj: entry.options[oi] } });
         }
       }
 
@@ -255,14 +230,14 @@ Return ONLY the JSON object, nothing else.`,
 
         const jsonMatch = result.match(/\{[\s\S]*\}/);
         if (!jsonMatch) {
-          console.error(`  Failed to extract furigana JSON for question ${question.id}`);
+          console.error(`  Failed to extract furigana JSON for entry ${entry.id}`);
           failed++;
           continue;
         }
 
         const parsed: Record<string, string> = JSON.parse(jsonMatch[0]);
 
-        // Apply results back to the question
+        // Apply results back to the entry
         for (const [numKey, target] of Object.entries(fieldMap)) {
           if (parsed[numKey] && typeof parsed[numKey] === "string") {
             target.obj.ja = parsed[numKey];
@@ -271,9 +246,9 @@ Return ONLY the JSON object, nothing else.`,
 
         writeDb(db);
         annotated++;
-        console.log(`  Added furigana for question ${question.id}`);
+        console.log(`  Added furigana for entry ${entry.id}`);
       } catch (err) {
-        console.error(`  Error adding furigana for question ${question.id}:`, err);
+        console.error(`  Error adding furigana for entry ${entry.id}:`, err);
         failed++;
       }
     }
@@ -284,46 +259,46 @@ Return ONLY the JSON object, nothing else.`,
   }
 });
 
-// PATCH a question (text edits + correctOption)
-app.patch("/questions/:id", (req, res) => {
+// PATCH an entry (text edits + correctOption)
+app.patch("/entries/:id", (req, res) => {
   if (processing) {
     res.status(409).json({ error: "Processing in progress, try again later" });
     return;
   }
   const id = parseInt(req.params.id, 10);
   const db = readDb();
-  const idx = db.questions.findIndex((q) => q.id === id);
+  const idx = db.entries.findIndex((q) => q.id === id);
   if (idx === -1) {
-    res.status(404).json({ error: "Question not found" });
+    res.status(404).json({ error: "Entry not found" });
     return;
   }
   const { question, options, correctOption } = req.body;
-  if (question !== undefined) db.questions[idx].question = question;
-  if (options !== undefined) db.questions[idx].options = options;
-  if (correctOption !== undefined) db.questions[idx].correctOption = correctOption;
+  if (question !== undefined) db.entries[idx].question = question;
+  if (options !== undefined) db.entries[idx].options = options;
+  if (correctOption !== undefined) db.entries[idx].correctOption = correctOption;
   writeDb(db);
-  res.json(db.questions[idx]);
+  res.json(db.entries[idx]);
 });
 
-// DELETE a question + screenshot files
-app.delete("/questions/:id", (req, res) => {
+// DELETE an entry + screenshot files
+app.delete("/entries/:id", (req, res) => {
   if (processing) {
     res.status(409).json({ error: "Processing in progress, try again later" });
     return;
   }
   const id = parseInt(req.params.id, 10);
   const db = readDb();
-  const idx = db.questions.findIndex((q) => q.id === id);
+  const idx = db.entries.findIndex((q) => q.id === id);
   if (idx === -1) {
-    res.status(404).json({ error: "Question not found" });
+    res.status(404).json({ error: "Entry not found" });
     return;
   }
 
-  const question = db.questions[idx];
-  const filename = question.filename;
+  const entry = db.entries[idx];
+  const filename = entry.filename;
 
   // Remove from database
-  db.questions.splice(idx, 1);
+  db.entries.splice(idx, 1);
   writeDb(db);
 
   // Delete screenshot files (best effort)
@@ -336,63 +311,7 @@ app.delete("/questions/:id", (req, res) => {
     }
   }
 
-  // Clean up study progress (best effort, skip if file doesn't exist)
-  try {
-    const progress = readStudyProgress();
-    let changed = false;
-    // Remove option card entries
-    for (let oi = 0; oi < 4; oi++) {
-      const cardId = `q${id}-o${oi}`;
-      if (cardId in progress.cards) {
-        delete progress.cards[cardId];
-        changed = true;
-      }
-    }
-    // Remove question card entry
-    const questionCardId = `q${id}`;
-    if (questionCardId in progress.cards) {
-      delete progress.cards[questionCardId];
-      changed = true;
-    }
-    if (changed) {
-      writeStudyProgress(progress);
-    }
-  } catch {
-    // study-progress.json may not exist yet
-  }
-
   res.json({ deleted: id });
-});
-
-// GET study progress
-app.get("/study/progress", (_req, res) => {
-  const progress = readStudyProgress();
-  res.json(progress);
-});
-
-// PATCH study progress — update a single card's SRS state
-app.patch("/study/progress", (req, res) => {
-  const { cardId, bucket, nextDue, lastReviewed } = req.body;
-  if (!cardId || typeof cardId !== "string") {
-    res.status(400).json({ error: "cardId is required" });
-    return;
-  }
-  if (typeof bucket !== "number" || bucket < 0 || bucket > 5) {
-    res.status(400).json({ error: "bucket must be a number 0-5" });
-    return;
-  }
-  if (nextDue !== null && typeof nextDue !== "string") {
-    res.status(400).json({ error: "nextDue must be a string or null" });
-    return;
-  }
-  if (lastReviewed !== null && typeof lastReviewed !== "string") {
-    res.status(400).json({ error: "lastReviewed must be a string or null" });
-    return;
-  }
-  const progress = readStudyProgress();
-  progress.cards[cardId] = { bucket, nextDue, lastReviewed };
-  writeStudyProgress(progress);
-  res.json({ cardId, bucket, nextDue, lastReviewed });
 });
 
 app.listen(3001, () => {
