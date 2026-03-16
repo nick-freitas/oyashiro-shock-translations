@@ -1,9 +1,6 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import type { Question } from "./types";
-import { QuestionList } from "./components/QuestionList";
-import { StudyMode } from "./components/StudyMode";
-import { CardManager } from "./components/CardManager";
+import type { Entry } from "./types";
+import { ReferenceList } from "./components/ReferenceList";
 import "./App.css";
 
 const KANJI_NUMS = [
@@ -16,8 +13,8 @@ function toKanjiCount(n: number): string {
   return KANJI_NUMS[n - 1] ?? String(n);
 }
 
-function Editor() {
-  const [questions, setQuestions] = useState<Question[]>([]);
+export default function App() {
+  const [entries, setEntries] = useState<Entry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [reprocessing, setReprocessing] = useState(false);
@@ -29,26 +26,26 @@ function Editor() {
   const popoverRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
-  function fetchQuestions() {
+  function fetchEntries() {
     setLoading(true);
-    fetch("/api/questions")
+    fetch("/api/entries")
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then(setQuestions)
+      .then(setEntries)
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   }
 
-  function handleQuestionSaved(updated: Question) {
-    setQuestions((prev) =>
+  function handleEntrySaved(updated: Entry) {
+    setEntries((prev) =>
       prev.map((q) => (q.id === updated.id ? updated : q))
     );
   }
 
-  function handleQuestionDeleted(id: number) {
-    setQuestions((prev) => prev.filter((q) => q.id !== id));
+  function handleEntryDeleted(id: number) {
+    setEntries((prev) => prev.filter((q) => q.id !== id));
   }
 
   function showToast(setter: (msg: string | null) => void, message: string) {
@@ -77,7 +74,7 @@ function Editor() {
   }, []);
 
   useEffect(() => {
-    fetchQuestions();
+    fetchEntries();
   }, []);
 
   useEffect(() => {
@@ -101,7 +98,7 @@ function Editor() {
     setReprocessing(true);
     setReprocessMsg(null);
     try {
-      const res = await fetch("/api/questions/reprocess", { method: "POST" });
+      const res = await fetch("/api/entries/reprocess", { method: "POST" });
       const text = await res.text();
       let data;
       try {
@@ -116,7 +113,7 @@ function Editor() {
       }
       if (data.processed > 0) {
         showToast(setReprocessMsg, `Processed ${data.processed} new screenshot(s)`);
-        fetchQuestions();
+        fetchEntries();
       } else {
         showToast(setReprocessMsg, data.message || "No new screenshots");
       }
@@ -132,7 +129,7 @@ function Editor() {
     setAddingFurigana(true);
     setFuriganaMsg(null);
     try {
-      const res = await fetch("/api/questions/add-furigana", { method: "POST" });
+      const res = await fetch("/api/entries/add-furigana", { method: "POST" });
       const text = await res.text();
       let data;
       try {
@@ -149,7 +146,7 @@ function Editor() {
       if (data.failed > 0) parts.push(`failed ${data.failed}`);
       showToast(setFuriganaMsg, `${parts.join(", ")} (${data.total} total)`);
       if (data.annotated > 0) {
-        fetchQuestions();
+        fetchEntries();
       }
     } catch (err) {
       showToast(setFuriganaMsg, err instanceof Error ? err.message : "Failed");
@@ -165,10 +162,10 @@ function Editor() {
   return (
     <div className="app-layout">
       <div className="main-content">
-        <QuestionList
-          questions={questions}
-          onQuestionSaved={handleQuestionSaved}
-          onQuestionDeleted={handleQuestionDeleted}
+        <ReferenceList
+          entries={entries}
+          onEntrySaved={handleEntrySaved}
+          onEntryDeleted={handleEntryDeleted}
         />
       </div>
 
@@ -183,8 +180,7 @@ function Editor() {
           >
             ⋮
           </button>
-          <Link to="/study" className="sidebar-nav-link">学習</Link>
-          <Link to="/manage" className="sidebar-nav-link">管理</Link>
+          <span className="sidebar-nav-link">REFERENCE</span>
         </div>
         {popoverOpen && (
           <div ref={popoverRef} className="sidebar-popover" role="dialog">
@@ -193,14 +189,14 @@ function Editor() {
               onClick={handleReprocess}
               disabled={reprocessing}
             >
-              {reprocessing ? "処理中…" : "画像を処理"}
+              {reprocessing ? "Processing..." : "Process Screenshots"}
             </button>
             <button
               className="sidebar-popover-action"
               onClick={handleAddFurigana}
               disabled={addingFurigana}
             >
-              {addingFurigana ? "振仮名追加中…" : "振仮名を追加"}
+              {addingFurigana ? "Adding Furigana..." : "Add Furigana"}
             </button>
           </div>
         )}
@@ -209,7 +205,7 @@ function Editor() {
           <div className="sidebar-title">おやしろさまショック</div>
         </div>
         <div className="sidebar-count">
-          {toKanjiCount(questions.length)}
+          {toKanjiCount(entries.length)}
         </div>
       </aside>
       {(reprocessMsg || furiganaMsg) && (
@@ -220,15 +216,3 @@ function Editor() {
     </div>
   );
 }
-
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Editor />} />
-      <Route path="/study" element={<StudyMode />} />
-      <Route path="/manage" element={<CardManager />} />
-    </Routes>
-  );
-}
-
-export default App;
