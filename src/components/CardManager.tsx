@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import type { Question } from "../types";
 import { Link } from "react-router-dom";
 import { parseRuby } from "../utils/parseRuby";
@@ -19,7 +19,6 @@ interface Card {
   optionIndex: number;
   ja: string;
   en: string;
-  distractors: string[];
   isCorrect: boolean;
 }
 
@@ -33,7 +32,6 @@ function flattenToCards(questions: Question[]): Card[] {
         optionIndex: i,
         ja: opt.ja,
         en: opt.en,
-        distractors: opt.distractors ?? [],
         isCorrect: q.correctOption === i,
       });
     }
@@ -45,22 +43,7 @@ export function CardManager() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [openCards, setOpenCards] = useState<Set<string> | null>(null);
-  const [addingTo, setAddingTo] = useState<string | null>(null);
-  // cardKey of the card currently adding a new distractor (local-only, not saved until blur)
-  const [editingDistractor, setEditingDistractor] = useState<string | null>(null);
-  // Format: "q1-o0-3" (cardKey + distractor index)
   const [editingJa, setEditingJa] = useState<string | null>(null);
-  const cancelledRef = useRef(false);
-
-  function toggleCard(cardKey: string) {
-    setOpenCards((prev) => {
-      const next = new Set(prev);
-      if (next.has(cardKey)) next.delete(cardKey);
-      else next.add(cardKey);
-      return next;
-    });
-  }
 
   async function saveOption(
     questionId: number,
@@ -88,31 +71,6 @@ export function CardManager() {
     }
   }
 
-  async function saveDistractors(
-    questionId: number,
-    optionIndex: number,
-    distractors: string[]
-  ) {
-    const question = questions.find((q) => q.id === questionId);
-    if (!question) return;
-
-    const newOptions = [...question.options] as Question["options"];
-    newOptions[optionIndex] = { ...newOptions[optionIndex], distractors };
-
-    try {
-      const res = await fetch(`/api/questions/${questionId}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ options: newOptions }),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const updated: Question = await res.json();
-      setQuestions((prev) => prev.map((q) => (q.id === updated.id ? updated : q)));
-    } catch (err) {
-      console.error("Save distractors failed:", err);
-    }
-  }
-
   useEffect(() => {
     fetch("/api/questions")
       .then((res) => {
@@ -126,11 +84,6 @@ export function CardManager() {
 
   const cards = flattenToCards(questions);
 
-  // Default all cards to expanded on first load
-  if (openCards === null && cards.length > 0) {
-    setOpenCards(new Set(cards.map((c) => `q${c.questionId}-o${c.optionIndex}`)));
-  }
-
   if (loading) return <div className="center">読み込み中…</div>;
   if (error) return <div className="center error">Error: {error}</div>;
 
@@ -141,12 +94,11 @@ export function CardManager() {
           const prevCard = idx > 0 ? cards[idx - 1] : null;
           const showDivider = prevCard && prevCard.questionId !== card.questionId;
           const cardKey = `q${card.questionId}-o${card.optionIndex}`;
-          const isOpen = openCards?.has(cardKey) ?? false;
           return (
             <div key={cardKey}>
               {showDivider && <div className="acc-q-divider" />}
-              <div className={`acc-item${isOpen ? " open" : ""}${idx % 2 === 1 ? " alt-row" : ""}`}>
-                <div className="acc-row" onClick={() => toggleCard(cardKey)}>
+              <div className={`acc-item${idx % 2 === 1 ? " alt-row" : ""}`}>
+                <div className="acc-row">
                   <div className="acc-id-cell">
                     <span className="acc-id">{`${toKanji(card.questionId)}問の${toKanji(card.optionIndex + 1)}`}</span>
                     {card.isCorrect && <span className="acc-correct-dot" />}
@@ -185,115 +137,6 @@ export function CardManager() {
                     }}
                     onClick={(e) => e.stopPropagation()}
                   />
-                  <div className="acc-chevron">▼</div>
-                </div>
-                <div className="acc-panel">
-                  <div className="acc-panel-inner">
-                    <div className="panel-label">
-                      Distractors ({card.distractors.length})
-                    </div>
-                    <div className="panel-chips">
-                      {card.distractors.map((d, di) => {
-                        const chipKey = `${cardKey}-${di}`;
-                        const isEditing = editingDistractor === chipKey;
-                        return (
-                          <span key={di} className="d-chip">
-                            {isEditing ? (
-                              <input
-                                className="d-chip-edit"
-                                defaultValue={d}
-                                autoFocus
-                                onBlur={(e) => {
-                                  if (cancelledRef.current) {
-                                    cancelledRef.current = false;
-                                    setEditingDistractor(null);
-                                    return;
-                                  }
-                                  setEditingDistractor(null);
-                                  const newVal = e.target.value.trim();
-                                  if (newVal && newVal !== d) {
-                                    const updated = [...card.distractors];
-                                    updated[di] = newVal;
-                                    saveDistractors(card.questionId, card.optionIndex, updated);
-                                  }
-                                }}
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter") (e.target as HTMLInputElement).blur();
-                                  if (e.key === "Escape") {
-                                    cancelledRef.current = true;
-                                    (e.target as HTMLInputElement).blur();
-                                  }
-                                }}
-                                onClick={(e) => e.stopPropagation()}
-                              />
-                            ) : (
-                              <span
-                                className="d-chip-text"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  setEditingDistractor(chipKey);
-                                }}
-                              >
-                                {d}
-                              </span>
-                            )}
-                            <span
-                              className="d-chip-x"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                const updated = card.distractors.filter((_, i) => i !== di);
-                                saveDistractors(card.questionId, card.optionIndex, updated);
-                              }}
-                            >
-                              ×
-                            </span>
-                          </span>
-                        );
-                      })}
-                      {addingTo === cardKey ? (
-                        <span className="d-chip">
-                          <input
-                            className="d-chip-edit"
-                            autoFocus
-                            placeholder="new distractor"
-                            onBlur={(e) => {
-                              if (cancelledRef.current) {
-                                cancelledRef.current = false;
-                                setAddingTo(null);
-                                return;
-                              }
-                              setAddingTo(null);
-                              const val = e.target.value.trim();
-                              if (val) {
-                                saveDistractors(card.questionId, card.optionIndex, [
-                                  ...card.distractors,
-                                  val,
-                                ]);
-                              }
-                            }}
-                            onKeyDown={(e) => {
-                              if (e.key === "Enter") (e.target as HTMLInputElement).blur();
-                              if (e.key === "Escape") {
-                                cancelledRef.current = true;
-                                (e.target as HTMLInputElement).blur();
-                              }
-                            }}
-                            onClick={(e) => e.stopPropagation()}
-                          />
-                        </span>
-                      ) : (
-                        <button
-                          className="d-add"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setAddingTo(cardKey);
-                          }}
-                        >
-                          +
-                        </button>
-                      )}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
