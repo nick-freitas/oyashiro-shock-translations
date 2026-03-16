@@ -16,9 +16,15 @@ Pivot the application from an SRS study tool to a reference tool. The app retain
 - `src/components/StudyMode.css`
 - `src/components/CardManager.tsx`
 - `src/components/CardManager.css`
+- `src/srs.ts`
+- `src/srs.test.ts`
 - `study-progress.json`
 - `docs/superpowers/specs/2026-03-14-study-mode-design.md`
 - `docs/superpowers/specs/2026-03-15-study-mode-v2-design.md`
+- `docs/superpowers/specs/2026-03-14-card-manager-design.md`
+- `docs/superpowers/plans/2026-03-14-study-mode.md`
+- `docs/superpowers/plans/2026-03-14-card-manager.md`
+- `docs/superpowers/plans/2026-03-16-study-mode-v2.md`
 
 **Server removals (`server/index.ts`):**
 - `STUDY_PROGRESS_PATH` constant
@@ -50,7 +56,8 @@ React Router is removed entirely. `App.tsx` renders the main view directly — n
 
 ### Sidebar Changes
 
-- **Keep:** Title "おやしろさまショック", subtitle "新・クイズ・ショック", question count (kanji), action popover (⋮ button)
+- **Keep:** Title "おやしろさまショック", question count (kanji), action popover (⋮ button)
+- **Note:** Subtitle "新・クイズ・ショック" is kept intentionally — it's the franchise title, not a description of the app's function
 - **Remove:** Nav links to study/manage (学習, 管理)
 - **Add:** A "REFERENCE" label in vertical text using `writing-mode: vertical-rl`, styled like the existing nav links. Placed where nav links were.
 - **Change:** Popover button labels from Japanese to English: "画像を処理" → "Process Screenshots", "処理中…" → "Processing...", "振仮名を追加" → "Add Furigana", "振仮名追加中…" → "Adding Furigana..."
@@ -65,6 +72,7 @@ React Router is removed entirely. `App.tsx` renders the main view directly — n
 | `QuestionList.css` | `ReferenceList.css` | File name |
 | `QuestionRow` (component) | `EntryRow` | Component name |
 | `QuestionRowProps` (interface) | `EntryRowProps` | Interface name |
+| `updateQuestion` (local function) | `updateQuestion` | **Keep as-is** — refers to the `question` field on Entry, not the old "Question" concept |
 | `QuestionListProps` (interface) | `ReferenceListProps` | Interface name |
 | `questions` (state variable in App) | `entries` | `src/App.tsx` |
 | `fetchQuestions` (function) | `fetchEntries` | `src/App.tsx` |
@@ -72,14 +80,19 @@ React Router is removed entirely. `App.tsx` renders the main view directly — n
 | `handleQuestionDeleted` | `handleEntryDeleted` | `src/App.tsx` |
 | `onQuestionSaved` (prop) | `onEntrySaved` | `ReferenceList` props |
 | `onQuestionDeleted` (prop) | `onEntryDeleted` | `ReferenceList` props |
-| `Editor` (function component) | `App` (becomes the default export directly) | `src/App.tsx` |
+
+**Structural change:** The current `Editor` function component is promoted to be the default `App` export directly. The outer `App` routing wrapper is removed.
 | `DbJson.questions` (server interface field) | `DbJson.entries` | `server/index.ts` |
 | `"questions"` key in `db.json` | `"entries"` | `db.json` |
-| `/api/questions` | `/api/entries` | All server routes and frontend fetch calls |
-| `/api/questions/reprocess` | `/api/entries/reprocess` | Server route and frontend |
-| `/api/questions/add-furigana` | `/api/entries/add-furigana` | Server route and frontend |
-| `/api/questions/:id` (PATCH) | `/api/entries/:id` | Server route and frontend |
-| `/api/questions/:id` (DELETE) | `/api/entries/:id` | Server route and frontend |
+**API route renames** (note: Vite proxy strips `/api` prefix, so server routes use `/entries` while frontend fetches use `/api/entries`):
+
+| Frontend URL | Server Route |
+|---|---|
+| `/api/entries` | `/entries` |
+| `/api/entries/reprocess` | `/entries/reprocess` |
+| `/api/entries/add-furigana` | `/entries/add-furigana` |
+| `/api/entries/:id` (PATCH) | `/entries/:id` |
+| `/api/entries/:id` (DELETE) | `/entries/:id` |
 
 **Domain fields that stay unchanged** (they still accurately describe the content):
 - `question` (field on Entry — it's still a question being asked)
@@ -124,10 +137,10 @@ React Router is removed entirely. `App.tsx` renders the main view directly — n
 
 **`src/components/QuestionList.css` → `src/components/ReferenceList.css`:**
 - Rename file
-- No CSS class name changes needed (they use semantic names like `.quiz-row`, `.option-item` which still make sense)
+- CSS class names (`.quiz-row`, `.question-col`, `.question-number`, `.option-item`, etc.) are kept as-is — they refer to domain content (these entries contain quiz questions) and renaming CSS classes provides no user-facing benefit
 
 **`vite.config.ts`:**
-- Update proxy path if it references `/api/questions` specifically (needs verification — likely proxies all `/api` so no change needed)
+- No changes needed — proxy is configured on `/api` generically, not per-route
 
 ### Data Migration
 
