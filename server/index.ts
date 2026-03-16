@@ -14,7 +14,6 @@ const PUBLIC_SCREENSHOTS_DIR = path.join(PROJECT_ROOT, "public", "screenshots");
 interface TranslatedText {
   ja: string;
   en: string;
-  distractors?: string[];
 }
 
 interface QuestionData {
@@ -180,98 +179,6 @@ Rules:
   }
 });
 
-// POST /questions/generate-distractors — must be before /:id routes
-app.post("/questions/generate-distractors", async (_req, res) => {
-  if (processing) {
-    res.status(409).json({ error: "Processing already in progress" });
-    return;
-  }
-
-  processing = true;
-  try {
-    const db = readDb();
-    let generated = 0;
-    let skipped = 0;
-    let failed = 0;
-    let total = 0;
-
-    for (const question of db.questions) {
-      for (let oi = 0; oi < question.options.length; oi++) {
-        total++;
-        const option = question.options[oi];
-
-        if (option.distractors && option.distractors.length > 0) {
-          skipped++;
-          continue;
-        }
-
-        const siblingEnglish = question.options
-          .filter((_, i) => i !== oi)
-          .map((o) => o.en);
-
-        try {
-          let result = "";
-
-          for await (const message of query({
-            prompt: `Generate 10 English distractor words/phrases for a multiple-choice flashcard.
-
-The correct answer is: "${option.en}"
-The question context is: "${question.question.en}"
-Other options from the same question (DO NOT include these): ${JSON.stringify(siblingEnglish)}
-
-Requirements:
-- Generate exactly 10 distractors
-- They must be the same CATEGORY as the correct answer (names with names, places with places, sound effects with sound effects, adjectives with adjectives, etc.)
-- They should be plausible wrong answers that someone learning Japanese might confuse
-- Do NOT include any of the other options listed above
-- Do NOT include the correct answer
-- For character names: use other character names from Higurashi no Naku Koro ni or similar visual novels
-- For Japanese words/phrases: use other Japanese words/phrases of similar type
-- Return ONLY a JSON array of 10 strings, nothing else
-
-Example output: ["Distractor1", "Distractor2", "Distractor3", "Distractor4", "Distractor5", "Distractor6", "Distractor7", "Distractor8", "Distractor9", "Distractor10"]`,
-            options: {
-              maxTurns: 1,
-              permissionMode: "acceptEdits",
-              systemPrompt:
-                "You are a Japanese language learning specialist. You generate plausible distractor options for multiple-choice vocabulary flashcards. Return ONLY valid JSON arrays, nothing else.",
-            },
-          })) {
-            if (message.type === "result" && "result" in message) {
-              result = (message as { result: string }).result;
-            }
-          }
-
-          const jsonMatch = result.match(/\[[\s\S]*\]/);
-          if (!jsonMatch) {
-            console.error(`  Failed to extract distractors for q${question.id}-o${oi}: ${option.en}`);
-            failed++;
-            continue;
-          }
-
-          const distractors: string[] = JSON.parse(jsonMatch[0]);
-          if (!Array.isArray(distractors) || distractors.length === 0) {
-            console.error(`  Invalid distractors for q${question.id}-o${oi}: ${option.en}`);
-            failed++;
-            continue;
-          }
-
-          option.distractors = distractors;
-          writeDb(db);
-          generated++;
-          console.log(`  Generated distractors for q${question.id}-o${oi}: "${option.en}" -> ${distractors.length} distractors`);
-        } catch (err) {
-          console.error(`  Error generating distractors for q${question.id}-o${oi}:`, err);
-          failed++;
-        }
-      }
-    }
-
-    res.json({ generated, skipped, failed, total });
-  } finally {
-    processing = false;
-  }
-});
 
 const FURIGANA_PATTERN = /\[.+?\]\{.+?\}/;
 
@@ -433,12 +340,19 @@ app.delete("/questions/:id", (req, res) => {
   try {
     const progress = readStudyProgress();
     let changed = false;
+    // Remove option card entries
     for (let oi = 0; oi < 4; oi++) {
       const cardId = `q${id}-o${oi}`;
       if (cardId in progress.cards) {
         delete progress.cards[cardId];
         changed = true;
       }
+    }
+    // Remove question card entry
+    const questionCardId = `q${id}`;
+    if (questionCardId in progress.cards) {
+      delete progress.cards[questionCardId];
+      changed = true;
     }
     if (changed) {
       writeStudyProgress(progress);
