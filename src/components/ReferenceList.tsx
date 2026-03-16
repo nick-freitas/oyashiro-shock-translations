@@ -53,7 +53,6 @@ const KANJI_NUMS = [
   "二十一", "二十二", "二十三", "二十四",
 ];
 
-const OPTION_COUNTERS = ["一", "二", "三", "四"];
 
 interface EntryRowProps {
   entry: Entry;
@@ -66,6 +65,7 @@ function EntryRow({ entry, index, onSaved, onDeleted }: EntryRowProps) {
   const [edited, setEdited] = useState<Entry>(entry);
   const [saving, setSaving] = useState(false);
   const [editingField, setEditingField] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
 
   const dirty = JSON.stringify(edited) !== JSON.stringify(entry);
 
@@ -98,6 +98,16 @@ function EntryRow({ entry, index, onSaved, onDeleted }: EntryRowProps) {
       newOptions[i] = { ...newOptions[i], [field]: value };
       return { ...prev, options: newOptions };
     });
+  }
+
+  function handleToggleExpanded() {
+    if (expanded && editingField) {
+      const match = editingField.match(/^option-(?:ja|en)-(\d)$/);
+      if (match && Number(match[1]) !== edited.correctOption) {
+        setEditingField(null);
+      }
+    }
+    setExpanded((prev) => !prev);
   }
 
   async function handleDelete() {
@@ -174,44 +184,124 @@ function EntryRow({ entry, index, onSaved, onDeleted }: EntryRowProps) {
       </div>
 
       <div className="options-col">
-        {edited.options.map((opt, oi) => (
-          <div
-            key={oi}
-            className={`option-item${edited.correctOption === oi ? " correct" : ""}`}
-          >
-            <div className="option-input-row">
-              <button
-                className={`correct-toggle${edited.correctOption === oi ? " is-correct" : ""}`}
-                onClick={() => setCorrectOption(oi)}
-                title="Mark as correct answer"
-                type="button"
-              >
-                {OPTION_COUNTERS[oi]}
-              </button>
-              {editingField === `option-ja-${oi}` ? (
-                <AutoTextarea
-                  className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                  value={opt.ja}
-                  onChange={(e) => updateOption(oi, "ja", e.target.value)}
-                  onBlur={() => setEditingField(null)}
-                  autoFocus
-                />
-              ) : (
-                <div
-                  className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                  onClick={() => setEditingField(`option-ja-${oi}`)}
-                >
-                  {parseRuby(opt.ja)}
+        {edited.correctOption != null ? (
+          <>
+            {/* Correct answer — always visible */}
+            {(() => {
+              const oi = edited.correctOption;
+              const opt = edited.options[oi];
+              return (
+                <div className="option-item correct">
+                  <div className="option-input-row">
+                    {editingField === `option-ja-${oi}` ? (
+                      <AutoTextarea
+                        className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
+                        value={opt.ja}
+                        onChange={(e) => updateOption(oi, "ja", e.target.value)}
+                        onBlur={() => setEditingField(null)}
+                        autoFocus
+                      />
+                    ) : (
+                      <div
+                        className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
+                        onClick={() => setEditingField(`option-ja-${oi}`)}
+                      >
+                        {parseRuby(opt.ja)}
+                      </div>
+                    )}
+                  </div>
+                  <AutoTextarea
+                    className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
+                    value={opt.en}
+                    onChange={(e) => updateOption(oi, "en", e.target.value)}
+                  />
                 </div>
-              )}
+              );
+            })()}
+
+            {/* Toggle button */}
+            <button
+              className="options-toggle"
+              onClick={handleToggleExpanded}
+              type="button"
+            >
+              {expanded ? "Hide options" : "Show options"}
+            </button>
+
+            {/* Alternate options — visible when expanded */}
+            {expanded && edited.options.map((opt, oi) => {
+              if (oi === edited.correctOption) return null;
+              return (
+                <div key={oi} className="option-item">
+                  <div className="option-input-row">
+                    <button
+                      className="correct-select"
+                      onClick={() => setCorrectOption(oi)}
+                      title="Mark as correct answer"
+                      type="button"
+                    />
+                    {editingField === `option-ja-${oi}` ? (
+                      <AutoTextarea
+                        className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
+                        value={opt.ja}
+                        onChange={(e) => updateOption(oi, "ja", e.target.value)}
+                        onBlur={() => setEditingField(null)}
+                        autoFocus
+                      />
+                    ) : (
+                      <div
+                        className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
+                        onClick={() => setEditingField(`option-ja-${oi}`)}
+                      >
+                        {parseRuby(opt.ja)}
+                      </div>
+                    )}
+                  </div>
+                  <AutoTextarea
+                    className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
+                    value={opt.en}
+                    onChange={(e) => updateOption(oi, "en", e.target.value)}
+                  />
+                </div>
+              );
+            })}
+          </>
+        ) : (
+          /* No correct answer set — show all options with radio circles */
+          edited.options.map((opt, oi) => (
+            <div key={oi} className="option-item">
+              <div className="option-input-row">
+                <button
+                  className="correct-select"
+                  onClick={() => setCorrectOption(oi)}
+                  title="Mark as correct answer"
+                  type="button"
+                />
+                {editingField === `option-ja-${oi}` ? (
+                  <AutoTextarea
+                    className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
+                    value={opt.ja}
+                    onChange={(e) => updateOption(oi, "ja", e.target.value)}
+                    onBlur={() => setEditingField(null)}
+                    autoFocus
+                  />
+                ) : (
+                  <div
+                    className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
+                    onClick={() => setEditingField(`option-ja-${oi}`)}
+                  >
+                    {parseRuby(opt.ja)}
+                  </div>
+                )}
+              </div>
+              <AutoTextarea
+                className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
+                value={opt.en}
+                onChange={(e) => updateOption(oi, "en", e.target.value)}
+              />
             </div>
-            <AutoTextarea
-              className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
-              value={opt.en}
-              onChange={(e) => updateOption(oi, "en", e.target.value)}
-            />
-          </div>
-        ))}
+          ))
+        )}
       </div>
 
       <div className="row-actions">
