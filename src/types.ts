@@ -1,7 +1,6 @@
 export interface TranslatedText {
   ja: string;
   en: string;
-  distractors?: string[];
 }
 
 export interface Question {
