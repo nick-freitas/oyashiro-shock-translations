@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from "react";
-import type { Question, TranslatedText } from "../types";
+import type { Entry, TranslatedText } from "../types";
 import { parseRuby } from "../utils/parseRuby";
-import "./QuestionList.css";
+import "./ReferenceList.css";
 
 function useAutoResize() {
   const resize = useCallback((el: HTMLTextAreaElement | null) => {
@@ -55,19 +55,19 @@ const KANJI_NUMS = [
 
 const OPTION_COUNTERS = ["一", "二", "三", "四"];
 
-interface QuestionRowProps {
-  question: Question;
+interface EntryRowProps {
+  entry: Entry;
   index: number;
-  onSaved: (updated: Question) => void;
+  onSaved: (updated: Entry) => void;
   onDeleted: (id: number) => void;
 }
 
-function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) {
-  const [edited, setEdited] = useState<Question>(question);
+function EntryRow({ entry, index, onSaved, onDeleted }: EntryRowProps) {
+  const [edited, setEdited] = useState<Entry>(entry);
   const [saving, setSaving] = useState(false);
   const [editingField, setEditingField] = useState<string | null>(null);
 
-  const dirty = JSON.stringify(edited) !== JSON.stringify(question);
+  const dirty = JSON.stringify(edited) !== JSON.stringify(entry);
 
   function updateQuestion(field: keyof TranslatedText, value: string) {
     setEdited((prev) => ({
@@ -79,7 +79,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
   async function setCorrectOption(optionIndex: number) {
     setEdited((prev) => ({ ...prev, correctOption: optionIndex }));
     try {
-      const res = await fetch(`/api/questions/${question.id}`, {
+      const res = await fetch(`/api/entries/${entry.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ correctOption: optionIndex }),
@@ -94,20 +94,20 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
 
   function updateOption(i: number, field: keyof TranslatedText, value: string) {
     setEdited((prev) => {
-      const newOptions = [...prev.options] as Question["options"];
+      const newOptions = [...prev.options] as Entry["options"];
       newOptions[i] = { ...newOptions[i], [field]: value };
       return { ...prev, options: newOptions };
     });
   }
 
   async function handleDelete() {
-    if (!confirm("Delete this question and its screenshot?")) return;
+    if (!confirm("Delete this entry and its screenshot?")) return;
     try {
-      const res = await fetch(`/api/questions/${question.id}`, {
+      const res = await fetch(`/api/entries/${entry.id}`, {
         method: "DELETE",
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      onDeleted(question.id);
+      onDeleted(entry.id);
     } catch (err) {
       console.error("Delete failed:", err);
     }
@@ -116,7 +116,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
   async function handleSave() {
     setSaving(true);
     try {
-      const res = await fetch(`/api/questions/${edited.id}`, {
+      const res = await fetch(`/api/entries/${edited.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -139,8 +139,8 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
     <div className="quiz-row">
       <div className="screenshot-col">
         <img
-          src={`/screenshots/${encodeURIComponent(question.filename)}`}
-          alt={question.question.en}
+          src={`/screenshots/${encodeURIComponent(entry.filename)}`}
+          alt={entry.question.en}
           className="screenshot-img"
           loading="lazy"
         />
@@ -152,7 +152,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
         </div>
         {editingField === "question-ja" ? (
           <AutoTextarea
-            className={`inline-input input-ja${edited.question.ja !== question.question.ja ? " modified" : ""}`}
+            className={`inline-input input-ja${edited.question.ja !== entry.question.ja ? " modified" : ""}`}
             value={edited.question.ja}
             onChange={(e) => updateQuestion("ja", e.target.value)}
             onBlur={() => setEditingField(null)}
@@ -160,14 +160,14 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
           />
         ) : (
           <div
-            className={`ruby-display input-ja${edited.question.ja !== question.question.ja ? " modified" : ""}`}
+            className={`ruby-display input-ja${edited.question.ja !== entry.question.ja ? " modified" : ""}`}
             onClick={() => setEditingField("question-ja")}
           >
             {parseRuby(edited.question.ja)}
           </div>
         )}
         <AutoTextarea
-          className={`inline-input input-en${edited.question.en !== question.question.en ? " modified" : ""}`}
+          className={`inline-input input-en${edited.question.en !== entry.question.en ? " modified" : ""}`}
           value={edited.question.en}
           onChange={(e) => updateQuestion("en", e.target.value)}
         />
@@ -190,7 +190,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
               </button>
               {editingField === `option-ja-${oi}` ? (
                 <AutoTextarea
-                  className={`inline-input input-ja option-input${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
+                  className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
                   value={opt.ja}
                   onChange={(e) => updateOption(oi, "ja", e.target.value)}
                   onBlur={() => setEditingField(null)}
@@ -198,7 +198,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
                 />
               ) : (
                 <div
-                  className={`ruby-display ruby-display-option input-ja${opt.ja !== question.options[oi].ja ? " modified" : ""}`}
+                  className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
                   onClick={() => setEditingField(`option-ja-${oi}`)}
                 >
                   {parseRuby(opt.ja)}
@@ -206,7 +206,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
               )}
             </div>
             <AutoTextarea
-              className={`inline-input input-en option-input${opt.en !== question.options[oi].en ? " modified" : ""}`}
+              className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
               value={opt.en}
               onChange={(e) => updateOption(oi, "en", e.target.value)}
             />
@@ -220,7 +220,7 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
             {saving ? "Saving…" : "Save"}
           </button>
         )}
-        <button className="delete-btn" onClick={handleDelete} title="Delete question" type="button">
+        <button className="delete-btn" onClick={handleDelete} title="Delete entry" type="button">
           ✕
         </button>
       </div>
@@ -228,22 +228,22 @@ function QuestionRow({ question, index, onSaved, onDeleted }: QuestionRowProps) 
   );
 }
 
-interface QuestionListProps {
-  questions: Question[];
-  onQuestionSaved: (updated: Question) => void;
-  onQuestionDeleted: (id: number) => void;
+interface ReferenceListProps {
+  entries: Entry[];
+  onEntrySaved: (updated: Entry) => void;
+  onEntryDeleted: (id: number) => void;
 }
 
-export function QuestionList({ questions, onQuestionSaved, onQuestionDeleted }: QuestionListProps) {
+export function ReferenceList({ entries, onEntrySaved, onEntryDeleted }: ReferenceListProps) {
   return (
     <main>
-      {questions.map((q, idx) => (
-        <QuestionRow
+      {entries.map((q, idx) => (
+        <EntryRow
           key={q.id}
-          question={q}
+          entry={q}
           index={idx}
-          onSaved={onQuestionSaved}
-          onDeleted={onQuestionDeleted}
+          onSaved={onEntrySaved}
+          onDeleted={onEntryDeleted}
         />
       ))}
     </main>
