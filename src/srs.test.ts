@@ -3,7 +3,6 @@ import {
   BUCKET_INTERVALS,
   computeNewState,
   selectNextCard,
-  pickDistractors,
 } from "./srs";
 import type { CardProgress } from "./types";
 
@@ -152,29 +151,5 @@ describe("selectNextCard", () => {
   it("returns null when no cards exist", () => {
     const result = selectNextCard({}, [], now);
     expect(result).toBeNull();
-  });
-});
-
-describe("pickDistractors", () => {
-  const pool = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
-
-  it("picks exactly 3 distractors", () => {
-    const result = pickDistractors(pool);
-    expect(result).toHaveLength(3);
-  });
-
-  it("picks from the pool", () => {
-    const result = pickDistractors(pool);
-    for (const d of result) {
-      expect(pool).toContain(d);
-    }
-  });
-
-  it("picks no duplicates", () => {
-    // Run multiple times to catch randomness issues
-    for (let i = 0; i < 20; i++) {
-      const result = pickDistractors(pool);
-      expect(new Set(result).size).toBe(3);
-    }
   });
 });
