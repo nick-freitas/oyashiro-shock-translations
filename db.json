@@ -1,3 +1,544 @@
 {
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "filename": "Screenshot 2026-03-13 at 7.53.39 PM.png",
+      "question": {
+        "ja": "デザートフェスタ、[店内]{てんない}に[響]{ひび}いたのは[何]{なん}コール?",
+        "en": "During the Dessert Festa, what was the call that echoed through the store?"
+      },
+      "options": [
+        {
+          "ja": "プリキー！",
+          "en": "Prikii!"
+        },
+        {
+          "ja": "フキフキ！",
+          "en": "Fukifuki!"
+        },
+        {
+          "ja": "ヌギヌギ！",
+          "en": "Nuginugi!"
+        },
+        {
+          "ja": "ブギウギ！",
+          "en": "Boogie Woogie!"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 2,
+      "filename": "Screenshot 2026-03-13 at 7.53.48 PM.png",
+      "question": {
+        "ja": "[本格]{ほんかく}[推理]{すいり}ゲームに[挑]{いど}んだ[圭一]{けいいち}、[自分]{じぶん}をなんと[呼称]{こしょう}した?",
+        "en": "When Keiichi took on the serious mystery game, what did he call himself?"
+      },
+      "options": [
+        {
+          "ja": "[江戸川]{えどがわ}ケーイチ",
+          "en": "Edogawa Keiichi"
+        },
+        {
+          "ja": "[前原]{まえばら}コゴロウ",
+          "en": "Maebara Kogorou"
+        },
+        {
+          "ja": "アルセーヌ[前原]{まえばら}",
+          "en": "Arsène Maebara"
+        },
+        {
+          "ja": "シャーロック[前原]{まえばら}",
+          "en": "Sherlock Maebara"
+        }
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 3,
+      "filename": "Screenshot 2026-03-13 at 7.53.56 PM.png",
+      "question": {
+        "ja": "[沙都子]{さとこ}、[遅]{おく}れてきた[圭一]{けいいち}を[何]{なん}に[例]{たと}えた?",
+        "en": "What did Satoko compare Keiichi to when he arrived late?"
+      },
+      "options": [
+        {
+          "ja": "[野球場]{やきゅうじょう}",
+          "en": "Baseball field"
+        },
+        {
+          "ja": "スーパー",
+          "en": "Supermarket"
+        },
+        {
+          "ja": "[市民]{しみん}プール",
+          "en": "Public swimming pool"
+        },
+        {
+          "ja": "ガソリンスタンド",
+          "en": "Gas station"
+        }
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 4,
+      "filename": "Screenshot 2026-03-13 at 7.54.05 PM.png",
+      "question": {
+        "ja": "[鬼隠]{おにかく}し[一年目]{いちねんめ}の[犠牲者]{ぎせいしゃ}は[誰]{だれ}？",
+        "en": "Who was the victim in the first year of Onikakushi?"
+      },
+      "options": [
+        {
+          "ja": "[梨花]{りか}の[父親]{ちちおや}",
+          "en": "Rika's father"
+        },
+        {
+          "ja": "[梨花]{りか}の[母親]{ははおや}",
+          "en": "Rika's mother"
+        },
+        {
+          "ja": "[分校]{ぶんこう}の[先生]{せんせい}",
+          "en": "The branch school teacher"
+        },
+        {
+          "ja": "[現場]{げんば}[監督]{かんとく}",
+          "en": "The site foreman"
+        }
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 5,
+      "filename": "Screenshot 2026-03-13 at 7.54.13 PM.png",
+      "question": {
+        "ja": "デザートフェスタ、[料理]{りょうり}をこぼされたズボンの[値段]{ねだん}は？",
+        "en": "At the Dessert Festa, what was the price of the pants that got food spilled on them?"
+      },
+      "options": [
+        {
+          "ja": "1,800[円]{えん}",
+          "en": "1,800 yen"
+        },
+        {
+          "ja": "2,980[円]{えん}",
+          "en": "2,980 yen"
+        },
+        {
+          "ja": "980[円]{えん}",
+          "en": "980 yen"
+        },
+        {
+          "ja": "49,800[円]{えん}",
+          "en": "49,800 yen"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 6,
+      "filename": "Screenshot 2026-03-13 at 7.54.18 PM.png",
+      "question": {
+        "ja": "デザートフェスタ、ピンチに[陥]{おちい}った[圭一]{けいいち}、[誰]{だれ}に[助]{たす}けを[求]{もと}めた?",
+        "en": "During the dessert festival, Keiichi found himself in a pinch — who did he ask for help?"
+      },
+      "options": [
+        {
+          "ja": "[父親]{ちちおや}",
+          "en": "His father"
+        },
+        {
+          "ja": "[部活]{ぶかつ}メンバー",
+          "en": "Club members"
+        },
+        {
+          "ja": "[校長]{こうちょう}",
+          "en": "The principal"
+        },
+        {
+          "ja": "[暗黒]{あんこく}[四天]{してん}",
+          "en": "The Dark Four Heavenly Kings"
+        }
+      ],
+      "correctOption": 1
+    },
+    {
+      "id": 7,
+      "filename": "Screenshot 2026-03-13 at 7.54.24 PM.png",
+      "question": {
+        "ja": "[富田]{とみた}と[岡村]{おかむら}、ボールが[何処]{どこ}に[挟]{はさ}まったと[言]{い}っていた？",
+        "en": "Where did Tomita and Okamura say the ball got stuck?"
+      },
+      "options": [
+        {
+          "ja": "2[階]{かい}の[雨]{あま}どい",
+          "en": "The second-floor rain gutter"
+        },
+        {
+          "ja": "[重機]{じゅうき}の[隙間]{すきま}",
+          "en": "A gap in the heavy machinery"
+        },
+        {
+          "ja": "[物置]{ものおき}の[屋根]{やね}",
+          "en": "The roof of the storage shed"
+        },
+        {
+          "ja": "[側溝]{そっこう}の[奥]{おく}",
+          "en": "Deep inside the drainage ditch"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 8,
+      "filename": "Screenshot 2026-03-13 at 7.54.30 PM.png",
+      "question": {
+        "ja": "コンシューマ[版]{ばん}「[奉]{ほう}」、[主題歌]{しゅだいか}は[何]{なに}？",
+        "en": "What is the theme song of the console version of \"Hou\" (Higurashi no Naku Koro ni Hou)?"
+      },
+      "options": [
+        {
+          "ja": "[君]{きみ}は[何]{なに}も[知]{し}らない",
+          "en": "You Don't Know Anything"
+        },
+        {
+          "ja": "[僕]{ぼく}はきっと[知]{し}ってる",
+          "en": "I Surely Know"
+        },
+        {
+          "ja": "[僕達]{ぼくたち}はもう[叫]{さけ}ってる",
+          "en": "We're Already Screaming"
+        },
+        {
+          "ja": "[僕]{ぼく}らの[雛見沢]{ひなみざわ}",
+          "en": "Our Hinamizawa"
+        }
+      ],
+      "correctOption": 2
+    },
+    {
+      "id": 9,
+      "filename": "Screenshot 2026-03-13 at 7.54.36 PM.png",
+      "question": {
+        "ja": "[沙都子]{さとこ}、[兄]{あに}の[事]{こと}をなんと[呼]{よ}んでいる？",
+        "en": "What does Satoko call her brother?"
+      },
+      "options": [
+        {
+          "ja": "あにぃ",
+          "en": "Ani~ (Big bro~)"
+        },
+        {
+          "ja": "にーにー",
+          "en": "Nii-nii (Big brother)"
+        },
+        {
+          "ja": "あにしゃん",
+          "en": "Anishan (Bro-bro)"
+        },
+        {
+          "ja": "にいや",
+          "en": "Niiya (Brother dear)"
+        }
+      ],
+      "correctOption": 1
+    },
+    {
+      "id": 10,
+      "filename": "Screenshot 2026-03-13 at 7.54.42 PM.png",
+      "question": {
+        "ja": "[原作]{げんさく}[版]{ばん}「[奉]{ほう}」、[主題歌]{しゅだいか}は[何]{なに}？",
+        "en": "What is the theme song of the original version of \"Hō\" (Offering)?"
+      },
+      "options": [
+        {
+          "ja": "あの[日]{ひ}へ",
+          "en": "To That Day"
+        },
+        {
+          "ja": "[汝]{なんじ}、[奉]{たてまつ}り[給]{たま}え",
+          "en": "Thou, Make Thine Offering"
+        },
+        {
+          "ja": "[光]{ひかり}へ",
+          "en": "Toward the Light"
+        },
+        {
+          "ja": "あの[日]{ひ}ね",
+          "en": "That Day, You Know"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 12,
+      "filename": "Screenshot 2026-03-13 at 7.56.17 PM.png",
+      "question": {
+        "ja": "[祭]{まつり}を[抜]{ぬ}け[出]{だ}した[圭一]{けいいち}と[詩音]{しおん}、[暗闇]{くらやみ}で[出会]{であ}ったのは？",
+        "en": "After Keiichi and Shion snuck out of the festival, who did they encounter in the darkness?"
+      },
+      "options": [
+        {
+          "ja": "[富竹]{とみたけ}と[鷹野]{たかの}",
+          "en": "Tomitake and Takano"
+        },
+        {
+          "ja": "[大石]{おおいし}と[熊谷]{くまがい}",
+          "en": "Ooishi and Kumagai"
+        },
+        {
+          "ja": "[知恵]{ちえ}と[入江]{いりえ}",
+          "en": "Chie and Irie"
+        },
+        {
+          "ja": "[沙都子]{さとこ}と[悟史]{さとし}",
+          "en": "Satoko and Satoshi"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 13,
+      "filename": "Screenshot 2026-03-13 at 7.56.23 PM.png",
+      "question": {
+        "ja": "[園崎家]{そのざきけ}[所有]{しょゆう}の[森]{もり}、その[入山料]{にゅうざんりょう}はいくら？",
+        "en": "How much is the entrance fee for the forest owned by the Sonozaki family?"
+      },
+      "options": [
+        {
+          "ja": "[五百円]{ごひゃくえん}",
+          "en": "500 yen"
+        },
+        {
+          "ja": "[無料]{むりょう}",
+          "en": "Free"
+        },
+        {
+          "ja": "[米]{こめ}[一俵]{いっぴょう}",
+          "en": "One bale of rice"
+        },
+        {
+          "ja": "[百万円]{ひゃくまんえん}",
+          "en": "1,000,000 yen"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 15,
+      "filename": "Screenshot 2026-03-13 at 7.57.21 PM.png",
+      "question": {
+        "ja": "[園崎]{そのざき}[本家]{ほんけ}、[自宅]{じたく}[周辺]{しゅうへん}に[配置]{はいち}したのは[何]{なに}？",
+        "en": "What did the Sonozaki main family place around their home?"
+      },
+      "options": [
+        {
+          "ja": "[沙都子]{さとこ}のトラップ",
+          "en": "Satoko's traps"
+        },
+        {
+          "ja": "[飛]{と}び[出]{だ}し[坊]{ぼう}や",
+          "en": "Child crossing signs"
+        },
+        {
+          "ja": "ペットボトル",
+          "en": "Plastic bottles"
+        },
+        {
+          "ja": "[監視]{かんし}カメラ",
+          "en": "Security cameras"
+        }
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 16,
+      "filename": "Screenshot 2026-03-13 at 7.57.26 PM.png",
+      "question": {
+        "ja": "[目明]{めあか}し[編]{へん}、[脱走]{だっそう}に[成功]{せいこう}した[詩音]{しおん}、[何]{なに}を[食]{た}べたいと[言]{い}った？",
+        "en": "In the Eye Opening chapter, after Shion successfully escaped, what did she say she wanted to eat?"
+      },
+      "options": [
+        {
+          "ja": "[焼肉]{やきにく}",
+          "en": "Yakiniku (grilled meat)"
+        },
+        {
+          "ja": "ハンバーガー",
+          "en": "Hamburger"
+        },
+        {
+          "ja": "[麦飯]{むぎめし}",
+          "en": "Barley rice"
+        },
+        {
+          "ja": "[銀]{ぎん}シャリ",
+          "en": "Ginshari (white rice)"
+        }
+      ],
+      "correctOption": 1
+    },
+    {
+      "id": 17,
+      "filename": "Screenshot 2026-03-13 at 7.57.33 PM.png",
+      "question": {
+        "ja": "[昼壊]{ひるこわ}し[編]{へん}、レナの[部屋]{へや}に[置]{お}かれていた[本]{ほん}はどれ?",
+        "en": "In the Hirukowashi chapter, which book was placed in Rena's room?"
+      },
+      "options": [
+        {
+          "ja": "[現代]{げんだい}メイド[理論]{りろん}",
+          "en": "Modern Maid Theory"
+        },
+        {
+          "ja": "メイドマガジン",
+          "en": "Maid Magazine"
+        },
+        {
+          "ja": "メイド&タイツ",
+          "en": "Maids & Tights"
+        },
+        {
+          "ja": "[近代]{きんだい}メイド[図鑑]{ずかん}",
+          "en": "Modern Maid Encyclopedia"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 18,
+      "filename": "Screenshot 2026-03-13 at 7.57.39 PM.png",
+      "question": {
+        "ja": "[縁日]{えんにち}の[焼]{や}きそば、[今年]{ことし}は[何]{なに}[入]{い}りと[言]{い}っていた?",
+        "en": "What did they say was in the yakisoba at the festival this year?"
+      },
+      "options": [
+        {
+          "ja": "イカリング",
+          "en": "Squid rings"
+        },
+        {
+          "ja": "[豚肉]{ぶたにく}",
+          "en": "Pork"
+        },
+        {
+          "ja": "[飛騨牛]{ひだぎゅう}",
+          "en": "Hida beef"
+        },
+        {
+          "ja": "タマネギ",
+          "en": "Onion"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 19,
+      "filename": "Screenshot 2026-03-13 at 7.57.45 PM.png",
+      "question": {
+        "ja": "フワラズの[勾玉]{まがたま}、[白]{しろ}の[勾玉]{まがたま}を[最初]{さいしょ}に[拾]{ひろ}ったのは[誰]{だれ}？",
+        "en": "Among the Fuwarazu magatama, who was the first to pick up the white magatama?"
+      },
+      "options": [
+        {
+          "ja": "Rena",
+          "en": "Rena"
+        },
+        {
+          "ja": "[富竹]{とみたけ}",
+          "en": "Tomitake"
+        },
+        {
+          "ja": "[圭一]{けいいち}",
+          "en": "Keiichi"
+        },
+        {
+          "ja": "[鷹野]{たかの}",
+          "en": "Takano"
+        }
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 21,
+      "filename": "Screenshot 2026-03-13 at 7.57.52 PM.png",
+      "question": {
+        "ja": "[底]{そこ}なしの[鬼]{おに}ヶ[淵]{ふち}[沼]{ぬま}、[何処]{どこ}に[繋]{つな}がると[言]{い}われていた?",
+        "en": "Where was the bottomless Onigafuchi Swamp said to lead to?"
+      },
+      "options": [
+        {
+          "ja": "[黄金郷]{おうごんきょう}",
+          "en": "El Dorado (The Golden Land)"
+        },
+        {
+          "ja": "[黄泉]{よみ}の[国]{くに}",
+          "en": "The Land of the Dead (Yomi)"
+        },
+        {
+          "ja": "[夢]{ゆめ}の[国]{くに}",
+          "en": "The Land of Dreams"
+        },
+        {
+          "ja": "[鬼]{おに}の[国]{くに}",
+          "en": "The Land of Demons"
+        }
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 22,
+      "filename": "Screenshot 2026-03-13 at 7.57.57 PM.png",
+      "question": {
+        "ja": "[鉄平]{てっぺい}の[麻雀]{マージャン}[仲間]{なかま}は[誰]{だれ}？",
+        "en": "Who is Teppei's mahjong buddy?"
+      },
+      "options": [
+        {
+          "ja": "[大石]{おおいし}",
+          "en": "Oishi"
+        },
+        {
+          "ja": "[椿]{つばき}",
+          "en": "Tsubaki"
+        },
+        {
+          "ja": "[赤坂]{あかさか}",
+          "en": "Akasaka"
+        },
+        {
+          "ja": "[各務]{かがみ}",
+          "en": "Kagami"
+        }
+      ],
+      "correctOption": 1
+    },
+    {
+      "id": 24,
+      "filename": "Screenshot 2026-03-13 at 7.58.03 PM.png",
+      "question": {
+        "ja": "[麻雀]{マージャン}を[嗜]{たしな}む[赤坂]{あかさか}、[若]{わか}い[頃]{ころ}に[暴]{あば}れまわったのは[早稲田]{わせだ}と[何処]{どこ}？",
+        "en": "Akasaka enjoys mahjong — when he was young, where did he run wild besides Waseda?"
+      },
+      "options": [
+        {
+          "ja": "[高田馬場]{たかだのばば}",
+          "en": "Takadanobaba"
+        },
+        {
+          "ja": "[門前仲町]{もんぜんなかちょう}",
+          "en": "Monzen-Nakachō"
+        },
+        {
+          "ja": "[八丁堀]{はっちょうぼり}",
+          "en": "Hatchōbori"
+        },
+        {
+          "ja": "[浦安]{うらやす}",
+          "en": "Urayasu"
+        }
+      ],
+      "correctOption": 0
+    }
+  ]
 }
