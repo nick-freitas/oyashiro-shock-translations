@@ -22,8 +22,6 @@ function Editor() {
   const [error, setError] = useState<string | null>(null);
   const [reprocessing, setReprocessing] = useState(false);
   const [reprocessMsg, setReprocessMsg] = useState<string | null>(null);
-  const [generating, setGenerating] = useState(false);
-  const [generateMsg, setGenerateMsg] = useState<string | null>(null);
   const [addingFurigana, setAddingFurigana] = useState(false);
   const [furiganaMsg, setFuriganaMsg] = useState<string | null>(null);
   const [popoverOpen, setPopoverOpen] = useState(false);
@@ -57,7 +55,6 @@ function Editor() {
     if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
     // Clear all message states so only one toast shows at a time
     setReprocessMsg(null);
-    setGenerateMsg(null);
     setFuriganaMsg(null);
     setter(message);
     toastTimeoutRef.current = setTimeout(() => setter(null), 3000);
@@ -131,37 +128,6 @@ function Editor() {
     }
   }
 
-  async function handleGenerateDistractors() {
-    setGenerating(true);
-    setGenerateMsg(null);
-    try {
-      const res = await fetch("/api/questions/generate-distractors", { method: "POST" });
-      const text = await res.text();
-      let data;
-      try {
-        data = JSON.parse(text);
-      } catch {
-        showToast(setGenerateMsg, `Server error: ${text}`);
-        return;
-      }
-      if (!res.ok) {
-        showToast(setGenerateMsg, data.error || "Failed");
-        return;
-      }
-      const parts = [`Generated ${data.generated}`, `skipped ${data.skipped}`];
-      if (data.failed > 0) parts.push(`failed ${data.failed}`);
-      showToast(setGenerateMsg, `${parts.join(", ")} (${data.total} total)`);
-      if (data.generated > 0) {
-        fetchQuestions();
-      }
-    } catch (err) {
-      showToast(setGenerateMsg, err instanceof Error ? err.message : "Failed");
-    } finally {
-      setGenerating(false);
-      setPopoverOpen(false);
-    }
-  }
-
   async function handleAddFurigana() {
     setAddingFurigana(true);
     setFuriganaMsg(null);
@@ -224,13 +190,6 @@ function Editor() {
           <div ref={popoverRef} className="sidebar-popover" role="dialog">
             <button
               className="sidebar-popover-action"
-              onClick={handleGenerateDistractors}
-              disabled={generating}
-            >
-              {generating ? "生成中…" : "練習問題を生成"}
-            </button>
-            <button
-              className="sidebar-popover-action"
               onClick={handleReprocess}
               disabled={reprocessing}
             >
@@ -253,9 +212,9 @@ function Editor() {
           {toKanjiCount(questions.length)}
         </div>
       </aside>
-      {(reprocessMsg || generateMsg || furiganaMsg) && (
+      {(reprocessMsg || furiganaMsg) && (
         <div className="toast-message" role="status">
-          {reprocessMsg || generateMsg || furiganaMsg}
+          {reprocessMsg || furiganaMsg}
         </div>
       )}
     </div>
