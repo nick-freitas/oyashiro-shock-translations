@@ -1,32 +1,38 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import type { Question, CardProgress, StudyProgress } from "../types";
-import { computeNewState, selectNextCard, pickDistractors } from "../srs";
+import { computeNewState, selectNextCard } from "../srs";
 import { parseRuby } from "../utils/parseRuby";
 import "./StudyMode.css";
 
-function getCardId(questionId: number, optionIndex: number): string {
-  return `q${questionId}-o${optionIndex}`;
-}
+type StudyCard =
+  | { cardId: string; ja: string; correctEn: string; type: 'option'; siblingChoices: string[] }
+  | { cardId: string; ja: string; correctEn: string; type: 'question'; questionId: number };
 
-interface StudyCard {
-  cardId: string;
-  ja: string;
-  correctEn: string;
-  distractors: string[];
-}
+const MIN_QUESTIONS_FOR_QUESTION_CARDS = 4;
 
 function buildStudyCards(questions: Question[]): StudyCard[] {
   const cards: StudyCard[] = [];
   for (const q of questions) {
+    // Option cards: 4 per question, siblings are distractors
+    const siblingChoices = q.options.map((o) => o.en);
     for (let oi = 0; oi < q.options.length; oi++) {
-      const opt = q.options[oi];
-      if (!opt.distractors || opt.distractors.length < 3) continue;
       cards.push({
-        cardId: getCardId(q.id, oi),
-        ja: opt.ja,
-        correctEn: opt.en,
-        distractors: opt.distractors,
+        cardId: `q${q.id}-o${oi}`,
+        ja: q.options[oi].ja,
+        correctEn: q.options[oi].en,
+        type: 'option',
+        siblingChoices,
+      });
+    }
+    // Question cards: 1 per question (only if enough questions for distractors)
+    if (questions.length >= MIN_QUESTIONS_FOR_QUESTION_CARDS) {
+      cards.push({
+        cardId: `q${q.id}`,
+        ja: q.question.ja,
+        correctEn: q.question.en,
+        type: 'question',
+        questionId: q.id,
       });
     }
   }
@@ -110,8 +116,18 @@ export function StudyMode() {
       }
 
       const card = cards.find((c) => c.cardId === result.cardId)!;
-      const distractorChoices = pickDistractors(card.distractors);
-      const allChoices = shuffleArray([card.correctEn, ...distractorChoices]);
+      let allChoices: string[];
+      if (card.type === 'option') {
+        allChoices = shuffleArray(card.siblingChoices);
+      } else {
+        const pool = cards
+          .filter((c): c is Extract<StudyCard, { type: 'question' }> =>
+            c.type === 'question' && c.questionId !== card.questionId
+          )
+          .map((c) => c.correctEn);
+        const shuffledPool = shuffleArray(pool);
+        allChoices = shuffleArray([card.correctEn, ...shuffledPool.slice(0, 3)]);
+      }
 
       setCurrentCard(card);
       setChoices(allChoices);
@@ -196,14 +212,12 @@ export function StudyMode() {
   if (error) return <div className="study-center study-error">Error: {error}</div>;
 
   if (studyCards.length === 0) {
-    const totalOptions = questions.reduce((sum, q) => sum + q.options.length, 0);
     return (
       <div className="study-container">
         <div className="study-empty">
           <p>No study cards available.</p>
           <p className="study-empty-sub">
-            {totalOptions} options found, but none have distractors yet.
-            Generate them from the editor.
+            Add questions to get started.
           </p>
           <Link to="/" className="study-back-link">Back to Editor</Link>
         </div>
