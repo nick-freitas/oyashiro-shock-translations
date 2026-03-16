@@ -80,10 +80,11 @@ React Router is removed entirely. `App.tsx` renders the main view directly — n
 | `handleQuestionDeleted` | `handleEntryDeleted` | `src/App.tsx` |
 | `onQuestionSaved` (prop) | `onEntrySaved` | `ReferenceList` props |
 | `onQuestionDeleted` (prop) | `onEntryDeleted` | `ReferenceList` props |
-
-**Structural change:** The current `Editor` function component is promoted to be the default `App` export directly. The outer `App` routing wrapper is removed.
 | `DbJson.questions` (server interface field) | `DbJson.entries` | `server/index.ts` |
 | `"questions"` key in `db.json` | `"entries"` | `db.json` |
+
+**Structural change:** The current `Editor` function component is promoted to be the default `App` export directly. The outer `App` routing wrapper is removed.
+
 **API route renames** (note: Vite proxy strips `/api` prefix, so server routes use `/entries` while frontend fetches use `/api/entries`):
 
 | Frontend URL | Server Route |
