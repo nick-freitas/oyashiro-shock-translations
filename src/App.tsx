@@ -3,6 +3,7 @@ import type { Entry } from "./types";
 import { entries } from "./data/entries";
 import { useImportantMarks } from "./hooks/useImportantMarks";
 import { ReferenceList } from "./components/ReferenceList";
+import { SectionTabs } from "./components/SectionTabs";
 import "./App.css";
 
 const LEVELS = [...new Set(entries.map((e) => e.level))].sort((a, b) => a - b);
@@ -26,20 +27,13 @@ export default function App() {
         />
       </div>
 
-      <aside className="title-sidebar">
-        <nav className="level-selector">
-          {LEVELS.map((level) => (
-            <button
-              key={level}
-              className={`level-btn${level === selectedLevel ? " active" : ""}`}
-              onClick={() => setSelectedLevel(level)}
-              type="button"
-            >
-              {level}
-            </button>
-          ))}
-        </nav>
+      <SectionTabs
+        levels={LEVELS}
+        selectedLevel={selectedLevel}
+        onSelectLevel={setSelectedLevel}
+      />
 
+      <aside className="title-sidebar">
         <div className="sidebar-titles">
           <div className="sidebar-subtitle">新・クイズ・ショック</div>
           <div className="sidebar-title">おやしろさまショック</div>
