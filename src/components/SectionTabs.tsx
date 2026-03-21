@@ -11,7 +11,7 @@ interface SectionTabsProps {
 }
 
 const STAR_ICONS: Record<StarFilter, string> = {
-  all: "⯪",
+  all: "◐",
   important: "★",
   unimportant: "☆",
 };
