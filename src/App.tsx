@@ -44,8 +44,6 @@ export default function App() {
           <div className="sidebar-subtitle">新・クイズ・ショック</div>
           <div className="sidebar-title">おやしろさまショック</div>
         </div>
-
-        <div className="sidebar-count">{filtered.length}</div>
       </aside>
     </div>
   );
