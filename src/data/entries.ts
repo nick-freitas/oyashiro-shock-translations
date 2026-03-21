@@ -163,10 +163,10 @@ export const entries: Entry[] = [
     "questionRomaji": "Keiichi ga Seven Smart de katta raamen wa nani?",
     "correctAnswerJp": "豚骨ショウガ味",
     "correctAnswerEn": "Pork bone ginger flavor",
-    "correctAnswerRomaji": "tonkotsushougaaji",
+    "correctAnswerRomaji": "tonkotsu shouga aji",
     "wrongAnswersJp": ["醤油味","塩味","カレー"],
     "wrongAnswersEn": ["Soy sauce flavor","Salt flavor","Curry"],
-    "wrongAnswersRomaji": ["shouyuaji","shioaji","karee"],
+    "wrongAnswersRomaji": ["shouyu aji","shioaji","karee"],
     "questionImage": "quiz_images/qlv1_02.png"
   },
   {
@@ -180,7 +180,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "migiude",
     "wrongAnswersJp": ["頭","左腕","明日"],
     "wrongAnswersEn": ["Head","Left arm","Tomorrow"],
-    "wrongAnswersRomaji": ["atama","hidariude","ashita"],
+    "wrongAnswersRomaji": ["atama","hidari ude","ashita"],
     "questionImage": "quiz_images/qlv1_03.png"
   },
   {
@@ -194,7 +194,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "29toshi",
     "wrongAnswersJp": ["28歳","25歳","永遠の17歳"],
     "wrongAnswersEn": ["28 years old","25 years old","Eternally 17 years old"],
-    "wrongAnswersRomaji": ["28toshi","25toshi","eienno17toshi"],
+    "wrongAnswersRomaji": ["28toshi","25toshi","eien no 17-sai"],
     "questionImage": "quiz_images/qlv1_04.png"
   },
   {
@@ -345,10 +345,10 @@ export const entries: Entry[] = [
     "questionRomaji": "renanodaisukina, Randi-kun ningyou. sorehanani?",
     "correctAnswerJp": "白ヒゲのおっさん",
     "correctAnswerEn": "Old man with a white beard",
-    "correctAnswerRomaji": "shirohigenoossan",
+    "correctAnswerRomaji": "shiro hige no ossan",
     "wrongAnswersJp": ["ゾウの子ども","舌を出した女の子","ピエロみたいな男"],
     "wrongAnswersEn": ["Baby elephant","Girl sticking out her tongue","Clown-like man"],
-    "wrongAnswersRomaji": ["zounokodomo","shitawodashitaonnanoko","pieromitainaotoko"],
+    "wrongAnswersRomaji": ["zou no kodomo","shita wo dashita onnanoko","piero mitai na otoko"],
     "questionImage": "quiz_images/qlv1_15.png"
   },
   {
@@ -359,10 +359,10 @@ export const entries: Entry[] = [
     "questionRomaji": "Keiichi no otousan no shokugyou wa?",
     "correctAnswerJp": "同人作家",
     "correctAnswerEn": "Doujin artist",
-    "correctAnswerRomaji": "doujinsakka",
+    "correctAnswerRomaji": "doujin sakka",
     "wrongAnswersJp": ["画家","彫刻家","遊び人"],
     "wrongAnswersEn": ["Painter","Sculptor","Playboy"],
-    "wrongAnswersRomaji": ["gaka","choukokuka","asobinin"],
+    "wrongAnswersRomaji": ["gaka","choukoku ka","asobinin"],
     "questionImage": "quiz_images/qlv1_16.png"
   },
   {
@@ -488,7 +488,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "gasshou",
     "wrongAnswersJp": ["合唱","合従","楽笑"],
     "wrongAnswersEn": ["Chorus","Alliance","Joyful laughter"],
-    "wrongAnswersRomaji": ["gasshou","gasshou","rakuwarai"],
+    "wrongAnswersRomaji": ["gasshou","gasshou","raku warai"],
     "questionImage": "quiz_images/qlv1_25.png"
   },
   {
@@ -541,10 +541,10 @@ export const entries: Entry[] = [
     "questionRomaji": "Saeki Chisato, jikka wa nani wo yatte iru?",
     "correctAnswerJp": "総合病院",
     "correctAnswerEn": "General hospital",
-    "correctAnswerRomaji": "sougoubyouin",
+    "correctAnswerRomaji": "sougou byouin",
     "wrongAnswersJp": ["宝石店","レストラン","製薬会社"],
     "wrongAnswersEn": ["Jewelry store","Restaurant","Pharmaceutical company"],
-    "wrongAnswersRomaji": ["housekiten","resutoran","seiyakugaisha"],
+    "wrongAnswersRomaji": ["houseki ten","resutoran","seiyaku gaisha"],
     "questionImage": "quiz_images/qlv1_29.png"
   },
   {
@@ -583,7 +583,7 @@ export const entries: Entry[] = [
     "questionRomaji": "Keiichi no torauma ni natte iru omocha wa?",
     "correctAnswerJp": "モデルガン",
     "correctAnswerEn": "Model gun",
-    "correctAnswerRomaji": "moderugan",
+    "correctAnswerRomaji": "moderu gan",
     "wrongAnswersJp": ["パチンコ","麻雀","トランプ"],
     "wrongAnswersEn": ["Pachinko","Mahjong","Playing cards"],
     "wrongAnswersRomaji": ["pachinko","maajan","toranpu"],
@@ -600,7 +600,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "beegoma",
     "wrongAnswersJp": ["ゾンビ鬼","大富豪","犯人探し"],
     "wrongAnswersEn": ["Zombie tag","President (card game)","Find the culprit"],
-    "wrongAnswersRomaji": ["zonbioni","daifugou","hanninsagashi"],
+    "wrongAnswersRomaji": ["zonbioni","daifugou","hannin sagashi"],
     "questionImage": "quiz_images/qlv1_33.png"
   },
   {
@@ -611,7 +611,7 @@ export const entries: Entry[] = [
     "questionRomaji": "\"Onikakushi-hen\"de, keiichigamiwomamorutamenitsukattamonoha?",
     "correctAnswerJp": "金属バット",
     "correctAnswerEn": "Metal bat",
-    "correctAnswerRomaji": "kinzokubatto",
+    "correctAnswerRomaji": "kinzoku batto",
     "wrongAnswersJp": ["鉈","斧","スタンガン"],
     "wrongAnswersEn": ["Hatchet","Axe","Stun gun"],
     "wrongAnswersRomaji": ["nata","ono","sutangan"],
@@ -726,7 +726,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "Shishibone",
     "wrongAnswersJp": ["かこつ","しかほね","ろっこつ"],
     "wrongAnswersEn": ["Kakotsu","Shikahone","Rokkotsu"],
-    "wrongAnswersRomaji": ["kakotsu","shikahone","rokkotsu"],
+    "wrongAnswersRomaji": ["kakotsu","shika hone","rokkotsu"],
     "questionImage": "quiz_images/qlv1_42.png"
   },
   {
@@ -1031,10 +1031,10 @@ export const entries: Entry[] = [
     "questionRomaji": "\"Meakashi-hen\"noshion, saigohanandeshinda?",
     "correctAnswerJp": "転落死",
     "correctAnswerEn": "Death by falling",
-    "correctAnswerRomaji": "tenrakushi",
+    "correctAnswerRomaji": "tenraku shi",
     "wrongAnswersJp": ["病死","中毒死","窒息死"],
     "wrongAnswersEn": ["Death by illness","Death by poisoning","Death by suffocation"],
-    "wrongAnswersRomaji": ["byoushi","chuudokushi","chissokushi"],
+    "wrongAnswersRomaji": ["byoushi","chuudoku shi","chissoku shi"],
     "questionImage": "quiz_images/qlv2_04.png"
   },
   {
@@ -1076,7 +1076,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "kyaria",
     "wrongAnswersJp": ["推薦組","一般採用","出向"],
     "wrongAnswersEn": ["Recommendation group","General recruitment","Transfer"],
-    "wrongAnswersRomaji": ["suisenkumi","ippansaiyou","shukkou"],
+    "wrongAnswersRomaji": ["suisen kumi","ippan saiyou","shukkou"],
     "questionImage": "quiz_images/qlv2_07.png"
   },
   {
@@ -1098,7 +1098,7 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「暇潰し編」で赤坂に接触した情報屋は？",
     "questionEn": "In the Himatsubushi chapter, who was the informant that contacted Akasaka?",
-    "questionRomaji": "\"Himatsubushi-hen\"deakasakanisesshokushitajouhouyaha?",
+    "questionRomaji": "\"Himatsubushi-hen\" de Akasaka ni sesshoku shita jouhouya wa?",
     "correctAnswerJp": "サトさん",
     "correctAnswerEn": "Sato-san",
     "correctAnswerRomaji": "Sato-san",
@@ -1132,7 +1132,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "ringo",
     "wrongAnswersJp": ["絶食","バナナ","炭水化物"],
     "wrongAnswersEn": ["Fasting","Banana","Carbohydrates"],
-    "wrongAnswersRomaji": ["zesshoku","banana","tansuikabutsu"],
+    "wrongAnswersRomaji": ["zesshoku","banana","tansui kabutsu"],
     "questionImage": "quiz_images/qlv2_11.png"
   },
   {
@@ -1143,7 +1143,7 @@ export const entries: Entry[] = [
     "questionRomaji": "taishokugo no Oishi, nani wo hajimeta?",
     "correctAnswerJp": "社交ダンス",
     "correctAnswerEn": "Ballroom dancing",
-    "correctAnswerRomaji": "shakoudansu",
+    "correctAnswerRomaji": "shakou dansu",
     "wrongAnswersJp": ["農業","盆栽","ゲートボール"],
     "wrongAnswersEn": ["Farming","Bonsai","Gateball"],
     "wrongAnswersRomaji": ["nougyou","bonsai","geetobooru"],
@@ -1157,10 +1157,10 @@ export const entries: Entry[] = [
     "questionRomaji": "Keishichou no Akasaka, shozoku wa kouan no doko?",
     "correctAnswerJp": "第七室",
     "correctAnswerEn": "Room 7",
-    "correctAnswerRomaji": "dainanashitsu",
+    "correctAnswerRomaji": "dai nana shitsu",
     "wrongAnswersJp": ["第五室","第一室","第零室"],
     "wrongAnswersEn": ["Room 5","Room 1","Room 0"],
-    "wrongAnswersRomaji": ["daigoshitsu","daiichishitsu","daireishitsu"],
+    "wrongAnswersRomaji": ["dai go shitsu","dai ichi shitsu","dai rei shitsu"],
     "questionImage": "quiz_images/qlv2_13.png"
   },
   {
@@ -1216,7 +1216,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "irezumi",
     "wrongAnswersJp": ["胸","髪形","頭の良さ"],
     "wrongAnswersEn": ["Chest","Hairstyle","Intelligence"],
-    "wrongAnswersRomaji": ["mune","kamigata","atamanoyosa"],
+    "wrongAnswersRomaji": ["mune","kamigata","atama no yosa"],
     "questionImage": "quiz_images/qlv2_17.png"
   },
   {
@@ -1496,7 +1496,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "jihou",
     "wrongAnswersJp": ["空気","フラグ","通過点"],
     "wrongAnswersEn": ["Atmosphere","Flag","Passing point"],
-    "wrongAnswersRomaji": ["kuuki","furagu","tsuukatten"],
+    "wrongAnswersRomaji": ["kuuki","furagu","tsuuka ten"],
     "questionImage": "quiz_images/qlv2_37.png"
   },
   {
@@ -1874,7 +1874,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "hashiri takotobi",
     "wrongAnswersJp": ["マラソン","やり投げ","短距離走"],
     "wrongAnswersEn": ["Marathon","Javelin throw","Sprint"],
-    "wrongAnswersRomaji": ["marason","yarinage","tankyorisou"],
+    "wrongAnswersRomaji": ["marason","yarinage","tankyori sou"],
     "questionImage": "quiz_images/qlv3_04.png"
   },
   {
@@ -1955,7 +1955,7 @@ export const entries: Entry[] = [
     "questionRomaji": "Yamaoki no Enjeru Mooto de no shougou wa?",
     "correctAnswerJp": "大公爵",
     "correctAnswerEn": "Grand Duke",
-    "correctAnswerRomaji": "daikoshaku",
+    "correctAnswerRomaji": "dai koushaku",
     "wrongAnswersJp": ["帝王","神","おっさん"],
     "wrongAnswersEn": ["Emperor","God","Old man"],
     "wrongAnswersRomaji": ["teiou","kami","ossan"],
@@ -2112,7 +2112,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "engeibu",
     "wrongAnswersJp": ["演劇部","吹奏楽部","文芸部"],
     "wrongAnswersEn": ["Drama club","Brass band club","Literary club"],
-    "wrongAnswersRomaji": ["engekibu","suisougakubu","bungeibu"],
+    "wrongAnswersRomaji": ["engekibu","suisou gakubu","bungeibu"],
     "questionImage": "quiz_images/qlv3_21.png"
   },
   {
@@ -2196,7 +2196,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "kami",
     "wrongAnswersJp": ["考古学者","医師","政治家"],
     "wrongAnswersEn": ["Archaeologist","Doctor","Politician"],
-    "wrongAnswersRomaji": ["koukogakusha","ishi","seijika"],
+    "wrongAnswersRomaji": ["koukou gakusha","ishi","seijika"],
     "questionImage": "quiz_images/qlv3_27.png"
   },
   {
@@ -2700,7 +2700,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "resutoran",
     "wrongAnswersJp": ["花屋","不動産屋","料亭"],
     "wrongAnswersEn": ["Flower shop","Real estate agency","Traditional restaurant"],
-    "wrongAnswersRomaji": ["hanaya","fudousanya","ryoutei"],
+    "wrongAnswersRomaji": ["hanaya","fudousan ya","ryoutei"],
     "questionImage": "quiz_images/qlv4_03.png"
   },
   {
@@ -2851,7 +2851,7 @@ export const entries: Entry[] = [
     "questionRomaji": "Takano no shoushi torikku wa nani de miaburareta?",
     "correctAnswerJp": "保険証",
     "correctAnswerEn": "Insurance card",
-    "correctAnswerRomaji": "hokenshou",
+    "correctAnswerRomaji": "hoken shou",
     "wrongAnswersJp": ["目撃証言","DNA鑑定","プロファイル"],
     "wrongAnswersEn": ["Eyewitness testimony","DNA analysis","Profiling"],
     "wrongAnswersRomaji": ["mokugeki shougen","DNA kantei","profairu"],
@@ -3257,7 +3257,7 @@ export const entries: Entry[] = [
     "questionRomaji": "\"Matsuribayashi-hen\", Akasaka no ichigeki wa nani ni tatoerareta?",
     "correctAnswerJp": "徹甲弾",
     "correctAnswerEn": "Armor-piercing round",
-    "correctAnswerRomaji": "tekkoudan",
+    "correctAnswerRomaji": "tekkou dan",
     "wrongAnswersJp": ["焼夷弾","核弾頭","爆裂弾"],
     "wrongAnswersEn": ["Incendiary round","Nuclear warhead","Explosive round"],
     "wrongAnswersRomaji": ["shoui-dan","kaku dandou","bakuretsu-dan"],
@@ -3565,10 +3565,10 @@ export const entries: Entry[] = [
     "questionRomaji": "Kasai Tatsuyoshi, \"nani\" no Tatsu to yobarete ita ka?",
     "correctAnswerJp": "散弾銃",
     "correctAnswerEn": "Shotgun",
-    "correctAnswerRomaji": "sandanjuu",
+    "correctAnswerRomaji": "sandan juu",
     "wrongAnswersJp": ["機関銃","光線銃","水鉄砲"],
     "wrongAnswersEn": ["Machine gun","Ray gun","Water gun"],
-    "wrongAnswersRomaji": ["kikanjuu","kousen-juu","mizuteppou"],
+    "wrongAnswersRomaji": ["kikanjuu","kousen-juu","mizu teppou"],
     "questionImage": "quiz_images/qlv5_05.png"
   },
   {
@@ -4842,7 +4842,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "kameraman",
     "wrongAnswersJp": ["フリーター","建設省職員","時報役"],
     "wrongAnswersEn": ["Freeter","Ministry of Construction worker","Timekeeper"],
-    "wrongAnswersRomaji": ["furiitaa","kensetsu-shou shokuin","jihou-yaku"],
+    "wrongAnswersRomaji": ["furiitaa","kensetsu-shou shokuin","jihou yaku"],
     "questionImage": "quiz_images/qlv6_36.png"
   },
   {
@@ -4982,7 +4982,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "meiyo shimin",
     "wrongAnswersJp": ["特別メンバー","一日市民","特待生"],
     "wrongAnswersEn": ["Special member","Citizen for a day","Honor student"],
-    "wrongAnswersRomaji": ["tokubetsu menbaa","ichinichi shimin","tokutaisei"],
+    "wrongAnswersRomaji": ["tokubetsu menbaa","ichinichi shimin","tokutai sei"],
     "questionImage": "quiz_images/qlv6_46.png"
   },
   {
@@ -5094,7 +5094,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "kashaku",
     "wrongAnswersJp": ["かせき","かっせき","どなりぜめ"],
     "wrongAnswersEn": ["Kaseki","Kasseki","Donarizeme"],
-    "wrongAnswersRomaji": ["kaseki","kasseki","donarizeme"],
+    "wrongAnswersRomaji": ["kaseki","kasseki","donari zeme"],
     "questionImage": "quiz_images/qlv6_54.png"
   },
   {
@@ -5220,7 +5220,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "hanbaagu",
     "wrongAnswersJp": ["ロースカツ","エビフライ","ウスターソース"],
     "wrongAnswersEn": ["Loin cutlet","Fried shrimp","Worcestershire sauce"],
-    "wrongAnswersRomaji": ["roosukatsu","ebi furai","Usutaa soosu"],
+    "wrongAnswersRomaji": ["roosu katsu","ebi furai","Usutaa soosu"],
     "questionImage": "quiz_images/qlv7_03.png"
   },
   {
@@ -5402,7 +5402,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "bukatsu menbaa",
     "wrongAnswersJp": ["父親","暗黒四天王","校長"],
     "wrongAnswersEn": ["Father","Dark Four Heavenly Kings","Principal"],
-    "wrongAnswersRomaji": ["chichioya","ankoku shitennou","kouchou"],
+    "wrongAnswersRomaji": ["chichi oya","ankoku shitennou","kouchou"],
     "questionImage": "quiz_images/qlv7_16.png"
   },
   {
@@ -5472,7 +5472,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "irodori",
     "wrongAnswersJp": ["炭水化物","緑黄色野菜","バランス"],
     "wrongAnswersEn": ["Carbohydrates","Green and yellow vegetables","Balance"],
-    "wrongAnswersRomaji": ["tansuikabutsu","ryokuoushoku yasai","baransu"],
+    "wrongAnswersRomaji": ["tansui kabutsu","ryokuoushoku yasai","baransu"],
     "questionImage": "quiz_images/qlv7_21.png"
   },
   {
@@ -5528,7 +5528,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "futaban",
     "wrongAnswersJp": ["七日","半日","一ヶ月"],
     "wrongAnswersEn": ["Seven days","Half a day","One month"],
-    "wrongAnswersRomaji": ["nanoka","hannichi","ikkagetsu"],
+    "wrongAnswersRomaji": ["nanoka","hannichi","ikka getsu"],
     "questionImage": "quiz_images/qlv7_25.png"
   },
   {
@@ -5542,7 +5542,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "paatii",
     "wrongAnswersJp": ["オフ会","三者面談","親族会議"],
     "wrongAnswersEn": ["Offline meetup","Three-way meeting","Family council"],
-    "wrongAnswersRomaji": ["ofu-kai","sanshamondaan","shinzoku kaigi"],
+    "wrongAnswersRomaji": ["ofu-kai","sansha mondaan","shinzoku kaigi"],
     "questionImage": "quiz_images/qlv7_26.png"
   },
   {
@@ -5556,7 +5556,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "gorufu kurabu",
     "wrongAnswersJp": ["金属バット","鉄パイプ","水鉄砲"],
     "wrongAnswersEn": ["Metal bat","Iron pipe","Water gun"],
-    "wrongAnswersRomaji": ["kinzoku batto","tetsu paipu","mizudeppou"],
+    "wrongAnswersRomaji": ["kinzoku batto","tetsu paipu","mizu deppou"],
     "questionImage": "quiz_images/qlv7_27.png"
   },
   {
@@ -5570,7 +5570,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "gasorin sutando",
     "wrongAnswersJp": ["スーパー","市民プール","野球場"],
     "wrongAnswersEn": ["Supermarket","Public pool","Baseball stadium"],
-    "wrongAnswersRomaji": ["suupaa","shimin puuru","yakyuujou"],
+    "wrongAnswersRomaji": ["suupaa","shimin puuru","yakyuu jou"],
     "questionImage": "quiz_images/qlv7_28.png"
   },
   {
@@ -5696,7 +5696,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "masukotto",
     "wrongAnswersJp": ["生き字引","祟り","良心"],
     "wrongAnswersEn": ["Walking encyclopedia","Curse","Conscience"],
-    "wrongAnswersRomaji": ["ikijibiki","tatari","ryoushin"],
+    "wrongAnswersRomaji": ["iki jibiki","tatari","ryoushin"],
     "questionImage": "quiz_images/qlv7_37.png"
   },
   {
@@ -5794,7 +5794,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "tsukai",
     "wrongAnswersJp": ["生まれ変わり","影","しもべ"],
     "wrongAnswersEn": ["Reincarnation","Shadow","Servant"],
-    "wrongAnswersRomaji": ["umarekawari","kage","shimobe"],
+    "wrongAnswersRomaji": ["umare kawari","kage","shimobe"],
     "questionImage": "quiz_images/qlv7_44.png"
   },
   {
@@ -5917,7 +5917,7 @@ export const entries: Entry[] = [
     "questionRomaji": "Mion ga motte kita ohagi, nani ni tsutsumarete ita?",
     "correctAnswerJp": "新聞紙",
     "correctAnswerEn": "Newspaper",
-    "correctAnswerRomaji": "shinbunshi",
+    "correctAnswerRomaji": "shinbun shi",
     "wrongAnswersJp": ["包装紙","ラップ","タッパー"],
     "wrongAnswersEn": ["Wrapping paper","Plastic wrap","Tupperware"],
     "wrongAnswersRomaji": ["housoshi","rappu","tappaa"],
@@ -6085,7 +6085,7 @@ export const entries: Entry[] = [
     "questionRomaji": "Keidai no ura ni ita Takano, nani ga kirei na yoru to itta?",
     "correctAnswerJp": "お月様",
     "correctAnswerEn": "The moon",
-    "correctAnswerRomaji": "otsukisama",
+    "correctAnswerRomaji": "otsuki-sama",
     "wrongAnswersJp": ["蛍火","花火","演舞"],
     "wrongAnswersEn": ["Firefly light","Fireworks","Dance performance"],
     "wrongAnswersRomaji": ["hotarubi","hanabi","enbu"],
@@ -6102,7 +6102,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "Saiguden",
     "wrongAnswersJp": ["賽銭箱","酒蔵","社務所"],
     "wrongAnswersEn": ["Offertory box","Sake storehouse","Shrine office"],
-    "wrongAnswersRomaji": ["saisenbako","sakagura","shamusho"],
+    "wrongAnswersRomaji": ["saisen bako","sakagura","shamusho"],
     "questionImage": "quiz_images/qlv8_06.png"
   },
   {
@@ -6130,7 +6130,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "oni no kuni",
     "wrongAnswersJp": ["夢の国","黄泉の国","黄金郷"],
     "wrongAnswersEn": ["Land of Dreams","Land of the Dead","Golden Land"],
-    "wrongAnswersRomaji": ["yume no kuni","yomi no kuni","ougonkyou"],
+    "wrongAnswersRomaji": ["yume no kuni","yomi no kuni","ougon kyou"],
     "questionImage": "quiz_images/qlv8_08.png"
   },
   {
@@ -6379,7 +6379,7 @@ export const entries: Entry[] = [
     "questionRomaji": "Tatarigoroshi-hen, Irie no shiин to sareta mono wa?",
     "correctAnswerJp": "睡眠薬",
     "correctAnswerEn": "Sleeping pills",
-    "correctAnswerRomaji": "suiminyaku",
+    "correctAnswerRomaji": "suimin yaku",
     "wrongAnswersJp": ["交通事故","多臓器不全","窒息"],
     "wrongAnswersEn": ["Traffic accident","Multiple organ failure","Suffocation"],
     "wrongAnswersRomaji": ["koutsuu jiko","tazouки fuzen","chissoku"],
@@ -6578,7 +6578,7 @@ export const entries: Entry[] = [
     "correctAnswerRomaji": "gin-shari",
     "wrongAnswersJp": ["焼肉","ハンバーガー","麦飯"],
     "wrongAnswersEn": ["Grilled meat","Hamburger","Barley rice"],
-    "wrongAnswersRomaji": ["yakiniku","hanbaagaa","mugigohan"],
+    "wrongAnswersRomaji": ["yakiniku","hanbaagaa","mugi gohan"],
     "questionImage": "quiz_images/qlv8_40.png"
   },
   {
