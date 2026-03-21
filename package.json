@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
-    "server": "tsx server/index.ts",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -15,19 +14,15 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@anthropic-ai/claude-agent-sdk": "^0.2.75",
     "@eslint/js": "^9.39.4",
     "@testing-library/react": "^16.3.2",
-    "@types/express": "^5.0.6",
     "@types/node": "^24.12.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.0",
-    "concurrently": "^9.2.1",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "express": "^5.2.1",
     "globals": "^17.4.0",
     "jsdom": "^28.1.0",
     "tsx": "^4.21.0",
