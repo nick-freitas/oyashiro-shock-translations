@@ -99,7 +99,7 @@ The important marks are visual-only indicators in this iteration — no filter t
 - `screenshots/` — no longer needed
 - `src/utils/parseRuby.tsx` — furigana dropped
 - `src/utils/parseRuby.test.tsx` — furigana test dropped
-- Dependencies: `@anthropic-ai/claude-agent-sdk`, `express`, `@types/express`, `concurrently`, `tsx`
+- Dependencies: `@anthropic-ai/claude-agent-sdk`, `express`, `@types/express`, `concurrently`
 
 ### Add
 
