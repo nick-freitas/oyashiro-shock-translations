@@ -184,106 +184,6 @@
   }
 }
 
-/* ===== INLINE EDITING ===== */
-.inline-input {
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  padding: 4px 8px;
-  width: 100%;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-  resize: none;
-  overflow: hidden;
-  display: block;
-}
-
-.inline-input:hover {
-  border-color: var(--border-row);
-}
-
-.inline-input:focus {
-  outline: none;
-  border-color: var(--accent-indigo-light);
-  background: rgba(58, 58, 110, 0.1);
-}
-
-.inline-input.modified {
-  border-color: var(--accent-gold);
-  background: rgba(154, 138, 72, 0.08);
-}
-
-.inline-input.input-ja {
-  font-family: var(--font-ja);
-  font-size: 33px;
-  font-weight: 400;
-  color: var(--text-ja);
-  line-height: 1.5;
-  margin-bottom: 6px;
-}
-
-.question-col .inline-input.input-ja {
-  font-size: 39px;
-  font-weight: 500;
-  line-height: 1.7;
-}
-
-.inline-input.input-en {
-  font-family: var(--font-en);
-  font-size: 27px;
-  font-weight: 300;
-  font-style: italic;
-  color: var(--text-en);
-  line-height: 1.4;
-}
-
-.question-col .inline-input.input-en {
-  font-size: 30px;
-  font-weight: 400;
-  color: var(--text-en);
-}
-
-.option-input-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-}
-
-.option-input {
-  flex: 1;
-}
-
-/* ===== ROW ACTIONS (save/delete buttons) ===== */
-.row-actions {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.save-btn {
-  background: var(--accent-indigo);
-  border: 1px solid var(--accent-indigo-light);
-  color: #e0ddd8;
-  padding: 6px 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: var(--font-en);
-  font-size: 21px;
-  letter-spacing: 0.05em;
-  transition: background-color 0.2s ease;
-}
-
-.save-btn:hover:not(:disabled) {
-  background: var(--accent-indigo-light);
-}
-
-.save-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 /* ===== CORRECT ANSWER ===== */
 .option-item.correct {
   background: rgba(64, 128, 64, 0.06);
@@ -294,68 +194,6 @@
 .option-item.correct::before {
   background: #408040;
   opacity: 1;
-}
-
-/* ===== DELETE BUTTON ===== */
-.delete-btn {
-  background: transparent;
-  border: 1px solid transparent;
-  color: #605858;
-  font-size: 24px;
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-
-.delete-btn:hover {
-  border-color: #804040;
-  color: #c06060;
-  background: rgba(128, 64, 64, 0.1);
-}
-
-/* ===== FURIGANA DISPLAY (click-to-edit) ===== */
-.ruby-display {
-  font-family: var(--font-ja);
-  color: var(--text-ja);
-  line-height: 2;
-  padding: 4px 8px;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  cursor: text;
-  min-height: 1.5em;
-  transition: border-color 0.2s ease;
-}
-
-.ruby-display:hover {
-  border-color: var(--border-row);
-}
-
-.ruby-display.modified {
-  border-color: var(--accent-gold);
-  background: rgba(154, 138, 72, 0.08);
-}
-
-.ruby-display rt {
-  font-size: 0.45em;
-  color: #a09890;
-}
-
-.question-col .ruby-display {
-  font-size: 39px;
-  font-weight: 500;
-  line-height: 1.7;
-  margin-bottom: 6px;
-}
-
-.ruby-display-option {
-  flex: 1;
-  font-size: 33px;
-  font-weight: 400;
 }
 
 /* ===== OPTIONS TOGGLE ===== */
@@ -374,21 +212,40 @@
   color: var(--accent-indigo-light);
 }
 
-/* ===== CORRECT SELECT RADIO ===== */
-.correct-select {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid var(--accent-indigo);
+/* ===== ROW ACTIONS ===== */
+.row-actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+/* ===== IMPORTANT TOGGLE ===== */
+.important-btn {
   background: transparent;
+  border: 1px solid transparent;
+  color: #403830;
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
   cursor: pointer;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease;
-  margin-top: 10px;
   padding: 0;
 }
 
-.correct-select:hover {
-  border-color: #408040;
-  background: rgba(64, 128, 64, 0.2);
+.important-btn:hover {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
+.important-btn.active {
+  color: var(--accent-gold-bright);
+}
+
+/* ===== IMPORTANT ROW HIGHLIGHT ===== */
+.quiz-row.important {
+  border-left: 3px solid var(--accent-gold);
 }

@@ -1,317 +1,64 @@
-import { useCallback, useRef, useState } from "react";
-import type { Entry, TranslatedText } from "../types";
-import { parseRuby } from "../utils/parseRuby";
+import { useState } from "react";
+import type { Entry } from "../types";
 import "./ReferenceList.css";
-
-function useAutoResize() {
-  const resize = useCallback((el: HTMLTextAreaElement | null) => {
-    if (!el) return;
-    el.style.height = "auto";
-    el.style.height = el.scrollHeight + "px";
-  }, []);
-  return resize;
-}
-
-function AutoTextarea({
-  className,
-  value,
-  onChange,
-  onBlur,
-  autoFocus,
-}: {
-  className: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  onBlur?: () => void;
-  autoFocus?: boolean;
-}) {
-  const resize = useAutoResize();
-  const ref = useRef<HTMLTextAreaElement | null>(null);
-
-  return (
-    <textarea
-      ref={(el) => {
-        ref.current = el;
-        resize(el);
-      }}
-      className={className}
-      value={value}
-      rows={1}
-      autoFocus={autoFocus}
-      onChange={(e) => {
-        onChange(e);
-        resize(e.target);
-      }}
-      onBlur={onBlur}
-    />
-  );
-}
-
-const KANJI_NUMS = [
-  "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
-  "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十",
-  "二十一", "二十二", "二十三", "二十四",
-];
-
 
 interface EntryRowProps {
   entry: Entry;
   index: number;
-  onSaved: (updated: Entry) => void;
-  onDeleted: (id: number) => void;
+  isImportant: boolean;
+  onToggleImportant: () => void;
 }
 
-function EntryRow({ entry, index, onSaved, onDeleted }: EntryRowProps) {
-  const [edited, setEdited] = useState<Entry>(entry);
-  const [saving, setSaving] = useState(false);
-  const [editingField, setEditingField] = useState<string | null>(null);
+function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProps) {
   const [expanded, setExpanded] = useState(false);
 
-  const dirty = JSON.stringify(edited) !== JSON.stringify(entry);
-
-  function updateQuestion(field: keyof TranslatedText, value: string) {
-    setEdited((prev) => ({
-      ...prev,
-      question: { ...prev.question, [field]: value },
-    }));
-  }
-
-  async function setCorrectOption(optionIndex: number) {
-    setEdited((prev) => ({ ...prev, correctOption: optionIndex }));
-    try {
-      const res = await fetch(`/api/entries/${entry.id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ correctOption: optionIndex }),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const updated = await res.json();
-      onSaved(updated);
-    } catch (err) {
-      console.error("Save correct answer failed:", err);
-    }
-  }
-
-  function updateOption(i: number, field: keyof TranslatedText, value: string) {
-    setEdited((prev) => {
-      const newOptions = [...prev.options] as Entry["options"];
-      newOptions[i] = { ...newOptions[i], [field]: value };
-      return { ...prev, options: newOptions };
-    });
-  }
-
-  function handleToggleExpanded() {
-    if (expanded && editingField) {
-      const match = editingField.match(/^option-(?:ja|en)-(\d)$/);
-      if (match && Number(match[1]) !== edited.correctOption) {
-        setEditingField(null);
-      }
-    }
-    setExpanded((prev) => !prev);
-  }
-
-  async function handleDelete() {
-    if (!confirm("Delete this entry and its screenshot?")) return;
-    try {
-      const res = await fetch(`/api/entries/${entry.id}`, {
-        method: "DELETE",
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      onDeleted(entry.id);
-    } catch (err) {
-      console.error("Delete failed:", err);
-    }
-  }
-
-  async function handleSave() {
-    setSaving(true);
-    try {
-      const res = await fetch(`/api/entries/${edited.id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          question: edited.question,
-          options: edited.options,
-          correctOption: edited.correctOption,
-        }),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const updated = await res.json();
-      onSaved(updated);
-    } catch (err) {
-      console.error("Save failed:", err);
-    } finally {
-      setSaving(false);
-    }
-  }
-
   return (
-    <div className="quiz-row">
+    <div className={`quiz-row${isImportant ? " important" : ""}`}>
       <div className="screenshot-col">
         <img
-          src={`/screenshots/${encodeURIComponent(entry.filename)}`}
-          alt={entry.question.en}
+          src={`/${entry.questionImage}`}
+          alt={entry.questionEn}
           className="screenshot-img"
           loading="lazy"
         />
       </div>
 
       <div className="question-col">
-        <div className="question-number">
-          {KANJI_NUMS[index] ?? String(index + 1)}
-        </div>
-        {editingField === "question-ja" ? (
-          <AutoTextarea
-            className={`inline-input input-ja${edited.question.ja !== entry.question.ja ? " modified" : ""}`}
-            value={edited.question.ja}
-            onChange={(e) => updateQuestion("ja", e.target.value)}
-            onBlur={() => setEditingField(null)}
-            autoFocus
-          />
-        ) : (
-          <div
-            className={`ruby-display input-ja${edited.question.ja !== entry.question.ja ? " modified" : ""}`}
-            onClick={() => setEditingField("question-ja")}
-          >
-            {parseRuby(edited.question.ja)}
-          </div>
-        )}
-        <AutoTextarea
-          className={`inline-input input-en${edited.question.en !== entry.question.en ? " modified" : ""}`}
-          value={edited.question.en}
-          onChange={(e) => updateQuestion("en", e.target.value)}
-        />
+        <div className="question-number">{index + 1}</div>
+        <div className="question-ja">{entry.questionJp}</div>
+        <div className="question-en">{entry.questionEn}</div>
       </div>
 
       <div className="options-col">
-        {edited.correctOption != null ? (
-          <>
-            {/* Correct answer — always visible */}
-            {(() => {
-              const oi = edited.correctOption;
-              const opt = edited.options[oi];
-              return (
-                <div className="option-item correct">
-                  <div className="option-input-row">
-                    {editingField === `option-ja-${oi}` ? (
-                      <AutoTextarea
-                        className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                        value={opt.ja}
-                        onChange={(e) => updateOption(oi, "ja", e.target.value)}
-                        onBlur={() => setEditingField(null)}
-                        autoFocus
-                      />
-                    ) : (
-                      <div
-                        className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                        onClick={() => setEditingField(`option-ja-${oi}`)}
-                      >
-                        {parseRuby(opt.ja)}
-                      </div>
-                    )}
-                  </div>
-                  <AutoTextarea
-                    className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
-                    value={opt.en}
-                    onChange={(e) => updateOption(oi, "en", e.target.value)}
-                  />
-                </div>
-              );
-            })()}
+        <div className="option-item correct">
+          <div className="option-ja">{entry.correctAnswerJp}</div>
+          <div className="option-en">{entry.correctAnswerEn}</div>
+        </div>
 
-            {/* Toggle button */}
-            <button
-              className="options-toggle"
-              onClick={handleToggleExpanded}
-              type="button"
-            >
-              {expanded ? "Hide options" : "Show options"}
-            </button>
+        <button
+          className="options-toggle"
+          onClick={() => setExpanded((prev) => !prev)}
+          type="button"
+        >
+          {expanded ? "Hide options" : "Show options"}
+        </button>
 
-            {/* Alternate options — visible when expanded */}
-            {expanded && edited.options.map((opt, oi) => {
-              if (oi === edited.correctOption) return null;
-              return (
-                <div key={oi} className="option-item">
-                  <div className="option-input-row">
-                    <button
-                      className="correct-select"
-                      onClick={() => setCorrectOption(oi)}
-                      title="Mark as correct answer"
-                      type="button"
-                    />
-                    {editingField === `option-ja-${oi}` ? (
-                      <AutoTextarea
-                        className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                        value={opt.ja}
-                        onChange={(e) => updateOption(oi, "ja", e.target.value)}
-                        onBlur={() => setEditingField(null)}
-                        autoFocus
-                      />
-                    ) : (
-                      <div
-                        className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                        onClick={() => setEditingField(`option-ja-${oi}`)}
-                      >
-                        {parseRuby(opt.ja)}
-                      </div>
-                    )}
-                  </div>
-                  <AutoTextarea
-                    className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
-                    value={opt.en}
-                    onChange={(e) => updateOption(oi, "en", e.target.value)}
-                  />
-                </div>
-              );
-            })}
-          </>
-        ) : (
-          /* No correct answer set — show all options with radio circles */
-          edited.options.map((opt, oi) => (
-            <div key={oi} className="option-item">
-              <div className="option-input-row">
-                <button
-                  className="correct-select"
-                  onClick={() => setCorrectOption(oi)}
-                  title="Mark as correct answer"
-                  type="button"
-                />
-                {editingField === `option-ja-${oi}` ? (
-                  <AutoTextarea
-                    className={`inline-input input-ja option-input${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                    value={opt.ja}
-                    onChange={(e) => updateOption(oi, "ja", e.target.value)}
-                    onBlur={() => setEditingField(null)}
-                    autoFocus
-                  />
-                ) : (
-                  <div
-                    className={`ruby-display ruby-display-option input-ja${opt.ja !== entry.options[oi].ja ? " modified" : ""}`}
-                    onClick={() => setEditingField(`option-ja-${oi}`)}
-                  >
-                    {parseRuby(opt.ja)}
-                  </div>
-                )}
-              </div>
-              <AutoTextarea
-                className={`inline-input input-en option-input${opt.en !== entry.options[oi].en ? " modified" : ""}`}
-                value={opt.en}
-                onChange={(e) => updateOption(oi, "en", e.target.value)}
-              />
-            </div>
-          ))
-        )}
+        {expanded && entry.wrongAnswersJp.map((wrongJp, i) => (
+          <div key={i} className="option-item">
+            <div className="option-ja">{wrongJp}</div>
+            <div className="option-en">{entry.wrongAnswersEn[i]}</div>
+          </div>
+        ))}
       </div>
 
       <div className="row-actions">
-        {dirty && (
-          <button className="save-btn" onClick={handleSave} disabled={saving}>
-            {saving ? "Saving…" : "Save"}
-          </button>
-        )}
-        <button className="delete-btn" onClick={handleDelete} title="Delete entry" type="button">
-          ✕
+        <button
+          className={`important-btn${isImportant ? " active" : ""}`}
+          onClick={onToggleImportant}
+          title={isImportant ? "Remove important mark" : "Mark as important"}
+          type="button"
+        >
+          ★
         </button>
       </div>
     </div>
@@ -320,20 +67,20 @@ function EntryRow({ entry, index, onSaved, onDeleted }: EntryRowProps) {
 
 interface ReferenceListProps {
   entries: Entry[];
-  onEntrySaved: (updated: Entry) => void;
-  onEntryDeleted: (id: number) => void;
+  importantMarks: Set<string>;
+  onToggleImportant: (id: string) => void;
 }
 
-export function ReferenceList({ entries, onEntrySaved, onEntryDeleted }: ReferenceListProps) {
+export function ReferenceList({ entries, importantMarks, onToggleImportant }: ReferenceListProps) {
   return (
     <main>
-      {entries.map((q, idx) => (
+      {entries.map((entry, idx) => (
         <EntryRow
-          key={q.id}
-          entry={q}
+          key={entry.id}
+          entry={entry}
           index={idx}
-          onSaved={onEntrySaved}
-          onDeleted={onEntryDeleted}
+          isImportant={importantMarks.has(entry.id)}
+          onToggleImportant={() => onToggleImportant(entry.id)}
         />
       ))}
     </main>
