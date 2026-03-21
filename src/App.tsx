@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import type { Entry } from "./types";
 import { entries } from "./data/entries";
 import { useImportantMarks } from "./hooks/useImportantMarks";
@@ -11,6 +11,12 @@ const LEVELS = [...new Set(entries.map((e) => e.level))].sort((a, b) => a - b);
 export default function App() {
   const [selectedLevel, setSelectedLevel] = useState(1);
   const { marks, toggle } = useImportantMarks();
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  const handleSelectLevel = useCallback((level: number) => {
+    setSelectedLevel(level);
+    mainRef.current?.scrollTo(0, 0);
+  }, []);
 
   const filtered = useMemo(
     () => entries.filter((e: Entry) => e.level === selectedLevel),
@@ -19,7 +25,7 @@ export default function App() {
 
   return (
     <div className="app-layout">
-      <div className="main-content">
+      <div className="main-content" ref={mainRef}>
         <ReferenceList
           entries={filtered}
           importantMarks={marks}
@@ -30,7 +36,7 @@ export default function App() {
       <SectionTabs
         levels={LEVELS}
         selectedLevel={selectedLevel}
-        onSelectLevel={setSelectedLevel}
+        onSelectLevel={handleSelectLevel}
       />
 
       <aside className="title-sidebar">
