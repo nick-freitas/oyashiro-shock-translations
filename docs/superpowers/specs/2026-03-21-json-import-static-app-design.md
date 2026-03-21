@@ -30,7 +30,8 @@ Each entry in `oyashiro_shock_quiz.json`:
 
 ```ts
 interface Entry {
-  id: string;            // qlvId
+  id: string;            // generated: "{qlvId}_{index}" to guarantee uniqueness
+                         // (qlvId alone is not unique — level 0 has 10 entries sharing qlv0_01)
   level: number;         // 0-8
   questionJp: string;    // plain Japanese, no furigana
   questionEn: string;
@@ -41,6 +42,8 @@ interface Entry {
   questionImage: string;     // path in public/quiz_images/
 }
 ```
+
+Source fields `vtId` and `questionNumber` are intentionally dropped — they are internal game IDs not needed for reference browsing.
 
 ### Import
 
@@ -63,7 +66,7 @@ Same sidebar + main content layout as current app.
 
 ### Sidebar
 
-- **Level selector**: Levels 0-8 as clickable items. Active level highlighted.
+- **Level selector**: Levels 0-8 as clickable items. Active level highlighted. Default selection: level 1 (level 0 is a tutorial level with meta-questions).
 - **Title block**: 新・クイズ・ショック / おやしろさまショック (unchanged)
 - **Entry count**: Updates to reflect the selected level's entry count
 
@@ -77,6 +80,8 @@ Shows entries for the selected level only. Each entry row displays:
 - Correct answer (JP + EN), visually distinct
 - 3 wrong answers behind a "Show options" expand toggle
 - An "important" toggle icon that persists to localStorage
+
+The important marks are visual-only indicators in this iteration — no filter to show only important entries. Filtering can be added later if needed.
 
 ### Removed UI
 
@@ -108,5 +113,5 @@ Shows entries for the selected level only. Each entry row displays:
 - `src/types.ts` — new Entry type
 - `src/App.tsx` — level selector state, static data import, remove fetch/server logic
 - `src/components/ReferenceList.tsx` — read-only rendering, important toggle, remove editing UI
-- `vite.config.ts` — remove proxy config
+- `vite.config.ts` — remove proxy config and `serve-prototypes` plugin (plus unused `fs`/`path` imports)
 - `package.json` — remove server deps and scripts, simplify dev script to just `vite`
