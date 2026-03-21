@@ -1,12 +1,11 @@
-export interface TranslatedText {
-  ja: string;
-  en: string;
-}
-
 export interface Entry {
-  id: number;
-  filename: string;
-  question: TranslatedText;
-  options: [TranslatedText, TranslatedText, TranslatedText, TranslatedText];
-  correctOption?: number;
+  id: string;
+  level: number;
+  questionJp: string;
+  questionEn: string;
+  correctAnswerJp: string;
+  correctAnswerEn: string;
+  wrongAnswersJp: string[];
+  wrongAnswersEn: string[];
+  questionImage: string;
 }
