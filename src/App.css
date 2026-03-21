@@ -155,22 +155,6 @@ body {
   background: rgba(154, 138, 72, 0.1);
 }
 
-/* ===== LOADING / ERROR ===== */
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-size: 1.8rem;
-  color: #484450;
-  letter-spacing: 0.15em;
-  width: 100%;
-}
-
-.error {
-  color: #a05050;
-}
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   :root {

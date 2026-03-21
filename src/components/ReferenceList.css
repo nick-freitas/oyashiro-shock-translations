@@ -124,15 +124,6 @@
   line-height: 1.5;
 }
 
-.option-letter {
-  font-family: var(--font-en);
-  font-size: 26px;
-  font-weight: 500;
-  color: var(--accent-indigo-light);
-  margin-right: 8px;
-  letter-spacing: 0.05em;
-}
-
 .option-en {
   font-family: var(--font-en);
   font-size: 27px;
