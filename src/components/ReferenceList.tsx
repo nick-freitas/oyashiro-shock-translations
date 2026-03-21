@@ -12,7 +12,7 @@ function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProp
   return (
     <div className={`quiz-row${isImportant ? " important" : ""}`}>
       <div className="question-col">
-        <div className="question-number">{index + 1}</div>
+        <div className="question-number">{entry.level} - {index + 1}</div>
         <div className="question-en">{entry.questionEn}</div>
         <div className="question-ja">{entry.questionJp}</div>
       </div>
