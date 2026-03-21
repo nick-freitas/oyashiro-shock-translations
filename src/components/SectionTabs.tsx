@@ -1,12 +1,22 @@
 import "./SectionTabs.css";
 
+export type StarFilter = "all" | "important" | "unimportant";
+
 interface SectionTabsProps {
   levels: number[];
   selectedLevel: number;
   onSelectLevel: (level: number) => void;
+  starFilter: StarFilter;
+  onToggleStarFilter: () => void;
 }
 
-export function SectionTabs({ levels, selectedLevel, onSelectLevel }: SectionTabsProps) {
+const STAR_ICONS: Record<StarFilter, string> = {
+  all: "⯪",
+  important: "★",
+  unimportant: "☆",
+};
+
+export function SectionTabs({ levels, selectedLevel, onSelectLevel, starFilter, onToggleStarFilter }: SectionTabsProps) {
   return (
     <nav className="section-tabs">
       {levels.map((level) => (
@@ -19,6 +29,14 @@ export function SectionTabs({ levels, selectedLevel, onSelectLevel }: SectionTab
           {level}
         </button>
       ))}
+      <button
+        className={`section-tab star-filter${starFilter !== "all" ? " active" : ""}`}
+        onClick={onToggleStarFilter}
+        title={starFilter === "all" ? "Showing all" : starFilter === "important" ? "Showing starred only" : "Showing unstarred only"}
+        type="button"
+      >
+        {STAR_ICONS[starFilter]}
+      </button>
     </nav>
   );
 }

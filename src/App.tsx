@@ -4,12 +4,14 @@ import { entries } from "./data/entries";
 import { useImportantMarks } from "./hooks/useImportantMarks";
 import { ReferenceList } from "./components/ReferenceList";
 import { SectionTabs } from "./components/SectionTabs";
+import type { StarFilter } from "./components/SectionTabs";
 import "./App.css";
 
 const LEVELS = [...new Set(entries.map((e) => e.level))].sort((a, b) => a - b);
 
 export default function App() {
   const [selectedLevel, setSelectedLevel] = useState(1);
+  const [starFilter, setStarFilter] = useState<StarFilter>("all");
   const { marks, toggle } = useImportantMarks();
   const mainRef = useRef<HTMLDivElement>(null);
 
@@ -18,10 +20,17 @@ export default function App() {
     mainRef.current?.scrollTo(0, 0);
   }, []);
 
-  const filtered = useMemo(
-    () => entries.filter((e: Entry) => e.level === selectedLevel),
-    [selectedLevel]
-  );
+  const CYCLE: StarFilter[] = ["all", "important", "unimportant"];
+  const handleToggleStarFilter = useCallback(() => {
+    setStarFilter((prev) => CYCLE[(CYCLE.indexOf(prev) + 1) % CYCLE.length]);
+  }, []);
+
+  const filtered = useMemo(() => {
+    const byLevel = entries.filter((e: Entry) => e.level === selectedLevel);
+    if (starFilter === "all") return byLevel;
+    if (starFilter === "important") return byLevel.filter((e) => marks.has(e.id));
+    return byLevel.filter((e) => !marks.has(e.id));
+  }, [selectedLevel, starFilter, marks]);
 
   return (
     <div className="app-layout">
@@ -37,6 +46,8 @@ export default function App() {
         levels={LEVELS}
         selectedLevel={selectedLevel}
         onSelectLevel={handleSelectLevel}
+        starFilter={starFilter}
+        onToggleStarFilter={handleToggleStarFilter}
       />
 
       <aside className="title-sidebar">

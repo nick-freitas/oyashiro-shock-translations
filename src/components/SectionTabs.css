@@ -50,3 +50,17 @@
   background: var(--accent-gold-bright);
   border-radius: 0 2px 2px 0;
 }
+
+/* ===== STAR FILTER ===== */
+.star-filter {
+  margin-top: auto;
+  font-size: 22px;
+}
+
+.star-filter.active {
+  color: var(--accent-gold-bright);
+}
+
+.star-filter.active::before {
+  display: none;
+}
