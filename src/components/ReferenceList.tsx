@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { Entry } from "../types";
 import "./ReferenceList.css";
 
@@ -10,10 +9,14 @@ interface EntryRowProps {
 }
 
 function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProps) {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <div className={`quiz-row${isImportant ? " important" : ""}`}>
+      <div className="question-col">
+        <div className="question-number">{index + 1}</div>
+        <div className="question-en">{entry.questionEn}</div>
+        <div className="question-ja">{entry.questionJp}</div>
+      </div>
+
       <div className="screenshot-col">
         <img
           src={`/${entry.questionImage}`}
@@ -23,30 +26,18 @@ function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProp
         />
       </div>
 
-      <div className="question-col">
-        <div className="question-number">{index + 1}</div>
-        <div className="question-ja">{entry.questionJp}</div>
-        <div className="question-en">{entry.questionEn}</div>
+      <div className="correct-answer">
+        <div className="option-item correct">
+          <div className="option-en">{entry.correctAnswerEn}</div>
+          <div className="option-ja">{entry.correctAnswerJp}</div>
+        </div>
       </div>
 
-      <div className="options-col">
-        <div className="option-item correct">
-          <div className="option-ja">{entry.correctAnswerJp}</div>
-          <div className="option-en">{entry.correctAnswerEn}</div>
-        </div>
-
-        <button
-          className="options-toggle"
-          onClick={() => setExpanded((prev) => !prev)}
-          type="button"
-        >
-          {expanded ? "Hide options" : "Show options"}
-        </button>
-
-        {expanded && entry.wrongAnswersJp.map((wrongJp, i) => (
+      <div className="wrong-answers">
+        {entry.wrongAnswersJp.map((wrongJp, i) => (
           <div key={i} className="option-item">
-            <div className="option-ja">{wrongJp}</div>
             <div className="option-en">{entry.wrongAnswersEn[i]}</div>
+            <div className="option-ja">{wrongJp}</div>
           </div>
         ))}
       </div>
