@@ -105,6 +105,15 @@
   line-height: 1.7;
 }
 
+.question-romaji {
+  font-family: var(--font-en);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-en);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
 /* ===== OPTIONS ===== */
 
 .option-item {
@@ -140,6 +149,15 @@
   color: var(--text-en-sub);
   line-height: 1.5;
   margin-top: 3px;
+}
+
+.option-romaji {
+  font-family: var(--font-en);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--text-en-sub);
+  line-height: 1.4;
+  margin-top: 1px;
 }
 
 /* ===== CORRECT ANSWER ===== */

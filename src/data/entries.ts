@@ -6,18 +6,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "1問目",
     "correctAnswerEn": "Question 1",
-    "wrongAnswersJp": [
-      "2問目",
-      "3問目",
-      "0問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 2",
-      "Question 3",
-      "Question 0"
-    ],
+    "correctAnswerRomaji": "1monme",
+    "wrongAnswersJp": ["2問目","3問目","0問目"],
+    "wrongAnswersEn": ["Question 2","Question 3","Question 0"],
+    "wrongAnswersRomaji": ["2monme","3monme","0monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -25,18 +20,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "2問目",
     "correctAnswerEn": "Question 2",
-    "wrongAnswersJp": [
-      "1問目",
-      "3問目",
-      "4問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 1",
-      "Question 3",
-      "Question 4"
-    ],
+    "correctAnswerRomaji": "2monme",
+    "wrongAnswersJp": ["1問目","3問目","4問目"],
+    "wrongAnswersEn": ["Question 1","Question 3","Question 4"],
+    "wrongAnswersRomaji": ["1monme","3monme","4monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -44,18 +34,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "3問目",
     "correctAnswerEn": "Question 3",
-    "wrongAnswersJp": [
-      "2問目",
-      "5問目",
-      "4問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 2",
-      "Question 5",
-      "Question 4"
-    ],
+    "correctAnswerRomaji": "3monme",
+    "wrongAnswersJp": ["2問目","5問目","4問目"],
+    "wrongAnswersEn": ["Question 2","Question 5","Question 4"],
+    "wrongAnswersRomaji": ["2monme","5monme","4monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -63,18 +48,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "4問目",
     "correctAnswerEn": "Question 4",
-    "wrongAnswersJp": [
-      "2問目",
-      "3問目",
-      "5問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 2",
-      "Question 3",
-      "Question 5"
-    ],
+    "correctAnswerRomaji": "4monme",
+    "wrongAnswersJp": ["2問目","3問目","5問目"],
+    "wrongAnswersEn": ["Question 2","Question 3","Question 5"],
+    "wrongAnswersRomaji": ["2monme","3monme","5monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -82,18 +62,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "5問目",
     "correctAnswerEn": "Question 5",
-    "wrongAnswersJp": [
-      "4問目",
-      "6問目",
-      "7問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 4",
-      "Question 6",
-      "Question 7"
-    ],
+    "correctAnswerRomaji": "5monme",
+    "wrongAnswersJp": ["4問目","6問目","7問目"],
+    "wrongAnswersEn": ["Question 4","Question 6","Question 7"],
+    "wrongAnswersRomaji": ["4monme","6monme","7monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -101,18 +76,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "6問目",
     "correctAnswerEn": "Question 6",
-    "wrongAnswersJp": [
-      "5問目",
-      "7問目",
-      "8問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 5",
-      "Question 7",
-      "Question 8"
-    ],
+    "correctAnswerRomaji": "6monme",
+    "wrongAnswersJp": ["5問目","7問目","8問目"],
+    "wrongAnswersEn": ["Question 5","Question 7","Question 8"],
+    "wrongAnswersRomaji": ["5monme","7monme","8monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -120,18 +90,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "7問目",
     "correctAnswerEn": "Question 7",
-    "wrongAnswersJp": [
-      "5問目",
-      "6問目",
-      "8問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 5",
-      "Question 6",
-      "Question 8"
-    ],
+    "correctAnswerRomaji": "7monme",
+    "wrongAnswersJp": ["5問目","6問目","8問目"],
+    "wrongAnswersEn": ["Question 5","Question 6","Question 8"],
+    "wrongAnswersRomaji": ["5monme","6monme","8monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -139,18 +104,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "8問目",
     "correctAnswerEn": "Question 8",
-    "wrongAnswersJp": [
-      "6問目",
-      "7問目",
-      "9問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 6",
-      "Question 7",
-      "Question 9"
-    ],
+    "correctAnswerRomaji": "8monme",
+    "wrongAnswersJp": ["6問目","7問目","9問目"],
+    "wrongAnswersEn": ["Question 6","Question 7","Question 9"],
+    "wrongAnswersRomaji": ["6monme","7monme","9monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -158,18 +118,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "9問目",
     "correctAnswerEn": "Question 9",
-    "wrongAnswersJp": [
-      "7問目",
-      "8問目",
-      "10問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 7",
-      "Question 8",
-      "Question 10"
-    ],
+    "correctAnswerRomaji": "9monme",
+    "wrongAnswersJp": ["7問目","8問目","10問目"],
+    "wrongAnswersEn": ["Question 7","Question 8","Question 10"],
+    "wrongAnswersRomaji": ["7monme","8monme","10monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -177,18 +132,13 @@ export const entries: Entry[] = [
     "level": 0,
     "questionJp": "今、何問目？",
     "questionEn": "What question number is this?",
+    "questionRomaji": "ima, nanmonme?",
     "correctAnswerJp": "10問目",
     "correctAnswerEn": "Question 10",
-    "wrongAnswersJp": [
-      "11問目",
-      "8問目",
-      "9問目"
-    ],
-    "wrongAnswersEn": [
-      "Question 11",
-      "Question 8",
-      "Question 9"
-    ],
+    "correctAnswerRomaji": "10monme",
+    "wrongAnswersJp": ["11問目","8問目","9問目"],
+    "wrongAnswersEn": ["Question 11","Question 8","Question 9"],
+    "wrongAnswersRomaji": ["11monme","8monme","9monme"],
     "questionImage": "quiz_images/qlv0_01.png"
   },
   {
@@ -196,18 +146,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "レナと魅音が持ってきてくれたおはぎは何個？",
     "questionEn": "How many ohagi did Rena and Mion bring over?",
+    "questionRomaji": "Rena to Mion ga motte kite kureta ohagi wa nanko?",
     "correctAnswerJp": "5個",
     "correctAnswerEn": "5 pieces",
-    "wrongAnswersJp": [
-      "4個",
-      "3個",
-      "12個"
-    ],
-    "wrongAnswersEn": [
-      "4 pieces",
-      "3 pieces",
-      "12 pieces"
-    ],
+    "correctAnswerRomaji": "5ko",
+    "wrongAnswersJp": ["4個","3個","12個"],
+    "wrongAnswersEn": ["4 pieces","3 pieces","12 pieces"],
+    "wrongAnswersRomaji": ["4ko","3ko","12ko"],
     "questionImage": "quiz_images/qlv1_01.png"
   },
   {
@@ -215,18 +160,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "圭一がセブンスマートで買ったラーメンは何？",
     "questionEn": "What ramen did Keiichi buy at Seven Smart?",
+    "questionRomaji": "Keiichi ga Seven Smart de katta raamen wa nani?",
     "correctAnswerJp": "豚骨ショウガ味",
     "correctAnswerEn": "Pork bone ginger flavor",
-    "wrongAnswersJp": [
-      "醤油味",
-      "塩味",
-      "カレー"
-    ],
-    "wrongAnswersEn": [
-      "Soy sauce flavor",
-      "Salt flavor",
-      "Curry"
-    ],
+    "correctAnswerRomaji": "tonkotsushougaaji",
+    "wrongAnswersJp": ["醤油味","塩味","カレー"],
+    "wrongAnswersEn": ["Soy sauce flavor","Salt flavor","Curry"],
+    "wrongAnswersRomaji": ["shouyuaji","shioaji","karee"],
     "questionImage": "quiz_images/qlv1_02.png"
   },
   {
@@ -234,18 +174,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "バラバラ殺人。見つからなかったのは、現場監督の何？",
     "questionEn": "The dismemberment murder. What part of the construction foreman was never found?",
+    "questionRomaji": "barabarasatsujin. mitsukaranakattanoha, genbakantokunonani?",
     "correctAnswerJp": "右腕",
     "correctAnswerEn": "Right arm",
-    "wrongAnswersJp": [
-      "頭",
-      "左腕",
-      "明日"
-    ],
-    "wrongAnswersEn": [
-      "Head",
-      "Left arm",
-      "Tomorrow"
-    ],
+    "correctAnswerRomaji": "migiude",
+    "wrongAnswersJp": ["頭","左腕","明日"],
+    "wrongAnswersEn": ["Head","Left arm","Tomorrow"],
+    "wrongAnswersRomaji": ["atama","hidariude","ashita"],
     "questionImage": "quiz_images/qlv1_03.png"
   },
   {
@@ -253,18 +188,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "南井巴は「染伝し編」当時、何歳？",
     "questionEn": "How old was Tomoe Minai during Someutsushi?",
+    "questionRomaji": "minaitomoeha\"Someutsushi-hen\"touji, nansai?",
     "correctAnswerJp": "29歳",
     "correctAnswerEn": "29 years old",
-    "wrongAnswersJp": [
-      "28歳",
-      "25歳",
-      "永遠の17歳"
-    ],
-    "wrongAnswersEn": [
-      "28 years old",
-      "25 years old",
-      "Eternally 17 years old"
-    ],
+    "correctAnswerRomaji": "29toshi",
+    "wrongAnswersJp": ["28歳","25歳","永遠の17歳"],
+    "wrongAnswersEn": ["28 years old","25 years old","Eternally 17 years old"],
+    "wrongAnswersRomaji": ["28toshi","25toshi","eienno17toshi"],
     "questionImage": "quiz_images/qlv1_04.png"
   },
   {
@@ -272,18 +202,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "藤田刑事の奥さんの名前は？",
     "questionEn": "What is the name of Detective Fujita's wife?",
+    "questionRomaji": "Fujita-keiji no okusan no namae wa?",
     "correctAnswerJp": "祐子",
     "correctAnswerEn": "Yuuko",
-    "wrongAnswersJp": [
-      "洋子",
-      "路子",
-      "優子"
-    ],
-    "wrongAnswersEn": [
-      "Youko",
-      "Michiko",
-      "Yuuko"
-    ],
+    "correctAnswerRomaji": "Yuuko",
+    "wrongAnswersJp": ["洋子","路子","優子"],
+    "wrongAnswersEn": ["Youko","Michiko","Yuuko"],
+    "wrongAnswersRomaji": ["Youko","Michiko","Yuuko"],
     "questionImage": "quiz_images/qlv1_05.png"
   },
   {
@@ -291,18 +216,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "園崎家のお手伝いさんは？",
     "questionEn": "Who is the Sonozaki family's housekeeper?",
+    "questionRomaji": "Sonozaki-ke no otetsudai-san wa?",
     "correctAnswerJp": "沁子",
     "correctAnswerEn": "Shinko",
-    "wrongAnswersJp": [
-      "ミタ",
-      "芳子",
-      "幸子"
-    ],
-    "wrongAnswersEn": [
-      "Mita",
-      "Yoshiko",
-      "Sachiko"
-    ],
+    "correctAnswerRomaji": "Shinko",
+    "wrongAnswersJp": ["ミタ","芳子","幸子"],
+    "wrongAnswersEn": ["Mita","Yoshiko","Sachiko"],
+    "wrongAnswersRomaji": ["Mita","Yoshiko","Sachiko"],
     "questionImage": "quiz_images/qlv1_06.png"
   },
   {
@@ -310,18 +230,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "魅音の親戚、おもちゃ屋さんは誰？",
     "questionEn": "Which of Mion's relatives runs a toy shop?",
+    "questionRomaji": "Mion no shinseki, omochayasanhadare?",
     "correctAnswerJp": "善郎",
     "correctAnswerEn": "Yoshirou",
-    "wrongAnswersJp": [
-      "弘",
-      "義郎",
-      "三郎"
-    ],
-    "wrongAnswersEn": [
-      "Hiroshi",
-      "Yoshirou",
-      "Saburou"
-    ],
+    "correctAnswerRomaji": "Yoshirou",
+    "wrongAnswersJp": ["弘","義郎","三郎"],
+    "wrongAnswersEn": ["Hiroshi","Yoshirou","Saburou"],
+    "wrongAnswersRomaji": ["Hiroshi","Yoshirou","Saburou"],
     "questionImage": "quiz_images/qlv1_07.png"
   },
   {
@@ -329,18 +244,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "魅音の親戚、エンジェルモートの経営者は？",
     "questionEn": "Which of Mion's relatives manages Angel Mort?",
+    "questionRomaji": "Mion no shinseki, enjierumootonokeieishaha?",
     "correctAnswerJp": "義郎",
     "correctAnswerEn": "Yoshirou",
-    "wrongAnswersJp": [
-      "善郎",
-      "弘",
-      "三郎"
-    ],
-    "wrongAnswersEn": [
-      "Yoshirou",
-      "Hiroshi",
-      "Saburou"
-    ],
+    "correctAnswerRomaji": "Yoshirou",
+    "wrongAnswersJp": ["善郎","弘","三郎"],
+    "wrongAnswersEn": ["Yoshirou","Hiroshi","Saburou"],
+    "wrongAnswersRomaji": ["Yoshirou","Hiroshi","Saburou"],
     "questionImage": "quiz_images/qlv1_08.png"
   },
   {
@@ -348,18 +258,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "入江が監督をやっているのは？",
     "questionEn": "What does Irie manage as coach?",
+    "questionRomaji": "Irie ga kantoku wo yatte iru no wa?",
     "correctAnswerJp": "ファイターズ",
     "correctAnswerEn": "Fighters",
-    "wrongAnswersJp": [
-      "ライオンズ",
-      "タイガース",
-      "アフィリアーズ"
-    ],
-    "wrongAnswersEn": [
-      "Lions",
-      "Tigers",
-      "Affilias"
-    ],
+    "correctAnswerRomaji": "Faitaazu",
+    "wrongAnswersJp": ["ライオンズ","タイガース","アフィリアーズ"],
+    "wrongAnswersEn": ["Lions","Tigers","Affilias"],
+    "wrongAnswersRomaji": ["Raionzu","Taigaasu","Afiriaazu"],
     "questionImage": "quiz_images/qlv1_09.png"
   },
   {
@@ -367,18 +272,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "亀田の下の名前は？",
     "questionEn": "What is Kameda's first name?",
+    "questionRomaji": "Kameda no shita no namae wa?",
     "correctAnswerJp": "幸一",
     "correctAnswerEn": "Kouichi",
-    "wrongAnswersJp": [
-      "進一",
-      "剛",
-      "秀樹"
-    ],
-    "wrongAnswersEn": [
-      "Shin'ichi",
-      "Tsuyoshi",
-      "Hideki"
-    ],
+    "correctAnswerRomaji": "Kouichi",
+    "wrongAnswersJp": ["進一","剛","秀樹"],
+    "wrongAnswersEn": ["Shin'ichi","Tsuyoshi","Hideki"],
+    "wrongAnswersRomaji": ["Shin'ichi","Tsuyoshi","Hideki"],
     "questionImage": "quiz_images/qlv1_10.png"
   },
   {
@@ -386,18 +286,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "分校の先生、知恵留美子。好きなものは？",
     "questionEn": "Rumiko Chie, the school teacher. What does she like?",
+    "questionRomaji": "bunkounosensei, chierumiko. sukinamonoha?",
     "correctAnswerJp": "カレー",
     "correctAnswerEn": "Curry",
-    "wrongAnswersJp": [
-      "鯛焼き",
-      "バニラアイス",
-      "お米"
-    ],
-    "wrongAnswersEn": [
-      "Taiyaki",
-      "Vanilla ice cream",
-      "Rice"
-    ],
+    "correctAnswerRomaji": "karee",
+    "wrongAnswersJp": ["鯛焼き","バニラアイス","お米"],
+    "wrongAnswersEn": ["Taiyaki","Vanilla ice cream","Rice"],
+    "wrongAnswersRomaji": ["taiyaki","baniraaisu","okome"],
     "questionImage": "quiz_images/qlv1_11.png"
   },
   {
@@ -405,18 +300,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "沙都子の苦手な食べ物は？",
     "questionEn": "What food does Satoko dislike?",
+    "questionRomaji": "Satoko no nigate na tabemono wa?",
     "correctAnswerJp": "かぼちゃ",
     "correctAnswerEn": "Pumpkin",
-    "wrongAnswersJp": [
-      "ブロッコリー",
-      "カリフラワー",
-      "ロマネスコ"
-    ],
-    "wrongAnswersEn": [
-      "Broccoli",
-      "Cauliflower",
-      "Romanesco"
-    ],
+    "correctAnswerRomaji": "kabocha",
+    "wrongAnswersJp": ["ブロッコリー","カリフラワー","ロマネスコ"],
+    "wrongAnswersEn": ["Broccoli","Cauliflower","Romanesco"],
+    "wrongAnswersRomaji": ["burokkorii","karifurawaa","romanesuko"],
     "questionImage": "quiz_images/qlv1_12.png"
   },
   {
@@ -424,18 +314,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "固有結界が使えないのは？",
     "questionEn": "Who cannot use a Reality Marble?",
+    "questionRomaji": "koyuu kekkai ga tsukaenai no wa?",
     "correctAnswerJp": "夏美",
     "correctAnswerEn": "Natsumi",
-    "wrongAnswersJp": [
-      "圭一",
-      "入江",
-      "陸"
-    ],
-    "wrongAnswersEn": [
-      "Keiichi",
-      "Irie",
-      "Riku"
-    ],
+    "correctAnswerRomaji": "Natsumi",
+    "wrongAnswersJp": ["圭一","入江","陸"],
+    "wrongAnswersEn": ["Keiichi","Irie","Riku"],
+    "wrongAnswersRomaji": ["Keiichi","Irie","Riku"],
     "questionImage": "quiz_images/qlv1_13.png"
   },
   {
@@ -443,18 +328,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "梨花は「賽殺し編」以外では、何代目の巫女？",
     "questionEn": "Outside of Dice Killing, what generation shrine maiden is Rika?",
+    "questionRomaji": "rikaha\"Saikoroshi-hen\"igaideha, nandaimenomiko?",
     "correctAnswerJp": "8代目",
     "correctAnswerEn": "8th generation",
-    "wrongAnswersJp": [
-      "7代目",
-      "3代目",
-      "9代目"
-    ],
-    "wrongAnswersEn": [
-      "7th generation",
-      "3rd generation",
-      "9th generation"
-    ],
+    "correctAnswerRomaji": "8daime",
+    "wrongAnswersJp": ["7代目","3代目","9代目"],
+    "wrongAnswersEn": ["7th generation","3rd generation","9th generation"],
+    "wrongAnswersRomaji": ["7daime","3daime","9daime"],
     "questionImage": "quiz_images/qlv1_14.png"
   },
   {
@@ -462,18 +342,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "レナの大好きな、ランディくん人形。それは何？",
     "questionEn": "Rena's beloved Randy-kun doll. What is it?",
+    "questionRomaji": "renanodaisukina, Randi-kun ningyou. sorehanani?",
     "correctAnswerJp": "白ヒゲのおっさん",
     "correctAnswerEn": "Old man with a white beard",
-    "wrongAnswersJp": [
-      "ゾウの子ども",
-      "舌を出した女の子",
-      "ピエロみたいな男"
-    ],
-    "wrongAnswersEn": [
-      "Baby elephant",
-      "Girl sticking out her tongue",
-      "Clown-like man"
-    ],
+    "correctAnswerRomaji": "shirohigenoossan",
+    "wrongAnswersJp": ["ゾウの子ども","舌を出した女の子","ピエロみたいな男"],
+    "wrongAnswersEn": ["Baby elephant","Girl sticking out her tongue","Clown-like man"],
+    "wrongAnswersRomaji": ["zounokodomo","shitawodashitaonnanoko","pieromitainaotoko"],
     "questionImage": "quiz_images/qlv1_15.png"
   },
   {
@@ -481,18 +356,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "圭一のお父さんの職業は？",
     "questionEn": "What is Keiichi's father's occupation?",
+    "questionRomaji": "Keiichi no otousan no shokugyou wa?",
     "correctAnswerJp": "同人作家",
     "correctAnswerEn": "Doujin artist",
-    "wrongAnswersJp": [
-      "画家",
-      "彫刻家",
-      "遊び人"
-    ],
-    "wrongAnswersEn": [
-      "Painter",
-      "Sculptor",
-      "Playboy"
-    ],
+    "correctAnswerRomaji": "doujinsakka",
+    "wrongAnswersJp": ["画家","彫刻家","遊び人"],
+    "wrongAnswersEn": ["Painter","Sculptor","Playboy"],
+    "wrongAnswersRomaji": ["gaka","choukokuka","asobinin"],
     "questionImage": "quiz_images/qlv1_16.png"
   },
   {
@@ -500,18 +370,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "私服姿で、帽子をかぶっているのは？",
     "questionEn": "In their casual clothes, who is wearing a hat?",
+    "questionRomaji": "shifuku sugata de, boushi wo kabatte iru no wa?",
     "correctAnswerJp": "レナ",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "魅音",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["魅音","沙都子","梨花"],
+    "wrongAnswersEn": ["Mion","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Mion","Satoko","Rika"],
     "questionImage": "quiz_images/qlv1_17.png"
   },
   {
@@ -519,18 +384,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "髪にカチューシャをしているのは？",
     "questionEn": "Who wears a headband in their hair?",
+    "questionRomaji": "kami ni kachuusha wo shite iru no wa?",
     "correctAnswerJp": "沙都子",
     "correctAnswerEn": "Satoko",
-    "wrongAnswersJp": [
-      "魅音",
-      "レナ",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Rena",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Satoko",
+    "wrongAnswersJp": ["魅音","レナ","梨花"],
+    "wrongAnswersEn": ["Mion","Rena","Rika"],
+    "wrongAnswersRomaji": ["Mion","Rena","Rika"],
     "questionImage": "quiz_images/qlv1_18.png"
   },
   {
@@ -538,18 +398,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "制服姿で、蝶ネクタイは？",
     "questionEn": "In uniform, who wears a bow tie?",
+    "questionRomaji": "seifuku sugata de, chou-nekutai wa?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "魅音",
-      "レナ",
-      "沙都子"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Rena",
-      "Satoko"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["魅音","レナ","沙都子"],
+    "wrongAnswersEn": ["Mion","Rena","Satoko"],
+    "wrongAnswersRomaji": ["Mion","Rena","Satoko"],
     "questionImage": "quiz_images/qlv1_19.png"
   },
   {
@@ -557,18 +412,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "私服姿で、短パンなのは？",
     "questionEn": "In their casual clothes, who is wearing shorts?",
+    "questionRomaji": "shifuku sugata de, tanpan na no wa?",
     "correctAnswerJp": "沙都子",
     "correctAnswerEn": "Satoko",
-    "wrongAnswersJp": [
-      "魅音",
-      "レナ",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Rena",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Satoko",
+    "wrongAnswersJp": ["魅音","レナ","梨花"],
+    "wrongAnswersEn": ["Mion","Rena","Rika"],
+    "wrongAnswersRomaji": ["Mion","Rena","Rika"],
     "questionImage": "quiz_images/qlv1_20.png"
   },
   {
@@ -576,18 +426,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "私服姿で、ジーパンなのは？",
     "questionEn": "In their casual clothes, who is wearing jeans?",
+    "questionRomaji": "shifuku sugata de, jiipan na no wa?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "レナ",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["レナ","沙都子","梨花"],
+    "wrongAnswersEn": ["Rena","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Rena","Satoko","Rika"],
     "questionImage": "quiz_images/qlv1_21.png"
   },
   {
@@ -595,18 +440,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "私服姿、セーターを着ているのは？",
     "questionEn": "In their casual clothes, who is wearing a sweater?",
+    "questionRomaji": "shifuku sugata, seetaa wo kite iru no wa?",
     "correctAnswerJp": "詩音",
     "correctAnswerEn": "Shion",
-    "wrongAnswersJp": [
-      "魅音",
-      "レナ",
-      "沙都子"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Rena",
-      "Satoko"
-    ],
+    "correctAnswerRomaji": "Shion",
+    "wrongAnswersJp": ["魅音","レナ","沙都子"],
+    "wrongAnswersEn": ["Mion","Rena","Satoko"],
+    "wrongAnswersRomaji": ["Mion","Rena","Satoko"],
     "questionImage": "quiz_images/qlv1_22.png"
   },
   {
@@ -614,18 +454,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "竜宮レナ、茨城でどんな事件を起こした？",
     "questionEn": "What incident did Rena Ryuugu cause in Ibaraki?",
+    "questionRomaji": "Ryuuguu Rena, Ibaraki de donna jiken wo okoshita?",
     "correctAnswerJp": "傷害",
     "correctAnswerEn": "Assault",
-    "wrongAnswersJp": [
-      "窃盗",
-      "放火",
-      "殺人"
-    ],
-    "wrongAnswersEn": [
-      "Theft",
-      "Arson",
-      "Murder"
-    ],
+    "correctAnswerRomaji": "shougai",
+    "wrongAnswersJp": ["窃盗","放火","殺人"],
+    "wrongAnswersEn": ["Theft","Arson","Murder"],
+    "wrongAnswersRomaji": ["settou","houka","satsujin"],
     "questionImage": "quiz_images/qlv1_23.png"
   },
   {
@@ -633,18 +468,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "園崎お魎、通り名は園崎「なに」？",
     "questionEn": "Sonozaki Oryou's alias is Sonozaki \"what\"?",
+    "questionRomaji": "Sonozaki Oryou, tsuurimei wa Sonozaki \"nani\"?",
     "correctAnswerJp": "明王",
     "correctAnswerEn": "Wisdom King",
-    "wrongAnswersJp": [
-      "帝王",
-      "界王",
-      "覇王"
-    ],
-    "wrongAnswersEn": [
-      "Emperor",
-      "Kai King",
-      "Overlord"
-    ],
+    "correctAnswerRomaji": "myouou",
+    "wrongAnswersJp": ["帝王","界王","覇王"],
+    "wrongAnswersEn": ["Emperor","Kai King","Overlord"],
+    "wrongAnswersRomaji": ["teiou","kaiou","haou"],
     "questionImage": "quiz_images/qlv1_24.png"
   },
   {
@@ -652,18 +482,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "雛見沢の建物のつくりは、「なに」造り？",
     "questionEn": "Hinamizawa's buildings use what style of construction?",
+    "questionRomaji": "Hinamizawa no tatemono no tsukuri wa, \"nani\"tsukuri?",
     "correctAnswerJp": "合掌",
     "correctAnswerEn": "Prayer hands",
-    "wrongAnswersJp": [
-      "合唱",
-      "合従",
-      "楽笑"
-    ],
-    "wrongAnswersEn": [
-      "Chorus",
-      "Alliance",
-      "Joyful laughter"
-    ],
+    "correctAnswerRomaji": "gasshou",
+    "wrongAnswersJp": ["合唱","合従","楽笑"],
+    "wrongAnswersEn": ["Chorus","Alliance","Joyful laughter"],
+    "wrongAnswersRomaji": ["gasshou","gasshou","rakuwarai"],
     "questionImage": "quiz_images/qlv1_25.png"
   },
   {
@@ -671,18 +496,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "綿流しのお祭り、何を流していた？",
     "questionEn": "At the Watanagashi Festival, what was being set afloat?",
+    "questionRomaji": "Watanagashi no omatsuri, naniwonagashiteita?",
     "correctAnswerJp": "綿",
     "correctAnswerEn": "Cotton",
-    "wrongAnswersJp": [
-      "罪",
-      "臓物",
-      "涙"
-    ],
-    "wrongAnswersEn": [
-      "Sin",
-      "Entrails",
-      "Tears"
-    ],
+    "correctAnswerRomaji": "wata",
+    "wrongAnswersJp": ["罪","臓物","涙"],
+    "wrongAnswersEn": ["Sin","Entrails","Tears"],
+    "wrongAnswersRomaji": ["tsumi","zoumotsu","namida"],
     "questionImage": "quiz_images/qlv1_26.png"
   },
   {
@@ -690,18 +510,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "綿流しのお祭り、梨花が鍬で裂いていたのは何？",
     "questionEn": "At the Watanagashi Festival, what did Rika tear apart with a hoe?",
+    "questionRomaji": "Watanagashi no omatsuri, rikagakuwadesaiteitanohanani?",
     "correctAnswerJp": "布団",
     "correctAnswerEn": "Futon",
-    "wrongAnswersJp": [
-      "ニワトリ",
-      "人",
-      "国旗"
-    ],
-    "wrongAnswersEn": [
-      "Chicken",
-      "Person",
-      "National flag"
-    ],
+    "correctAnswerRomaji": "futon",
+    "wrongAnswersJp": ["ニワトリ","人","国旗"],
+    "wrongAnswersEn": ["Chicken","Person","National flag"],
+    "wrongAnswersRomaji": ["niwatori","nin","kokki"],
     "questionImage": "quiz_images/qlv1_27.png"
   },
   {
@@ -709,18 +524,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "「祟殺し編」終盤、沙都子は北条家のどこで発見された？",
     "questionEn": "Near the end of the Tatarigoroshi chapter, where in the Houjou house was Satoko found?",
+    "questionRomaji": "\"Tatarigoroshi-hen\"shuuban, satokohahoujoukenodokodehakkensareta?",
     "correctAnswerJp": "風呂場",
     "correctAnswerEn": "Bathroom",
-    "wrongAnswersJp": [
-      "台所",
-      "庭",
-      "居間"
-    ],
-    "wrongAnswersEn": [
-      "Kitchen",
-      "Garden",
-      "Living room"
-    ],
+    "correctAnswerRomaji": "furoba",
+    "wrongAnswersJp": ["台所","庭","居間"],
+    "wrongAnswersEn": ["Kitchen","Garden","Living room"],
+    "wrongAnswersRomaji": ["daidokoro","niwa","ima"],
     "questionImage": "quiz_images/qlv1_28.png"
   },
   {
@@ -728,18 +538,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "佐伯千紗登、実家は何をやっている？",
     "questionEn": "What does Chisato Saeki's family do for a living?",
+    "questionRomaji": "Saeki Chisato, jikka wa nani wo yatte iru?",
     "correctAnswerJp": "総合病院",
     "correctAnswerEn": "General hospital",
-    "wrongAnswersJp": [
-      "宝石店",
-      "レストラン",
-      "製薬会社"
-    ],
-    "wrongAnswersEn": [
-      "Jewelry store",
-      "Restaurant",
-      "Pharmaceutical company"
-    ],
+    "correctAnswerRomaji": "sougoubyouin",
+    "wrongAnswersJp": ["宝石店","レストラン","製薬会社"],
+    "wrongAnswersEn": ["Jewelry store","Restaurant","Pharmaceutical company"],
+    "wrongAnswersRomaji": ["housekiten","resutoran","seiyakugaisha"],
     "questionImage": "quiz_images/qlv1_29.png"
   },
   {
@@ -747,18 +552,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "佐伯千紗登、亡くなった妹の名前は？",
     "questionEn": "What was the name of Chisato Saeki's deceased sister?",
+    "questionRomaji": "Saeki Chisato, nakunatta imouto no namae wa?",
     "correctAnswerJp": "佳織",
     "correctAnswerEn": "Kaori",
-    "wrongAnswersJp": [
-      "沙織",
-      "伊織",
-      "詩織"
-    ],
-    "wrongAnswersEn": [
-      "Saori",
-      "Iori",
-      "Shiori"
-    ],
+    "correctAnswerRomaji": "Kaori",
+    "wrongAnswersJp": ["沙織","伊織","詩織"],
+    "wrongAnswersEn": ["Saori","Iori","Shiori"],
+    "wrongAnswersRomaji": ["Saori","Iori","Shiori"],
     "questionImage": "quiz_images/qlv1_30.png"
   },
   {
@@ -766,18 +566,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "この中で、垣内署の刑事でないのは誰？",
     "questionEn": "Among these, who is NOT a detective from the Kakiuchi precinct?",
+    "questionRomaji": "kono naka de, Kakiuchi-sho no keiji de nai no wa dare?",
     "correctAnswerJp": "松岡",
     "correctAnswerEn": "Matsuoka",
-    "wrongAnswersJp": [
-      "高屋敷",
-      "安藤",
-      "嶋"
-    ],
-    "wrongAnswersEn": [
-      "Takayashiki",
-      "Andou",
-      "Shima"
-    ],
+    "correctAnswerRomaji": "Matsuoka",
+    "wrongAnswersJp": ["高屋敷","安藤","嶋"],
+    "wrongAnswersEn": ["Takayashiki","Andou","Shima"],
+    "wrongAnswersRomaji": ["Takayashiki","Andou","Shima"],
     "questionImage": "quiz_images/qlv1_31.png"
   },
   {
@@ -785,18 +580,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "圭一のトラウマになっているおもちゃは？",
     "questionEn": "What toy is Keiichi traumatized by?",
+    "questionRomaji": "Keiichi no torauma ni natte iru omocha wa?",
     "correctAnswerJp": "モデルガン",
     "correctAnswerEn": "Model gun",
-    "wrongAnswersJp": [
-      "パチンコ",
-      "麻雀",
-      "トランプ"
-    ],
-    "wrongAnswersEn": [
-      "Pachinko",
-      "Mahjong",
-      "Playing cards"
-    ],
+    "correctAnswerRomaji": "moderugan",
+    "wrongAnswersJp": ["パチンコ","麻雀","トランプ"],
+    "wrongAnswersEn": ["Pachinko","Mahjong","Playing cards"],
+    "wrongAnswersRomaji": ["pachinko","maajan","toranpu"],
     "questionImage": "quiz_images/qlv1_32.png"
   },
   {
@@ -804,18 +594,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "部活でやらなかった遊びはどれ？",
     "questionEn": "Which game was never played during club activities?",
+    "questionRomaji": "bukatsu de yaranakatta asobi wa dore?",
     "correctAnswerJp": "ベーゴマ",
     "correctAnswerEn": "Spinning top",
-    "wrongAnswersJp": [
-      "ゾンビ鬼",
-      "大富豪",
-      "犯人探し"
-    ],
-    "wrongAnswersEn": [
-      "Zombie tag",
-      "President (card game)",
-      "Find the culprit"
-    ],
+    "correctAnswerRomaji": "beegoma",
+    "wrongAnswersJp": ["ゾンビ鬼","大富豪","犯人探し"],
+    "wrongAnswersEn": ["Zombie tag","President (card game)","Find the culprit"],
+    "wrongAnswersRomaji": ["zonbioni","daifugou","hanninsagashi"],
     "questionImage": "quiz_images/qlv1_33.png"
   },
   {
@@ -823,18 +608,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "「鬼隠し編」で、圭一が身を守るために使ったものは？",
     "questionEn": "In the Onikakushi chapter, what did Keiichi use to defend himself?",
+    "questionRomaji": "\"Onikakushi-hen\"de, keiichigamiwomamorutamenitsukattamonoha?",
     "correctAnswerJp": "金属バット",
     "correctAnswerEn": "Metal bat",
-    "wrongAnswersJp": [
-      "鉈",
-      "斧",
-      "スタンガン"
-    ],
-    "wrongAnswersEn": [
-      "Hatchet",
-      "Axe",
-      "Stun gun"
-    ],
+    "correctAnswerRomaji": "kinzokubatto",
+    "wrongAnswersJp": ["鉈","斧","スタンガン"],
+    "wrongAnswersEn": ["Hatchet","Axe","Stun gun"],
+    "wrongAnswersRomaji": ["nata","ono","sutangan"],
     "questionImage": "quiz_images/qlv1_34.png"
   },
   {
@@ -842,18 +622,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "前原藍子の声優さんは？",
     "questionEn": "Who is the voice actress for Aiko Maebara?",
+    "questionRomaji": "Maebara Aiko no seiyuu-san wa?",
     "correctAnswerJp": "松井菜桜子",
     "correctAnswerEn": "Matsui Naoko",
-    "wrongAnswersJp": [
-      "前田愛",
-      "水野理紗",
-      "井上麻里奈"
-    ],
-    "wrongAnswersEn": [
-      "Maeda Ai",
-      "Mizuno Risa",
-      "Inoue Marina"
-    ],
+    "correctAnswerRomaji": "Matsui Naoko",
+    "wrongAnswersJp": ["前田愛","水野理紗","井上麻里奈"],
+    "wrongAnswersEn": ["Maeda Ai","Mizuno Risa","Inoue Marina"],
+    "wrongAnswersRomaji": ["Maeda Ai","Mizuno Risa","Inoue Marina"],
     "questionImage": "quiz_images/qlv1_35.png"
   },
   {
@@ -861,18 +636,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "コミックの購入特典になった外伝はどれ？",
     "questionEn": "Which side story was a purchase bonus for the manga?",
+    "questionRomaji": "komikku no kounyuu tokuten ni natta gaiden wa dore?",
     "correctAnswerJp": "猫殺し編",
     "correctAnswerEn": "Nekodamashi-hen",
-    "wrongAnswersJp": [
-      "村崩し編",
-      "幸遠し編",
-      "夢交し編"
-    ],
-    "wrongAnswersEn": [
-      "Murakuzushi-hen",
-      "Sachitoshi-hen",
-      "Yumemajiwashi-hen"
-    ],
+    "correctAnswerRomaji": "Nekodamashi-hen",
+    "wrongAnswersJp": ["村崩し編","幸遠し編","夢交し編"],
+    "wrongAnswersEn": ["Murakuzushi-hen","Sachitoshi-hen","Yumemajiwashi-hen"],
+    "wrongAnswersRomaji": ["Murakuzushi-hen","Sachitoshi-hen","Yumemajiwashi-hen"],
     "questionImage": "quiz_images/qlv1_36.png"
   },
   {
@@ -880,18 +650,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "絆シリーズ第一巻、出たのは何年？",
     "questionEn": "What year was the first volume of the Kizuna series released?",
+    "questionRomaji": "Kizuna shiriizu dai-ikkan, deta no wa nannen?",
     "correctAnswerJp": "2008年",
     "correctAnswerEn": "2008",
-    "wrongAnswersJp": [
-      "2007年",
-      "2009年",
-      "2010年"
-    ],
-    "wrongAnswersEn": [
-      "2007",
-      "2009",
-      "2010"
-    ],
+    "correctAnswerRomaji": "2008nen",
+    "wrongAnswersJp": ["2007年","2009年","2010年"],
+    "wrongAnswersEn": ["2007","2009","2010"],
+    "wrongAnswersRomaji": ["2007nen","2009nen","2010nen"],
     "questionImage": "quiz_images/qlv1_37.png"
   },
   {
@@ -899,18 +664,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "「嘆きノ森」、歌ったのは誰？",
     "questionEn": "Who sang \"Nageki no Mori\"?",
+    "questionRomaji": "\"Nageki no Mori\", utatsutanohadare?",
     "correctAnswerJp": "彩音",
     "correctAnswerEn": "Ayane",
-    "wrongAnswersJp": [
-      "いとうかなこ",
-      "Cyua",
-      "諫山実生"
-    ],
-    "wrongAnswersEn": [
-      "Itou Kanako",
-      "Cyua",
-      "Isayama Mio"
-    ],
+    "correctAnswerRomaji": "Ayane",
+    "wrongAnswersJp": ["いとうかなこ","Cyua","諫山実生"],
+    "wrongAnswersEn": ["Itou Kanako","Cyua","Isayama Mio"],
+    "wrongAnswersRomaji": ["Itou Kanako","Cyua","Isayama Mio"],
     "questionImage": "quiz_images/qlv1_38.png"
   },
   {
@@ -918,18 +678,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "ひぐらしのなく頃に絆、第一巻は？",
     "questionEn": "What was the first volume of Higurashi no Naku Koro ni Kizuna?",
+    "questionRomaji": "Higurashi no Naku Koro ni Kizuna, dai-ikkan wa?",
     "correctAnswerJp": "祟",
     "correctAnswerEn": "Curse",
-    "wrongAnswersJp": [
-      "想",
-      "螺",
-      "絆"
-    ],
-    "wrongAnswersEn": [
-      "Thought",
-      "Spiral",
-      "Bond"
-    ],
+    "correctAnswerRomaji": "Tatari",
+    "wrongAnswersJp": ["想","螺","絆"],
+    "wrongAnswersEn": ["Thought","Spiral","Bond"],
+    "wrongAnswersRomaji": ["Sou","Ra","Kizuna"],
     "questionImage": "quiz_images/qlv1_39.png"
   },
   {
@@ -937,18 +692,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "「追想のディスペア」、歌ったのは誰？",
     "questionEn": "Who sang \"Tsuisou no Despair\"?",
+    "questionRomaji": "\"Tsuisou no Disupea\", utatsutanohadare?",
     "correctAnswerJp": "いとうかなこ",
     "correctAnswerEn": "Itou Kanako",
-    "wrongAnswersJp": [
-      "彩音",
-      "Cyua",
-      "諫山実生"
-    ],
-    "wrongAnswersEn": [
-      "Ayane",
-      "Cyua",
-      "Isayama Mio"
-    ],
+    "correctAnswerRomaji": "Itou Kanako",
+    "wrongAnswersJp": ["彩音","Cyua","諫山実生"],
+    "wrongAnswersEn": ["Ayane","Cyua","Isayama Mio"],
+    "wrongAnswersRomaji": ["Ayane","Cyua","Isayama Mio"],
     "questionImage": "quiz_images/qlv1_40.png"
   },
   {
@@ -956,18 +706,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "この文字、なんて読む？　興宮",
     "questionEn": "How do you read this word? Okinomiya",
+    "questionRomaji": "kono moji, nante yomu? Okinomiya",
     "correctAnswerJp": "おきのみや",
     "correctAnswerEn": "Okinomiya",
-    "wrongAnswersJp": [
-      "こうみや",
-      "きょうみや",
-      "こうぐう"
-    ],
-    "wrongAnswersEn": [
-      "Koumiya",
-      "Kyoumiya",
-      "Kouguu"
-    ],
+    "correctAnswerRomaji": "Okinomiya",
+    "wrongAnswersJp": ["こうみや","きょうみや","こうぐう"],
+    "wrongAnswersEn": ["Koumiya","Kyoumiya","Kouguu"],
+    "wrongAnswersRomaji": ["koumiya","kyoumiya","kouguu"],
     "questionImage": "quiz_images/qlv1_41.png"
   },
   {
@@ -975,18 +720,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "この文字、なんて読む？　鹿骨",
     "questionEn": "How do you read this word? Shishbone (Shishibone)",
+    "questionRomaji": "kono moji, nante yomu? Shishibone",
     "correctAnswerJp": "ししぼね",
     "correctAnswerEn": "Shishibone",
-    "wrongAnswersJp": [
-      "かこつ",
-      "しかほね",
-      "ろっこつ"
-    ],
-    "wrongAnswersEn": [
-      "Kakotsu",
-      "Shikahone",
-      "Rokkotsu"
-    ],
+    "correctAnswerRomaji": "Shishibone",
+    "wrongAnswersJp": ["かこつ","しかほね","ろっこつ"],
+    "wrongAnswersEn": ["Kakotsu","Shikahone","Rokkotsu"],
+    "wrongAnswersRomaji": ["kakotsu","shikahone","rokkotsu"],
     "questionImage": "quiz_images/qlv1_42.png"
   },
   {
@@ -994,18 +734,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "この絵の制服を着ているのは？",
     "questionEn": "Who is wearing the uniform shown in this picture?",
+    "questionRomaji": "kono e no seifuku wo kite iru no wa?",
     "correctAnswerJp": "レナ",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "魅音",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["魅音","沙都子","梨花"],
+    "wrongAnswersEn": ["Mion","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Mion","Satoko","Rika"],
     "questionImage": "quiz_images/qlv1_43.png"
   },
   {
@@ -1013,18 +748,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "この絵の制服を着ているのは？",
     "questionEn": "Who is wearing the uniform shown in this picture?",
+    "questionRomaji": "kono e no seifuku wo kite iru no wa?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "レナ",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["レナ","沙都子","梨花"],
+    "wrongAnswersEn": ["Rena","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Rena","Satoko","Rika"],
     "questionImage": "quiz_images/qlv1_44.png"
   },
   {
@@ -1032,18 +762,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "圭一",
     "correctAnswerEn": "Keiichi",
-    "wrongAnswersJp": [
-      "悟史",
-      "幸助",
-      "誠"
-    ],
-    "wrongAnswersEn": [
-      "Satoshi",
-      "Kousuke",
-      "Makoto"
-    ],
+    "correctAnswerRomaji": "Keiichi",
+    "wrongAnswersJp": ["悟史","幸助","誠"],
+    "wrongAnswersEn": ["Satoshi","Kousuke","Makoto"],
+    "wrongAnswersRomaji": ["Satoshi","Kousuke","Makoto"],
     "questionImage": "quiz_images/qlv1_45.png"
   },
   {
@@ -1051,18 +776,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "レナ",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "魅音",
-      "梨花",
-      "文乃"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Rika",
-      "Fumino"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["魅音","梨花","文乃"],
+    "wrongAnswersEn": ["Mion","Rika","Fumino"],
+    "wrongAnswersRomaji": ["Mion","Rika","Fumino"],
     "questionImage": "quiz_images/qlv1_46.png"
   },
   {
@@ -1070,18 +790,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "レナ",
-      "沙都子",
-      "伊豆湖"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Satoko",
-      "Izuko"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["レナ","沙都子","伊豆湖"],
+    "wrongAnswersEn": ["Rena","Satoko","Izuko"],
+    "wrongAnswersRomaji": ["Rena","Satoko","Izuko"],
     "questionImage": "quiz_images/qlv1_47.png"
   },
   {
@@ -1089,18 +804,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "沙都子",
     "correctAnswerEn": "Satoko",
-    "wrongAnswersJp": [
-      "梨花",
-      "レナ",
-      "ようこ"
-    ],
-    "wrongAnswersEn": [
-      "Rika",
-      "Rena",
-      "Youko"
-    ],
+    "correctAnswerRomaji": "Satoko",
+    "wrongAnswersJp": ["梨花","レナ","ようこ"],
+    "wrongAnswersEn": ["Rika","Rena","Youko"],
+    "wrongAnswersRomaji": ["Rika","Rena","Youko"],
     "questionImage": "quiz_images/qlv1_48.png"
   },
   {
@@ -1108,18 +818,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "沙都子",
-      "夏美",
-      "むろみ"
-    ],
-    "wrongAnswersEn": [
-      "Satoko",
-      "Natsumi",
-      "Muromi"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["沙都子","夏美","むろみ"],
+    "wrongAnswersEn": ["Satoko","Natsumi","Muromi"],
+    "wrongAnswersRomaji": ["Satoko","Natsumi","Muromi"],
     "questionImage": "quiz_images/qlv1_49.png"
   },
   {
@@ -1127,18 +832,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "夏美",
     "correctAnswerEn": "Natsumi",
-    "wrongAnswersJp": [
-      "みちる",
-      "真奈美",
-      "マミ"
-    ],
-    "wrongAnswersEn": [
-      "Michiru",
-      "Manami",
-      "Mami"
-    ],
+    "correctAnswerRomaji": "Natsumi",
+    "wrongAnswersJp": ["みちる","真奈美","マミ"],
+    "wrongAnswersEn": ["Michiru","Manami","Mami"],
+    "wrongAnswersRomaji": ["Michiru","Manami","Mami"],
     "questionImage": "quiz_images/qlv1_50.png"
   },
   {
@@ -1146,18 +846,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "藤田",
     "correctAnswerEn": "Fujita",
-    "wrongAnswersJp": [
-      "熊田",
-      "郷田",
-      "花田"
-    ],
-    "wrongAnswersEn": [
-      "Kumada",
-      "Gouda",
-      "Hanada"
-    ],
+    "correctAnswerRomaji": "Fujita",
+    "wrongAnswersJp": ["熊田","郷田","花田"],
+    "wrongAnswersEn": ["Kumada","Gouda","Hanada"],
+    "wrongAnswersRomaji": ["Kumada","Gouda","Hanada"],
     "questionImage": "quiz_images/qlv1_51.png"
   },
   {
@@ -1165,18 +860,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "リナ",
     "correctAnswerEn": "Rina",
-    "wrongAnswersJp": [
-      "リサ",
-      "ナサ",
-      "サナリィ"
-    ],
-    "wrongAnswersEn": [
-      "Lisa",
-      "Nasa",
-      "Sanarii"
-    ],
+    "correctAnswerRomaji": "Rina",
+    "wrongAnswersJp": ["リサ","ナサ","サナリィ"],
+    "wrongAnswersEn": ["Lisa","Nasa","Sanarii"],
+    "wrongAnswersRomaji": ["Lisa","Nasa","Sanarii"],
     "questionImage": "quiz_images/qlv1_52.png"
   },
   {
@@ -1184,18 +874,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "保志総一朗",
     "correctAnswerEn": "Hoshi Souichirou",
-    "wrongAnswersJp": [
-      "星総一郎",
-      "保志総次郎",
-      "瀬戸総一郎"
-    ],
-    "wrongAnswersEn": [
-      "Hoshi Souichirou (alt.)",
-      "Hoshi Soujirou (alt.)",
-      "Seto Souichirou (alt.)"
-    ],
+    "correctAnswerRomaji": "Hoshi Souichirou",
+    "wrongAnswersJp": ["星総一郎","保志総次郎","瀬戸総一郎"],
+    "wrongAnswersEn": ["Hoshi Souichirou (alt.)","Hoshi Soujirou (alt.)","Seto Souichirou (alt.)"],
+    "wrongAnswersRomaji": ["Hoshi Souichirou","Hoshi Soujirou","Seto Souichirou"],
     "questionImage": "quiz_images/qlv1_53.png"
   },
   {
@@ -1203,18 +888,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "中原麻衣",
     "correctAnswerEn": "Nakahara Mai",
-    "wrongAnswersJp": [
-      "仲原舞",
-      "中原真衣",
-      "楯山麻衣"
-    ],
-    "wrongAnswersEn": [
-      "Nakahara Mai (alt.)",
-      "Nakahara Mai (alt.)",
-      "Tateyama Mai (alt.)"
-    ],
+    "correctAnswerRomaji": "Nakahara Mai",
+    "wrongAnswersJp": ["仲原舞","中原真衣","楯山麻衣"],
+    "wrongAnswersEn": ["Nakahara Mai (alt.)","Nakahara Mai (alt.)","Tateyama Mai (alt.)"],
+    "wrongAnswersRomaji": ["Nakahara Mai","Nakahara Mai","Tateyama Mai"],
     "questionImage": "quiz_images/qlv1_54.png"
   },
   {
@@ -1222,18 +902,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "ゆきのさつき",
     "correctAnswerEn": "Yukino Satsuki",
-    "wrongAnswersJp": [
-      "ゆきのむつき",
-      "きみざわさつき",
-      "ゆきのかなめ"
-    ],
-    "wrongAnswersEn": [
-      "Yukino Mutsuki",
-      "Kimizawa Satsuki",
-      "Yukino Kaname"
-    ],
+    "correctAnswerRomaji": "Yukino Satsuki",
+    "wrongAnswersJp": ["ゆきのむつき","きみざわさつき","ゆきのかなめ"],
+    "wrongAnswersEn": ["Yukino Mutsuki","Kimizawa Satsuki","Yukino Kaname"],
+    "wrongAnswersRomaji": ["Yukino Mutsuki","Kimizawa Satsuki","Yukino Kaname"],
     "questionImage": "quiz_images/qlv1_55.png"
   },
   {
@@ -1241,18 +916,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "かないみか",
     "correctAnswerEn": "Kanai Mika",
-    "wrongAnswersJp": [
-      "かみなかい",
-      "かみいなか",
-      "かかみいな"
-    ],
-    "wrongAnswersEn": [
-      "Kaminakai",
-      "Kamiinaka",
-      "Kakamiina"
-    ],
+    "correctAnswerRomaji": "Kanai Mika",
+    "wrongAnswersJp": ["かみなかい","かみいなか","かかみいな"],
+    "wrongAnswersEn": ["Kaminakai","Kamiinaka","Kakamiina"],
+    "wrongAnswersRomaji": ["Kaminakai","Kamiinaka","Kakamiina"],
     "questionImage": "quiz_images/qlv1_56.png"
   },
   {
@@ -1260,18 +930,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "田村ゆかり",
     "correctAnswerEn": "Tamura Yukari",
-    "wrongAnswersJp": [
-      "田無ゆかり",
-      "田村ゆりか",
-      "村田ゆりか"
-    ],
-    "wrongAnswersEn": [
-      "Tanashi Yukari (alt.)",
-      "Tamura Yurika (alt.)",
-      "Murata Yurika (alt.)"
-    ],
+    "correctAnswerRomaji": "Tamura Yukari",
+    "wrongAnswersJp": ["田無ゆかり","田村ゆりか","村田ゆりか"],
+    "wrongAnswersEn": ["Tanashi Yukari (alt.)","Tamura Yurika (alt.)","Murata Yurika (alt.)"],
+    "wrongAnswersRomaji": ["Tanashi Yukari","Tamura Yurika","Murata Yurika"],
     "questionImage": "quiz_images/qlv1_57.png"
   },
   {
@@ -1279,18 +944,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "水橋かおり",
     "correctAnswerEn": "Mizuhashi Kaori",
-    "wrongAnswersJp": [
-      "涼宮かおり",
-      "荻上かおり",
-      "巴かすみ"
-    ],
-    "wrongAnswersEn": [
-      "Suzumiya Kaori (alt.)",
-      "Ogiue Kaori (alt.)",
-      "Tomoe Kasumi (alt.)"
-    ],
+    "correctAnswerRomaji": "Mizuhashi Kaori",
+    "wrongAnswersJp": ["涼宮かおり","荻上かおり","巴かすみ"],
+    "wrongAnswersEn": ["Suzumiya Kaori (alt.)","Ogiue Kaori (alt.)","Tomoe Kasumi (alt.)"],
+    "wrongAnswersRomaji": ["Suzumiya Kaori","Ogiue Kaori","Tomoe Kasumi"],
     "questionImage": "quiz_images/qlv1_58.png"
   },
   {
@@ -1298,18 +958,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "宝亀克寿",
     "correctAnswerEn": "Houki Katsuhisa",
-    "wrongAnswersJp": [
-      "宝亀克久",
-      "奉亀克寿",
-      "ラル・ジャクソン"
-    ],
-    "wrongAnswersEn": [
-      "Houki Katsuhisa (alt.)",
-      "Houki Katsuhisa (alt.)",
-      "Ral Jackson"
-    ],
+    "correctAnswerRomaji": "Houki Katsuhisa",
+    "wrongAnswersJp": ["宝亀克久","奉亀克寿","ラル・ジャクソン"],
+    "wrongAnswersEn": ["Houki Katsuhisa (alt.)","Houki Katsuhisa (alt.)","Ral Jackson"],
+    "wrongAnswersRomaji": ["Houki Katsuhisa","Houki Katsuhisa","Ral Jackson"],
     "questionImage": "quiz_images/qlv1_59.png"
   },
   {
@@ -1317,18 +972,13 @@ export const entries: Entry[] = [
     "level": 1,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "氷上恭子",
     "correctAnswerEn": "Hikami Kyouko",
-    "wrongAnswersJp": [
-      "氷上共子",
-      "氷上響子",
-      "シフォン・うさだ"
-    ],
-    "wrongAnswersEn": [
-      "Hikami Kyouko (alt.)",
-      "Hikami Kyouko (alt.)",
-      "Chiffon Usada"
-    ],
+    "correctAnswerRomaji": "Hikami Kyouko",
+    "wrongAnswersJp": ["氷上共子","氷上響子","シフォン・うさだ"],
+    "wrongAnswersEn": ["Hikami Kyouko (alt.)","Hikami Kyouko (alt.)","Chiffon Usada"],
+    "wrongAnswersRomaji": ["Hikami Kyouko","Hikami Kyouko","Chiffon Usada"],
     "questionImage": "quiz_images/qlv1_60.png"
   },
   {
@@ -1336,18 +986,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "愛知県の警察は、愛知県警。では、東京都は？",
     "questionEn": "Aichi Prefecture's police is the Aichi Prefectural Police. So what about Tokyo?",
+    "questionRomaji": "aichikennokeisatsuha, aichikenkei. deha, toukyoutoha?",
     "correctAnswerJp": "警視庁",
     "correctAnswerEn": "Metropolitan Police",
-    "wrongAnswersJp": [
-      "警察庁",
-      "東京都庁",
-      "大江戸捜査網"
-    ],
-    "wrongAnswersEn": [
-      "National Police Agency",
-      "Tokyo Metropolitan Government",
-      "Great Edo Investigation Network"
-    ],
+    "correctAnswerRomaji": "Keishichou",
+    "wrongAnswersJp": ["警察庁","東京都庁","大江戸捜査網"],
+    "wrongAnswersEn": ["National Police Agency","Tokyo Metropolitan Government","Great Edo Investigation Network"],
+    "wrongAnswersRomaji": ["Keisatsuchou","Tokyo Metropolitan Government","Ooedo Sousaami"],
     "questionImage": "quiz_images/qlv2_01.png"
   },
   {
@@ -1355,18 +1000,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "南井巴の母の名前は？",
     "questionEn": "What is the name of Tomoe Minai's mother?",
+    "questionRomaji": "Minai Tomoe no haha no namae wa?",
     "correctAnswerJp": "円美",
     "correctAnswerEn": "Marumi",
-    "wrongAnswersJp": [
-      "一美",
-      "玉美",
-      "丸美"
-    ],
-    "wrongAnswersEn": [
-      "Hitomi",
-      "Tamami",
-      "Marumi"
-    ],
+    "correctAnswerRomaji": "Marumi",
+    "wrongAnswersJp": ["一美","玉美","丸美"],
+    "wrongAnswersEn": ["Hitomi","Tamami","Marumi"],
+    "wrongAnswersRomaji": ["Hitomi","Tamami","Marumi"],
     "questionImage": "quiz_images/qlv2_02.png"
   },
   {
@@ -1374,18 +1014,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「暇潰し編」の梨花、どこへ帰れといった？",
     "questionEn": "In the Himatsubushi chapter, where did Rika tell him to go back to?",
+    "questionRomaji": "\"Himatsubushi-hen\"norika, dokohekaeretoitta?",
     "correctAnswerJp": "東京",
     "correctAnswerEn": "Tokyo",
-    "wrongAnswersJp": [
-      "ソレント",
-      "田舎",
-      "無"
-    ],
-    "wrongAnswersEn": [
-      "Sorrento",
-      "The countryside",
-      "Nowhere"
-    ],
+    "correctAnswerRomaji": "Tokyo",
+    "wrongAnswersJp": ["ソレント","田舎","無"],
+    "wrongAnswersEn": ["Sorrento","The countryside","Nowhere"],
+    "wrongAnswersRomaji": ["sorento","inaka","mu"],
     "questionImage": "quiz_images/qlv2_03.png"
   },
   {
@@ -1393,18 +1028,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「目明し編」の詩音、最後はなんで死んだ？",
     "questionEn": "In the Meakashi chapter, how did Shion die at the end?",
+    "questionRomaji": "\"Meakashi-hen\"noshion, saigohanandeshinda?",
     "correctAnswerJp": "転落死",
     "correctAnswerEn": "Death by falling",
-    "wrongAnswersJp": [
-      "病死",
-      "中毒死",
-      "窒息死"
-    ],
-    "wrongAnswersEn": [
-      "Death by illness",
-      "Death by poisoning",
-      "Death by suffocation"
-    ],
+    "correctAnswerRomaji": "tenrakushi",
+    "wrongAnswersJp": ["病死","中毒死","窒息死"],
+    "wrongAnswersEn": ["Death by illness","Death by poisoning","Death by suffocation"],
+    "wrongAnswersRomaji": ["byoushi","chuudokushi","chissokushi"],
     "questionImage": "quiz_images/qlv2_04.png"
   },
   {
@@ -1412,18 +1042,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "公由村長の名前は？",
     "questionEn": "What is the name of Village Chief Kimiyoshi?",
+    "questionRomaji": "Kimiyoshi-mura-chou no namae wa?",
     "correctAnswerJp": "喜一郎",
     "correctAnswerEn": "Kiichiro",
-    "wrongAnswersJp": [
-      "又一郎",
-      "総一郎",
-      "喜八"
-    ],
-    "wrongAnswersEn": [
-      "Mataichiro",
-      "Souichirou",
-      "Kihachi"
-    ],
+    "correctAnswerRomaji": "Kiichiro",
+    "wrongAnswersJp": ["又一郎","総一郎","喜八"],
+    "wrongAnswersEn": ["Mataichiro","Souichirou","Kihachi"],
+    "wrongAnswersRomaji": ["Mataichiro","Souichirou","Kihachi"],
     "questionImage": "quiz_images/qlv2_05.png"
   },
   {
@@ -1431,18 +1056,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "詩音の苦手な食べ物は？",
     "questionEn": "What food does Shion dislike?",
+    "questionRomaji": "Shion no nigate na tabemono wa?",
     "correctAnswerJp": "缶詰",
     "correctAnswerEn": "Canned food",
-    "wrongAnswersJp": [
-      "レモン",
-      "しいたけ",
-      "漬物"
-    ],
-    "wrongAnswersEn": [
-      "Lemon",
-      "Shiitake mushroom",
-      "Pickles"
-    ],
+    "correctAnswerRomaji": "kanzume",
+    "wrongAnswersJp": ["レモン","しいたけ","漬物"],
+    "wrongAnswersEn": ["Lemon","Shiitake mushroom","Pickles"],
+    "wrongAnswersRomaji": ["remon","shiitake","tsukemono"],
     "questionImage": "quiz_images/qlv2_06.png"
   },
   {
@@ -1450,18 +1070,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "赤坂は警察官の何？",
     "questionEn": "What is Akasaka's rank as a police officer?",
+    "questionRomaji": "Akasaka wa keisatsukan no nani?",
     "correctAnswerJp": "キャリア",
     "correctAnswerEn": "Career track",
-    "wrongAnswersJp": [
-      "推薦組",
-      "一般採用",
-      "出向"
-    ],
-    "wrongAnswersEn": [
-      "Recommendation group",
-      "General recruitment",
-      "Transfer"
-    ],
+    "correctAnswerRomaji": "kyaria",
+    "wrongAnswersJp": ["推薦組","一般採用","出向"],
+    "wrongAnswersEn": ["Recommendation group","General recruitment","Transfer"],
+    "wrongAnswersRomaji": ["suisenkumi","ippansaiyou","shukkou"],
     "questionImage": "quiz_images/qlv2_07.png"
   },
   {
@@ -1469,18 +1084,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "詩音の通っていた学校は？",
     "questionEn": "What school did Shion attend?",
+    "questionRomaji": "Shion no kayotte ita gakkou wa?",
     "correctAnswerJp": "聖ルチーア",
     "correctAnswerEn": "St. Lucia",
-    "wrongAnswersJp": [
-      "聖マリア",
-      "聖ナポリ",
-      "聖セレナ"
-    ],
-    "wrongAnswersEn": [
-      "St. Maria",
-      "St. Napoli",
-      "St. Serena"
-    ],
+    "correctAnswerRomaji": "St. Lucia",
+    "wrongAnswersJp": ["聖マリア","聖ナポリ","聖セレナ"],
+    "wrongAnswersEn": ["St. Maria","St. Napoli","St. Serena"],
+    "wrongAnswersRomaji": ["St. Maria","St. Napoli","St. Serena"],
     "questionImage": "quiz_images/qlv2_08.png"
   },
   {
@@ -1488,18 +1098,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「暇潰し編」で赤坂に接触した情報屋は？",
     "questionEn": "In the Himatsubushi chapter, who was the informant that contacted Akasaka?",
+    "questionRomaji": "\"Himatsubushi-hen\"deakasakanisesshokushitajouhouyaha?",
     "correctAnswerJp": "サトさん",
     "correctAnswerEn": "Sato-san",
-    "wrongAnswersJp": [
-      "ソトさん",
-      "ミチさん",
-      "スズさん"
-    ],
-    "wrongAnswersEn": [
-      "Soto-san",
-      "Michi-san",
-      "Suzu-san"
-    ],
+    "correctAnswerRomaji": "Sato-san",
+    "wrongAnswersJp": ["ソトさん","ミチさん","スズさん"],
+    "wrongAnswersEn": ["Soto-san","Michi-san","Suzu-san"],
+    "wrongAnswersRomaji": ["Soto-san","Michi-san","Suzu-san"],
     "questionImage": "quiz_images/qlv2_09.png"
   },
   {
@@ -1507,18 +1112,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "赤坂の娘の名前は？",
     "questionEn": "What is the name of Akasaka's daughter?",
+    "questionRomaji": "Akasaka no musume no namae wa?",
     "correctAnswerJp": "美雪",
     "correctAnswerEn": "Miyuki",
-    "wrongAnswersJp": [
-      "深雪",
-      "美幸",
-      "みゆき"
-    ],
-    "wrongAnswersEn": [
-      "Miyuki",
-      "Miyuki",
-      "Miyuki"
-    ],
+    "correctAnswerRomaji": "Miyuki",
+    "wrongAnswersJp": ["深雪","美幸","みゆき"],
+    "wrongAnswersEn": ["Miyuki","Miyuki","Miyuki"],
+    "wrongAnswersRomaji": ["Miyuki","Miyuki","Miyuki"],
     "questionImage": "quiz_images/qlv2_10.png"
   },
   {
@@ -1526,18 +1126,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "退職後の大石、「なに」ダイエットをやり始めた？",
     "questionEn": "After retiring, what kind of diet did Oishi start?",
+    "questionRomaji": "taishokugo no Oishi, \"nani\" daietto wo yari hajimeta?",
     "correctAnswerJp": "リンゴ",
     "correctAnswerEn": "Apple",
-    "wrongAnswersJp": [
-      "絶食",
-      "バナナ",
-      "炭水化物"
-    ],
-    "wrongAnswersEn": [
-      "Fasting",
-      "Banana",
-      "Carbohydrates"
-    ],
+    "correctAnswerRomaji": "ringo",
+    "wrongAnswersJp": ["絶食","バナナ","炭水化物"],
+    "wrongAnswersEn": ["Fasting","Banana","Carbohydrates"],
+    "wrongAnswersRomaji": ["zesshoku","banana","tansuikabutsu"],
     "questionImage": "quiz_images/qlv2_11.png"
   },
   {
@@ -1545,18 +1140,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "退職後の大石、何を始めた？",
     "questionEn": "After retiring, what did Oishi start doing?",
+    "questionRomaji": "taishokugo no Oishi, nani wo hajimeta?",
     "correctAnswerJp": "社交ダンス",
     "correctAnswerEn": "Ballroom dancing",
-    "wrongAnswersJp": [
-      "農業",
-      "盆栽",
-      "ゲートボール"
-    ],
-    "wrongAnswersEn": [
-      "Farming",
-      "Bonsai",
-      "Gateball"
-    ],
+    "correctAnswerRomaji": "shakoudansu",
+    "wrongAnswersJp": ["農業","盆栽","ゲートボール"],
+    "wrongAnswersEn": ["Farming","Bonsai","Gateball"],
+    "wrongAnswersRomaji": ["nougyou","bonsai","geetobooru"],
     "questionImage": "quiz_images/qlv2_12.png"
   },
   {
@@ -1564,18 +1154,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "警視庁の赤坂、所属は公安のどこ？",
     "questionEn": "Akasaka of the Metropolitan Police — what division of Public Security did he belong to?",
+    "questionRomaji": "Keishichou no Akasaka, shozoku wa kouan no doko?",
     "correctAnswerJp": "第七室",
     "correctAnswerEn": "Room 7",
-    "wrongAnswersJp": [
-      "第五室",
-      "第一室",
-      "第零室"
-    ],
-    "wrongAnswersEn": [
-      "Room 5",
-      "Room 1",
-      "Room 0"
-    ],
+    "correctAnswerRomaji": "dainanashitsu",
+    "wrongAnswersJp": ["第五室","第一室","第零室"],
+    "wrongAnswersEn": ["Room 5","Room 1","Room 0"],
+    "wrongAnswersRomaji": ["daigoshitsu","daiichishitsu","daireishitsu"],
     "questionImage": "quiz_images/qlv2_13.png"
   },
   {
@@ -1583,18 +1168,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "巴とまどか、歳の差は何歳？",
     "questionEn": "What is the age difference between Tomoe and Madoka?",
+    "questionRomaji": "Tomoe to Madoka, toshi no sa wa nansai?",
     "correctAnswerJp": "3歳",
     "correctAnswerEn": "3 years old",
-    "wrongAnswersJp": [
-      "2歳",
-      "5歳",
-      "4歳"
-    ],
-    "wrongAnswersEn": [
-      "2 years old",
-      "5 years old",
-      "4 years old"
-    ],
+    "correctAnswerRomaji": "3toshi",
+    "wrongAnswersJp": ["2歳","5歳","4歳"],
+    "wrongAnswersEn": ["2 years old","5 years old","4 years old"],
+    "wrongAnswersRomaji": ["2toshi","5toshi","4toshi"],
     "questionImage": "quiz_images/qlv2_14.png"
   },
   {
@@ -1602,18 +1182,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "山沖薫、出身はどこ？",
     "questionEn": "Where is Yamaoki Kaoru from?",
+    "questionRomaji": "Yamaoki Kaoru, shusshin wa doko?",
     "correctAnswerJp": "山口",
     "correctAnswerEn": "Yamaguchi",
-    "wrongAnswersJp": [
-      "長崎",
-      "和歌山",
-      "愛媛"
-    ],
-    "wrongAnswersEn": [
-      "Nagasaki",
-      "Wakayama",
-      "Ehime"
-    ],
+    "correctAnswerRomaji": "Yamaguchi",
+    "wrongAnswersJp": ["長崎","和歌山","愛媛"],
+    "wrongAnswersEn": ["Nagasaki","Wakayama","Ehime"],
+    "wrongAnswersRomaji": ["Nagasaki","Wakayama","Ehime"],
     "questionImage": "quiz_images/qlv2_15.png"
   },
   {
@@ -1621,18 +1196,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "葛西タツヨシ、漢字で書くと？",
     "questionEn": "How do you write Kasai Tatsuyoshi in kanji?",
+    "questionRomaji": "Kasai Tatsuyoshi, kanji de kaku to?",
     "correctAnswerJp": "辰由",
     "correctAnswerEn": "Tatsuyoshi",
-    "wrongAnswersJp": [
-      "辰吉",
-      "辰良",
-      "辰義"
-    ],
-    "wrongAnswersEn": [
-      "Tatsuyoshi",
-      "Tatsuyoshi (alt.)",
-      "Tatsuyoshi (alt.)"
-    ],
+    "correctAnswerRomaji": "Tatsuyoshi",
+    "wrongAnswersJp": ["辰吉","辰良","辰義"],
+    "wrongAnswersEn": ["Tatsuyoshi","Tatsuyoshi (alt.)","Tatsuyoshi (alt.)"],
+    "wrongAnswersRomaji": ["Tatsuyoshi","Tatsuyoshi","Tatsuyoshi"],
     "questionImage": "quiz_images/qlv2_16.png"
   },
   {
@@ -1640,18 +1210,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "魅音と詩音の違い、決定的な違いは？",
     "questionEn": "What is the definitive difference between Mion and Shion?",
+    "questionRomaji": "Mion to Shion no chigai, ketteiteki na chigai wa?",
     "correctAnswerJp": "刺青",
     "correctAnswerEn": "Tattoo",
-    "wrongAnswersJp": [
-      "胸",
-      "髪形",
-      "頭の良さ"
-    ],
-    "wrongAnswersEn": [
-      "Chest",
-      "Hairstyle",
-      "Intelligence"
-    ],
+    "correctAnswerRomaji": "irezumi",
+    "wrongAnswersJp": ["胸","髪形","頭の良さ"],
+    "wrongAnswersEn": ["Chest","Hairstyle","Intelligence"],
+    "wrongAnswersRomaji": ["mune","kamigata","atamanoyosa"],
     "questionImage": "quiz_images/qlv2_17.png"
   },
   {
@@ -1659,18 +1224,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "大石の部下の熊谷、下の名前は？",
     "questionEn": "What is the first name of Oishi's subordinate, Kumagai?",
+    "questionRomaji": "Oishi no buka no Kumagai, shita no namae wa?",
     "correctAnswerJp": "勝也",
     "correctAnswerEn": "Katsuya",
-    "wrongAnswersJp": [
-      "篤士",
-      "拓央",
-      "充"
-    ],
-    "wrongAnswersEn": [
-      "Atsushi",
-      "Takuo",
-      "Mitsuru"
-    ],
+    "correctAnswerRomaji": "Katsuya",
+    "wrongAnswersJp": ["篤士","拓央","充"],
+    "wrongAnswersEn": ["Atsushi","Takuo","Mitsuru"],
+    "wrongAnswersRomaji": ["Atsushi","Takuo","Mitsuru"],
     "questionImage": "quiz_images/qlv2_18.png"
   },
   {
@@ -1678,18 +1238,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "昼壊し編で無くなったのは、「なに」の勾玉？",
     "questionEn": "In Hirukowashi, whose magatama went missing?",
+    "questionRomaji": "Hirukowashi-hen de nakunatta no wa, \"nani\" no magatama?",
     "correctAnswerJp": "フワラズ",
     "correctAnswerEn": "Fuwarazu",
-    "wrongAnswersJp": [
-      "フラワズ",
-      "プリホル",
-      "ワラフズ"
-    ],
-    "wrongAnswersEn": [
-      "Furawazu",
-      "Purihoru",
-      "Warafuzu"
-    ],
+    "correctAnswerRomaji": "Fuwarazu",
+    "wrongAnswersJp": ["フラワズ","プリホル","ワラフズ"],
+    "wrongAnswersEn": ["Furawazu","Purihoru","Warafuzu"],
+    "wrongAnswersRomaji": ["Furawazu","Purihoru","Warafuzu"],
     "questionImage": "quiz_images/qlv2_19.png"
   },
   {
@@ -1697,18 +1252,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「昼壊し編」、原作と異なっていないのは？",
     "questionEn": "In the Hirukowashi chapter, what was NOT different from the original?",
+    "questionRomaji": "\"Hirukowashi-hen\", gensakutokotonatteinainoha?",
     "correctAnswerJp": "最初に惚れる相手",
     "correctAnswerEn": "First person you fall for",
-    "wrongAnswersJp": [
-      "圭一の固有結界",
-      "最後の対決方法",
-      "羽入と詩音の有無"
-    ],
-    "wrongAnswersEn": [
-      "Keiichi's Reality Marble",
-      "Final showdown method",
-      "Presence of Hanyuu and Shion"
-    ],
+    "correctAnswerRomaji": "saisho ni horeru aite",
+    "wrongAnswersJp": ["圭一の固有結界","最後の対決方法","羽入と詩音の有無"],
+    "wrongAnswersEn": ["Keiichi's Reality Marble","Final showdown method","Presence of Hanyuu and Shion"],
+    "wrongAnswersRomaji": ["Keiichi no koyuu kekkai","saigo no taiketsu houhou","Hanyuu to Shion no umu"],
     "questionImage": "quiz_images/qlv2_20.png"
   },
   {
@@ -1716,18 +1266,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "畠山家で起きた、一家惨殺事件。犯人は誰？",
     "questionEn": "Who was the culprit in the massacre at the Hatakeyama household?",
+    "questionRomaji": "hatakeyamaiedeokita, ikkazansatsujiken. hanninhadare?",
     "correctAnswerJp": "あおい",
     "correctAnswerEn": "Aoi",
-    "wrongAnswersJp": [
-      "正雄",
-      "一馬",
-      "芳子"
-    ],
-    "wrongAnswersEn": [
-      "Masao",
-      "Kazuma",
-      "Yoshiko"
-    ],
+    "correctAnswerRomaji": "Aoi",
+    "wrongAnswersJp": ["正雄","一馬","芳子"],
+    "wrongAnswersEn": ["Masao","Kazuma","Yoshiko"],
+    "wrongAnswersRomaji": ["Masao","Kazuma","Yoshiko"],
     "questionImage": "quiz_images/qlv2_21.png"
   },
   {
@@ -1735,18 +1280,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「目明し編」で詩音がアルバイトしていたのは、どこ？",
     "questionEn": "In the Meakashi chapter, where was Shion working part-time?",
+    "questionRomaji": "\"Meakashi-hen\"deshiongaarubaitoshiteitanoha, doko?",
     "correctAnswerJp": "ファミレス",
     "correctAnswerEn": "Family restaurant",
-    "wrongAnswersJp": [
-      "おもちゃ屋",
-      "図書館",
-      "キャバクラ"
-    ],
-    "wrongAnswersEn": [
-      "Toy store",
-      "Library",
-      "Hostess club"
-    ],
+    "correctAnswerRomaji": "famiresu",
+    "wrongAnswersJp": ["おもちゃ屋","図書館","キャバクラ"],
+    "wrongAnswersEn": ["Toy store","Library","Hostess club"],
+    "wrongAnswersRomaji": ["omochaya","toshokan","kyabakura"],
     "questionImage": "quiz_images/qlv2_22.png"
   },
   {
@@ -1754,18 +1294,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「綿流し編」、祭具殿で変な足音を聞いたのは誰？",
     "questionEn": "In the Watanagashi chapter, who heard strange footsteps in the ritual storehouse?",
+    "questionRomaji": "\"Watanagashi-hen\", saigudonodehennaashiotowokiitanohadare?",
     "correctAnswerJp": "詩音",
     "correctAnswerEn": "Shion",
-    "wrongAnswersJp": [
-      "鷹野",
-      "富竹",
-      "圭一"
-    ],
-    "wrongAnswersEn": [
-      "Takano",
-      "Tomitake",
-      "Keiichi"
-    ],
+    "correctAnswerRomaji": "Shion",
+    "wrongAnswersJp": ["鷹野","富竹","圭一"],
+    "wrongAnswersEn": ["Takano","Tomitake","Keiichi"],
+    "wrongAnswersRomaji": ["Takano","Tomitake","Keiichi"],
     "questionImage": "quiz_images/qlv2_23.png"
   },
   {
@@ -1773,18 +1308,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "赤坂雪絵の声優さんは？",
     "questionEn": "Who is the voice actress for Akasaka Yukie?",
+    "questionRomaji": "Akasaka Yukie no seiyuu-san wa?",
     "correctAnswerJp": "水野理紗",
     "correctAnswerEn": "Mizuno Risa",
-    "wrongAnswersJp": [
-      "松井菜桜子",
-      "前田愛",
-      "井上麻里奈"
-    ],
-    "wrongAnswersEn": [
-      "Matsui Naoko",
-      "Maeda Ai",
-      "Inoue Marina"
-    ],
+    "correctAnswerRomaji": "Mizuno Risa",
+    "wrongAnswersJp": ["松井菜桜子","前田愛","井上麻里奈"],
+    "wrongAnswersEn": ["Matsui Naoko","Maeda Ai","Inoue Marina"],
+    "wrongAnswersRomaji": ["Matsui Naoko","Maeda Ai","Inoue Marina"],
     "questionImage": "quiz_images/qlv2_24.png"
   },
   {
@@ -1792,18 +1322,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "絆シリーズで、声優名が伏せられたことのあるキャラは？",
     "questionEn": "In the Kizuna series, which character had their voice actor's name hidden?",
+    "questionRomaji": "Kizuna shiriizu de, seiyuu-mei ga fuserareta koto no aru kyara wa?",
     "correctAnswerJp": "赤坂美雪",
     "correctAnswerEn": "Akasaka Miyuki",
-    "wrongAnswersJp": [
-      "田無美代子",
-      "十和田八重",
-      "南井まどか"
-    ],
-    "wrongAnswersEn": [
-      "Tanashi Miyoko (alt.)",
-      "Towada Yae",
-      "Minai Madoka"
-    ],
+    "correctAnswerRomaji": "Akasaka Miyuki",
+    "wrongAnswersJp": ["田無美代子","十和田八重","南井まどか"],
+    "wrongAnswersEn": ["Tanashi Miyoko (alt.)","Towada Yae","Minai Madoka"],
+    "wrongAnswersRomaji": ["Tanashi Miyoko","Towada Yae","Minai Madoka"],
     "questionImage": "quiz_images/qlv2_25.png"
   },
   {
@@ -1811,18 +1336,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「プレイス・オブ・ピリオド」、歌ったのは誰？",
     "questionEn": "Who sang \"Place of Period\"?",
+    "questionRomaji": "\"Pureisu obu Piriodo\", utatsutanohadare?",
     "correctAnswerJp": "諫山実生",
     "correctAnswerEn": "Isayama Mio",
-    "wrongAnswersJp": [
-      "いとうかなこ",
-      "彩音",
-      "Cyua"
-    ],
-    "wrongAnswersEn": [
-      "Itou Kanako",
-      "Ayane",
-      "Cyua"
-    ],
+    "correctAnswerRomaji": "Isayama Mio",
+    "wrongAnswersJp": ["いとうかなこ","彩音","Cyua"],
+    "wrongAnswersEn": ["Itou Kanako","Ayane","Cyua"],
+    "wrongAnswersRomaji": ["Itou Kanako","Ayane","Cyua"],
     "questionImage": "quiz_images/qlv2_26.png"
   },
   {
@@ -1830,18 +1350,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「目明し編」、エンディングテーマは何？",
     "questionEn": "What was the ending theme of the Meakashi chapter?",
+    "questionRomaji": "\"Meakashi-hen\", endinguteemahanani?",
     "correctAnswerJp": "you",
     "correctAnswerEn": "you",
-    "wrongAnswersJp": [
-      "そらのむこう",
-      "Friend",
-      "escape"
-    ],
-    "wrongAnswersEn": [
-      "Sora no Mukou",
-      "Friend",
-      "escape"
-    ],
+    "correctAnswerRomaji": "you",
+    "wrongAnswersJp": ["そらのむこう","Friend","escape"],
+    "wrongAnswersEn": ["Sora no Mukou","Friend","escape"],
+    "wrongAnswersRomaji": ["Sora no Mukou","Friend","escape"],
     "questionImage": "quiz_images/qlv2_27.png"
   },
   {
@@ -1849,18 +1364,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "原作版から欠かせない作曲家さん、名前はなんという？",
     "questionEn": "What is the name of the indispensable composer from the original version?",
+    "questionRomaji": "gensaku-ban kara kakasenai sakkyokuka-san, namae wa nanto iu?",
     "correctAnswerJp": "dai",
     "correctAnswerEn": "dai",
-    "wrongAnswersJp": [
-      "doi",
-      "bai",
-      "boi"
-    ],
-    "wrongAnswersEn": [
-      "doi",
-      "bai",
-      "boi"
-    ],
+    "correctAnswerRomaji": "dai",
+    "wrongAnswersJp": ["doi","bai","boi"],
+    "wrongAnswersEn": ["doi","bai","boi"],
+    "wrongAnswersRomaji": ["doi","bai","boi"],
     "questionImage": "quiz_images/qlv2_28.png"
   },
   {
@@ -1868,18 +1378,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "ひぐらし外伝シリーズ、ベースになったのは何編？",
     "questionEn": "What chapter was the Higurashi side story series based on?",
+    "questionRomaji": "Higurashi gaiden shiriizu, besu ni natta no wa nani-hen?",
     "correctAnswerJp": "鬼曝し編",
     "correctAnswerEn": "Onisarashi-hen",
-    "wrongAnswersJp": [
-      "現壊し編",
-      "心癒し編",
-      "燕返し編"
-    ],
-    "wrongAnswersEn": [
-      "Utsutsukowashi-hen",
-      "Kokoroyashi-hen",
-      "Tsubamegaeshi-hen"
-    ],
+    "correctAnswerRomaji": "Onisarashi-hen",
+    "wrongAnswersJp": ["現壊し編","心癒し編","燕返し編"],
+    "wrongAnswersEn": ["Utsutsukowashi-hen","Kokoroyashi-hen","Tsubamegaeshi-hen"],
+    "wrongAnswersRomaji": ["Utsutsukowashi-hen","Kokoroyashi-hen","Tsubamegaeshi-hen"],
     "questionImage": "quiz_images/qlv2_29.png"
   },
   {
@@ -1887,18 +1392,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "「昼壊し編」、何のゲームをベースに書かれた？",
     "questionEn": "What game was the Hirukowashi chapter based on?",
+    "questionRomaji": "\"Hirukowashi-hen\", nannogeemuwobeesunikakareta?",
     "correctAnswerJp": "ひデブ",
     "correctAnswerEn": "hiDeBu",
-    "wrongAnswersJp": [
-      "さンゴ",
-      "トさカ",
-      "たワバ"
-    ],
-    "wrongAnswersEn": [
-      "saNGo",
-      "ToSaKa",
-      "taWaBa"
-    ],
+    "correctAnswerRomaji": "hiDeBu",
+    "wrongAnswersJp": ["さンゴ","トさカ","たワバ"],
+    "wrongAnswersEn": ["saNGo","ToSaKa","taWaBa"],
+    "wrongAnswersRomaji": ["saNGo","ToSaKa","taWaBa"],
     "questionImage": "quiz_images/qlv2_30.png"
   },
   {
@@ -1906,18 +1406,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "一年目の犠牲者、それは誰？",
     "questionEn": "Who was the victim in the first year?",
+    "questionRomaji": "ichinenmme no giseisha, sore wa dare?",
     "correctAnswerJp": "現場監督",
     "correctAnswerEn": "Construction foreman",
-    "wrongAnswersJp": [
-      "北条夫妻",
-      "古手夫妻",
-      "北条玉枝"
-    ],
-    "wrongAnswersEn": [
-      "The Houjou couple",
-      "The Furude couple",
-      "Houjou Tamae"
-    ],
+    "correctAnswerRomaji": "genba kantoku",
+    "wrongAnswersJp": ["北条夫妻","古手夫妻","北条玉枝"],
+    "wrongAnswersEn": ["The Houjou couple","The Furude couple","Houjou Tamae"],
+    "wrongAnswersRomaji": ["Houjou fuusai","Furude fuusai","Houjou Tamae"],
     "questionImage": "quiz_images/qlv2_31.png"
   },
   {
@@ -1925,18 +1420,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "二年目の犠牲者、それは誰？",
     "questionEn": "Who was the victim in the second year?",
+    "questionRomaji": "ninenmme no giseisha, sore wa dare?",
     "correctAnswerJp": "北条夫妻",
     "correctAnswerEn": "The Houjou couple",
-    "wrongAnswersJp": [
-      "現場監督",
-      "古手夫妻",
-      "北条玉枝"
-    ],
-    "wrongAnswersEn": [
-      "Construction foreman",
-      "The Furude couple",
-      "Houjou Tamae"
-    ],
+    "correctAnswerRomaji": "Houjou fuusai",
+    "wrongAnswersJp": ["現場監督","古手夫妻","北条玉枝"],
+    "wrongAnswersEn": ["Construction foreman","The Furude couple","Houjou Tamae"],
+    "wrongAnswersRomaji": ["genba kantoku","Furude fuusai","Houjou Tamae"],
     "questionImage": "quiz_images/qlv2_32.png"
   },
   {
@@ -1944,18 +1434,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "三年目の犠牲者、それは誰？",
     "questionEn": "Who was the victim in the third year?",
+    "questionRomaji": "sannenmme no giseisha, sore wa dare?",
     "correctAnswerJp": "古手夫妻",
     "correctAnswerEn": "The Furude couple",
-    "wrongAnswersJp": [
-      "現場監督",
-      "北条夫妻",
-      "北条玉枝"
-    ],
-    "wrongAnswersEn": [
-      "Construction foreman",
-      "The Houjou couple",
-      "Houjou Tamae"
-    ],
+    "correctAnswerRomaji": "Furude fuusai",
+    "wrongAnswersJp": ["現場監督","北条夫妻","北条玉枝"],
+    "wrongAnswersEn": ["Construction foreman","The Houjou couple","Houjou Tamae"],
+    "wrongAnswersRomaji": ["genba kantoku","Houjou fuusai","Houjou Tamae"],
     "questionImage": "quiz_images/qlv2_33.png"
   },
   {
@@ -1963,18 +1448,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "四年目の犠牲者、それは誰？",
     "questionEn": "Who was the fourth year's victim?",
+    "questionRomaji": "yonenmme no giseisha, sore wa dare?",
     "correctAnswerJp": "北条玉枝",
     "correctAnswerEn": "Houjou Tamae",
-    "wrongAnswersJp": [
-      "現場監督",
-      "北条夫妻",
-      "古手夫妻"
-    ],
-    "wrongAnswersEn": [
-      "Construction foreman",
-      "The Houjou couple",
-      "The Furude couple"
-    ],
+    "correctAnswerRomaji": "Houjou Tamae",
+    "wrongAnswersJp": ["現場監督","北条夫妻","古手夫妻"],
+    "wrongAnswersEn": ["Construction foreman","The Houjou couple","The Furude couple"],
+    "wrongAnswersRomaji": ["genba kantoku","Houjou fuusai","Furude fuusai"],
     "questionImage": "quiz_images/qlv2_34.png"
   },
   {
@@ -1982,18 +1462,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "絆シリーズ第二巻、出たのは何年？",
     "questionEn": "What year was the second volume of the Kizuna series released?",
+    "questionRomaji": "Kizuna shiiriizu dai-ni-kan, deta no wa nan-nen?",
     "correctAnswerJp": "2008年",
     "correctAnswerEn": "2008",
-    "wrongAnswersJp": [
-      "2007年",
-      "2009年",
-      "2010年"
-    ],
-    "wrongAnswersEn": [
-      "2007",
-      "2009",
-      "2010"
-    ],
+    "correctAnswerRomaji": "2008-nen",
+    "wrongAnswersJp": ["2007年","2009年","2010年"],
+    "wrongAnswersEn": ["2007","2009","2010"],
+    "wrongAnswersRomaji": ["2007-nen","2009-nen","2010-nen"],
     "questionImage": "quiz_images/qlv2_35.png"
   },
   {
@@ -2001,18 +1476,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "祭シリーズ、のちに出た時のタイトルは？",
     "questionEn": "What was the title when the Matsuri series was later re-released?",
+    "questionRomaji": "Matsuri shiiriizu, nochi ni deta toki no taitoru wa?",
     "correctAnswerJp": "カケラ遊び",
     "correctAnswerEn": "Kakera Playing",
-    "wrongAnswersJp": [
-      "カケラ紡ぎ",
-      "カケラ結び",
-      "カケラ弾き"
-    ],
-    "wrongAnswersEn": [
-      "Kakera Spinning",
-      "Kakera Tying",
-      "Kakera Flicking"
-    ],
+    "correctAnswerRomaji": "Kakera Asobi",
+    "wrongAnswersJp": ["カケラ紡ぎ","カケラ結び","カケラ弾き"],
+    "wrongAnswersEn": ["Kakera Spinning","Kakera Tying","Kakera Flicking"],
+    "wrongAnswersRomaji": ["Kakera Tsumugi","Kakera Musubi","Kakera Hajiki"],
     "questionImage": "quiz_images/qlv2_36.png"
   },
   {
@@ -2020,18 +1490,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "富竹ジロウ、役どころからついたアダ名は？",
     "questionEn": "What nickname did Tomitake Jirou get based on his role?",
+    "questionRomaji": "Tomitake Jirou, yakudokoro kara tsuita adana wa?",
     "correctAnswerJp": "時報",
     "correctAnswerEn": "Time signal",
-    "wrongAnswersJp": [
-      "空気",
-      "フラグ",
-      "通過点"
-    ],
-    "wrongAnswersEn": [
-      "Atmosphere",
-      "Flag",
-      "Passing point"
-    ],
+    "correctAnswerRomaji": "jihou",
+    "wrongAnswersJp": ["空気","フラグ","通過点"],
+    "wrongAnswersEn": ["Atmosphere","Flag","Passing point"],
+    "wrongAnswersRomaji": ["kuuki","furagu","tsuukatten"],
     "questionImage": "quiz_images/qlv2_37.png"
   },
   {
@@ -2039,18 +1504,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "キャラクターデザインの「らと」さん、文字はなんと書く？",
     "questionEn": "How do you write the character designer \"Rato\"'s name in kanji?",
+    "questionRomaji": "kyarakutaa dezain no \"Rato\" san, moji wa nanto kaku?",
     "correctAnswerJp": "rato",
     "correctAnswerEn": "rato",
-    "wrongAnswersJp": [
-      "Rato",
-      "RATO",
-      "Lato"
-    ],
-    "wrongAnswersEn": [
-      "Rato",
-      "RATO",
-      "Lato"
-    ],
+    "correctAnswerRomaji": "rato",
+    "wrongAnswersJp": ["Rato","RATO","Lato"],
+    "wrongAnswersEn": ["Rato","RATO","Lato"],
+    "wrongAnswersRomaji": ["Rato","RATO","Lato"],
     "questionImage": "quiz_images/qlv2_38.png"
   },
   {
@@ -2058,18 +1518,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "ひぐらしのなく頃に絆、第二巻は？",
     "questionEn": "What was the second volume of Higurashi no Naku Koro ni Kizuna?",
+    "questionRomaji": "Higurashi no Naku Koro ni Kizuna, dai-ni-kan wa?",
     "correctAnswerJp": "想",
     "correctAnswerEn": "Thought",
-    "wrongAnswersJp": [
-      "祟",
-      "螺",
-      "絆"
-    ],
-    "wrongAnswersEn": [
-      "Curse",
-      "Spiral",
-      "Bond"
-    ],
+    "correctAnswerRomaji": "sou",
+    "wrongAnswersJp": ["祟","螺","絆"],
+    "wrongAnswersEn": ["Curse","Spiral","Bond"],
+    "wrongAnswersRomaji": ["tatari","ra","kizuna"],
     "questionImage": "quiz_images/qlv2_39.png"
   },
   {
@@ -2077,18 +1532,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "この文字、なんて読む？　谷河内",
     "questionEn": "How do you read this word? Yagouchi",
+    "questionRomaji": "kono moji, nante yomu? Yagouchi",
     "correctAnswerJp": "やごうち",
     "correctAnswerEn": "Yagouchi",
-    "wrongAnswersJp": [
-      "たにごうち",
-      "たにこうち",
-      "たにかわち"
-    ],
-    "wrongAnswersEn": [
-      "Tanigouchi",
-      "Tanikouchi",
-      "Tanikawachi"
-    ],
+    "correctAnswerRomaji": "Yagouchi",
+    "wrongAnswersJp": ["たにごうち","たにこうち","たにかわち"],
+    "wrongAnswersEn": ["Tanigouchi","Tanikouchi","Tanikawachi"],
+    "wrongAnswersRomaji": ["Tanigouchi","Tanikouchi","Tanikawachi"],
     "questionImage": "quiz_images/qlv2_40.png"
   },
   {
@@ -2096,18 +1546,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "この絵の制服を着ているのは？",
     "questionEn": "Who is wearing the uniform shown in this picture?",
+    "questionRomaji": "kono e no seifuku wo kite iru no wa?",
     "correctAnswerJp": "沙都子",
     "correctAnswerEn": "Satoko",
-    "wrongAnswersJp": [
-      "レナ",
-      "詩音",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Shion",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Satoko",
+    "wrongAnswersJp": ["レナ","詩音","梨花"],
+    "wrongAnswersEn": ["Rena","Shion","Rika"],
+    "wrongAnswersRomaji": ["Rena","Shion","Rika"],
     "questionImage": "quiz_images/qlv2_41.png"
   },
   {
@@ -2115,18 +1560,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "この絵の制服を着ているのは？",
     "questionEn": "Who is wearing the uniform shown in this picture?",
+    "questionRomaji": "kono e no seifuku wo kite iru no wa?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "夏美",
-      "魅音",
-      "詩音"
-    ],
-    "wrongAnswersEn": [
-      "Natsumi",
-      "Mion",
-      "Shion"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["夏美","魅音","詩音"],
+    "wrongAnswersEn": ["Natsumi","Mion","Shion"],
+    "wrongAnswersRomaji": ["Natsumi","Mion","Shion"],
     "questionImage": "quiz_images/qlv2_42.png"
   },
   {
@@ -2134,18 +1574,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "この絵の制服を着ているのは？",
     "questionEn": "Who is wearing the uniform shown in this picture?",
+    "questionRomaji": "kono e no seifuku wo kite iru no wa?",
     "correctAnswerJp": "詩音",
     "correctAnswerEn": "Shion",
-    "wrongAnswersJp": [
-      "魅音",
-      "レナ",
-      "夏美"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Rena",
-      "Natsumi"
-    ],
+    "correctAnswerRomaji": "Shion",
+    "wrongAnswersJp": ["魅音","レナ","夏美"],
+    "wrongAnswersEn": ["Mion","Rena","Natsumi"],
+    "wrongAnswersRomaji": ["Mion","Rena","Natsumi"],
     "questionImage": "quiz_images/qlv2_43.png"
   },
   {
@@ -2153,18 +1588,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "この絵の制服を着ているのは？",
     "questionEn": "Who is wearing the uniform shown in this picture?",
+    "questionRomaji": "kono e no seifuku wo kite iru no wa?",
     "correctAnswerJp": "夏美",
     "correctAnswerEn": "Natsumi",
-    "wrongAnswersJp": [
-      "レナ",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Natsumi",
+    "wrongAnswersJp": ["レナ","沙都子","梨花"],
+    "wrongAnswersEn": ["Rena","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Rena","Satoko","Rika"],
     "questionImage": "quiz_images/qlv2_44.png"
   },
   {
@@ -2172,18 +1602,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "この口癖をしているのは、誰？　おじさん",
     "questionEn": "Whose catchphrase is this? \"Ojisan\"",
+    "questionRomaji": "kono kuchiguse wo shite iru no wa, dare? ojisan",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "レナ",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["レナ","沙都子","梨花"],
+    "wrongAnswersEn": ["Rena","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Rena","Satoko","Rika"],
     "questionImage": "quiz_images/qlv2_45.png"
   },
   {
@@ -2191,18 +1616,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "沙都子",
-      "美雪",
-      "夏美"
-    ],
-    "wrongAnswersEn": [
-      "Satoko",
-      "Miyuki",
-      "Natsumi"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["沙都子","美雪","夏美"],
+    "wrongAnswersEn": ["Satoko","Miyuki","Natsumi"],
+    "wrongAnswersRomaji": ["Satoko","Miyuki","Natsumi"],
     "questionImage": "quiz_images/qlv2_46.png"
   },
   {
@@ -2210,18 +1630,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "赤坂",
     "correctAnswerEn": "Akasaka",
-    "wrongAnswersJp": [
-      "戦人",
-      "保坂",
-      "空条"
-    ],
-    "wrongAnswersEn": [
-      "Battler",
-      "Hosaka",
-      "Kuujou"
-    ],
+    "correctAnswerRomaji": "Akasaka",
+    "wrongAnswersJp": ["戦人","保坂","空条"],
+    "wrongAnswersEn": ["Battler","Hosaka","Kuujou"],
+    "wrongAnswersRomaji": ["Battler","Hosaka","Kuujou"],
     "questionImage": "quiz_images/qlv2_47.png"
   },
   {
@@ -2229,18 +1644,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "詩音",
     "correctAnswerEn": "Shion",
-    "wrongAnswersJp": [
-      "嘉音",
-      "紗音",
-      "明日音"
-    ],
-    "wrongAnswersEn": [
-      "Kanon",
-      "Shannon",
-      "Asuon"
-    ],
+    "correctAnswerRomaji": "Shion",
+    "wrongAnswersJp": ["嘉音","紗音","明日音"],
+    "wrongAnswersEn": ["Kanon","Shannon","Asuon"],
+    "wrongAnswersRomaji": ["Kanon","Shanon","Asuon"],
     "questionImage": "quiz_images/qlv2_48.png"
   },
   {
@@ -2248,18 +1658,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "亀田",
     "correctAnswerEn": "Kameda",
-    "wrongAnswersJp": [
-      "田中",
-      "烏養",
-      "小林"
-    ],
-    "wrongAnswersEn": [
-      "Tanaka",
-      "Ukai",
-      "Kobayashi"
-    ],
+    "correctAnswerRomaji": "Kameda",
+    "wrongAnswersJp": ["田中","烏養","小林"],
+    "wrongAnswersEn": ["Tanaka","Ukai","Kobayashi"],
+    "wrongAnswersRomaji": ["Tanaka","Ukai","Kobayashi"],
     "questionImage": "quiz_images/qlv2_49.png"
   },
   {
@@ -2267,18 +1672,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "悟史",
     "correctAnswerEn": "Satoshi",
-    "wrongAnswersJp": [
-      "鉄平",
-      "聡志",
-      "嘉音"
-    ],
-    "wrongAnswersEn": [
-      "Teppei",
-      "Satoshi (alt.)",
-      "Kanon"
-    ],
+    "correctAnswerRomaji": "Satoshi",
+    "wrongAnswersJp": ["鉄平","聡志","嘉音"],
+    "wrongAnswersEn": ["Teppei","Satoshi (alt.)","Kanon"],
+    "wrongAnswersRomaji": ["Teppei","Satoshi","Kanon"],
     "questionImage": "quiz_images/qlv2_50.png"
   },
   {
@@ -2286,18 +1686,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "巴",
     "correctAnswerEn": "Tomoe",
-    "wrongAnswersJp": [
-      "一美",
-      "薙",
-      "麻尋"
-    ],
-    "wrongAnswersEn": [
-      "Hitomi",
-      "Nagi",
-      "Mahiro"
-    ],
+    "correctAnswerRomaji": "Tomoe",
+    "wrongAnswersJp": ["一美","薙","麻尋"],
+    "wrongAnswersEn": ["Hitomi","Nagi","Mahiro"],
+    "wrongAnswersRomaji": ["Hitomi","Nagi","Mahiro"],
     "questionImage": "quiz_images/qlv2_51.png"
   },
   {
@@ -2305,18 +1700,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "大石",
     "correctAnswerEn": "Oishi",
-    "wrongAnswersJp": [
-      "鎌霧",
-      "磯野",
-      "目暮"
-    ],
-    "wrongAnswersEn": [
-      "Kamagiri",
-      "Isono",
-      "Megure"
-    ],
+    "correctAnswerRomaji": "Oishi",
+    "wrongAnswersJp": ["鎌霧","磯野","目暮"],
+    "wrongAnswersEn": ["Kamagiri","Isono","Megure"],
+    "wrongAnswersRomaji": ["Kamagiri","Isono","Megure"],
     "questionImage": "quiz_images/qlv2_52.png"
   },
   {
@@ -2324,18 +1714,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "田村ゆかり",
     "correctAnswerEn": "Tamura Yukari",
-    "wrongAnswersJp": [
-      "村田ゆかり",
-      "田村ゆりか",
-      "完売なのは"
-    ],
-    "wrongAnswersEn": [
-      "Murata Yukari (alt.)",
-      "Tamura Yurika (alt.)",
-      "Sold-out Nanoha"
-    ],
+    "correctAnswerRomaji": "Tamura Yukari",
+    "wrongAnswersJp": ["村田ゆかり","田村ゆりか","完売なのは"],
+    "wrongAnswersEn": ["Murata Yukari (alt.)","Tamura Yurika (alt.)","Sold-out Nanoha"],
+    "wrongAnswersRomaji": ["Murata Yukari","Tamura Yurika","kanbai Nanoha"],
     "questionImage": "quiz_images/qlv2_53.png"
   },
   {
@@ -2343,18 +1728,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "小野大輔",
     "correctAnswerEn": "Ono Daisuke",
-    "wrongAnswersJp": [
-      "右代宮大輔",
-      "小野清舟",
-      "小野かおる"
-    ],
-    "wrongAnswersEn": [
-      "Ushiromiya Daisuke (alt.)",
-      "Ono Seishuu (alt.)",
-      "Ono Kaoru (alt.)"
-    ],
+    "correctAnswerRomaji": "Ono Daisuke",
+    "wrongAnswersJp": ["右代宮大輔","小野清舟","小野かおる"],
+    "wrongAnswersEn": ["Ushiromiya Daisuke (alt.)","Ono Seishuu (alt.)","Ono Kaoru (alt.)"],
+    "wrongAnswersRomaji": ["Ushiromiya Daisuke","Ono Seishuu","Ono Kaoru"],
     "questionImage": "quiz_images/qlv2_54.png"
   },
   {
@@ -2362,18 +1742,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "ゆきのさつき",
     "correctAnswerEn": "Yukino Satsuki",
-    "wrongAnswersJp": [
-      "ゆきのむつき",
-      "きみざわさつき",
-      "ゆきのかなめ"
-    ],
-    "wrongAnswersEn": [
-      "Yukino Mutsuki",
-      "Kimizawa Satsuki",
-      "Yukino Kaname"
-    ],
+    "correctAnswerRomaji": "Yukino Satsuki",
+    "wrongAnswersJp": ["ゆきのむつき","きみざわさつき","ゆきのかなめ"],
+    "wrongAnswersEn": ["Yukino Mutsuki","Kimizawa Satsuki","Yukino Kaname"],
+    "wrongAnswersRomaji": ["Yukino Mutsuki","Kimizawa Satsuki","Yukino Kaname"],
     "questionImage": "quiz_images/qlv2_55.png"
   },
   {
@@ -2381,18 +1756,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "田中一成",
     "correctAnswerEn": "Tanaka Kazunari",
-    "wrongAnswersJp": [
-      "田中三成",
-      "道頓堀一成",
-      "田中拳"
-    ],
-    "wrongAnswersEn": [
-      "Tanaka Mitsunari (alt.)",
-      "Doutonbori Kazunari (alt.)",
-      "Tanaka Ken (alt.)"
-    ],
+    "correctAnswerRomaji": "Tanaka Kazunari",
+    "wrongAnswersJp": ["田中三成","道頓堀一成","田中拳"],
+    "wrongAnswersEn": ["Tanaka Mitsunari (alt.)","Doutonbori Kazunari (alt.)","Tanaka Ken (alt.)"],
+    "wrongAnswersRomaji": ["Tanaka Mitsunari","Doutonbori Kazunari","Tanaka Ken"],
     "questionImage": "quiz_images/qlv2_56.png"
   },
   {
@@ -2400,18 +1770,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "小林ゆう",
     "correctAnswerEn": "Kobayashi Yuu",
-    "wrongAnswersJp": [
-      "木林ゆう",
-      "小林ゆゆ",
-      "サシャ・葛城"
-    ],
-    "wrongAnswersEn": [
-      "Kibayashi Yuu (alt.)",
-      "Kobayashi Yuyu (alt.)",
-      "Sasha Katsuragi"
-    ],
+    "correctAnswerRomaji": "Kobayashi Yuu",
+    "wrongAnswersJp": ["木林ゆう","小林ゆゆ","サシャ・葛城"],
+    "wrongAnswersEn": ["Kibayashi Yuu (alt.)","Kobayashi Yuyu (alt.)","Sasha Katsuragi"],
+    "wrongAnswersRomaji": ["Kibayashi Yuu","Kobayashi Yuyu","Sasha Katsuragi"],
     "questionImage": "quiz_images/qlv2_57.png"
   },
   {
@@ -2419,18 +1784,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "井ノ上奈々",
     "correctAnswerEn": "Inoue Nana",
-    "wrongAnswersJp": [
-      "井上七",
-      "川淵奈々",
-      "仙堂奈々"
-    ],
-    "wrongAnswersEn": [
-      "Inoue Nana (alt.)",
-      "Kawabuchi Nana (alt.)",
-      "Sendou Nana (alt.)"
-    ],
+    "correctAnswerRomaji": "Inoue Nana",
+    "wrongAnswersJp": ["井上七","川淵奈々","仙堂奈々"],
+    "wrongAnswersEn": ["Inoue Nana (alt.)","Kawabuchi Nana (alt.)","Sendou Nana (alt.)"],
+    "wrongAnswersRomaji": ["Inoue Nana","Kawabuchi Nana","Sendou Nana"],
     "questionImage": "quiz_images/qlv2_58.png"
   },
   {
@@ -2438,18 +1798,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "茶風林",
     "correctAnswerEn": "Chafurin",
-    "wrongAnswersJp": [
-      "茶風鈴",
-      "滝口林",
-      "永沢秀治"
-    ],
-    "wrongAnswersEn": [
-      "Chafurin (alt.)",
-      "Takiguchi Rin (alt.)",
-      "Nagasawa Shuuji (alt.)"
-    ],
+    "correctAnswerRomaji": "Chafurin",
+    "wrongAnswersJp": ["茶風鈴","滝口林","永沢秀治"],
+    "wrongAnswersEn": ["Chafurin (alt.)","Takiguchi Rin (alt.)","Nagasawa Shuuji (alt.)"],
+    "wrongAnswersRomaji": ["Chafuurin","Takiguchi Rin","Nagasawa Shuuji"],
     "questionImage": "quiz_images/qlv2_59.png"
   },
   {
@@ -2457,18 +1812,13 @@ export const entries: Entry[] = [
     "level": 2,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "沢城みゆき",
     "correctAnswerEn": "Sawashiro Miyuki",
-    "wrongAnswersJp": [
-      "沢城美雪",
-      "沢代みゆき",
-      "銅鑼野織乃楠"
-    ],
-    "wrongAnswersEn": [
-      "Sawashiro Miyuki (alt.)",
-      "Sawashiro Miyuki (alt.)",
-      "Doranorinonokusu (alt.)"
-    ],
+    "correctAnswerRomaji": "Sawashiro Miyuki",
+    "wrongAnswersJp": ["沢城美雪","沢代みゆき","銅鑼野織乃楠"],
+    "wrongAnswersEn": ["Sawashiro Miyuki (alt.)","Sawashiro Miyuki (alt.)","Doranorinonokusu (alt.)"],
+    "wrongAnswersRomaji": ["Sawashiro Miyuki","Sawashiro Miyuki","Doranorinonokusu"],
     "questionImage": "quiz_images/qlv2_60.png"
   },
   {
@@ -2476,18 +1826,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "南井巴の出身大学は？",
     "questionEn": "What university did Tomoe Minai attend?",
+    "questionRomaji": "Minai Tomoe no shusshin daigaku wa?",
     "correctAnswerJp": "鹿嶋大",
     "correctAnswerEn": "Kashima University",
-    "wrongAnswersJp": [
-      "水戸大",
-      "日立大",
-      "土浦大"
-    ],
-    "wrongAnswersEn": [
-      "Mito University",
-      "Hitachi University",
-      "Tsuchiura University"
-    ],
+    "correctAnswerRomaji": "Kashima Dai",
+    "wrongAnswersJp": ["水戸大","日立大","土浦大"],
+    "wrongAnswersEn": ["Mito University","Hitachi University","Tsuchiura University"],
+    "wrongAnswersRomaji": ["Mito Dai","Hitachi Dai","Tsuchiura Dai"],
     "questionImage": "quiz_images/qlv3_01.png"
   },
   {
@@ -2495,18 +1840,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "垣内署の署長、山沖薫の階級は？",
     "questionEn": "What is the rank of Kakiuchi Station chief Yamaoki Kaoru?",
+    "questionRomaji": "Kakiuchi-sho no shochou, Yamaoki Kaoru no kaikyu wa?",
     "correctAnswerJp": "警視正",
     "correctAnswerEn": "Senior Superintendent",
-    "wrongAnswersJp": [
-      "警視",
-      "警視長",
-      "警部"
-    ],
-    "wrongAnswersEn": [
-      "Superintendent",
-      "Chief Superintendent",
-      "Inspector"
-    ],
+    "correctAnswerRomaji": "keishishou",
+    "wrongAnswersJp": ["警視","警視長","警部"],
+    "wrongAnswersEn": ["Superintendent","Chief Superintendent","Inspector"],
+    "wrongAnswersRomaji": ["keishi","keishichou","keibu"],
     "questionImage": "quiz_images/qlv3_02.png"
   },
   {
@@ -2514,18 +1854,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "魅音の親戚、議員さんは誰？",
     "questionEn": "Which of Mion's relatives is a politician?",
+    "questionRomaji": "Mion no shinseki, giin-san wa dare?",
     "correctAnswerJp": "三郎",
     "correctAnswerEn": "Saburou",
-    "wrongAnswersJp": [
-      "善郎",
-      "弘",
-      "義郎"
-    ],
-    "wrongAnswersEn": [
-      "Yoshirou",
-      "Hiroshi",
-      "Yoshirou"
-    ],
+    "correctAnswerRomaji": "Saburou",
+    "wrongAnswersJp": ["善郎","弘","義郎"],
+    "wrongAnswersEn": ["Yoshirou","Hiroshi","Yoshirou"],
+    "wrongAnswersRomaji": ["Yoshirou","Hiroshi","Yoshirou"],
     "questionImage": "quiz_images/qlv3_03.png"
   },
   {
@@ -2533,18 +1868,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "南井巴の陸上部時代の種目は？",
     "questionEn": "What was Tomoe Minai's event when she was on the track team?",
+    "questionRomaji": "Minai Tomoe no rikujoubu jidai no shumoku wa?",
     "correctAnswerJp": "走り高跳び",
     "correctAnswerEn": "High jump",
-    "wrongAnswersJp": [
-      "マラソン",
-      "やり投げ",
-      "短距離走"
-    ],
-    "wrongAnswersEn": [
-      "Marathon",
-      "Javelin throw",
-      "Sprint"
-    ],
+    "correctAnswerRomaji": "hashiri takotobi",
+    "wrongAnswersJp": ["マラソン","やり投げ","短距離走"],
+    "wrongAnswersEn": ["Marathon","Javelin throw","Sprint"],
+    "wrongAnswersRomaji": ["marason","yarinage","tankyorisou"],
     "questionImage": "quiz_images/qlv3_04.png"
   },
   {
@@ -2552,18 +1882,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "大高の所属する県警本部、どこにある？",
     "questionEn": "Where is the prefectural police headquarters that Ootaka belongs to?",
+    "questionRomaji": "Ootaka no shozoku suru kenkeihonbu, doko ni aru?",
     "correctAnswerJp": "穀倉",
     "correctAnswerEn": "Kokusou",
-    "wrongAnswersJp": [
-      "谷河内",
-      "興宮",
-      "天竺"
-    ],
-    "wrongAnswersEn": [
-      "Yagouchi",
-      "Okinomiya",
-      "Tenjiku"
-    ],
+    "correctAnswerRomaji": "Gogura",
+    "wrongAnswersJp": ["谷河内","興宮","天竺"],
+    "wrongAnswersEn": ["Yagouchi","Okinomiya","Tenjiku"],
+    "wrongAnswersRomaji": ["Yagouchi","Okinomiya","Tenjiku"],
     "questionImage": "quiz_images/qlv3_05.png"
   },
   {
@@ -2571,18 +1896,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "レナの仕掛けた爆弾の仕組みは？",
     "questionEn": "How was the bomb Rena set up rigged to work?",
+    "questionRomaji": "Rena no shikaketa bakudan no shikumi wa?",
     "correctAnswerJp": "キッチンタイマー",
     "correctAnswerEn": "Kitchen timer",
-    "wrongAnswersJp": [
-      "目覚まし時計",
-      "フーコーの振り子",
-      "形状記憶合金"
-    ],
-    "wrongAnswersEn": [
-      "Alarm clock",
-      "Foucault's pendulum",
-      "Shape-memory alloy"
-    ],
+    "correctAnswerRomaji": "kicchin taimaa",
+    "wrongAnswersJp": ["目覚まし時計","フーコーの振り子","形状記憶合金"],
+    "wrongAnswersEn": ["Alarm clock","Foucault's pendulum","Shape-memory alloy"],
+    "wrongAnswersRomaji": ["mezamashi tokei","Fuuko no furiko","keijou kioku goukin"],
     "questionImage": "quiz_images/qlv3_06.png"
   },
   {
@@ -2590,18 +1910,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "大石の上司、刑事課の課長の名前は？",
     "questionEn": "What is the name of Oishi's boss, the chief of the Criminal Investigation Division?",
+    "questionRomaji": "Oishi no joushi, keijika no kachou no namae wa?",
     "correctAnswerJp": "高杉",
     "correctAnswerEn": "Takasugi",
-    "wrongAnswersJp": [
-      "大杉",
-      "出木杉",
-      "千年杉"
-    ],
-    "wrongAnswersEn": [
-      "Oosugi",
-      "Dekisugi",
-      "Thousand-year cedar"
-    ],
+    "correctAnswerRomaji": "Takasugi",
+    "wrongAnswersJp": ["大杉","出木杉","千年杉"],
+    "wrongAnswersEn": ["Oosugi","Dekisugi","Thousand-year cedar"],
+    "wrongAnswersRomaji": ["Oosugi","Dekisugi","Sennenzugi"],
     "questionImage": "quiz_images/qlv3_07.png"
   },
   {
@@ -2609,18 +1924,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "羽入の好物は？",
     "questionEn": "What is Hanyuu's favorite food?",
+    "questionRomaji": "Hanyuu no koubutsu wa?",
     "correctAnswerJp": "正解はない",
     "correctAnswerEn": "There is no correct answer",
-    "wrongAnswersJp": [
-      "キムチ",
-      "ワサビ",
-      "ハバネロ"
-    ],
-    "wrongAnswersEn": [
-      "Kimchi",
-      "Wasabi",
-      "Habanero"
-    ],
+    "correctAnswerRomaji": "seikai wa nai",
+    "wrongAnswersJp": ["キムチ","ワサビ","ハバネロ"],
+    "wrongAnswersEn": ["Kimchi","Wasabi","Habanero"],
+    "wrongAnswersRomaji": ["kimuchi","wasabi","habanero"],
     "questionImage": "quiz_images/qlv3_08.png"
   },
   {
@@ -2628,18 +1938,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "梨花の好きなものは？",
     "questionEn": "What is Rika's favorite thing?",
+    "questionRomaji": "Rika no suki na mono wa?",
     "correctAnswerJp": "ぶどうジュース",
     "correctAnswerEn": "Grape juice",
-    "wrongAnswersJp": [
-      "りんごジュース",
-      "梅酒",
-      "焼肉のたれ"
-    ],
-    "wrongAnswersEn": [
-      "Apple juice",
-      "Plum wine",
-      "Yakiniku sauce"
-    ],
+    "correctAnswerRomaji": "budou juusu",
+    "wrongAnswersJp": ["りんごジュース","梅酒","焼肉のたれ"],
+    "wrongAnswersEn": ["Apple juice","Plum wine","Yakiniku sauce"],
+    "wrongAnswersRomaji": ["ringo juusu","umeshu","yakiniku no tare"],
     "questionImage": "quiz_images/qlv3_09.png"
   },
   {
@@ -2647,18 +1952,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "山沖のエンジェルモートでの称号は？",
     "questionEn": "What is Yamaoki's title at Angel Mort?",
+    "questionRomaji": "Yamaoki no Enjeru Mooto de no shougou wa?",
     "correctAnswerJp": "大公爵",
     "correctAnswerEn": "Grand Duke",
-    "wrongAnswersJp": [
-      "帝王",
-      "神",
-      "おっさん"
-    ],
-    "wrongAnswersEn": [
-      "Emperor",
-      "God",
-      "Old man"
-    ],
+    "correctAnswerRomaji": "daikoshaku",
+    "wrongAnswersJp": ["帝王","神","おっさん"],
+    "wrongAnswersEn": ["Emperor","God","Old man"],
+    "wrongAnswersRomaji": ["teiou","kami","ossan"],
     "questionImage": "quiz_images/qlv3_10.png"
   },
   {
@@ -2666,18 +1966,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "園崎家の秘宝、「シンレイ」、漢字で書くと？",
     "questionEn": "The Sonozaki family's secret treasure, \"Shinrei\" -- how is it written in kanji?",
+    "questionRomaji": "Sonozaki-ke no hihou, \"Shinrei\", kanji de kaku to?",
     "correctAnswerJp": "振鈴",
     "correctAnswerEn": "Ringing bell",
-    "wrongAnswersJp": [
-      "心霊",
-      "神鈴",
-      "神礼"
-    ],
-    "wrongAnswersEn": [
-      "Psychic",
-      "Sacred bell",
-      "Sacred offering"
-    ],
+    "correctAnswerRomaji": "shinrei",
+    "wrongAnswersJp": ["心霊","神鈴","神礼"],
+    "wrongAnswersEn": ["Psychic","Sacred bell","Sacred offering"],
+    "wrongAnswersRomaji": ["shinrei","shinrei","shinrei"],
     "questionImage": "quiz_images/qlv3_11.png"
   },
   {
@@ -2685,18 +1980,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "園崎家の家宝の剣、「なに」弾き？",
     "questionEn": "The Sonozaki family's treasured sword: \"what\"-biki?",
+    "questionRomaji": "Sonozaki-ke no kahou no ken, \"nani\" hajiki?",
     "correctAnswerJp": "たま",
     "correctAnswerEn": "Tama",
-    "wrongAnswersJp": [
-      "つま",
-      "しま",
-      "てま"
-    ],
-    "wrongAnswersEn": [
-      "Tsuma",
-      "Shima",
-      "Tema"
-    ],
+    "correctAnswerRomaji": "tama",
+    "wrongAnswersJp": ["つま","しま","てま"],
+    "wrongAnswersEn": ["Tsuma","Shima","Tema"],
+    "wrongAnswersRomaji": ["tsuma","shima","tema"],
     "questionImage": "quiz_images/qlv3_12.png"
   },
   {
@@ -2704,18 +1994,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "八重の恋人、黒澤タクミ。漢字で書くと？",
     "questionEn": "Yae's boyfriend, Takumi Kurosawa. How is his name written in kanji?",
+    "questionRomaji": "Yae no koibito, Kurosawa Takumi. kanji de kaku to?",
     "correctAnswerJp": "工",
     "correctAnswerEn": "Kou",
-    "wrongAnswersJp": [
-      "匠",
-      "巧",
-      "卓"
-    ],
-    "wrongAnswersEn": [
-      "Takumi",
-      "Takumi",
-      "Taku"
-    ],
+    "correctAnswerRomaji": "Kou",
+    "wrongAnswersJp": ["匠","巧","卓"],
+    "wrongAnswersEn": ["Takumi","Takumi","Taku"],
+    "wrongAnswersRomaji": ["Takumi","Takumi","Taku"],
     "questionImage": "quiz_images/qlv3_13.png"
   },
   {
@@ -2723,18 +2008,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "ライターの荒川龍ノ介、専門ジャンルは？",
     "questionEn": "What genre does the writer Ryuunosuke Arakawa specialize in?",
+    "questionRomaji": "raitaa no Arakawa Ryuunosuke, senmon janru wa?",
     "correctAnswerJp": "オカルト",
     "correctAnswerEn": "Occult",
-    "wrongAnswersJp": [
-      "スポーツ",
-      "ＳＦ",
-      "芸能"
-    ],
-    "wrongAnswersEn": [
-      "Sports",
-      "Sci-fi",
-      "Entertainment"
-    ],
+    "correctAnswerRomaji": "okaruto",
+    "wrongAnswersJp": ["スポーツ","ＳＦ","芸能"],
+    "wrongAnswersEn": ["Sports","Sci-fi","Entertainment"],
+    "wrongAnswersRomaji": ["supootsu","SF","geinou"],
     "questionImage": "quiz_images/qlv3_14.png"
   },
   {
@@ -2742,18 +2022,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "反町美雪、父親は誰？",
     "questionEn": "Who is Miyuki Sorimachi's father?",
+    "questionRomaji": "Sorimachi Miyuki, chichioya wa dare?",
     "correctAnswerJp": "赤坂",
     "correctAnswerEn": "Akasaka",
-    "wrongAnswersJp": [
-      "大石",
-      "富竹",
-      "圭一"
-    ],
-    "wrongAnswersEn": [
-      "Oishi",
-      "Tomitake",
-      "Keiichi"
-    ],
+    "correctAnswerRomaji": "Akasaka",
+    "wrongAnswersJp": ["大石","富竹","圭一"],
+    "wrongAnswersEn": ["Oishi","Tomitake","Keiichi"],
+    "wrongAnswersRomaji": ["Oishi","Tomitake","Keiichi"],
     "questionImage": "quiz_images/qlv3_15.png"
   },
   {
@@ -2761,18 +2036,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "園崎家の裏切り者、名前は？",
     "questionEn": "What is the name of the traitor of the Sonozaki family?",
+    "questionRomaji": "Sonozaki-ke no uragirimono, namae wa?",
     "correctAnswerJp": "三船",
     "correctAnswerEn": "Mifune",
-    "wrongAnswersJp": [
-      "渡",
-      "加山",
-      "石原"
-    ],
-    "wrongAnswersEn": [
-      "Watari",
-      "Kayama",
-      "Ishihara"
-    ],
+    "correctAnswerRomaji": "Mifune",
+    "wrongAnswersJp": ["渡","加山","石原"],
+    "wrongAnswersEn": ["Watari","Kayama","Ishihara"],
+    "wrongAnswersRomaji": ["Watari","Kayama","Ishihara"],
     "questionImage": "quiz_images/qlv3_16.png"
   },
   {
@@ -2780,18 +2050,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「鬼隠し編」の圭一、何を注射器だと思った？",
     "questionEn": "In the Onikakushi chapter, what did Keiichi mistake for a syringe?",
+    "questionRomaji": "\"Onikakushi-hen\" no Keiichi, nani wo chuushaki da to omotta?",
     "correctAnswerJp": "サインペン",
     "correctAnswerEn": "Marker pen",
-    "wrongAnswersJp": [
-      "泡だて器",
-      "リモコン",
-      "しゃもじ"
-    ],
-    "wrongAnswersEn": [
-      "Whisk",
-      "Remote control",
-      "Rice paddle"
-    ],
+    "correctAnswerRomaji": "sain pen",
+    "wrongAnswersJp": ["泡だて器","リモコン","しゃもじ"],
+    "wrongAnswersEn": ["Whisk","Remote control","Rice paddle"],
+    "wrongAnswersRomaji": ["awadateki","rimokon","shamoji"],
     "questionImage": "quiz_images/qlv3_17.png"
   },
   {
@@ -2799,18 +2064,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "間宮リナ、勤めているのは「なに」マーメイド？",
     "questionEn": "Rena Mamiya works at \"what\" Mermaid?",
+    "questionRomaji": "Mamiya Rina, tsutomete iru no wa \"nani\" Maameido?",
     "correctAnswerJp": "ブルー",
     "correctAnswerEn": "Blue",
-    "wrongAnswersJp": [
-      "リトル",
-      "レッド",
-      "デス"
-    ],
-    "wrongAnswersEn": [
-      "Little",
-      "Red",
-      "Death"
-    ],
+    "correctAnswerRomaji": "Buruu",
+    "wrongAnswersJp": ["リトル","レッド","デス"],
+    "wrongAnswersEn": ["Little","Red","Death"],
+    "wrongAnswersRomaji": ["Ritoru","Reddo","Desu"],
     "questionImage": "quiz_images/qlv3_18.png"
   },
   {
@@ -2818,18 +2078,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "乙部彰、どうして借金をした？",
     "questionEn": "Why did Akira Otobe go into debt?",
+    "questionRomaji": "Otobe Akira, doushite shakkin wo shita?",
     "correctAnswerJp": "彼女",
     "correctAnswerEn": "Girlfriend",
-    "wrongAnswersJp": [
-      "競馬",
-      "パチンコ",
-      "宗教"
-    ],
-    "wrongAnswersEn": [
-      "Horse racing",
-      "Pachinko",
-      "Religion"
-    ],
+    "correctAnswerRomaji": "kanojo",
+    "wrongAnswersJp": ["競馬","パチンコ","宗教"],
+    "wrongAnswersEn": ["Horse racing","Pachinko","Religion"],
+    "wrongAnswersRomaji": ["keiba","pachinko","shuukyou"],
     "questionImage": "quiz_images/qlv3_19.png"
   },
   {
@@ -2837,18 +2092,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "集団自殺、生き残ったのは誰？",
     "questionEn": "Who survived the mass suicide?",
+    "questionRomaji": "shuudan jisatsu, ikinokotta no wa dare?",
     "correctAnswerJp": "乙部",
     "correctAnswerEn": "Otobe",
-    "wrongAnswersJp": [
-      "芥川",
-      "千秋",
-      "真知子"
-    ],
-    "wrongAnswersEn": [
-      "Akutagawa",
-      "Chiaki",
-      "Machiko"
-    ],
+    "correctAnswerRomaji": "Otobe",
+    "wrongAnswersJp": ["芥川","千秋","真知子"],
+    "wrongAnswersEn": ["Akutagawa","Chiaki","Machiko"],
+    "wrongAnswersRomaji": ["Akutagawa","Chiaki","Machiko"],
     "questionImage": "quiz_images/qlv3_20.png"
   },
   {
@@ -2856,18 +2106,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "尾崎渚、所属していたクラブは？",
     "questionEn": "What club did Ozaki Nagisa belong to?",
+    "questionRomaji": "Ozaki Nagisa, shozoku shite ita kurabu wa?",
     "correctAnswerJp": "園芸部",
     "correctAnswerEn": "Gardening club",
-    "wrongAnswersJp": [
-      "演劇部",
-      "吹奏楽部",
-      "文芸部"
-    ],
-    "wrongAnswersEn": [
-      "Drama club",
-      "Brass band club",
-      "Literary club"
-    ],
+    "correctAnswerRomaji": "engeibu",
+    "wrongAnswersJp": ["演劇部","吹奏楽部","文芸部"],
+    "wrongAnswersEn": ["Drama club","Brass band club","Literary club"],
+    "wrongAnswersRomaji": ["engekibu","suisougakubu","bungeibu"],
     "questionImage": "quiz_images/qlv3_21.png"
   },
   {
@@ -2875,18 +2120,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "尾崎渚の彼氏、名前は「なに」公平？",
     "questionEn": "Ozaki Nagisa's boyfriend -- his name is \"what\" Kouhei?",
+    "questionRomaji": "Ozaki Nagisa no kareshi, namae wa \"nani\" Kouhei?",
     "correctAnswerJp": "澤村",
     "correctAnswerEn": "Sawamura",
-    "wrongAnswersJp": [
-      "田中",
-      "前田",
-      "大谷"
-    ],
-    "wrongAnswersEn": [
-      "Tanaka",
-      "Maeda",
-      "Ootani"
-    ],
+    "correctAnswerRomaji": "Sawamura",
+    "wrongAnswersJp": ["田中","前田","大谷"],
+    "wrongAnswersEn": ["Tanaka","Maeda","Ootani"],
+    "wrongAnswersRomaji": ["Tanaka","Maeda","Ootani"],
     "questionImage": "quiz_images/qlv3_22.png"
   },
   {
@@ -2894,18 +2134,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "園崎茜、別の漢字で書くと？",
     "questionEn": "Sonozaki Akane -- what does her name mean when written with different kanji?",
+    "questionRomaji": "Sonozaki Akane, betsu no kanji de kaku to?",
     "correctAnswerJp": "蒐",
     "correctAnswerEn": "Collect",
-    "wrongAnswersJp": [
-      "朱",
-      "明",
-      "愛"
-    ],
-    "wrongAnswersEn": [
-      "Vermillion",
-      "Bright",
-      "Love"
-    ],
+    "correctAnswerRomaji": "atsumeru",
+    "wrongAnswersJp": ["朱","明","愛"],
+    "wrongAnswersEn": ["Vermillion","Bright","Love"],
+    "wrongAnswersRomaji": ["shu","mei","ai"],
     "questionImage": "quiz_images/qlv3_23.png"
   },
   {
@@ -2913,18 +2148,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "間宮リナの結婚詐欺、レナはどこで確信した？",
     "questionEn": "Where did Rena become certain about Rina Mamiya's marriage fraud?",
+    "questionRomaji": "Mamiya Rina no kekkon sagi, Rena wa doko de kakushin shita?",
     "correctAnswerJp": "喫茶店で立ち聞き",
     "correctAnswerEn": "Eavesdropping at the cafe",
-    "wrongAnswersJp": [
-      "預金が減った",
-      "家具が増えた",
-      "父のキャバクラ"
-    ],
-    "wrongAnswersEn": [
-      "Savings decreased",
-      "Furniture increased",
-      "Dad's hostess club"
-    ],
+    "correctAnswerRomaji": "kissaten de tachigiki",
+    "wrongAnswersJp": ["預金が減った","家具が増えた","父のキャバクラ"],
+    "wrongAnswersEn": ["Savings decreased","Furniture increased","Dad's hostess club"],
+    "wrongAnswersRomaji": ["yokin ga hetta","kagu ga fueta","chichi no kyabakura"],
     "questionImage": "quiz_images/qlv3_24.png"
   },
   {
@@ -2932,18 +2162,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "レナの元母親、職業は何？",
     "questionEn": "What is the occupation of Rena's former mother?",
+    "questionRomaji": "Rena no moto hahaoya, shokugyou wa nani?",
     "correctAnswerJp": "デザイナー",
     "correctAnswerEn": "Designer",
-    "wrongAnswersJp": [
-      "教師",
-      "モデル",
-      "アナウンサー"
-    ],
-    "wrongAnswersEn": [
-      "Teacher",
-      "Model",
-      "Announcer"
-    ],
+    "correctAnswerRomaji": "dezainaa",
+    "wrongAnswersJp": ["教師","モデル","アナウンサー"],
+    "wrongAnswersEn": ["Teacher","Model","Announcer"],
+    "wrongAnswersRomaji": ["kyoushi","moderu","anaunsaa"],
     "questionImage": "quiz_images/qlv3_25.png"
   },
   {
@@ -2951,18 +2176,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "羽入のNGワード、それは何？",
     "questionEn": "What is Hanyuu's forbidden word?",
+    "questionRomaji": "Hanyuu no NG waado, sore wa nani?",
     "correctAnswerJp": "バケモノ",
     "correctAnswerEn": "Monster",
-    "wrongAnswersJp": [
-      "悪魔",
-      "鬼",
-      "宇宙人"
-    ],
-    "wrongAnswersEn": [
-      "Devil",
-      "Demon",
-      "Alien"
-    ],
+    "correctAnswerRomaji": "bakemono",
+    "wrongAnswersJp": ["悪魔","鬼","宇宙人"],
+    "wrongAnswersEn": ["Devil","Demon","Alien"],
+    "wrongAnswersRomaji": ["akuma","oni","uchuujin"],
     "questionImage": "quiz_images/qlv3_26.png"
   },
   {
@@ -2970,18 +2190,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "鷹野三四、なりたかったものは何？",
     "questionEn": "What did Takano Miyo want to become?",
+    "questionRomaji": "Takano Miyo, naritakatta mono wa nani?",
     "correctAnswerJp": "神",
     "correctAnswerEn": "God",
-    "wrongAnswersJp": [
-      "考古学者",
-      "医師",
-      "政治家"
-    ],
-    "wrongAnswersEn": [
-      "Archaeologist",
-      "Doctor",
-      "Politician"
-    ],
+    "correctAnswerRomaji": "kami",
+    "wrongAnswersJp": ["考古学者","医師","政治家"],
+    "wrongAnswersEn": ["Archaeologist","Doctor","Politician"],
+    "wrongAnswersRomaji": ["koukogakusha","ishi","seijika"],
     "questionImage": "quiz_images/qlv3_27.png"
   },
   {
@@ -2989,18 +2204,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "雛見沢分校、生徒数は何名？",
     "questionEn": "How many students attend Hinamizawa Branch School?",
+    "questionRomaji": "Hinamizawa Bunkou, seito-suu wa nan-mei?",
     "correctAnswerJp": "26名",
     "correctAnswerEn": "26 people",
-    "wrongAnswersJp": [
-      "27名",
-      "30名",
-      "21名"
-    ],
-    "wrongAnswersEn": [
-      "27 people",
-      "30 people",
-      "21 people"
-    ],
+    "correctAnswerRomaji": "26-mei",
+    "wrongAnswersJp": ["27名","30名","21名"],
+    "wrongAnswersEn": ["27 people","30 people","21 people"],
+    "wrongAnswersRomaji": ["27-mei","30-mei","21-mei"],
     "questionImage": "quiz_images/qlv3_28.png"
   },
   {
@@ -3008,18 +2218,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「罪滅し編」の屋上対決、圭一はなんと言った？",
     "questionEn": "In the rooftop confrontation of the Tsumihoroboshi chapter, what did Keiichi say?",
+    "questionRomaji": "\"Tsumihoroboshi-hen\" no okujou taiketsu, Keiichi wa nanto itta?",
     "correctAnswerJp": "ルナティック",
     "correctAnswerEn": "Lunatic",
-    "wrongAnswersJp": [
-      "オカルティック",
-      "カオティック",
-      "アクロバティック"
-    ],
-    "wrongAnswersEn": [
-      "Occultic",
-      "Chaotic",
-      "Acrobatic"
-    ],
+    "correctAnswerRomaji": "runateikku",
+    "wrongAnswersJp": ["オカルティック","カオティック","アクロバティック"],
+    "wrongAnswersEn": ["Occultic","Chaotic","Acrobatic"],
+    "wrongAnswersRomaji": ["okaruteikku","kaoteikku","akurobaateikku"],
     "questionImage": "quiz_images/qlv3_29.png"
   },
   {
@@ -3027,18 +2232,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「罪滅し編」で大高が呼び寄せた鎮圧部隊、どこから来た？",
     "questionEn": "In the Tsumihoroboshi chapter, where did the suppression squad that Ootaka called in come from?",
+    "questionRomaji": "\"Tsumihoroboshi-hen\" de Ootaka ga yobiyoseta chin'atsu butai, doko kara kita?",
     "correctAnswerJp": "大阪府警",
     "correctAnswerEn": "Osaka Prefectural Police",
-    "wrongAnswersJp": [
-      "警視庁",
-      "岐阜県警",
-      "愛知県警"
-    ],
-    "wrongAnswersEn": [
-      "Metropolitan Police",
-      "Gifu Prefectural Police",
-      "Aichi Prefectural Police"
-    ],
+    "correctAnswerRomaji": "Osaka-fukei",
+    "wrongAnswersJp": ["警視庁","岐阜県警","愛知県警"],
+    "wrongAnswersEn": ["Metropolitan Police","Gifu Prefectural Police","Aichi Prefectural Police"],
+    "wrongAnswersRomaji": ["Keishichou","Gifu-kenkei","Aichi-kenkei"],
     "questionImage": "quiz_images/qlv3_30.png"
   },
   {
@@ -3046,18 +2246,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「光の空のクオリア」、歌ったのは誰？",
     "questionEn": "Who sang \"Hikari no Sora no Qualia\"?",
+    "questionRomaji": "\"Hikari no Sora no Quaria\", utatta no wa dare?",
     "correctAnswerJp": "Cyua",
     "correctAnswerEn": "Cyua",
-    "wrongAnswersJp": [
-      "いとうかなこ",
-      "彩音",
-      "諫山実生"
-    ],
-    "wrongAnswersEn": [
-      "Itou Kanako",
-      "Ayane",
-      "Isayama Mio"
-    ],
+    "correctAnswerRomaji": "Cyua",
+    "wrongAnswersJp": ["いとうかなこ","彩音","諫山実生"],
+    "wrongAnswersEn": ["Itou Kanako","Ayane","Isayama Mio"],
+    "wrongAnswersRomaji": ["Itou Kanako","Ayane","Isayama Mio"],
     "questionImage": "quiz_images/qlv3_31.png"
   },
   {
@@ -3065,18 +2260,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「escape」、歌ったのは誰？",
     "questionEn": "Who sang \"escape\"?",
+    "questionRomaji": "\"escape\", utatta no wa dare?",
     "correctAnswerJp": "いとうかなこ",
     "correctAnswerEn": "Itou Kanako",
-    "wrongAnswersJp": [
-      "彩音",
-      "Cyua",
-      "諫山実生"
-    ],
-    "wrongAnswersEn": [
-      "Ayane",
-      "Cyua",
-      "Isayama Mio"
-    ],
+    "correctAnswerRomaji": "Itou Kanako",
+    "wrongAnswersJp": ["彩音","Cyua","諫山実生"],
+    "wrongAnswersEn": ["Ayane","Cyua","Isayama Mio"],
+    "wrongAnswersRomaji": ["Ayane","Cyua","Isayama Mio"],
     "questionImage": "quiz_images/qlv3_32.png"
   },
   {
@@ -3084,18 +2274,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「罪滅し編」、エンディングテーマは何？",
     "questionEn": "What was the ending theme of the Tsumihoroboshi chapter?",
+    "questionRomaji": "\"Tsumihoroboshi-hen\", endingu teema wa nani?",
     "correctAnswerJp": "escape",
     "correctAnswerEn": "escape",
-    "wrongAnswersJp": [
-      "そらのむこう",
-      "you",
-      "Friend"
-    ],
-    "wrongAnswersEn": [
-      "Sora no Mukou",
-      "you",
-      "Friend"
-    ],
+    "correctAnswerRomaji": "escape",
+    "wrongAnswersJp": ["そらのむこう","you","Friend"],
+    "wrongAnswersEn": ["Sora no Mukou","you","Friend"],
+    "wrongAnswersRomaji": ["Sora no Mukou","you","Friend"],
     "questionImage": "quiz_images/qlv3_33.png"
   },
   {
@@ -3103,18 +2288,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "「光の空のクオリア」、歌詞からなんというあだ名が付いた？",
     "questionEn": "What nickname was given to \"Hikari no Sora no Qualia\" based on its lyrics?",
+    "questionRomaji": "\"Hikari no Sora no Quaria\", kashi kara nan to iu adana ga tsuita?",
     "correctAnswerJp": "ヤンデレ",
     "correctAnswerEn": "Yandere",
-    "wrongAnswersJp": [
-      "ツンデレ",
-      "クーデレ",
-      "極デレ"
-    ],
-    "wrongAnswersEn": [
-      "Tsundere",
-      "Kuudere",
-      "Super dere"
-    ],
+    "correctAnswerRomaji": "yandere",
+    "wrongAnswersJp": ["ツンデレ","クーデレ","極デレ"],
+    "wrongAnswersEn": ["Tsundere","Kuudere","Super dere"],
+    "wrongAnswersRomaji": ["tsundere","kuudere","kyoku dere"],
     "questionImage": "quiz_images/qlv3_34.png"
   },
   {
@@ -3122,18 +2302,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "コミックの「宵越し編」、ゲームと何が違う？",
     "questionEn": "In the manga version of the Yoigoshi chapter, what is different from the game?",
+    "questionRomaji": "komikku no \"Yoigoshi-hen\", geemu to nani ga chigau?",
     "correctAnswerJp": "キャラが増えた",
     "correctAnswerEn": "More characters were added",
-    "wrongAnswersJp": [
-      "死人が多い",
-      "バッドエンド",
-      "年号が違う"
-    ],
-    "wrongAnswersEn": [
-      "Too many dead people",
-      "Bad ending",
-      "The year is different"
-    ],
+    "correctAnswerRomaji": "kyara ga fueta",
+    "wrongAnswersJp": ["死人が多い","バッドエンド","年号が違う"],
+    "wrongAnswersEn": ["Too many dead people","Bad ending","The year is different"],
+    "wrongAnswersRomaji": ["shinijin ga ooi","baddo endo","nengou ga chigau"],
     "questionImage": "quiz_images/qlv3_35.png"
   },
   {
@@ -3141,18 +2316,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "絆シリーズの「宵越し編」、脚本を担当したのは？",
     "questionEn": "In the Kizuna series, who wrote the script for \"Yoigoshi\"?",
+    "questionRomaji": "Kizuna shiiriizu no \"Yoigoshi-hen\", kyakuhon wo tantou shita no wa?",
     "correctAnswerJp": "宮城季詩子",
     "correctAnswerEn": "Miyagi Kishiko",
-    "wrongAnswersJp": [
-      "中野麻衣",
-      "中村慎介",
-      "鴻野貴光"
-    ],
-    "wrongAnswersEn": [
-      "Nakano Mai",
-      "Nakamura Shinsuke",
-      "Kouno Takamitsu"
-    ],
+    "correctAnswerRomaji": "Miyagi Kishiko",
+    "wrongAnswersJp": ["中野麻衣","中村慎介","鴻野貴光"],
+    "wrongAnswersEn": ["Nakano Mai","Nakamura Shinsuke","Kouno Takamitsu"],
+    "wrongAnswersRomaji": ["Nakano Mai","Nakamura Shinsuke","Kouno Takamitsu"],
     "questionImage": "quiz_images/qlv3_36.png"
   },
   {
@@ -3160,18 +2330,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "絆シリーズ第三巻、出たのは何年？",
     "questionEn": "What year was the third volume of the Kizuna series released?",
+    "questionRomaji": "Kizuna shiiriizu dai-san-kan, deta no wa nan-nen?",
     "correctAnswerJp": "2009年",
     "correctAnswerEn": "2009",
-    "wrongAnswersJp": [
-      "2007年",
-      "2008年",
-      "2010年"
-    ],
-    "wrongAnswersEn": [
-      "2007",
-      "2008",
-      "2010"
-    ],
+    "correctAnswerRomaji": "2009-nen",
+    "wrongAnswersJp": ["2007年","2008年","2010年"],
+    "wrongAnswersEn": ["2007","2008","2010"],
+    "wrongAnswersRomaji": ["2007-nen","2008-nen","2010-nen"],
     "questionImage": "quiz_images/qlv3_37.png"
   },
   {
@@ -3179,18 +2344,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "雛見沢症候群、症状に当てはまらないのは？",
     "questionEn": "Which of these is NOT a symptom of Hinamizawa Syndrome?",
+    "questionRomaji": "Hinamizawa shoukougun, shoujou ni atehamaranai no wa?",
     "correctAnswerJp": "吸血欲求",
     "correctAnswerEn": "Bloodlust",
-    "wrongAnswersJp": [
-      "疑心暗鬼",
-      "喉が痒くなる",
-      "幻覚が見える"
-    ],
-    "wrongAnswersEn": [
-      "Paranoia",
-      "Throat becomes itchy",
-      "Seeing hallucinations"
-    ],
+    "correctAnswerRomaji": "kyuuketsu yokkyuu",
+    "wrongAnswersJp": ["疑心暗鬼","喉が痒くなる","幻覚が見える"],
+    "wrongAnswersEn": ["Paranoia","Throat becomes itchy","Seeing hallucinations"],
+    "wrongAnswersRomaji": ["gishin anki","nodo ga kayuku naru","genkaku ga mieru"],
     "questionImage": "quiz_images/qlv3_38.png"
   },
   {
@@ -3198,18 +2358,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "ひぐらしのなく頃に絆、第三巻は？",
     "questionEn": "What was the third volume of Higurashi no Naku Koro ni Kizuna?",
+    "questionRomaji": "Higurashi no Naku Koro ni Kizuna, dai-san-kan wa?",
     "correctAnswerJp": "螺",
     "correctAnswerEn": "Spiral",
-    "wrongAnswersJp": [
-      "祟",
-      "想",
-      "絆"
-    ],
-    "wrongAnswersEn": [
-      "Curse",
-      "Thought",
-      "Bond"
-    ],
+    "correctAnswerRomaji": "ra",
+    "wrongAnswersJp": ["祟","想","絆"],
+    "wrongAnswersEn": ["Curse","Thought","Bond"],
+    "wrongAnswersRomaji": ["tatari","sou","kizuna"],
     "questionImage": "quiz_images/qlv3_39.png"
   },
   {
@@ -3217,18 +2372,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "ひぐらし全シリーズ、一番台詞の多かった声優さんは？",
     "questionEn": "Across all Higurashi series, which voice actor had the most lines?",
+    "questionRomaji": "Higurashi zen shiiriizu, ichiban serifu no ookatta seiyuu san wa?",
     "correctAnswerJp": "ゆきのさつき",
     "correctAnswerEn": "Yukino Satsuki",
-    "wrongAnswersJp": [
-      "保志総一朗",
-      "中原麻衣",
-      "田村ゆかり"
-    ],
-    "wrongAnswersEn": [
-      "Hoshi Souichirou",
-      "Nakahara Mai",
-      "Tamura Yukari"
-    ],
+    "correctAnswerRomaji": "Yukino Satsuki",
+    "wrongAnswersJp": ["保志総一朗","中原麻衣","田村ゆかり"],
+    "wrongAnswersEn": ["Hoshi Souichirou","Nakahara Mai","Tamura Yukari"],
+    "wrongAnswersRomaji": ["Hoshi Souichirou","Nakahara Mai","Tamura Yukari"],
     "questionImage": "quiz_images/qlv3_40.png"
   },
   {
@@ -3236,18 +2386,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "祭シリーズ、出たのは何年？",
     "questionEn": "What year did the Matsuri series come out?",
+    "questionRomaji": "Matsuri shiiriizu, deta no wa nan-nen?",
     "correctAnswerJp": "2007年",
     "correctAnswerEn": "2007",
-    "wrongAnswersJp": [
-      "2006年",
-      "2008年",
-      "2009年"
-    ],
-    "wrongAnswersEn": [
-      "2006",
-      "2008",
-      "2009"
-    ],
+    "correctAnswerRomaji": "2007-nen",
+    "wrongAnswersJp": ["2006年","2008年","2009年"],
+    "wrongAnswersEn": ["2006","2008","2009"],
+    "wrongAnswersRomaji": ["2006-nen","2008-nen","2009-nen"],
     "questionImage": "quiz_images/qlv3_41.png"
   },
   {
@@ -3255,18 +2400,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "この文字、なんて読む？　穀倉",
     "questionEn": "How do you read this word? Kokusou (granary)",
+    "questionRomaji": "kono moji, nante yomu? Gogura",
     "correctAnswerJp": "ごぐら",
     "correctAnswerEn": "Gogura",
-    "wrongAnswersJp": [
-      "こくそう",
-      "こくら",
-      "ごくら"
-    ],
-    "wrongAnswersEn": [
-      "Kokusou",
-      "Kokura",
-      "Gokura"
-    ],
+    "correctAnswerRomaji": "Gogura",
+    "wrongAnswersJp": ["こくそう","こくら","ごくら"],
+    "wrongAnswersEn": ["Kokusou","Kokura","Gokura"],
+    "wrongAnswersRomaji": ["Kokusou","Kokura","Gokura"],
     "questionImage": "quiz_images/qlv3_42.png"
   },
   {
@@ -3274,18 +2414,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "この名前、なんて言う？　小此木",
     "questionEn": "How do you read this name? Okonogi",
+    "questionRomaji": "kono namae, nante iu? Okonogi",
     "correctAnswerJp": "おこのぎ",
     "correctAnswerEn": "Okonogi",
-    "wrongAnswersJp": [
-      "こひぎ",
-      "ここのぎ",
-      "ここぎ"
-    ],
-    "wrongAnswersEn": [
-      "Kohigi",
-      "Kokonogi",
-      "Kokogi"
-    ],
+    "correctAnswerRomaji": "Okonogi",
+    "wrongAnswersJp": ["こひぎ","ここのぎ","ここぎ"],
+    "wrongAnswersEn": ["Kohigi","Kokonogi","Kokogi"],
+    "wrongAnswersRomaji": ["Kohigi","Kokonogi","Kokogi"],
     "questionImage": "quiz_images/qlv3_43.png"
   },
   {
@@ -3293,18 +2428,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "この口癖をしているのは、誰？　はぅ",
     "questionEn": "Whose catchphrase is this? \"Hau\"",
+    "questionRomaji": "kono kuchiguse wo shite iru no wa, dare? hau",
     "correctAnswerJp": "レナ",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "魅音",
-      "沙都子",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Satoko",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["魅音","沙都子","梨花"],
+    "wrongAnswersEn": ["Mion","Satoko","Rika"],
+    "wrongAnswersRomaji": ["Mion","Satoko","Rika"],
     "questionImage": "quiz_images/qlv3_44.png"
   },
   {
@@ -3312,18 +2442,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "この口癖をしているのは、誰？　を一つほっほっほっ",
     "questionEn": "Whose catchphrase is this? \"...if I do say so myself, ho ho ho\"",
+    "questionRomaji": "kono kuchiguse wo shite iru no wa, dare? wo hitotsu ho ho ho",
     "correctAnswerJp": "沙都子",
     "correctAnswerEn": "Satoko",
-    "wrongAnswersJp": [
-      "レナ",
-      "魅音",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Mion",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Satoko",
+    "wrongAnswersJp": ["レナ","魅音","梨花"],
+    "wrongAnswersEn": ["Rena","Mion","Rika"],
+    "wrongAnswersRomaji": ["Rena","Mion","Rika"],
     "questionImage": "quiz_images/qlv3_45.png"
   },
   {
@@ -3331,18 +2456,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "この口癖をしているのは、誰？　みい",
     "questionEn": "Whose catchphrase is this? \"Mii\"",
+    "questionRomaji": "kono kuchiguse wo shite iru no wa, dare? mii",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "レナ",
-      "魅音",
-      "沙都子"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Mion",
-      "Satoko"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["レナ","魅音","沙都子"],
+    "wrongAnswersEn": ["Rena","Mion","Satoko"],
+    "wrongAnswersRomaji": ["Rena","Mion","Satoko"],
     "questionImage": "quiz_images/qlv3_46.png"
   },
   {
@@ -3350,18 +2470,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "乙部",
     "correctAnswerEn": "Otobe",
-    "wrongAnswersJp": [
-      "甲部",
-      "乙吉",
-      "光希"
-    ],
-    "wrongAnswersEn": [
-      "Koubu",
-      "Otokichi",
-      "Miki"
-    ],
+    "correctAnswerRomaji": "Otobe",
+    "wrongAnswersJp": ["甲部","乙吉","光希"],
+    "wrongAnswersEn": ["Koubu","Otokichi","Miki"],
+    "wrongAnswersRomaji": ["Koubu","Otokichi","Miki"],
     "questionImage": "quiz_images/qlv3_47.png"
   },
   {
@@ -3369,18 +2484,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "八重",
     "correctAnswerEn": "Yae",
-    "wrongAnswersJp": [
-      "二重",
-      "一重",
-      "沙英"
-    ],
-    "wrongAnswersEn": [
-      "Double",
-      "Single",
-      "Sae"
-    ],
+    "correctAnswerRomaji": "Yae",
+    "wrongAnswersJp": ["二重","一重","沙英"],
+    "wrongAnswersEn": ["Double","Single","Sae"],
+    "wrongAnswersRomaji": ["futae","hitoe","Sae"],
     "questionImage": "quiz_images/qlv3_48.png"
   },
   {
@@ -3388,18 +2498,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "渚",
     "correctAnswerEn": "Nagisa",
-    "wrongAnswersJp": [
-      "薫",
-      "慎",
-      "梢"
-    ],
-    "wrongAnswersEn": [
-      "Kaoru",
-      "Shin",
-      "Kozue"
-    ],
+    "correctAnswerRomaji": "Nagisa",
+    "wrongAnswersJp": ["薫","慎","梢"],
+    "wrongAnswersEn": ["Kaoru","Shin","Kozue"],
+    "wrongAnswersRomaji": ["Kaoru","Shin","Kozue"],
     "questionImage": "quiz_images/qlv3_49.png"
   },
   {
@@ -3407,18 +2512,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "塚田",
     "correctAnswerEn": "Tsukada",
-    "wrongAnswersJp": [
-      "山田",
-      "有田",
-      "満田"
-    ],
-    "wrongAnswersEn": [
-      "Yamada",
-      "Arita",
-      "Mitsuda"
-    ],
+    "correctAnswerRomaji": "Tsukada",
+    "wrongAnswersJp": ["山田","有田","満田"],
+    "wrongAnswersEn": ["Yamada","Arita","Mitsuda"],
+    "wrongAnswersRomaji": ["Yamada","Arita","Mitsuda"],
     "questionImage": "quiz_images/qlv3_50.png"
   },
   {
@@ -3426,18 +2526,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "まどか",
     "correctAnswerEn": "Madoka",
-    "wrongAnswersJp": [
-      "ほむら",
-      "きょうこ",
-      "さやか"
-    ],
-    "wrongAnswersEn": [
-      "Homura",
-      "Kyouko",
-      "Sayaka"
-    ],
+    "correctAnswerRomaji": "Madoka",
+    "wrongAnswersJp": ["ほむら","きょうこ","さやか"],
+    "wrongAnswersEn": ["Homura","Kyouko","Sayaka"],
+    "wrongAnswersRomaji": ["Homura","Kyouko","Sayaka"],
     "questionImage": "quiz_images/qlv3_51.png"
   },
   {
@@ -3445,18 +2540,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "入江",
     "correctAnswerEn": "Irie",
-    "wrongAnswersJp": [
-      "大石",
-      "鷹野",
-      "ＪＪ・リックス"
-    ],
-    "wrongAnswersEn": [
-      "Oishi",
-      "Takano",
-      "JJ Rix"
-    ],
+    "correctAnswerRomaji": "Irie",
+    "wrongAnswersJp": ["大石","鷹野","ＪＪ・リックス"],
+    "wrongAnswersEn": ["Oishi","Takano","JJ Rix"],
+    "wrongAnswersRomaji": ["Oishi","Takano","JJ Rikkusu"],
     "questionImage": "quiz_images/qlv3_52.png"
   },
   {
@@ -3464,18 +2554,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "知恵",
     "correctAnswerEn": "Chie",
-    "wrongAnswersJp": [
-      "巴",
-      "まどか",
-      "茜"
-    ],
-    "wrongAnswersEn": [
-      "Tomoe",
-      "Madoka",
-      "Akane"
-    ],
+    "correctAnswerRomaji": "Chie",
+    "wrongAnswersJp": ["巴","まどか","茜"],
+    "wrongAnswersEn": ["Tomoe","Madoka","Akane"],
+    "wrongAnswersRomaji": ["Tomoe","Madoka","Akane"],
     "questionImage": "quiz_images/qlv3_53.png"
   },
   {
@@ -3483,18 +2568,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "宮田幸季",
     "correctAnswerEn": "Miyata Kouki",
-    "wrongAnswersJp": [
-      "田宮幸季",
-      "宮田光貴",
-      "不二咲照文"
-    ],
-    "wrongAnswersEn": [
-      "Tamiya Kouki (alt.)",
-      "Miyata Kouki (alt.)",
-      "Fujisaki Terufumi (alt.)"
-    ],
+    "correctAnswerRomaji": "Miyata Kouki",
+    "wrongAnswersJp": ["田宮幸季","宮田光貴","不二咲照文"],
+    "wrongAnswersEn": ["Tamiya Kouki (alt.)","Miyata Kouki (alt.)","Fujisaki Terufumi (alt.)"],
+    "wrongAnswersRomaji": ["Tamiya Kouki","Miyata Kouki","Fujisaki Terufumi"],
     "questionImage": "quiz_images/qlv3_54.png"
   },
   {
@@ -3502,18 +2582,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "新谷良子",
     "correctAnswerEn": "Shintani Ryouko",
-    "wrongAnswersJp": [
-      "新谷涼子",
-      "仁井谷良子",
-      "ミルフィ・桜木"
-    ],
-    "wrongAnswersEn": [
-      "Shintani Ryouko (alt.)",
-      "Niitani Ryouko (alt.)",
-      "Milfie Sakuragi"
-    ],
+    "correctAnswerRomaji": "Shintani Ryouko",
+    "wrongAnswersJp": ["新谷涼子","仁井谷良子","ミルフィ・桜木"],
+    "wrongAnswersEn": ["Shintani Ryouko (alt.)","Niitani Ryouko (alt.)","Milfie Sakuragi"],
+    "wrongAnswersRomaji": ["Shintani Ryouko","Niitani Ryouko","Mirufi Sakuragi"],
     "questionImage": "quiz_images/qlv3_55.png"
   },
   {
@@ -3521,18 +2596,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "仁後真耶子",
     "correctAnswerEn": "Nigo Mayako",
-    "wrongAnswersJp": [
-      "二五真耶子",
-      "人御摩耶子",
-      "リリカ・高槻"
-    ],
-    "wrongAnswersEn": [
-      "Nigo Mayako (alt.)",
-      "Hitogomayako (alt.)",
-      "Lyrica Takatsuki"
-    ],
+    "correctAnswerRomaji": "Nigo Mayako",
+    "wrongAnswersJp": ["二五真耶子","人御摩耶子","リリカ・高槻"],
+    "wrongAnswersEn": ["Nigo Mayako (alt.)","Hitogomayako (alt.)","Lyrica Takatsuki"],
+    "wrongAnswersRomaji": ["Nigo Mayako","Hitogomayako","Ririka Takatsuki"],
     "questionImage": "quiz_images/qlv3_56.png"
   },
   {
@@ -3540,18 +2610,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "中村悠一",
     "correctAnswerEn": "Nakamura Yuuichi",
-    "wrongAnswersJp": [
-      "仲村悠一",
-      "中村裕一",
-      "リカルド・早乙女"
-    ],
-    "wrongAnswersEn": [
-      "Nakamura Yuuichi (alt.)",
-      "Nakamura Yuuichi (alt.)",
-      "Ricardo Saotome"
-    ],
+    "correctAnswerRomaji": "Nakamura Yuuichi",
+    "wrongAnswersJp": ["仲村悠一","中村裕一","リカルド・早乙女"],
+    "wrongAnswersEn": ["Nakamura Yuuichi (alt.)","Nakamura Yuuichi (alt.)","Ricardo Saotome"],
+    "wrongAnswersRomaji": ["Nakamura Yuuichi","Nakamura Yuuichi","Rikarudo Saotome"],
     "questionImage": "quiz_images/qlv3_57.png"
   },
   {
@@ -3559,18 +2624,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "下田麻美",
     "correctAnswerEn": "Shimoda Asami",
-    "wrongAnswersJp": [
-      "志茂田麻美",
-      "下田麻実",
-      "亜美真美"
-    ],
-    "wrongAnswersEn": [
-      "Shimoda Asami (alt.)",
-      "Shimoda Asami (alt.)",
-      "Ami Mami (alt.)"
-    ],
+    "correctAnswerRomaji": "Shimoda Asami",
+    "wrongAnswersJp": ["志茂田麻美","下田麻実","亜美真美"],
+    "wrongAnswersEn": ["Shimoda Asami (alt.)","Shimoda Asami (alt.)","Ami Mami (alt.)"],
+    "wrongAnswersRomaji": ["Shimoda Asami","Shimoda Asami","Ami Mami"],
     "questionImage": "quiz_images/qlv3_58.png"
   },
   {
@@ -3578,18 +2638,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "関俊彦",
     "correctAnswerEn": "Seki Toshihiko",
-    "wrongAnswersJp": [
-      "石俊彦",
-      "関利彦",
-      "加賀桃太郎"
-    ],
-    "wrongAnswersEn": [
-      "Seki Toshihiko (alt.)",
-      "Seki Toshihiko (alt.)",
-      "Kaga Momotarou (alt.)"
-    ],
+    "correctAnswerRomaji": "Seki Toshihiko",
+    "wrongAnswersJp": ["石俊彦","関利彦","加賀桃太郎"],
+    "wrongAnswersEn": ["Seki Toshihiko (alt.)","Seki Toshihiko (alt.)","Kaga Momotarou (alt.)"],
+    "wrongAnswersRomaji": ["Ishi Toshihiko","Seki Toshihiko","Kaga Momotarou"],
     "questionImage": "quiz_images/qlv3_59.png"
   },
   {
@@ -3597,18 +2652,13 @@ export const entries: Entry[] = [
     "level": 3,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu san wa?",
     "correctAnswerJp": "折笠富美子",
     "correctAnswerEn": "Orikasa Fumiko",
-    "wrongAnswersJp": [
-      "織笠富美子",
-      "折笠富子",
-      "シエル・南野"
-    ],
-    "wrongAnswersEn": [
-      "Orikasa Fumiko (alt.)",
-      "Orikasa Fumiko (alt.)",
-      "Ciel Nanno"
-    ],
+    "correctAnswerRomaji": "Orikasa Fumiko",
+    "wrongAnswersJp": ["織笠富美子","折笠富子","シエル・南野"],
+    "wrongAnswersEn": ["Orikasa Fumiko (alt.)","Orikasa Fumiko (alt.)","Ciel Nanno"],
+    "wrongAnswersRomaji": ["Orikasa Fumiko","Orikasa Fumiko","Shiero Nanno"],
     "questionImage": "quiz_images/qlv3_60.png"
   },
   {
@@ -3616,18 +2666,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "しらかば山荘事件が起きたのは、何年？",
     "questionEn": "What year did the Shirakaba Mountain Lodge incident take place?",
+    "questionRomaji": "Shirakaba Sanso jiken ga okita no wa, nan-nen?",
     "correctAnswerJp": "1970年",
     "correctAnswerEn": "1970",
-    "wrongAnswersJp": [
-      "1971年",
-      "1972年",
-      "1969年"
-    ],
-    "wrongAnswersEn": [
-      "1971",
-      "1972",
-      "1969"
-    ],
+    "correctAnswerRomaji": "1970-nen",
+    "wrongAnswersJp": ["1971年","1972年","1969年"],
+    "wrongAnswersEn": ["1971","1972","1969"],
+    "wrongAnswersRomaji": ["1971-nen","1972-nen","1969-nen"],
     "questionImage": "quiz_images/qlv4_01.png"
   },
   {
@@ -3635,18 +2680,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "花田刑事の趣味は？",
     "questionEn": "What is Detective Hanada's hobby?",
+    "questionRomaji": "Hanada keiji no shumi wa?",
     "correctAnswerJp": "カーレース",
     "correctAnswerEn": "Car racing",
-    "wrongAnswersJp": [
-      "盆栽",
-      "射撃",
-      "読書"
-    ],
-    "wrongAnswersEn": [
-      "Bonsai",
-      "Shooting",
-      "Reading"
-    ],
+    "correctAnswerRomaji": "kaa reesu",
+    "wrongAnswersJp": ["盆栽","射撃","読書"],
+    "wrongAnswersEn": ["Bonsai","Shooting","Reading"],
+    "wrongAnswersRomaji": ["bonsai","shageki","dokusho"],
     "questionImage": "quiz_images/qlv4_02.png"
   },
   {
@@ -3654,18 +2694,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "高屋敷刑事の実家は、何をやっている？",
     "questionEn": "What does Detective Takayashiki's family do for a living?",
+    "questionRomaji": "Takayashiki keiji no jikka wa, nani wo yatte iru?",
     "correctAnswerJp": "レストラン",
     "correctAnswerEn": "Restaurant",
-    "wrongAnswersJp": [
-      "花屋",
-      "不動産屋",
-      "料亭"
-    ],
-    "wrongAnswersEn": [
-      "Flower shop",
-      "Real estate agency",
-      "Traditional restaurant"
-    ],
+    "correctAnswerRomaji": "resutoran",
+    "wrongAnswersJp": ["花屋","不動産屋","料亭"],
+    "wrongAnswersEn": ["Flower shop","Real estate agency","Traditional restaurant"],
+    "wrongAnswersRomaji": ["hanaya","fudousanya","ryoutei"],
     "questionImage": "quiz_images/qlv4_03.png"
   },
   {
@@ -3673,18 +2708,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "垣内署の刑事二課の課長代理は浅見と誰？",
     "questionEn": "The deputy chiefs of Criminal Investigation Division 2 at Kakiuchi Station are Asami and who?",
+    "questionRomaji": "Kakiuchi-sho no keiji-nika no kachou dairi wa Asami to dare?",
     "correctAnswerJp": "児島",
     "correctAnswerEn": "Kojima",
-    "wrongAnswersJp": [
-      "山下",
-      "駒鳥",
-      "田淵"
-    ],
-    "wrongAnswersEn": [
-      "Yamashita",
-      "Komadori",
-      "Tabuchi"
-    ],
+    "correctAnswerRomaji": "Kojima",
+    "wrongAnswersJp": ["山下","駒鳥","田淵"],
+    "wrongAnswersEn": ["Yamashita","Komadori","Tabuchi"],
+    "wrongAnswersRomaji": ["Yamashita","Komadori","Tabuchi"],
     "questionImage": "quiz_images/qlv4_04.png"
   },
   {
@@ -3692,18 +2722,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "花田史郎の元の苗字は？",
     "questionEn": "What was Shiro Hanada's original surname?",
+    "questionRomaji": "Hanada Shirou no moto no myouji wa?",
     "correctAnswerJp": "滝口",
     "correctAnswerEn": "Takiguchi",
-    "wrongAnswersJp": [
-      "山口",
-      "澤村",
-      "種田"
-    ],
-    "wrongAnswersEn": [
-      "Yamaguchi",
-      "Sawamura",
-      "Taneda"
-    ],
+    "correctAnswerRomaji": "Takiguchi",
+    "wrongAnswersJp": ["山口","澤村","種田"],
+    "wrongAnswersEn": ["Yamaguchi","Sawamura","Taneda"],
+    "wrongAnswersRomaji": ["Yamaguchi","Sawamura","Taneda"],
     "questionImage": "quiz_images/qlv4_05.png"
   },
   {
@@ -3711,18 +2736,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "魅音の親戚、不動産屋さんは誰？",
     "questionEn": "Which of Mion's relatives runs a real estate business?",
+    "questionRomaji": "Mion no shinseki, fudousanya-san wa dare?",
     "correctAnswerJp": "弘",
     "correctAnswerEn": "Hiroshi",
-    "wrongAnswersJp": [
-      "善郎",
-      "義郎",
-      "三郎"
-    ],
-    "wrongAnswersEn": [
-      "Yoshirou",
-      "Yoshirou",
-      "Saburou"
-    ],
+    "correctAnswerRomaji": "Hiroshi",
+    "wrongAnswersJp": ["善郎","義郎","三郎"],
+    "wrongAnswersEn": ["Yoshirou","Yoshirou","Saburou"],
+    "wrongAnswersRomaji": ["Yoshirou","Yoshirou","Saburou"],
     "questionImage": "quiz_images/qlv4_06.png"
   },
   {
@@ -3730,18 +2750,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "羽入の剣の名前は？",
     "questionEn": "What is the name of Hanyuu's sword?",
+    "questionRomaji": "Hanyuu no ken no namae wa?",
     "correctAnswerJp": "柳桜",
     "correctAnswerEn": "Ryuuou",
-    "wrongAnswersJp": [
-      "流桜",
-      "桜桃",
-      "龍桜"
-    ],
-    "wrongAnswersEn": [
-      "Ryuuou (alt.)",
-      "Outou (alt.)",
-      "Ryuuou (alt.)"
-    ],
+    "correctAnswerRomaji": "Ryuuou",
+    "wrongAnswersJp": ["流桜","桜桃","龍桜"],
+    "wrongAnswersEn": ["Ryuuou (alt.)","Outou (alt.)","Ryuuou (alt.)"],
+    "wrongAnswersRomaji": ["Ryuuou","Outou","Ryuuou"],
     "questionImage": "quiz_images/qlv4_07.png"
   },
   {
@@ -3749,18 +2764,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "この中で実在しない古手家の人間は？",
     "questionEn": "Among these, who is NOT a real member of the Furude family?",
+    "questionRomaji": "kono naka de jitsuzai shinai Furude-ke no ningen wa?",
     "correctAnswerJp": "来花",
     "correctAnswerEn": "Raika",
-    "wrongAnswersJp": [
-      "桜花",
-      "梨花",
-      "風花"
-    ],
-    "wrongAnswersEn": [
-      "Ouka",
-      "Rika",
-      "Fuuka"
-    ],
+    "correctAnswerRomaji": "Raika",
+    "wrongAnswersJp": ["桜花","梨花","風花"],
+    "wrongAnswersEn": ["Ouka","Rika","Fuuka"],
+    "wrongAnswersRomaji": ["Ouka","Rika","Fuuka"],
     "questionImage": "quiz_images/qlv4_08.png"
   },
   {
@@ -3768,18 +2778,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "タカノクリニックに勤めている医者は誰？",
     "questionEn": "Who is the doctor that works at the Takano Clinic?",
+    "questionRomaji": "Takano Kurinikku ni tsutomete iru isha wa dare?",
     "correctAnswerJp": "山本",
     "correctAnswerEn": "Yamamoto",
-    "wrongAnswersJp": [
-      "沖田",
-      "川上",
-      "小早川"
-    ],
-    "wrongAnswersEn": [
-      "Okita",
-      "Kawakami",
-      "Kobayakawa"
-    ],
+    "correctAnswerRomaji": "Yamamoto",
+    "wrongAnswersJp": ["沖田","川上","小早川"],
+    "wrongAnswersEn": ["Okita","Kawakami","Kobayakawa"],
+    "wrongAnswersRomaji": ["Okita","Kawakami","Kobayakawa"],
     "questionImage": "quiz_images/qlv4_09.png"
   },
   {
@@ -3787,18 +2792,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "羽入の言い伝えられている本名は？",
     "questionEn": "What is Hanyuu's true name according to legend?",
+    "questionRomaji": "Hanyuu no iitsuterare te iru honmei wa?",
     "correctAnswerJp": "イェアソムール",
     "correctAnswerEn": "Yeasomuru",
-    "wrongAnswersJp": [
-      "シーツェン",
-      "リューン",
-      "ジェダ"
-    ],
-    "wrongAnswersEn": [
-      "Shiitsen",
-      "Ryuun",
-      "Jeda"
-    ],
+    "correctAnswerRomaji": "Yeasomuuru",
+    "wrongAnswersJp": ["シーツェン","リューン","ジェダ"],
+    "wrongAnswersEn": ["Shiitsen","Ryuun","Jeda"],
+    "wrongAnswersRomaji": ["Shiitsen","Ryuun","Jeda"],
     "questionImage": "quiz_images/qlv4_10.png"
   },
   {
@@ -3806,18 +2806,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "鷹野の元の苗字は？",
     "questionEn": "What was Takano's original surname?",
+    "questionRomaji": "Takano no moto no myouji wa?",
     "correctAnswerJp": "田無",
     "correctAnswerEn": "Tanashi",
-    "wrongAnswersJp": [
-      "吉祥寺",
-      "中野",
-      "三鷹"
-    ],
-    "wrongAnswersEn": [
-      "Kichijouji",
-      "Nakano",
-      "Mitaka"
-    ],
+    "correctAnswerRomaji": "Tanashi",
+    "wrongAnswersJp": ["吉祥寺","中野","三鷹"],
+    "wrongAnswersEn": ["Kichijouji","Nakano","Mitaka"],
+    "wrongAnswersRomaji": ["Kichijouji","Nakano","Mitaka"],
     "questionImage": "quiz_images/qlv4_11.png"
   },
   {
@@ -3825,18 +2820,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "富竹の得意技は？",
     "questionEn": "What is Tomitake's special skill?",
+    "questionRomaji": "Tomitake no tokui waza wa?",
     "correctAnswerJp": "射撃",
     "correctAnswerEn": "Shooting",
-    "wrongAnswersJp": [
-      "タックル",
-      "盗撮",
-      "空気を読む"
-    ],
-    "wrongAnswersEn": [
-      "Tackle",
-      "Hidden photography",
-      "Reading the room"
-    ],
+    "correctAnswerRomaji": "shageki",
+    "wrongAnswersJp": ["タックル","盗撮","空気を読む"],
+    "wrongAnswersEn": ["Tackle","Hidden photography","Reading the room"],
+    "wrongAnswersRomaji": ["takkuru","tousatsu","kuuki wo yomu"],
     "questionImage": "quiz_images/qlv4_12.png"
   },
   {
@@ -3844,18 +2834,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「祭囃し編・澪尽し編」当時、赤坂の階級は？",
     "questionEn": "What was Akasaka's rank during the Matsuribayashi/Miotsukushi chapters?",
+    "questionRomaji": "\"Matsuribayashi-hen / Miotsukushi-hen\" touji, Akasaka no kaikyu wa?",
     "correctAnswerJp": "警視",
     "correctAnswerEn": "Superintendent",
-    "wrongAnswersJp": [
-      "警視正",
-      "警部補",
-      "警部"
-    ],
-    "wrongAnswersEn": [
-      "Senior Superintendent",
-      "Assistant Inspector",
-      "Inspector"
-    ],
+    "correctAnswerRomaji": "keishi",
+    "wrongAnswersJp": ["警視正","警部補","警部"],
+    "wrongAnswersEn": ["Senior Superintendent","Assistant Inspector","Inspector"],
+    "wrongAnswersRomaji": ["keishishou","keibuho","keibu"],
     "questionImage": "quiz_images/qlv4_13.png"
   },
   {
@@ -3863,18 +2848,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "鷹野の焼死トリックは何で見破られた？",
     "questionEn": "How was Takano's faked-death-by-burning trick exposed?",
+    "questionRomaji": "Takano no shoushi torikku wa nani de miaburareta?",
     "correctAnswerJp": "保険証",
     "correctAnswerEn": "Insurance card",
-    "wrongAnswersJp": [
-      "目撃証言",
-      "DNA鑑定",
-      "プロファイル"
-    ],
-    "wrongAnswersEn": [
-      "Eyewitness testimony",
-      "DNA analysis",
-      "Profiling"
-    ],
+    "correctAnswerRomaji": "hokenshou",
+    "wrongAnswersJp": ["目撃証言","DNA鑑定","プロファイル"],
+    "wrongAnswersEn": ["Eyewitness testimony","DNA analysis","Profiling"],
+    "wrongAnswersRomaji": ["mokugeki shougen","DNA kantei","profairu"],
     "questionImage": "quiz_images/qlv4_14.png"
   },
   {
@@ -3882,18 +2862,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "刑事の南井巴、配属されたことがないのは？",
     "questionEn": "Detective Tomoe Minai has never been assigned to which division?",
+    "questionRomaji": "Keiji no Minai Tomoe, haizoku sareta koto ga nai no wa?",
     "correctAnswerJp": "警視庁",
     "correctAnswerEn": "Metropolitan Police",
-    "wrongAnswersJp": [
-      "警察庁",
-      "茨城県警",
-      "愛知県警"
-    ],
-    "wrongAnswersEn": [
-      "National Police Agency",
-      "Ibaraki Prefectural Police",
-      "Aichi Prefectural Police"
-    ],
+    "correctAnswerRomaji": "Keishichou",
+    "wrongAnswersJp": ["警察庁","茨城県警","愛知県警"],
+    "wrongAnswersEn": ["National Police Agency","Ibaraki Prefectural Police","Aichi Prefectural Police"],
+    "wrongAnswersRomaji": ["Keisatsu-chou","Ibaraki-ken Keisatsu","Aichi-ken Keisatsu"],
     "questionImage": "quiz_images/qlv4_15.png"
   },
   {
@@ -3901,18 +2876,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "入江の父親、職業は何？",
     "questionEn": "What is the occupation of Irie's father?",
+    "questionRomaji": "Irie no otousan, shokugyou wa nani?",
     "correctAnswerJp": "土建職人",
     "correctAnswerEn": "Construction worker",
-    "wrongAnswersJp": [
-      "画家",
-      "医師",
-      "教師"
-    ],
-    "wrongAnswersEn": [
-      "Painter",
-      "Doctor",
-      "Teacher"
-    ],
+    "correctAnswerRomaji": "dokon shokunin",
+    "wrongAnswersJp": ["画家","医師","教師"],
+    "wrongAnswersEn": ["Painter","Doctor","Teacher"],
+    "wrongAnswersRomaji": ["gaka","ishi","kyoushi"],
     "questionImage": "quiz_images/qlv4_16.png"
   },
   {
@@ -3920,18 +2890,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "入江の専門は？",
     "questionEn": "What is Irie's specialty?",
+    "questionRomaji": "Irie no senmon wa?",
     "correctAnswerJp": "精神外科",
     "correctAnswerEn": "Psychosurgery",
-    "wrongAnswersJp": [
-      "内科",
-      "小児科",
-      "眼科"
-    ],
-    "wrongAnswersEn": [
-      "Internal medicine",
-      "Pediatrics",
-      "Ophthalmology"
-    ],
+    "correctAnswerRomaji": "seishin geka",
+    "wrongAnswersJp": ["内科","小児科","眼科"],
+    "wrongAnswersEn": ["Internal medicine","Pediatrics","Ophthalmology"],
+    "wrongAnswersRomaji": ["naika","shounika","ganka"],
     "questionImage": "quiz_images/qlv4_17.png"
   },
   {
@@ -3939,18 +2904,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "園崎茜、通り名はなんという？",
     "questionEn": "What is Sonozaki Akane's alias?",
+    "questionRomaji": "Sonozaki Akane, toorina wa nanto iu?",
     "correctAnswerJp": "鬼姫",
     "correctAnswerEn": "Demon Princess",
-    "wrongAnswersJp": [
-      "歌姫",
-      "舞姫",
-      "鬼婆"
-    ],
-    "wrongAnswersEn": [
-      "Songstress",
-      "Dancing Princess",
-      "Demon Hag"
-    ],
+    "correctAnswerRomaji": "Onihime",
+    "wrongAnswersJp": ["歌姫","舞姫","鬼婆"],
+    "wrongAnswersEn": ["Songstress","Dancing Princess","Demon Hag"],
+    "wrongAnswersRomaji": ["utahime","maihime","onibaba"],
     "questionImage": "quiz_images/qlv4_18.png"
   },
   {
@@ -3958,18 +2918,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "ブラジルの首都、魅音が答えたのは？",
     "questionEn": "When asked the capital of Brazil, what was Mion's answer?",
+    "questionRomaji": "Burajiru no shuto, Mion ga kotaeta no wa?",
     "correctAnswerJp": "ジュネーブ",
     "correctAnswerEn": "Geneva",
-    "wrongAnswersJp": [
-      "リオデジャネイロ",
-      "ブエノスアイレス",
-      "ブラジリア"
-    ],
-    "wrongAnswersEn": [
-      "Rio de Janeiro",
-      "Buenos Aires",
-      "Brasilia"
-    ],
+    "correctAnswerRomaji": "Juneebu",
+    "wrongAnswersJp": ["リオデジャネイロ","ブエノスアイレス","ブラジリア"],
+    "wrongAnswersEn": ["Rio de Janeiro","Buenos Aires","Brasilia"],
+    "wrongAnswersRomaji": ["Rio de Janeiro","Buenos Aires","Burajilia"],
     "questionImage": "quiz_images/qlv4_19.png"
   },
   {
@@ -3977,18 +2932,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "魅音の学力のダメっぷり、圭一は何にたとえた？",
     "questionEn": "What did Keiichi compare Mion's terrible academic ability to?",
+    "questionRomaji": "Mion no gakuryoku no dameppuri, Keiichi wa nani ni tatoeta?",
     "correctAnswerJp": "ウナギ",
     "correctAnswerEn": "Eel",
-    "wrongAnswersJp": [
-      "ピラニア",
-      "トビウオ",
-      "ペンギン"
-    ],
-    "wrongAnswersEn": [
-      "Piranha",
-      "Flying fish",
-      "Penguin"
-    ],
+    "correctAnswerRomaji": "Unagi",
+    "wrongAnswersJp": ["ピラニア","トビウオ","ペンギン"],
+    "wrongAnswersEn": ["Piranha","Flying fish","Penguin"],
+    "wrongAnswersRomaji": ["Pirania","Tobiuo","Pengin"],
     "questionImage": "quiz_images/qlv4_20.png"
   },
   {
@@ -3996,18 +2946,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "婚約騒動の中で魅音、事実を聞かされてどうなった？",
     "questionEn": "During the engagement uproar, what happened to Mion when she was told the truth?",
+    "questionRomaji": "Konnyaku soudou no naka de Mion, jijitsu wo kikasarete dou natta?",
     "correctAnswerJp": "立ったまま気絶",
     "correctAnswerEn": "Fainted while standing",
-    "wrongAnswersJp": [
-      "鼻血吹き出す",
-      "穴を掘って埋まる",
-      "逃亡して行方不明"
-    ],
-    "wrongAnswersEn": [
-      "Nosebleed gush",
-      "Dug a hole and buried himself",
-      "Fled and went missing"
-    ],
+    "correctAnswerRomaji": "tatta mama kizetsu",
+    "wrongAnswersJp": ["鼻血吹き出す","穴を掘って埋まる","逃亡して行方不明"],
+    "wrongAnswersEn": ["Nosebleed gush","Dug a hole and buried himself","Fled and went missing"],
+    "wrongAnswersRomaji": ["hanaji fukidasu","ana wo hotte umaru","tousou shite yukuefumei"],
     "questionImage": "quiz_images/qlv4_21.png"
   },
   {
@@ -4015,18 +2960,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "初デートが決まって魅音、どうなった？",
     "questionEn": "What happened to Mion when her first date was decided?",
+    "questionRomaji": "Hatsu deeto ga kimatte Mion, dou natta?",
     "correctAnswerJp": "鼻血吹き出す",
     "correctAnswerEn": "Nosebleed gush",
-    "wrongAnswersJp": [
-      "立ったまま気絶",
-      "穴を掘って埋まる",
-      "逃亡して行方不明"
-    ],
-    "wrongAnswersEn": [
-      "Fainted while standing",
-      "Dug a hole and buried himself",
-      "Fled and went missing"
-    ],
+    "correctAnswerRomaji": "hanaji fukidasu",
+    "wrongAnswersJp": ["立ったまま気絶","穴を掘って埋まる","逃亡して行方不明"],
+    "wrongAnswersEn": ["Fainted while standing","Dug a hole and buried himself","Fled and went missing"],
+    "wrongAnswersRomaji": ["tatta mama kizetsu","ana wo hotte umaru","tousou shite yukuefumei"],
     "questionImage": "quiz_images/qlv4_22.png"
   },
   {
@@ -4034,18 +2974,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "鷹野を操る影の支配者、名乗っていない苗字は？",
     "questionEn": "The shadowy mastermind controlling Takano — what surname did they not go by?",
+    "questionRomaji": "Takano wo ayatsuru kage no shihaisha, nanotte inai myouji wa?",
     "correctAnswerJp": "森",
     "correctAnswerEn": "Mori",
-    "wrongAnswersJp": [
-      "野村",
-      "渡邉",
-      "舞沢"
-    ],
-    "wrongAnswersEn": [
-      "Nomura",
-      "Watanabe",
-      "Maizawa"
-    ],
+    "correctAnswerRomaji": "Mori",
+    "wrongAnswersJp": ["野村","渡邉","舞沢"],
+    "wrongAnswersEn": ["Nomura","Watanabe","Maizawa"],
+    "wrongAnswersRomaji": ["Nomura","Watanabe","Maizawa"],
     "questionImage": "quiz_images/qlv4_23.png"
   },
   {
@@ -4053,18 +2988,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「澪尽し編・裏」、ラスボス、千葉を逮捕したのは？",
     "questionEn": "In Miotsukushi Ura, who arrested the final boss, Chiba?",
+    "questionRomaji": "\"Miotsukushi-hen Ura\", rasubosu Chiba wo taiho shita no wa?",
     "correctAnswerJp": "反町",
     "correctAnswerEn": "Sorimachi",
-    "wrongAnswersJp": [
-      "巴",
-      "山沖",
-      "前野"
-    ],
-    "wrongAnswersEn": [
-      "Tomoe",
-      "Yamaoki",
-      "Maeno"
-    ],
+    "correctAnswerRomaji": "Sorimachi",
+    "wrongAnswersJp": ["巴","山沖","前野"],
+    "wrongAnswersEn": ["Tomoe","Yamaoki","Maeno"],
+    "wrongAnswersRomaji": ["Tomoe","Yamaoki","Maeno"],
     "questionImage": "quiz_images/qlv4_24.png"
   },
   {
@@ -4072,18 +3002,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "赤坂の得意技で違うのは？",
     "questionEn": "Which of these is NOT one of Akasaka's special techniques?",
+    "questionRomaji": "Akasaka no tokui waza de chigau no wa?",
     "correctAnswerJp": "射撃",
     "correctAnswerEn": "Shooting",
-    "wrongAnswersJp": [
-      "格闘技",
-      "諜報",
-      "麻雀"
-    ],
-    "wrongAnswersEn": [
-      "Martial arts",
-      "Espionage",
-      "Mahjong"
-    ],
+    "correctAnswerRomaji": "shageki",
+    "wrongAnswersJp": ["格闘技","諜報","麻雀"],
+    "wrongAnswersEn": ["Martial arts","Espionage","Mahjong"],
+    "wrongAnswersRomaji": ["kakutougi","chouhou","maajan"],
     "questionImage": "quiz_images/qlv4_25.png"
   },
   {
@@ -4091,18 +3016,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「言祝し編」の園崎家当主、名前は？",
     "questionEn": "In the Kotohogushi chapter, what was the name of the Sonozaki family head?",
+    "questionRomaji": "\"Kotohogushi-hen\" no Sonozaki ke touju, namae wa?",
     "correctAnswerJp": "魔央",
     "correctAnswerEn": "Mao",
-    "wrongAnswersJp": [
-      "真緒",
-      "真央",
-      "真魚"
-    ],
-    "wrongAnswersEn": [
-      "Mao",
-      "Mao",
-      "Mao"
-    ],
+    "correctAnswerRomaji": "Mao",
+    "wrongAnswersJp": ["真緒","真央","真魚"],
+    "wrongAnswersEn": ["Mao","Mao","Mao"],
+    "wrongAnswersRomaji": ["Mao","Mao","Mao"],
     "questionImage": "quiz_images/qlv4_26.png"
   },
   {
@@ -4110,18 +3030,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "田無美代子、集めているのは？",
     "questionEn": "What does Miyoko Tanashi collect?",
+    "questionRomaji": "Tanashi Miyoko, atsumete iru no wa?",
     "correctAnswerJp": "旗",
     "correctAnswerEn": "Flag",
-    "wrongAnswersJp": [
-      "コイン",
-      "切手",
-      "キャップ"
-    ],
-    "wrongAnswersEn": [
-      "Coin",
-      "Stamp",
-      "Cap"
-    ],
+    "correctAnswerRomaji": "hata",
+    "wrongAnswersJp": ["コイン","切手","キャップ"],
+    "wrongAnswersEn": ["Coin","Stamp","Cap"],
+    "wrongAnswersRomaji": ["koin","kitte","kyappu"],
     "questionImage": "quiz_images/qlv4_27.png"
   },
   {
@@ -4129,18 +3044,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "鷹野三四の恩人、高野先生。下の名前は？",
     "questionEn": "Takano Miyo's benefactor, Dr. Takano — what is his first name?",
+    "questionRomaji": "Takano Miyo no onjin, Takano-sensei. Shita no namae wa?",
     "correctAnswerJp": "一二三",
     "correctAnswerEn": "Hifumi",
-    "wrongAnswersJp": [
-      "十三",
-      "一八",
-      "二三也"
-    ],
-    "wrongAnswersEn": [
-      "Juuzou",
-      "Ippachi",
-      "Fumiya"
-    ],
+    "correctAnswerRomaji": "Hifumi",
+    "wrongAnswersJp": ["十三","一八","二三也"],
+    "wrongAnswersEn": ["Juuzou","Ippachi","Fumiya"],
+    "wrongAnswersRomaji": ["Juuzou","Ippachi","Fumiya"],
     "questionImage": "quiz_images/qlv4_28.png"
   },
   {
@@ -4148,18 +3058,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "雲雀13、何に例えてクールといった？",
     "questionEn": "Hibari 13 compared something to what when calling it cool?",
+    "questionRomaji": "Hibari 13, nani ni tatoete kuuru to itta?",
     "correctAnswerJp": "ミント",
     "correctAnswerEn": "Mint",
-    "wrongAnswersJp": [
-      "アイス",
-      "ナイフ",
-      "アフロ"
-    ],
-    "wrongAnswersEn": [
-      "Ice cream",
-      "Knife",
-      "Afro"
-    ],
+    "correctAnswerRomaji": "Minto",
+    "wrongAnswersJp": ["アイス","ナイフ","アフロ"],
+    "wrongAnswersEn": ["Ice cream","Knife","Afro"],
+    "wrongAnswersRomaji": ["Aisu","Naifu","Afuro"],
     "questionImage": "quiz_images/qlv4_29.png"
   },
   {
@@ -4167,18 +3072,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "雲雀13、沙都子のトラップにどう対抗した？",
     "questionEn": "How did Hibari 13 counter Satoko's traps?",
+    "questionRomaji": "Hibari 13, Satoko no torappu ni dou koukou shita?",
     "correctAnswerJp": "後ろに下がる",
     "correctAnswerEn": "Step backward",
-    "wrongAnswersJp": [
-      "真ん中を通る",
-      "真上にジャンプ",
-      "その場を動かない"
-    ],
-    "wrongAnswersEn": [
-      "Go through the middle",
-      "Jump straight up",
-      "Don't move from the spot"
-    ],
+    "correctAnswerRomaji": "ushiro ni sagaru",
+    "wrongAnswersJp": ["真ん中を通る","真上にジャンプ","その場を動かない"],
+    "wrongAnswersEn": ["Go through the middle","Jump straight up","Don't move from the spot"],
+    "wrongAnswersRomaji": ["mannaka wo tooru","maue ni janpu","sono ba wo ugokanai"],
     "questionImage": "quiz_images/qlv4_30.png"
   },
   {
@@ -4186,18 +3086,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "公由夏美、昔のアダ名は？",
     "questionEn": "What was Natsumi Kimiyoshi's old nickname?",
+    "questionRomaji": "Kimiyoshi Natsumi, mukashi no adana wa?",
     "correctAnswerJp": "座敷わらし",
     "correctAnswerEn": "Zashiki-warashi",
-    "wrongAnswersJp": [
-      "コロポックル",
-      "キジムナー",
-      "ぬらりひょん"
-    ],
-    "wrongAnswersEn": [
-      "Koropokkur",
-      "Kijimunaa",
-      "Nurarihyon"
-    ],
+    "correctAnswerRomaji": "zashiki-warashi",
+    "wrongAnswersJp": ["コロポックル","キジムナー","ぬらりひょん"],
+    "wrongAnswersEn": ["Koropokkur","Kijimunaa","Nurarihyon"],
+    "wrongAnswersRomaji": ["Koropokkuru","Kijimunaa","Nurarihyon"],
     "questionImage": "quiz_images/qlv4_31.png"
   },
   {
@@ -4205,18 +3100,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "南井巴、物語中ではどこまで出世した？",
     "questionEn": "How far did Tomoe Minai get promoted in the story?",
+    "questionRomaji": "Minai Tomoe, monogatari chuu de wa doko made shusse shita?",
     "correctAnswerJp": "広報室長",
     "correctAnswerEn": "Public Relations chief",
-    "wrongAnswersJp": [
-      "刑事課長",
-      "公安課長",
-      "署長"
-    ],
-    "wrongAnswersEn": [
-      "Criminal Affairs chief",
-      "Public Security chief",
-      "Station chief"
-    ],
+    "correctAnswerRomaji": "kouhoushitsu-chou",
+    "wrongAnswersJp": ["刑事課長","公安課長","署長"],
+    "wrongAnswersEn": ["Criminal Affairs chief","Public Security chief","Station chief"],
+    "wrongAnswersRomaji": ["keijika-chou","kouanka-chou","sho-chou"],
     "questionImage": "quiz_images/qlv4_32.png"
   },
   {
@@ -4224,18 +3114,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "巴の協力者の相馬、所属はどこ？",
     "questionEn": "Where does Tomoe's collaborator Souma work?",
+    "questionRomaji": "Tomoe no kyouryokusha no Souma, shozoku wa doko?",
     "correctAnswerJp": "科学警察研究所",
     "correctAnswerEn": "National Research Inst. of Police Science",
-    "wrongAnswersJp": [
-      "科学捜査研究所",
-      "麻薬取締官事務所",
-      "東京地方検察庁"
-    ],
-    "wrongAnswersEn": [
-      "Forensic Science Laboratory",
-      "Narcotics Control Office",
-      "Tokyo District Public Prosecutors Office"
-    ],
+    "correctAnswerRomaji": "Kagaku Keisatsu Kenkyuusho",
+    "wrongAnswersJp": ["科学捜査研究所","麻薬取締官事務所","東京地方検察庁"],
+    "wrongAnswersEn": ["Forensic Science Laboratory","Narcotics Control Office","Tokyo District Public Prosecutors Office"],
+    "wrongAnswersRomaji": ["Kagaku Sousa Kenkyuusho","Mayaku Torishimari-kan Jimusho","Tokyo Chihou Kensatsu-chou"],
     "questionImage": "quiz_images/qlv4_33.png"
   },
   {
@@ -4243,18 +3128,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "巴の協力者の反町、所属はどこ？",
     "questionEn": "Where does Tomoe's collaborator Sorimachi work?",
+    "questionRomaji": "Tomoe no kyouryokusha no Sorimachi, shozoku wa doko?",
     "correctAnswerJp": "東京地方検察庁",
     "correctAnswerEn": "Tokyo District Public Prosecutors Office",
-    "wrongAnswersJp": [
-      "科学捜査研究所",
-      "科学警察研究所",
-      "麻薬取締官事務所"
-    ],
-    "wrongAnswersEn": [
-      "Forensic Science Laboratory",
-      "National Research Inst. of Police Science",
-      "Narcotics Control Office"
-    ],
+    "correctAnswerRomaji": "Tokyo Chihou Kensatsu-chou",
+    "wrongAnswersJp": ["科学捜査研究所","科学警察研究所","麻薬取締官事務所"],
+    "wrongAnswersEn": ["Forensic Science Laboratory","National Research Inst. of Police Science","Narcotics Control Office"],
+    "wrongAnswersRomaji": ["Kagaku Sousa Kenkyuusho","Kagaku Keisatsu Kenkyuusho","Mayaku Torishimari-kan Jimusho"],
     "questionImage": "quiz_images/qlv4_34.png"
   },
   {
@@ -4262,18 +3142,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "公由志乃の声優さんは？",
     "questionEn": "Who is the voice actress for Shino Kimiyoshi?",
+    "questionRomaji": "Kimiyoshi Shino no seiyuu-san wa?",
     "correctAnswerJp": "前田愛",
     "correctAnswerEn": "Maeda Ai",
-    "wrongAnswersJp": [
-      "松井菜桜子",
-      "水野理紗",
-      "井上麻里奈"
-    ],
-    "wrongAnswersEn": [
-      "Matsui Naoko",
-      "Mizuno Risa",
-      "Inoue Marina"
-    ],
+    "correctAnswerRomaji": "Maeda Ai",
+    "wrongAnswersJp": ["松井菜桜子","水野理紗","井上麻里奈"],
+    "wrongAnswersEn": ["Matsui Naoko","Mizuno Risa","Inoue Marina"],
+    "wrongAnswersRomaji": ["Matsui Naoko","Mizuno Risa","Inoue Marina"],
     "questionImage": "quiz_images/qlv4_35.png"
   },
   {
@@ -4281,18 +3156,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "園崎魔央の声優さんは？",
     "questionEn": "Who is the voice actor for Sonozaki Maon?",
+    "questionRomaji": "Sonozaki Mao no seiyuu-san wa?",
     "correctAnswerJp": "井上麻里奈",
     "correctAnswerEn": "Inoue Marina",
-    "wrongAnswersJp": [
-      "松井菜桜子",
-      "前田愛",
-      "水野理紗"
-    ],
-    "wrongAnswersEn": [
-      "Matsui Naoko",
-      "Maeda Ai",
-      "Mizuno Risa"
-    ],
+    "correctAnswerRomaji": "Inoue Marina",
+    "wrongAnswersJp": ["松井菜桜子","前田愛","水野理紗"],
+    "wrongAnswersEn": ["Matsui Naoko","Maeda Ai","Mizuno Risa"],
+    "wrongAnswersRomaji": ["Matsui Naoko","Maeda Ai","Mizuno Risa"],
     "questionImage": "quiz_images/qlv4_36.png"
   },
   {
@@ -4300,18 +3170,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "立ち絵で負傷差分があるキャラは？",
     "questionEn": "Which character has an injured variant in their standing sprite?",
+    "questionRomaji": "tachie de fushou saben ga aru kyara wa?",
     "correctAnswerJp": "鷹野三四",
     "correctAnswerEn": "Takano Miyo",
-    "wrongAnswersJp": [
-      "入江京介",
-      "富竹ジロウ",
-      "大石蔵人"
-    ],
-    "wrongAnswersEn": [
-      "Irie Kyousuke",
-      "Tomitake Jirou",
-      "Oishi Kuraudo"
-    ],
+    "correctAnswerRomaji": "Takano Miyo",
+    "wrongAnswersJp": ["入江京介","富竹ジロウ","大石蔵人"],
+    "wrongAnswersEn": ["Irie Kyousuke","Tomitake Jirou","Oishi Kuraudo"],
+    "wrongAnswersRomaji": ["Irie Kyousuke","Tomitake Jirou","Oishi Kuraudo"],
     "questionImage": "quiz_images/qlv4_37.png"
   },
   {
@@ -4319,18 +3184,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "バトル用の立ち絵がないのは、この中の誰？",
     "questionEn": "Among these characters, who has no battle sprite?",
+    "questionRomaji": "batoru you no tachie ga nai no wa, kono naka no dare?",
     "correctAnswerJp": "反町美雪",
     "correctAnswerEn": "Sorimachi Miyuki",
-    "wrongAnswersJp": [
-      "竜宮レナ",
-      "羽入",
-      "園崎魅音"
-    ],
-    "wrongAnswersEn": [
-      "Ryuuguu Rena",
-      "Hanyuu",
-      "Sonozaki Mion"
-    ],
+    "correctAnswerRomaji": "Sorimachi Miyuki",
+    "wrongAnswersJp": ["竜宮レナ","羽入","園崎魅音"],
+    "wrongAnswersEn": ["Ryuuguu Rena","Hanyuu","Sonozaki Mion"],
+    "wrongAnswersRomaji": ["Ryuuguu Rena","Hanyuu","Sonozaki Mion"],
     "questionImage": "quiz_images/qlv4_38.png"
   },
   {
@@ -4338,18 +3198,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「言祝し編」の羽入、巫女服の前はどんな服だった？",
     "questionEn": "In the Kotohogushi chapter, what did Hanyuu wear before her shrine maiden outfit?",
+    "questionRomaji": "\"Kotohogushi-hen\" no Hanyuu, miko fuku no mae wa donna fuku datta?",
     "correctAnswerJp": "黒い戦闘服",
     "correctAnswerEn": "Black combat suit",
-    "wrongAnswersJp": [
-      "白い宇宙服",
-      "実は裸",
-      "赤い羽衣"
-    ],
-    "wrongAnswersEn": [
-      "White space suit",
-      "Actually naked",
-      "Red robe of feathers"
-    ],
+    "correctAnswerRomaji": "kuroi sentou fuku",
+    "wrongAnswersJp": ["白い宇宙服","実は裸","赤い羽衣"],
+    "wrongAnswersEn": ["White space suit","Actually naked","Red robe of feathers"],
+    "wrongAnswersRomaji": ["shiroi uchuufuku","jitsu wa hadaka","akai hagoromo"],
     "questionImage": "quiz_images/qlv4_39.png"
   },
   {
@@ -4357,18 +3212,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「言祝し編」、陸を助けるため羽入が倒したケモノは？",
     "questionEn": "In the Kotohogushi chapter, what beast did Hanyuu defeat to save Riku?",
+    "questionRomaji": "\"Kotohogushi-hen\", Riku wo tasukeru tame Hanyuu ga taoshita kemono wa?",
     "correctAnswerJp": "熊",
     "correctAnswerEn": "Bear",
-    "wrongAnswersJp": [
-      "狼",
-      "猪",
-      "象"
-    ],
-    "wrongAnswersEn": [
-      "Wolf",
-      "Wild boar",
-      "Elephant"
-    ],
+    "correctAnswerRomaji": "kuma",
+    "wrongAnswersJp": ["狼","猪","象"],
+    "wrongAnswersEn": ["Wolf","Wild boar","Elephant"],
+    "wrongAnswersRomaji": ["ookami","inoshishi","zou"],
     "questionImage": "quiz_images/qlv4_40.png"
   },
   {
@@ -4376,18 +3226,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "原作版「祭囃し編」、エンディングテーマは何？",
     "questionEn": "What is the ending theme of the original Matsuribayashi?",
+    "questionRomaji": "gensakuban \"Matsuribayashi-hen\", ending teeemu wa nani?",
     "correctAnswerJp": "そらのむこう",
     "correctAnswerEn": "Sora no Mukou",
-    "wrongAnswersJp": [
-      "you",
-      "Friend",
-      "escape"
-    ],
-    "wrongAnswersEn": [
-      "you",
-      "Friend",
-      "escape"
-    ],
+    "correctAnswerRomaji": "Sora no Mukou",
+    "wrongAnswersJp": ["you","Friend","escape"],
+    "wrongAnswersEn": ["you","Friend","escape"],
+    "wrongAnswersRomaji": ["you","Friend","escape"],
     "questionImage": "quiz_images/qlv4_41.png"
   },
   {
@@ -4395,18 +3240,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「賽殺し編」、母と一緒に作ったのは何？",
     "questionEn": "In the Saikoroshi chapter, what did she make together with her mother?",
+    "questionRomaji": "\"Saikoroshi-hen\", haha to issho ni tsukutta no wa nani?",
     "correctAnswerJp": "カレー",
     "correctAnswerEn": "Curry",
-    "wrongAnswersJp": [
-      "肉じゃが",
-      "オムライス",
-      "シチュー"
-    ],
-    "wrongAnswersEn": [
-      "Nikujaga",
-      "Omurice",
-      "Stew"
-    ],
+    "correctAnswerRomaji": "karee",
+    "wrongAnswersJp": ["肉じゃが","オムライス","シチュー"],
+    "wrongAnswersEn": ["Nikujaga","Omurice","Stew"],
+    "wrongAnswersRomaji": ["nikujaga","omuraisu","shichuu"],
     "questionImage": "quiz_images/qlv4_42.png"
   },
   {
@@ -4414,18 +3254,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「祭囃し編」、赤坂の一撃は何にたとえられた？",
     "questionEn": "In the Matsuribayashi chapter, what was Akasaka's blow compared to?",
+    "questionRomaji": "\"Matsuribayashi-hen\", Akasaka no ichigeki wa nani ni tatoerareta?",
     "correctAnswerJp": "徹甲弾",
     "correctAnswerEn": "Armor-piercing round",
-    "wrongAnswersJp": [
-      "焼夷弾",
-      "核弾頭",
-      "爆裂弾"
-    ],
-    "wrongAnswersEn": [
-      "Incendiary round",
-      "Nuclear warhead",
-      "Explosive round"
-    ],
+    "correctAnswerRomaji": "tekkoudan",
+    "wrongAnswersJp": ["焼夷弾","核弾頭","爆裂弾"],
+    "wrongAnswersEn": ["Incendiary round","Nuclear warhead","Explosive round"],
+    "wrongAnswersRomaji": ["shoui-dan","kaku dandou","bakuretsu-dan"],
     "questionImage": "quiz_images/qlv4_43.png"
   },
   {
@@ -4433,18 +3268,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "絆シリーズの「言祝し編」、脚本を担当したのは？",
     "questionEn": "In the Kizuna series, who wrote the script for \"Kotohogushi\"?",
+    "questionRomaji": "Kizuna shiriizu no \"Kotohogushi-hen\", kyakuhon wo tantou shita no wa?",
     "correctAnswerJp": "中村慎介",
     "correctAnswerEn": "Nakamura Shinsuke",
-    "wrongAnswersJp": [
-      "中野麻衣",
-      "宮城季詩子",
-      "鴻野貴光"
-    ],
-    "wrongAnswersEn": [
-      "Nakano Mai",
-      "Miyagi Kishiko",
-      "Kouno Takamitsu"
-    ],
+    "correctAnswerRomaji": "Nakamura Shinsuke",
+    "wrongAnswersJp": ["中野麻衣","宮城季詩子","鴻野貴光"],
+    "wrongAnswersEn": ["Nakano Mai","Miyagi Kishiko","Kouno Takamitsu"],
+    "wrongAnswersRomaji": ["Nakano Mai","Miyagi Kishiko","Kouno Takamitsu"],
     "questionImage": "quiz_images/qlv4_44.png"
   },
   {
@@ -4452,18 +3282,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "山沖とまどか、年齢は何歳差？",
     "questionEn": "What is the age gap between Yamaoki and Madoka?",
+    "questionRomaji": "Yamaoki to Madoka, nenrei wa nansai-sa?",
     "correctAnswerJp": "31歳",
     "correctAnswerEn": "31 years old",
-    "wrongAnswersJp": [
-      "26歳",
-      "40歳",
-      "28歳"
-    ],
-    "wrongAnswersEn": [
-      "26 years old",
-      "40 years old",
-      "28 years old"
-    ],
+    "correctAnswerRomaji": "31-sai",
+    "wrongAnswersJp": ["26歳","40歳","28歳"],
+    "wrongAnswersEn": ["26 years old","40 years old","28 years old"],
+    "wrongAnswersRomaji": ["26-sai","40-sai","28-sai"],
     "questionImage": "quiz_images/qlv4_45.png"
   },
   {
@@ -4471,18 +3296,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "ひぐらしのなく頃に絆、第四巻は？",
     "questionEn": "What was the fourth volume of Higurashi no Naku Koro ni Kizuna?",
+    "questionRomaji": "Higurashi no Naku Koro ni Kizuna, daiyonkan wa?",
     "correctAnswerJp": "絆",
     "correctAnswerEn": "Bond",
-    "wrongAnswersJp": [
-      "祟",
-      "想",
-      "螺"
-    ],
-    "wrongAnswersEn": [
-      "Curse",
-      "Thought",
-      "Spiral"
-    ],
+    "correctAnswerRomaji": "Kizuna",
+    "wrongAnswersJp": ["祟","想","螺"],
+    "wrongAnswersEn": ["Curse","Thought","Spiral"],
+    "wrongAnswersRomaji": ["Tatari","Omoi","Ra"],
     "questionImage": "quiz_images/qlv4_46.png"
   },
   {
@@ -4490,18 +3310,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "絆シリーズ第四巻、出たのは何年？",
     "questionEn": "What year was the fourth volume of the Kizuna series released?",
+    "questionRomaji": "Kizuna shiriizu daiyonkan, deta no wa nannen?",
     "correctAnswerJp": "2010年",
     "correctAnswerEn": "2010",
-    "wrongAnswersJp": [
-      "2007年",
-      "2008年",
-      "2009年"
-    ],
-    "wrongAnswersEn": [
-      "2007",
-      "2008",
-      "2009"
-    ],
+    "correctAnswerRomaji": "2010-nen",
+    "wrongAnswersJp": ["2007年","2008年","2009年"],
+    "wrongAnswersEn": ["2007","2008","2009"],
+    "wrongAnswersRomaji": ["2007-nen","2008-nen","2009-nen"],
     "questionImage": "quiz_images/qlv4_47.png"
   },
   {
@@ -4509,18 +3324,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「Friend」、歌ったのは誰？",
     "questionEn": "Who sang \"Friend\"?",
+    "questionRomaji": "\"Friend\", utatta no wa dare?",
     "correctAnswerJp": "いとうかなこ",
     "correctAnswerEn": "Itou Kanako",
-    "wrongAnswersJp": [
-      "彩音",
-      "Cyua",
-      "諫山実生"
-    ],
-    "wrongAnswersEn": [
-      "Ayane",
-      "Cyua",
-      "Isayama Mio"
-    ],
+    "correctAnswerRomaji": "Itou Kanako",
+    "wrongAnswersJp": ["彩音","Cyua","諫山実生"],
+    "wrongAnswersEn": ["Ayane","Cyua","Isayama Mio"],
+    "wrongAnswersRomaji": ["Ayane","Cyua","Isayama Mio"],
     "questionImage": "quiz_images/qlv4_48.png"
   },
   {
@@ -4528,18 +3338,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「コンプレックス・イマージュ」、歌ったのは誰？",
     "questionEn": "Who sang \"Complex Image\"?",
+    "questionRomaji": "\"Konpurekkusu Imeeju\", utatta no wa dare?",
     "correctAnswerJp": "彩音",
     "correctAnswerEn": "Ayane",
-    "wrongAnswersJp": [
-      "いとうかなこ",
-      "Cyua",
-      "諫山実生"
-    ],
-    "wrongAnswersEn": [
-      "Itou Kanako",
-      "Cyua",
-      "Isayama Mio"
-    ],
+    "correctAnswerRomaji": "Ayane",
+    "wrongAnswersJp": ["いとうかなこ","Cyua","諫山実生"],
+    "wrongAnswersEn": ["Itou Kanako","Cyua","Isayama Mio"],
+    "wrongAnswersRomaji": ["Itou Kanako","Cyua","Isayama Mio"],
     "questionImage": "quiz_images/qlv4_49.png"
   },
   {
@@ -4547,18 +3352,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "「澪尽し編」、エンディングテーマは何？",
     "questionEn": "What was the ending theme of the Miotsukushi chapter?",
+    "questionRomaji": "\"Miotsukushi-hen\", ending teeemu wa nani?",
     "correctAnswerJp": "Friend",
     "correctAnswerEn": "Friend",
-    "wrongAnswersJp": [
-      "そらのむこう",
-      "you",
-      "escape"
-    ],
-    "wrongAnswersEn": [
-      "Sora no Mukou",
-      "you",
-      "escape"
-    ],
+    "correctAnswerRomaji": "Friend",
+    "wrongAnswersJp": ["そらのむこう","you","escape"],
+    "wrongAnswersEn": ["Sora no Mukou","you","escape"],
+    "wrongAnswersRomaji": ["Sora no Mukou","you","escape"],
     "questionImage": "quiz_images/qlv4_50.png"
   },
   {
@@ -4566,18 +3366,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "鷹野",
     "correctAnswerEn": "Takano",
-    "wrongAnswersJp": [
-      "鷹埜",
-      "高野",
-      "ラムダデルタ"
-    ],
-    "wrongAnswersEn": [
-      "Takano (alt.)",
-      "Takano (alt.)",
-      "Lambdadelta"
-    ],
+    "correctAnswerRomaji": "Takano",
+    "wrongAnswersJp": ["鷹埜","高野","ラムダデルタ"],
+    "wrongAnswersEn": ["Takano (alt.)","Takano (alt.)","Lambdadelta"],
+    "wrongAnswersRomaji": ["Takano (betsuji)","Takano (betsuji)","Ramudadelta"],
     "questionImage": "quiz_images/qlv4_51.png"
   },
   {
@@ -4585,18 +3380,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "イェアソムール",
     "correctAnswerEn": "Yeasomuru",
-    "wrongAnswersJp": [
-      "尾八白様",
-      "アウアウローラ",
-      "ジェダ"
-    ],
-    "wrongAnswersEn": [
-      "Oyashiro-sama (alt.)",
-      "Au Au Aurora",
-      "Jeda"
-    ],
+    "correctAnswerRomaji": "Yeasomuru",
+    "wrongAnswersJp": ["尾八白様","アウアウローラ","ジェダ"],
+    "wrongAnswersEn": ["Oyashiro-sama (alt.)","Au Au Aurora","Jeda"],
+    "wrongAnswersRomaji": ["Oyashiro-sama (betsuji)","Au Au Aurora","Jeda"],
     "questionImage": "quiz_images/qlv4_52.png"
   },
   {
@@ -4604,18 +3394,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "お魎",
     "correctAnswerEn": "Oryou",
-    "wrongAnswersJp": [
-      "お菊",
-      "お梅",
-      "お京"
-    ],
-    "wrongAnswersEn": [
-      "Okiku",
-      "Oume",
-      "Okyo"
-    ],
+    "correctAnswerRomaji": "Oryou",
+    "wrongAnswersJp": ["お菊","お梅","お京"],
+    "wrongAnswersEn": ["Okiku","Oume","Okyo"],
+    "wrongAnswersRomaji": ["Okiku","Oume","Okyo"],
     "questionImage": "quiz_images/qlv4_53.png"
   },
   {
@@ -4623,18 +3408,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "桜花",
     "correctAnswerEn": "Ouka",
-    "wrongAnswersJp": [
-      "桃花",
-      "彩花",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Momoka",
-      "Ayaka",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Ouka",
+    "wrongAnswersJp": ["桃花","彩花","梨花"],
+    "wrongAnswersEn": ["Momoka","Ayaka","Rika"],
+    "wrongAnswersRomaji": ["Momoka","Ayaka","Rika"],
     "questionImage": "quiz_images/qlv4_54.png"
   },
   {
@@ -4642,18 +3422,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "雲雀13",
     "correctAnswerEn": "Skylark 13",
-    "wrongAnswersJp": [
-      "鶯13",
-      "燕13",
-      "天草十二"
-    ],
-    "wrongAnswersEn": [
-      "Warbler 13",
-      "Swallow 13",
-      "Amakusa Twelve"
-    ],
+    "correctAnswerRomaji": "Hibari 13",
+    "wrongAnswersJp": ["鶯13","燕13","天草十二"],
+    "wrongAnswersEn": ["Warbler 13","Swallow 13","Amakusa Twelve"],
+    "wrongAnswersRomaji": ["Uguisu 13","Tsubame 13","Amakusa Juuni"],
     "questionImage": "quiz_images/qlv4_55.png"
   },
   {
@@ -4661,18 +3436,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "佐藤利奈",
     "correctAnswerEn": "Satou Rina",
-    "wrongAnswersJp": [
-      "左藤利奈",
-      "佐藤縁寿",
-      "レールガン・御坂"
-    ],
-    "wrongAnswersEn": [
-      "Satou Rina (alt.)",
-      "Satou Enju (alt.)",
-      "Railgun Misaka"
-    ],
+    "correctAnswerRomaji": "Satou Rina",
+    "wrongAnswersJp": ["左藤利奈","佐藤縁寿","レールガン・御坂"],
+    "wrongAnswersEn": ["Satou Rina (alt.)","Satou Enju (alt.)","Railgun Misaka"],
+    "wrongAnswersRomaji": ["Satou Rina (betsuji)","Satou Enju (betsuji)","Reergan Misaka"],
     "questionImage": "quiz_images/qlv4_56.png"
   },
   {
@@ -4680,18 +3450,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "間島淳司",
     "correctAnswerEn": "Majima Junji",
-    "wrongAnswersJp": [
-      "真島淳司",
-      "間島純次",
-      "プリニー・稲穂"
-    ],
-    "wrongAnswersEn": [
-      "Majima Junji (alt.)",
-      "Majima Junji (alt.)",
-      "Prinny Inaho"
-    ],
+    "correctAnswerRomaji": "Majima Junji",
+    "wrongAnswersJp": ["真島淳司","間島純次","プリニー・稲穂"],
+    "wrongAnswersEn": ["Majima Junji (alt.)","Majima Junji (alt.)","Prinny Inaho"],
+    "wrongAnswersRomaji": ["Majima Junji (betsuji)","Majima Junji (betsuji)","Purinii Inaho"],
     "questionImage": "quiz_images/qlv4_57.png"
   },
   {
@@ -4699,18 +3464,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "大浦冬華",
     "correctAnswerEn": "Ooura Fuyuka",
-    "wrongAnswersJp": [
-      "田無三四",
-      "田無美代子",
-      "メリル・田無"
-    ],
-    "wrongAnswersEn": [
-      "Tanashi Miyo (alt.)",
-      "Tanashi Miyoko (alt.)",
-      "Meryl Tanashi"
-    ],
+    "correctAnswerRomaji": "Ooura Fuyuka",
+    "wrongAnswersJp": ["田無三四","田無美代子","メリル・田無"],
+    "wrongAnswersEn": ["Tanashi Miyo (alt.)","Tanashi Miyoko (alt.)","Meryl Tanashi"],
+    "wrongAnswersRomaji": ["Tanashi Miyo (betsuji)","Tanashi Miyoko (betsuji)","Meriru Tanashi"],
     "questionImage": "quiz_images/qlv4_58.png"
   },
   {
@@ -4718,18 +3478,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "若本規夫",
     "correctAnswerEn": "Wakamoto Norio",
-    "wrongAnswersJp": [
-      "若本ノリ夫",
-      "若元紀夫",
-      "穴子輝"
-    ],
-    "wrongAnswersEn": [
-      "Wakamoto Norio (alt.)",
-      "Wakamoto Norio (alt.)",
-      "Anago Hikaru (alt.)"
-    ],
+    "correctAnswerRomaji": "Wakamoto Norio",
+    "wrongAnswersJp": ["若本ノリ夫","若元紀夫","穴子輝"],
+    "wrongAnswersEn": ["Wakamoto Norio (alt.)","Wakamoto Norio (alt.)","Anago Hikaru (alt.)"],
+    "wrongAnswersRomaji": ["Wakamoto Norio (betsuji)","Wakamoto Norio (betsuji)","Anago Hikaru (betsuji)"],
     "questionImage": "quiz_images/qlv4_59.png"
   },
   {
@@ -4737,18 +3492,13 @@ export const entries: Entry[] = [
     "level": 4,
     "questionJp": "このキャラを演じた声優さんは？",
     "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "関智一",
     "correctAnswerEn": "Seki Tomokazu",
-    "wrongAnswersJp": [
-      "関友一",
-      "関俊一",
-      "ドモン・骨川"
-    ],
-    "wrongAnswersEn": [
-      "Seki Tomokazu (alt.)",
-      "Seki Tomokazu (alt.)",
-      "Domon Honekawa"
-    ],
+    "correctAnswerRomaji": "Seki Tomokazu",
+    "wrongAnswersJp": ["関友一","関俊一","ドモン・骨川"],
+    "wrongAnswersEn": ["Seki Tomokazu (alt.)","Seki Tomokazu (alt.)","Domon Honekawa"],
+    "wrongAnswersRomaji": ["Seki Tomokazu (betsuji)","Seki Tomokazu (betsuji)","Domon Honekawa"],
     "questionImage": "quiz_images/qlv4_60.png"
   },
   {
@@ -4756,18 +3506,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "鹿骨市役所雛見沢出張所主事、そのフルネームは？",
     "questionEn": "What is the full name of the clerk at the Shishibone City Hall Hinamizawa Branch Office?",
+    "questionRomaji": "Shishibone Shiyakusho Hinamizawa Shutchoujo Shushi, sono furuneemu wa?",
     "correctAnswerJp": "公由真由美",
     "correctAnswerEn": "Kimiyoshi Mayumi",
-    "wrongAnswersJp": [
-      "公由春子",
-      "公由冬司",
-      "公由アキ"
-    ],
-    "wrongAnswersEn": [
-      "Kimiyoshi Haruko",
-      "Kimiyoshi Touji",
-      "Kimiyoshi Aki"
-    ],
+    "correctAnswerRomaji": "Kimiyoshi Mayumi",
+    "wrongAnswersJp": ["公由春子","公由冬司","公由アキ"],
+    "wrongAnswersEn": ["Kimiyoshi Haruko","Kimiyoshi Touji","Kimiyoshi Aki"],
+    "wrongAnswersRomaji": ["Kimiyoshi Haruko","Kimiyoshi Touji","Kimiyoshi Aki"],
     "questionImage": "quiz_images/qlv5_01.png"
   },
   {
@@ -4775,18 +3520,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "園崎本家のお手伝いさん、そのフルネームは？",
     "questionEn": "What is the full name of the Sonozaki main family's housekeeper?",
+    "questionRomaji": "Sonozaki honke no otetsudai-san, sono furuneemu wa?",
     "correctAnswerJp": "牧野沁子",
     "correctAnswerEn": "Makino Shinko",
-    "wrongAnswersJp": [
-      "染シミ子",
-      "牧野アンナ",
-      "熊沢チヨ"
-    ],
-    "wrongAnswersEn": [
-      "Someshimiko",
-      "Makino Anna",
-      "Kumasawa Chiyo"
-    ],
+    "correctAnswerRomaji": "Makino Shinko",
+    "wrongAnswersJp": ["染シミ子","牧野アンナ","熊沢チヨ"],
+    "wrongAnswersEn": ["Someshimiko","Makino Anna","Kumasawa Chiyo"],
+    "wrongAnswersRomaji": ["Someshimiko","Makino Anna","Kumasawa Chiyo"],
     "questionImage": "quiz_images/qlv5_02.png"
   },
   {
@@ -4794,18 +3534,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "鬼隠し編、レナが圭一に言い放った言葉は？",
     "questionEn": "In the Onikakushi chapter, what words did Rena say to Keiichi?",
+    "questionRomaji": "Onikakushi-hen, Rena ga Keiichi ni iihanareta kotoba wa?",
     "correctAnswerJp": "嘘だッ！",
     "correctAnswerEn": "That's a lie!",
-    "wrongAnswersJp": [
-      "嘘だっちゃ！",
-      "嘘だぁ！！！",
-      "嫌だッ！"
-    ],
-    "wrongAnswersEn": [
-      "That's a lie-ccha!",
-      "That's a lieeee!!!",
-      "No way!"
-    ],
+    "correctAnswerRomaji": "Uso da!",
+    "wrongAnswersJp": ["嘘だっちゃ！","嘘だぁ！！！","嫌だッ！"],
+    "wrongAnswersEn": ["That's a lie-ccha!","That's a lieeee!!!","No way!"],
+    "wrongAnswersRomaji": ["Uso daccha!","Uso daa!!!","Iya da!"],
     "questionImage": "quiz_images/qlv5_03.png"
   },
   {
@@ -4813,18 +3548,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "興宮タイタンズの実力派投手の名前は？",
     "questionEn": "What is the name of the Okinomiya Titans' skilled pitcher?",
+    "questionRomaji": "Okinomiya Taitanzu no jitsuryokuha toushu no namae wa?",
     "correctAnswerJp": "亀田",
     "correctAnswerEn": "Kameda",
-    "wrongAnswersJp": [
-      "辰吉",
-      "竹原",
-      "内藤"
-    ],
-    "wrongAnswersEn": [
-      "Tatsuyoshi",
-      "Takehara",
-      "Naitou"
-    ],
+    "correctAnswerRomaji": "Kameda",
+    "wrongAnswersJp": ["辰吉","竹原","内藤"],
+    "wrongAnswersEn": ["Tatsuyoshi","Takehara","Naitou"],
+    "wrongAnswersRomaji": ["Tatsuyoshi","Takehara","Naitou"],
     "questionImage": "quiz_images/qlv5_04.png"
   },
   {
@@ -4832,18 +3562,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "葛西辰由、「何」の辰と呼ばれていたか？",
     "questionEn": "Kasai Tatsuyoshi — what kind of \"Tatsu\" was he called?",
+    "questionRomaji": "Kasai Tatsuyoshi, \"nani\" no Tatsu to yobarete ita ka?",
     "correctAnswerJp": "散弾銃",
     "correctAnswerEn": "Shotgun",
-    "wrongAnswersJp": [
-      "機関銃",
-      "光線銃",
-      "水鉄砲"
-    ],
-    "wrongAnswersEn": [
-      "Machine gun",
-      "Ray gun",
-      "Water gun"
-    ],
+    "correctAnswerRomaji": "sandanjuu",
+    "wrongAnswersJp": ["機関銃","光線銃","水鉄砲"],
+    "wrongAnswersEn": ["Machine gun","Ray gun","Water gun"],
+    "wrongAnswersRomaji": ["kikanjuu","kousen-juu","mizuteppou"],
     "questionImage": "quiz_images/qlv5_05.png"
   },
   {
@@ -4851,18 +3576,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「はにゅう」市がある県名は？",
     "questionEn": "What prefecture contains a city called \"Hanyuu\"?",
+    "questionRomaji": "\"Hanyuu\" shi ga aru ken-mei wa?",
     "correctAnswerJp": "埼玉県",
     "correctAnswerEn": "Saitama Prefecture",
-    "wrongAnswersJp": [
-      "茨城県",
-      "岐阜県",
-      "沖縄県"
-    ],
-    "wrongAnswersEn": [
-      "Ibaraki Prefecture",
-      "Gifu Prefecture",
-      "Okinawa Prefecture"
-    ],
+    "correctAnswerRomaji": "Saitama-ken",
+    "wrongAnswersJp": ["茨城県","岐阜県","沖縄県"],
+    "wrongAnswersEn": ["Ibaraki Prefecture","Gifu Prefecture","Okinawa Prefecture"],
+    "wrongAnswersRomaji": ["Ibaraki-ken","Gifu-ken","Okinawa-ken"],
     "questionImage": "quiz_images/qlv5_06.png"
   },
   {
@@ -4870,18 +3590,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "澪尽し編、鷹野に対して発砲許可を出したのは誰？",
     "questionEn": "In Miotsukushi, who gave the order to open fire on Takano?",
+    "questionRomaji": "Miotsukushi-hen, Takano ni taishite happou kyoka wo dashita no wa dare?",
     "correctAnswerJp": "大高",
     "correctAnswerEn": "Ootaka",
-    "wrongAnswersJp": [
-      "織田",
-      "大石",
-      "熊谷"
-    ],
-    "wrongAnswersEn": [
-      "Oda",
-      "Oishi",
-      "Kumagai"
-    ],
+    "correctAnswerRomaji": "Ootaka",
+    "wrongAnswersJp": ["織田","大石","熊谷"],
+    "wrongAnswersEn": ["Oda","Oishi","Kumagai"],
+    "wrongAnswersRomaji": ["Oda","Oishi","Kumagai"],
     "questionImage": "quiz_images/qlv5_07.png"
   },
   {
@@ -4889,18 +3604,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "BSスカパー!版ドラマで圭一を演じたのは誰？",
     "questionEn": "Who played Keiichi in the BS SKY PerfecTV! drama?",
+    "questionRomaji": "BS Sukaapaa! ban dorama de Keiichi wo enjita no wa dare?",
     "correctAnswerJp": "稲葉友",
     "correctAnswerEn": "Inaba Yuu",
-    "wrongAnswersJp": [
-      "吉沢亮",
-      "赤楚衛二",
-      "瀬戸利樹"
-    ],
-    "wrongAnswersEn": [
-      "Yoshizawa Ryou",
-      "Akaso Eiji",
-      "Seto Toshiki"
-    ],
+    "correctAnswerRomaji": "Inaba Yuu",
+    "wrongAnswersJp": ["吉沢亮","赤楚衛二","瀬戸利樹"],
+    "wrongAnswersEn": ["Yoshizawa Ryou","Akaso Eiji","Seto Toshiki"],
+    "wrongAnswersRomaji": ["Yoshizawa Ryou","Akaso Eiji","Seto Toshiki"],
     "questionImage": "quiz_images/qlv5_08.png"
   },
   {
@@ -4908,18 +3618,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "BSスカパー!版ひぐらしのなく頃に解は全何話？",
     "questionEn": "How many episodes was the BS SKY PerfecTV! version of Higurashi Kai in total?",
+    "questionRomaji": "BS Sukaapaa! ban Higurashi no Naku Koro ni Kai wa zen nan-wa?",
     "correctAnswerJp": "4話",
     "correctAnswerEn": "Episode 4",
-    "wrongAnswersJp": [
-      "3話",
-      "12話",
-      "11話"
-    ],
-    "wrongAnswersEn": [
-      "Episode 3",
-      "Episode 12",
-      "Episode 11"
-    ],
+    "correctAnswerRomaji": "4-wa",
+    "wrongAnswersJp": ["3話","12話","11話"],
+    "wrongAnswersEn": ["Episode 3","Episode 12","Episode 11"],
+    "wrongAnswersRomaji": ["3-wa","12-wa","11-wa"],
     "questionImage": "quiz_images/qlv5_09.png"
   },
   {
@@ -4927,18 +3632,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "BSスカパー!版ひぐらしのなく頃に、部活メンバーの女性を演じたのは？",
     "questionEn": "In the BS SKY PerfecTV! version of Higurashi, who played the female club members?",
+    "questionRomaji": "BS Sukaapaa! ban Higurashi no Naku Koro ni, bukatsu menbaa no josei wo enjita no wa?",
     "correctAnswerJp": "NGT48",
     "correctAnswerEn": "NGT48",
-    "wrongAnswersJp": [
-      "AKB48",
-      "乃木坂46",
-      "SKE48"
-    ],
-    "wrongAnswersEn": [
-      "AKB48",
-      "Nogizaka46",
-      "SKE48"
-    ],
+    "correctAnswerRomaji": "NGT48",
+    "wrongAnswersJp": ["AKB48","乃木坂46","SKE48"],
+    "wrongAnswersEn": ["AKB48","Nogizaka46","SKE48"],
+    "wrongAnswersRomaji": ["AKB48","Nogizaka 46","SKE48"],
     "questionImage": "quiz_images/qlv5_10.png"
   },
   {
@@ -4946,18 +3646,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "神姦し編、エンディングテーマは「ひぐらし」何？",
     "questionEn": "In Kamikanshi, the ending theme is \"Higurashi\" what?",
+    "questionRomaji": "Kamikanshi-hen, ending teeemu wa \"Higurashi\" nani?",
     "correctAnswerJp": "ブレイクアウト！",
     "correctAnswerEn": "Breakout!",
-    "wrongAnswersJp": [
-      "アウトブレイク！",
-      "ブレイクスルー！",
-      "が鳴き止まない"
-    ],
-    "wrongAnswersEn": [
-      "Outbreak!",
-      "Breakthrough!",
-      "...won't stop crying"
-    ],
+    "correctAnswerRomaji": "Bureikuauto!",
+    "wrongAnswersJp": ["アウトブレイク！","ブレイクスルー！","が鳴き止まない"],
+    "wrongAnswersEn": ["Outbreak!","Breakthrough!","...won't stop crying"],
+    "wrongAnswersRomaji": ["Autobreiku!","Bureikusuruuu!","ga nakiyamanai"],
     "questionImage": "quiz_images/qlv5_11.png"
   },
   {
@@ -4965,18 +3660,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "ひぐらしシリーズ、存在しないタイトルは？",
     "questionEn": "Among the Higurashi series, which title does NOT exist?",
+    "questionRomaji": "Higurashi shiriizu, sonzai shinai taitoru wa?",
     "correctAnswerJp": "散",
     "correctAnswerEn": "Scatter",
-    "wrongAnswersJp": [
-      "礼",
-      "祭",
-      "雀"
-    ],
-    "wrongAnswersEn": [
-      "Gratitude",
-      "Festival",
-      "Sparrow"
-    ],
+    "correctAnswerRomaji": "San",
+    "wrongAnswersJp": ["礼","祭","雀"],
+    "wrongAnswersEn": ["Gratitude","Festival","Sparrow"],
+    "wrongAnswersRomaji": ["Rei","Matsuri","Suzume"],
     "questionImage": "quiz_images/qlv5_12.png"
   },
   {
@@ -4984,18 +3674,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "雛見沢のモデルとなった白川郷、何県にある？",
     "questionEn": "Shirakawa-go, the model for Hinamizawa, is in what prefecture?",
+    "questionRomaji": "Hinamizawa no moderu to natta Shirakawa-gou, nan-ken ni aru?",
     "correctAnswerJp": "岐阜",
     "correctAnswerEn": "Gifu",
-    "wrongAnswersJp": [
-      "富山",
-      "長野",
-      "福井"
-    ],
-    "wrongAnswersEn": [
-      "Toyama",
-      "Nagano",
-      "Fukui"
-    ],
+    "correctAnswerRomaji": "Gifu",
+    "wrongAnswersJp": ["富山","長野","福井"],
+    "wrongAnswersEn": ["Toyama","Nagano","Fukui"],
+    "wrongAnswersRomaji": ["Toyama","Nagano","Fukui"],
     "questionImage": "quiz_images/qlv5_13.png"
   },
   {
@@ -5003,18 +3688,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "竜宮レナの本名は？",
     "questionEn": "What is Rena Ryuugu's real name?",
+    "questionRomaji": "Ryuuguu Rena no honmyou wa?",
     "correctAnswerJp": "礼奈",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "玲奈",
-      "麗奈",
-      "れな"
-    ],
-    "wrongAnswersEn": [
-      "Rena (alt.)",
-      "Rena (alt.)",
-      "Rena"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["玲奈","麗奈","れな"],
+    "wrongAnswersEn": ["Rena (alt.)","Rena (alt.)","Rena"],
+    "wrongAnswersRomaji": ["Rena (betsuji)","Rena (betsuji)","rena"],
     "questionImage": "quiz_images/qlv5_14.png"
   },
   {
@@ -5022,18 +3702,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "バッターボックスで沙都子が口にくわえているものは？",
     "questionEn": "What is Satoko holding in her mouth in the batter's box?",
+    "questionRomaji": "battaa bokkusu de Satoko ga kuchi ni kuwaete iru mono wa?",
     "correctAnswerJp": "葉っぱ",
     "correctAnswerEn": "Leaf",
-    "wrongAnswersJp": [
-      "たんぽぽ",
-      "ジャーキー",
-      "歯ブラシ"
-    ],
-    "wrongAnswersEn": [
-      "Dandelion",
-      "Jerky",
-      "Toothbrush"
-    ],
+    "correctAnswerRomaji": "happa",
+    "wrongAnswersJp": ["たんぽぽ","ジャーキー","歯ブラシ"],
+    "wrongAnswersEn": ["Dandelion","Jerky","Toothbrush"],
+    "wrongAnswersRomaji": ["tanpopo","jaakii","haburashi"],
     "questionImage": "quiz_images/qlv5_15.png"
   },
   {
@@ -5041,18 +3716,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「ひぐらしのなく頃に祭・限定版」ポストカードケースの内側に描かれているものは？",
     "questionEn": "What was drawn on the inside of the \"Higurashi no Naku Koro ni Matsuri Limited Edition\" postcard case?",
+    "questionRomaji": "\"Higurashi no Naku Koro ni Matsuri Gentei-ban\" posutokaaudo keesu no uchigawa ni egakarete iru mono wa?",
     "correctAnswerJp": "眼",
     "correctAnswerEn": "Eye",
-    "wrongAnswersJp": [
-      "鉈",
-      "おはぎ",
-      "ひぐ夫"
-    ],
-    "wrongAnswersEn": [
-      "Hatchet",
-      "Ohagi",
-      "Higu-o"
-    ],
+    "correctAnswerRomaji": "me",
+    "wrongAnswersJp": ["鉈","おはぎ","ひぐ夫"],
+    "wrongAnswersEn": ["Hatchet","Ohagi","Higu-o"],
+    "wrongAnswersRomaji": ["nata","ohagi","Higu-o"],
     "questionImage": "quiz_images/qlv5_16.png"
   },
   {
@@ -5060,18 +3730,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「パチスロ ひぐらしのなく頃に祭」、宣伝部長は誰？",
     "questionEn": "Who was the promotional director for \"Pachislot Higurashi no Naku Koro ni Matsuri\"?",
+    "questionRomaji": "\"Pachisuro Higurashi no Naku Koro ni Matsuri\", senden buchou wa dare?",
     "correctAnswerJp": "ひぐ夫",
     "correctAnswerEn": "Higu-o",
-    "wrongAnswersJp": [
-      "ひぐしげ",
-      "しげっるチー",
-      "オヤシロリカ"
-    ],
-    "wrongAnswersEn": [
-      "Higushige",
-      "ShigettruChii",
-      "Oyashiro Rika"
-    ],
+    "correctAnswerRomaji": "Higu-o",
+    "wrongAnswersJp": ["ひぐしげ","しげっるチー","オヤシロリカ"],
+    "wrongAnswersEn": ["Higushige","ShigettruChii","Oyashiro Rika"],
+    "wrongAnswersRomaji": ["Higushige","ShigettruChii","Oyashiro Rika"],
     "questionImage": "quiz_images/qlv5_17.png"
   },
   {
@@ -5079,18 +3744,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "圭一の二つ名、何の「魔術師」？",
     "questionEn": "Keiichi's nickname: \"Magician\" of what?",
+    "questionRomaji": "Keiichi no futatsuna, nani no \"majutsushi\"?",
     "correctAnswerJp": "口先",
     "correctAnswerEn": "Smooth talker",
-    "wrongAnswersJp": [
-      "妄想",
-      "ハッタリ",
-      "漆黒"
-    ],
-    "wrongAnswersEn": [
-      "Delusion",
-      "Bluff",
-      "Jet-black"
-    ],
+    "correctAnswerRomaji": "kuchisaki",
+    "wrongAnswersJp": ["妄想","ハッタリ","漆黒"],
+    "wrongAnswersEn": ["Delusion","Bluff","Jet-black"],
+    "wrongAnswersRomaji": ["mousou","hattari","shikkoku"],
     "questionImage": "quiz_images/qlv5_18.png"
   },
   {
@@ -5098,18 +3758,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "罪滅し編、罪を告白するレナは何の上に立っていた？",
     "questionEn": "In Atonement, what was Rena standing on when she confessed her sins?",
+    "questionRomaji": "Tsumibayashi-hen, tsumi wo kokuhaku suru Rena wa nani no ue ni tatte ita?",
     "correctAnswerJp": "廃車",
     "correctAnswerEn": "Abandoned car",
-    "wrongAnswersJp": [
-      "富竹の背中",
-      "ケンタ君人形",
-      "銭湯の煙突"
-    ],
-    "wrongAnswersEn": [
-      "Tomitake's back",
-      "Kenta-kun doll",
-      "Bathhouse chimney"
-    ],
+    "correctAnswerRomaji": "haiisha",
+    "wrongAnswersJp": ["富竹の背中","ケンタ君人形","銭湯の煙突"],
+    "wrongAnswersEn": ["Tomitake's back","Kenta-kun doll","Bathhouse chimney"],
+    "wrongAnswersRomaji": ["Tomitake no senaka","Kenta-kun ningyou","sentou no entotsu"],
     "questionImage": "quiz_images/qlv5_19.png"
   },
   {
@@ -5117,18 +3772,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "皆殺し編、圭一に殴りかかる詩音が持っていた物は？",
     "questionEn": "In Massacre, what was Shion holding when she attacked Keiichi?",
+    "questionRomaji": "Minagoroshi-hen, Keiichi ni nagurikanakaru Shion ga motte ita mono wa?",
     "correctAnswerJp": "椅子",
     "correctAnswerEn": "Chair",
-    "wrongAnswersJp": [
-      "金属バット",
-      "スタンガン",
-      "日本刀"
-    ],
-    "wrongAnswersEn": [
-      "Metal bat",
-      "Stun gun",
-      "Japanese sword"
-    ],
+    "correctAnswerRomaji": "isu",
+    "wrongAnswersJp": ["金属バット","スタンガン","日本刀"],
+    "wrongAnswersEn": ["Metal bat","Stun gun","Japanese sword"],
+    "wrongAnswersRomaji": ["kinzoku batto","sutangan","nihontou"],
     "questionImage": "quiz_images/qlv5_20.png"
   },
   {
@@ -5136,18 +3786,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "祭囃し編、美代子が電話ボックスで見つけたものは？",
     "questionEn": "In Festival Accompanying, what did Miyoko find in the phone booth?",
+    "questionRomaji": "Matsuribayashi-hen, Miyoko ga denwa bokkusu de mitsuketa mono wa?",
     "correctAnswerJp": "10円玉",
     "correctAnswerEn": "10-yen coin",
-    "wrongAnswersJp": [
-      "テレホンカード",
-      "サイフ",
-      "金塊"
-    ],
-    "wrongAnswersEn": [
-      "Telephone card",
-      "Wallet",
-      "Gold bars"
-    ],
+    "correctAnswerRomaji": "10-en-dama",
+    "wrongAnswersJp": ["テレホンカード","サイフ","金塊"],
+    "wrongAnswersEn": ["Telephone card","Wallet","Gold bars"],
+    "wrongAnswersRomaji": ["terehon kaado","saifu","kinkai"],
     "questionImage": "quiz_images/qlv5_21.png"
   },
   {
@@ -5155,18 +3800,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "園崎家、古井戸の中に隠されていたものは？",
     "questionEn": "What was hidden in the old well at the Sonozaki estate?",
+    "questionRomaji": "Sonozaki ke, furui ido no naka ni kakusarete ita mono wa?",
     "correctAnswerJp": "抜け穴",
     "correctAnswerEn": "Secret passage",
-    "wrongAnswersJp": [
-      "黄金",
-      "宇宙船",
-      "テスト答案"
-    ],
-    "wrongAnswersEn": [
-      "Gold",
-      "Spaceship",
-      "Test answer sheet"
-    ],
+    "correctAnswerRomaji": "nukeana",
+    "wrongAnswersJp": ["黄金","宇宙船","テスト答案"],
+    "wrongAnswersEn": ["Gold","Spaceship","Test answer sheet"],
+    "wrongAnswersRomaji": ["ougon","uchuusen","tesuto touaan"],
     "questionImage": "quiz_images/qlv5_22.png"
   },
   {
@@ -5174,18 +3814,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "雛見沢村の旧称は？",
     "questionEn": "What was the former name of Hinamizawa Village?",
+    "questionRomaji": "Hinamizawa-mura no kyuushou wa?",
     "correctAnswerJp": "鬼ケ淵村",
     "correctAnswerEn": "Onigafuchi Village",
-    "wrongAnswersJp": [
-      "清見村",
-      "荘川村",
-      "白川村"
-    ],
-    "wrongAnswersEn": [
-      "Kiyomi Village",
-      "Shoukawaura Village",
-      "Shirakawa Village"
-    ],
+    "correctAnswerRomaji": "Onigafuchi-mura",
+    "wrongAnswersJp": ["清見村","荘川村","白川村"],
+    "wrongAnswersEn": ["Kiyomi Village","Shoukawaura Village","Shirakawa Village"],
+    "wrongAnswersRomaji": ["Kiyomi-mura","Shougawa-mura","Shirakawa-mura"],
     "questionImage": "quiz_images/qlv5_23.png"
   },
   {
@@ -5193,18 +3828,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "梨花が打ち破ったのは何年間の袋小路？",
     "questionEn": "How many years of dead ends did Rika break through?",
+    "questionRomaji": "Rika ga uchiyabutta no wa nan-nen-kan no fukurokouji?",
     "correctAnswerJp": "100年以上",
     "correctAnswerEn": "Over 100 years",
-    "wrongAnswersJp": [
-      "17年",
-      "1000年",
-      "28年"
-    ],
-    "wrongAnswersEn": [
-      "17 years",
-      "1,000 years",
-      "28 years"
-    ],
+    "correctAnswerRomaji": "100-nen ijou",
+    "wrongAnswersJp": ["17年","1000年","28年"],
+    "wrongAnswersEn": ["17 years","1,000 years","28 years"],
+    "wrongAnswersRomaji": ["17-nen","1000-nen","28-nen"],
     "questionImage": "quiz_images/qlv5_24.png"
   },
   {
@@ -5212,18 +3842,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "大石刑事、下の名をカタカナで書くと？",
     "questionEn": "How do you write Detective Oishi's first name in katakana?",
+    "questionRomaji": "Oishi keiji, shita no na wo katakana de kaku to?",
     "correctAnswerJp": "クラウド",
     "correctAnswerEn": "Cloud",
-    "wrongAnswersJp": [
-      "ヴァン",
-      "ティーダ",
-      "ノクティス"
-    ],
-    "wrongAnswersEn": [
-      "Van",
-      "Tidus",
-      "Noctis"
-    ],
+    "correctAnswerRomaji": "Kuraudo",
+    "wrongAnswersJp": ["ヴァン","ティーダ","ノクティス"],
+    "wrongAnswersEn": ["Van","Tidus","Noctis"],
+    "wrongAnswersRomaji": ["Van","Tiida","Nokutisu"],
     "questionImage": "quiz_images/qlv5_25.png"
   },
   {
@@ -5231,18 +3856,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "山狗の指揮官、小此木の階級は？",
     "questionEn": "What is the rank of the Yamainu commander, Okonogi?",
+    "questionRomaji": "Yamainu no shikikan, Okonogi no kaikyu wa?",
     "correctAnswerJp": "二尉",
     "correctAnswerEn": "First Lieutenant",
-    "wrongAnswersJp": [
-      "三佐",
-      "軍曹",
-      "曹長"
-    ],
-    "wrongAnswersEn": [
-      "Major",
-      "Sergeant",
-      "Master Sergeant"
-    ],
+    "correctAnswerRomaji": "ni-i",
+    "wrongAnswersJp": ["三佐","軍曹","曹長"],
+    "wrongAnswersEn": ["Major","Sergeant","Master Sergeant"],
+    "wrongAnswersRomaji": ["san-sa","gunsou","souchou"],
     "questionImage": "quiz_images/qlv5_26.png"
   },
   {
@@ -5250,18 +3870,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "詩音のバイト先、店名はどれ？",
     "questionEn": "What is the name of the restaurant where Shion works part-time?",
+    "questionRomaji": "Shion no baito-saki, mise-mei wa dore?",
     "correctAnswerJp": "エンジェルモート",
     "correctAnswerEn": "Angel Mort",
-    "wrongAnswersJp": [
-      "ハンナミラーズ",
-      "びっくりモンキー",
-      "シルバーパロット"
-    ],
-    "wrongAnswersEn": [
-      "Hanna Miller's",
-      "Bikkuri Monkey",
-      "Silver Parrot"
-    ],
+    "correctAnswerRomaji": "Enjeru Mooto",
+    "wrongAnswersJp": ["ハンナミラーズ","びっくりモンキー","シルバーパロット"],
+    "wrongAnswersEn": ["Hanna Miller's","Bikkuri Monkey","Silver Parrot"],
+    "wrongAnswersRomaji": ["Hanna Mirazu","Bikkuri Monkii","Shirubaa Parotto"],
     "questionImage": "quiz_images/qlv5_27.png"
   },
   {
@@ -5269,18 +3884,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "詩音のバイト先、経営者の名前は？",
     "questionEn": "What is the name of the owner of Shion's part-time workplace?",
+    "questionRomaji": "Shion no baito-saki, keieisha no namae wa?",
     "correctAnswerJp": "義郎",
     "correctAnswerEn": "Yoshirou",
-    "wrongAnswersJp": [
-      "泰夫",
-      "啓一",
-      "兵吾"
-    ],
-    "wrongAnswersEn": [
-      "Yasuo",
-      "Keiichi",
-      "Hyougo"
-    ],
+    "correctAnswerRomaji": "Yoshirou",
+    "wrongAnswersJp": ["泰夫","啓一","兵吾"],
+    "wrongAnswersEn": ["Yasuo","Keiichi","Hyougo"],
+    "wrongAnswersRomaji": ["Yasuo","Keiichi","Hyougo"],
     "questionImage": "quiz_images/qlv5_28.png"
   },
   {
@@ -5288,18 +3898,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "悟史の口癖は？",
     "questionEn": "What is Satoshi's catchphrase?",
+    "questionRomaji": "Satoshi no kuchiguse wa?",
     "correctAnswerJp": "むぅ…",
     "correctAnswerEn": "Muu...",
-    "wrongAnswersJp": [
-      "うりゅー",
-      "はにゅん",
-      "わにゃん"
-    ],
-    "wrongAnswersEn": [
-      "Uryuu",
-      "Hanyun",
-      "Wanyan"
-    ],
+    "correctAnswerRomaji": "muu...",
+    "wrongAnswersJp": ["うりゅー","はにゅん","わにゃん"],
+    "wrongAnswersEn": ["Uryuu","Hanyun","Wanyan"],
+    "wrongAnswersRomaji": ["uryuu","hanyun","wanyan"],
     "questionImage": "quiz_images/qlv5_29.png"
   },
   {
@@ -5307,18 +3912,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「ひぐらしのなく頃に祭」、予約特典の悟志バットはどんな機能？",
     "questionEn": "In \"Higurashi no Naku Koro ni Matsuri,\" what function did the Satoshi bat pre-order bonus have?",
+    "questionRomaji": "\"Higurashi no Naku Koro ni Matsuri\", yoyaku tokuten no Satoshi batto wa donna kinou?",
     "correctAnswerJp": "ボールペン",
     "correctAnswerEn": "Ballpoint pen",
-    "wrongAnswersJp": [
-      "耳かき",
-      "タッチペン",
-      "充電器"
-    ],
-    "wrongAnswersEn": [
-      "Ear pick",
-      "Stylus pen",
-      "Charger"
-    ],
+    "correctAnswerRomaji": "boorupen",
+    "wrongAnswersJp": ["耳かき","タッチペン","充電器"],
+    "wrongAnswersEn": ["Ear pick","Stylus pen","Charger"],
+    "wrongAnswersRomaji": ["mimikami","tacchi pen","juuden-ki"],
     "questionImage": "quiz_images/qlv5_30.png"
   },
   {
@@ -5326,18 +3926,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "目明し編、クレジットで流れる曲はどれ？",
     "questionEn": "In Eye Opening, which song plays during the credits?",
+    "questionRomaji": "Meakashi-hen, kurejitto de nagareru kyoku wa dore?",
     "correctAnswerJp": "you",
     "correctAnswerEn": "you",
-    "wrongAnswersJp": [
-      "your",
-      "奈落の花",
-      "漆黒の祭壇"
-    ],
-    "wrongAnswersEn": [
-      "your",
-      "Flower of the Abyss",
-      "Jet-black Altar"
-    ],
+    "correctAnswerRomaji": "you",
+    "wrongAnswersJp": ["your","奈落の花","漆黒の祭壇"],
+    "wrongAnswersEn": ["your","Flower of the Abyss","Jet-black Altar"],
+    "wrongAnswersRomaji": ["your","Naraku no Hana","Shikkoku no Saidan"],
     "questionImage": "quiz_images/qlv5_31.png"
   },
   {
@@ -5345,18 +3940,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "罪滅し編、レナが学校に撒いたのは何？",
     "questionEn": "In Atonement, what did Rena scatter around the school?",
+    "questionRomaji": "Tsumibayashi-hen, Rena ga gakkou ni maita no wa nani?",
     "correctAnswerJp": "ガソリン",
     "correctAnswerEn": "Gasoline",
-    "wrongAnswersJp": [
-      "除草剤",
-      "金塊",
-      "まきびし"
-    ],
-    "wrongAnswersEn": [
-      "Herbicide",
-      "Gold bars",
-      "Caltrops"
-    ],
+    "correctAnswerRomaji": "gasorin",
+    "wrongAnswersJp": ["除草剤","金塊","まきびし"],
+    "wrongAnswersEn": ["Herbicide","Gold bars","Caltrops"],
+    "wrongAnswersRomaji": ["josouzai","kinkai","makibishi"],
     "questionImage": "quiz_images/qlv5_32.png"
   },
   {
@@ -5364,18 +3954,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "この中で、2017年までに存在しない作品は？",
     "questionEn": "Among these, which work did not exist as of 2017?",
+    "questionRomaji": "kono naka de, 2017-nen made ni sonzai shinai sakuhin wa?",
     "correctAnswerJp": "祝",
     "correctAnswerEn": "Celebration",
-    "wrongAnswersJp": [
-      "誓",
-      "叫",
-      "怪"
-    ],
-    "wrongAnswersEn": [
-      "Oath",
-      "Scream",
-      "Mystery"
-    ],
+    "correctAnswerRomaji": "Shuku",
+    "wrongAnswersJp": ["誓","叫","怪"],
+    "wrongAnswersEn": ["Oath","Scream","Mystery"],
+    "wrongAnswersRomaji": ["Chika","Sakebi","Kai"],
     "questionImage": "quiz_images/qlv5_33.png"
   },
   {
@@ -5383,18 +3968,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "大石のソウルネームは何？",
     "questionEn": "What is Oishi's soul name?",
+    "questionRomaji": "Oishi no souruneemu wa nani?",
     "correctAnswerJp": "クラウド",
     "correctAnswerEn": "Cloud",
-    "wrongAnswersJp": [
-      "オリバー",
-      "ウェイン",
-      "チャールズ"
-    ],
-    "wrongAnswersEn": [
-      "Oliver",
-      "Wayne",
-      "Charles"
-    ],
+    "correctAnswerRomaji": "Kuraudo",
+    "wrongAnswersJp": ["オリバー","ウェイン","チャールズ"],
+    "wrongAnswersEn": ["Oliver","Wayne","Charles"],
+    "wrongAnswersRomaji": ["Oribaa","Wein","Chaarezu"],
     "questionImage": "quiz_images/qlv5_34.png"
   },
   {
@@ -5402,18 +3982,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "富竹のソウルネームは何？",
     "questionEn": "What is Tomitake's soul name?",
+    "questionRomaji": "Tomitake no souruneemu wa nani?",
     "correctAnswerJp": "トミー",
     "correctAnswerEn": "Tommy",
-    "wrongAnswersJp": [
-      "サイラス",
-      "ケイレブ",
-      "リチャード"
-    ],
-    "wrongAnswersEn": [
-      "Cyrus",
-      "Caleb",
-      "Richard"
-    ],
+    "correctAnswerRomaji": "Tomii",
+    "wrongAnswersJp": ["サイラス","ケイレブ","リチャード"],
+    "wrongAnswersEn": ["Cyrus","Caleb","Richard"],
+    "wrongAnswersRomaji": ["Sairasu","Keireb","Richaado"],
     "questionImage": "quiz_images/qlv5_35.png"
   },
   {
@@ -5421,18 +3996,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "入江のソウルネームは何？",
     "questionEn": "What is Irie's soul name?",
+    "questionRomaji": "Irie no souruneemu wa nani?",
     "correctAnswerJp": "イリー",
     "correctAnswerEn": "Iry",
-    "wrongAnswersJp": [
-      "ジャンヌ",
-      "ツェル",
-      "ニーナ"
-    ],
-    "wrongAnswersEn": [
-      "Jeanne",
-      "Tsel",
-      "Nina"
-    ],
+    "correctAnswerRomaji": "Irii",
+    "wrongAnswersJp": ["ジャンヌ","ツェル","ニーナ"],
+    "wrongAnswersEn": ["Jeanne","Tsel","Nina"],
+    "wrongAnswersRomaji": ["Jannu","Tseru","Niina"],
     "questionImage": "quiz_images/qlv5_36.png"
   },
   {
@@ -5440,18 +4010,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "圭一のソウルネームは何？",
     "questionEn": "What is Keiichi's Soul Name?",
+    "questionRomaji": "Keiichi no souruneemu wa nani?",
     "correctAnswerJp": "Ｋ",
     "correctAnswerEn": "K",
-    "wrongAnswersJp": [
-      "アラン",
-      "キース",
-      "ガブリエル"
-    ],
-    "wrongAnswersEn": [
-      "Alan",
-      "Keith",
-      "Gabriel"
-    ],
+    "correctAnswerRomaji": "K",
+    "wrongAnswersJp": ["アラン","キース","ガブリエル"],
+    "wrongAnswersEn": ["Alan","Keith","Gabriel"],
+    "wrongAnswersRomaji": ["Aran","Kiisu","Gaburieru"],
     "questionImage": "quiz_images/qlv5_37.png"
   },
   {
@@ -5459,18 +4024,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "トミー、イリー、クラウド、Kで構成されるのはソウル？",
     "questionEn": "Tommy, Irie, Cloud, and K make up the Soul...?",
+    "questionRomaji": "Tomii, Irii, Kuraudo, K de kousei sareru no wa Sooru?",
     "correctAnswerJp": "ブラザー",
     "correctAnswerEn": "Brother",
-    "wrongAnswersJp": [
-      "ドラゴン",
-      "キャット",
-      "ファイター"
-    ],
-    "wrongAnswersEn": [
-      "Dragon",
-      "Cat",
-      "Fighter"
-    ],
+    "correctAnswerRomaji": "Buraazaa",
+    "wrongAnswersJp": ["ドラゴン","キャット","ファイター"],
+    "wrongAnswersEn": ["Dragon","Cat","Fighter"],
+    "wrongAnswersRomaji": ["Doragon","Kyatto","Faitaa"],
     "questionImage": "quiz_images/qlv5_38.png"
   },
   {
@@ -5478,18 +4038,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "知恵先生、好きな食べ物は何？",
     "questionEn": "What is Chie-sensei's favorite food?",
+    "questionRomaji": "Chie-sensei, sukina tabemono wa nani?",
     "correctAnswerJp": "カレー",
     "correctAnswerEn": "Curry",
-    "wrongAnswersJp": [
-      "ミートソース",
-      "麻婆豆腐",
-      "あったか寄せ鍋"
-    ],
-    "wrongAnswersEn": [
-      "Meat sauce",
-      "Mapo tofu",
-      "Warm yosenabe hot pot"
-    ],
+    "correctAnswerRomaji": "karee",
+    "wrongAnswersJp": ["ミートソース","麻婆豆腐","あったか寄せ鍋"],
+    "wrongAnswersEn": ["Meat sauce","Mapo tofu","Warm yosenabe hot pot"],
+    "wrongAnswersRomaji": ["miito soosu","maabou toufu","attaka yosenabe"],
     "questionImage": "quiz_images/qlv5_39.png"
   },
   {
@@ -5497,18 +4052,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "コミカライズ版「雛見沢停留所」の作画は誰？",
     "questionEn": "Who drew the manga adaptation of \"Hinamizawa Bus Stop\"?",
+    "questionRomaji": "komikaru-zu ban \"Hinamizawa Teiryuusho\" no sakuga wa dare?",
     "correctAnswerJp": "ともぞ",
     "correctAnswerEn": "Tomozo",
-    "wrongAnswersJp": [
-      "緋賀ゆかり",
-      "小池ノクト",
-      "和遥キナ"
-    ],
-    "wrongAnswersEn": [
-      "Higa Yukari",
-      "Koike Nokuto",
-      "Kazuharuki Na"
-    ],
+    "correctAnswerRomaji": "Tomozo",
+    "wrongAnswersJp": ["緋賀ゆかり","小池ノクト","和遥キナ"],
+    "wrongAnswersEn": ["Higa Yukari","Koike Nokuto","Kazuharuki Na"],
+    "wrongAnswersRomaji": ["Higa Yukari","Koike Nokuto","Kazuharuki Na"],
     "questionImage": "quiz_images/qlv5_40.png"
   },
   {
@@ -5516,18 +4066,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "PC原作版1～4話を総じて何という？",
     "questionEn": "What are episodes 1 through 4 of the original PC version collectively called?",
+    "questionRomaji": "PC gensakuban 1~4-wa wo soujite nanto iu?",
     "correctAnswerJp": "出題編",
     "correctAnswerEn": "Question Arc",
-    "wrongAnswersJp": [
-      "前編",
-      "ビギニング",
-      "上巻"
-    ],
-    "wrongAnswersEn": [
-      "First half",
-      "Beginning",
-      "Volume 1"
-    ],
+    "correctAnswerRomaji": "shutsudai-hen",
+    "wrongAnswersJp": ["前編","ビギニング","上巻"],
+    "wrongAnswersEn": ["First half","Beginning","Volume 1"],
+    "wrongAnswersRomaji": ["zenhen","biginingu","joukan"],
     "questionImage": "quiz_images/qlv5_41.png"
   },
   {
@@ -5535,18 +4080,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "PC原作版5～8話を総じて何という？",
     "questionEn": "What are episodes 5 through 8 of the original PC version collectively called?",
+    "questionRomaji": "PC gensakuban 5~8-wa wo soujite nanto iu?",
     "correctAnswerJp": "解答編",
     "correctAnswerEn": "Answer Arc",
-    "wrongAnswersJp": [
-      "後編",
-      "ラストシーズン",
-      "下巻"
-    ],
-    "wrongAnswersEn": [
-      "Second half",
-      "Last Season",
-      "Volume 2"
-    ],
+    "correctAnswerRomaji": "kaitou-hen",
+    "wrongAnswersJp": ["後編","ラストシーズン","下巻"],
+    "wrongAnswersEn": ["Second half","Last Season","Volume 2"],
+    "wrongAnswersRomaji": ["kouhen","rasuto shiizon","gekan"],
     "questionImage": "quiz_images/qlv5_42.png"
   },
   {
@@ -5554,18 +4094,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「音楽CD」、弦楽四重奏とピアノでアレンジされたアルバム名は？",
     "questionEn": "What was the name of the music CD album arranged for string quartet and piano?",
+    "questionRomaji": "\"ongaku CD\", gengaku shijuusou to piano de arrange sareta arubamu-mei wa?",
     "correctAnswerJp": "奏",
     "correctAnswerEn": "Performance",
-    "wrongAnswersJp": [
-      "楽",
-      "弦",
-      "音"
-    ],
-    "wrongAnswersEn": [
-      "Music",
-      "String",
-      "Sound"
-    ],
+    "correctAnswerRomaji": "Kanade",
+    "wrongAnswersJp": ["楽","弦","音"],
+    "wrongAnswersEn": ["Music","String","Sound"],
+    "wrongAnswersRomaji": ["Raku","Gen","Oto"],
     "questionImage": "quiz_images/qlv5_43.png"
   },
   {
@@ -5573,18 +4108,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "コンシューマ版「奉」で初収録となった作品はどれ？",
     "questionEn": "Which work was included for the first time in the console version of \"Hou\"?",
+    "questionRomaji": "konshuumaa-ban \"Hou\" de hatsu shuukyoku to natta sakuhin wa dore?",
     "correctAnswerJp": "雛見沢停留所",
     "correctAnswerEn": "Hinamizawa Bus Stop",
-    "wrongAnswersJp": [
-      "心癒し編",
-      "羞晒し編",
-      "現壊し編"
-    ],
-    "wrongAnswersEn": [
-      "Kokoroyashi-hen",
-      "Hajisarashi-hen",
-      "Utsutsukowashi-hen"
-    ],
+    "correctAnswerRomaji": "Hinamizawa Teiryuusho",
+    "wrongAnswersJp": ["心癒し編","羞晒し編","現壊し編"],
+    "wrongAnswersEn": ["Kokoroyashi-hen","Hajisarashi-hen","Utsutsukowashi-hen"],
+    "wrongAnswersRomaji": ["Kokoroyashi-hen","Hajisarashi-hen","Utsutsukowashi-hen"],
     "questionImage": "quiz_images/qlv5_44.png"
   },
   {
@@ -5592,18 +4122,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "コンシューマ版「奉」で初収録となった作品はどれ？",
     "questionEn": "Which work was included for the first time in the console version of \"Hou\"?",
+    "questionRomaji": "konshuumaa-ban \"Hou\" de hatsu shuukyoku to natta sakuhin wa dore?",
     "correctAnswerJp": "アウトブレイク",
     "correctAnswerEn": "Outbreak",
-    "wrongAnswersJp": [
-      "君恋し編",
-      "語咄し編",
-      "村崩し編"
-    ],
-    "wrongAnswersEn": [
-      "Kimikoishi-hen",
-      "Kataribashiri-hen",
-      "Murakuzushi-hen"
-    ],
+    "correctAnswerRomaji": "Autobreiku",
+    "wrongAnswersJp": ["君恋し編","語咄し編","村崩し編"],
+    "wrongAnswersEn": ["Kimikoishi-hen","Kataribashiri-hen","Murakuzushi-hen"],
+    "wrongAnswersRomaji": ["Kimikoishi-hen","Kataribashiri-hen","Murakuzushi-hen"],
     "questionImage": "quiz_images/qlv5_45.png"
   },
   {
@@ -5611,18 +4136,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "コンシューマ版「奉」で初収録となった作品はどれ？",
     "questionEn": "Which work was included for the first time in the console version of \"Hou\"?",
+    "questionRomaji": "konshuumaa-ban \"Hou\" de hatsu shuukyoku to natta sakuhin wa dore?",
     "correctAnswerJp": "神姦し編",
     "correctAnswerEn": "Kamikashimashi-hen",
-    "wrongAnswersJp": [
-      "虚仮威し編",
-      "幸探し編",
-      "夢交し編"
-    ],
-    "wrongAnswersEn": [
-      "Kokodamashi-hen",
-      "Sachisagashi-hen",
-      "Yumemajiwashi-hen"
-    ],
+    "correctAnswerRomaji": "Kamikanshi-hen",
+    "wrongAnswersJp": ["虚仮威し編","幸探し編","夢交し編"],
+    "wrongAnswersEn": ["Kokodamashi-hen","Sachisagashi-hen","Yumemajiwashi-hen"],
+    "wrongAnswersRomaji": ["Kokodamashi-hen","Sachisagashi-hen","Yumemajiwashi-hen"],
     "questionImage": "quiz_images/qlv5_46.png"
   },
   {
@@ -5630,18 +4150,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "コンシューマ版「奉」で初収録となった作品はどれ？",
     "questionEn": "Which work was included for the first time in the console version of \"Hou\"?",
+    "questionRomaji": "konshuumaa-ban \"Hou\" de hatsu shuukyoku to natta sakuhin wa dore?",
     "correctAnswerJp": "罰恋し編",
     "correctAnswerEn": "Batsukoishi-hen",
-    "wrongAnswersJp": [
-      "厄醒し編",
-      "夜更し編",
-      "猫殺し編"
-    ],
-    "wrongAnswersEn": [
-      "Yakusamashi-hen",
-      "Yofukashi-hen",
-      "Nekodamashi-hen"
-    ],
+    "correctAnswerRomaji": "Batsukoishi-hen",
+    "wrongAnswersJp": ["厄醒し編","夜更し編","猫殺し編"],
+    "wrongAnswersEn": ["Yakusamashi-hen","Yofukashi-hen","Nekodamashi-hen"],
+    "wrongAnswersRomaji": ["Yakusamashi-hen","Yofukashi-hen","Nekodamashi-hen"],
     "questionImage": "quiz_images/qlv5_47.png"
   },
   {
@@ -5649,18 +4164,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "コンシューマ版「ひぐらしのなく頃にシリーズ」で、発売されていなジャンルは？",
     "questionEn": "Among the console \"Higurashi no Naku Koro ni\" series, which genre has NOT been released?",
+    "questionRomaji": "konshuumaa-ban \"Higurashi no Naku Koro ni shiriizu\" de, hatsubai sarete inai janru wa?",
     "correctAnswerJp": "ＳＲＰＧ",
     "correctAnswerEn": "SRPG",
-    "wrongAnswersJp": [
-      "アドベンチャー",
-      "麻雀",
-      "対戦アクション"
-    ],
-    "wrongAnswersEn": [
-      "Adventure",
-      "Mahjong",
-      "Versus action"
-    ],
+    "correctAnswerRomaji": "SRPG",
+    "wrongAnswersJp": ["アドベンチャー","麻雀","対戦アクション"],
+    "wrongAnswersEn": ["Adventure","Mahjong","Versus action"],
+    "wrongAnswersRomaji": ["adobenchaa","maajan","taisen akushon"],
     "questionImage": "quiz_images/qlv5_48.png"
   },
   {
@@ -5668,18 +4178,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "雛見沢一帯で起こる風土病、雛見沢何と呼ばれる？",
     "questionEn": "The endemic disease occurring throughout Hinamizawa is called Hinamizawa what?",
+    "questionRomaji": "Hinamizawa ittai de okoru fuudo-byou, Hinamizawa nanto yobareru?",
     "correctAnswerJp": "症候群",
     "correctAnswerEn": "Syndrome",
-    "wrongAnswersJp": [
-      "吊り橋効果",
-      "病",
-      "ショック"
-    ],
-    "wrongAnswersEn": [
-      "Suspension bridge effect",
-      "Illness",
-      "Shock"
-    ],
+    "correctAnswerRomaji": "shoukougun",
+    "wrongAnswersJp": ["吊り橋効果","病","ショック"],
+    "wrongAnswersEn": ["Suspension bridge effect","Illness","Shock"],
+    "wrongAnswersRomaji": ["tsuribashi kouka","yamai","shokku"],
     "questionImage": "quiz_images/qlv5_49.png"
   },
   {
@@ -5687,18 +4192,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「僕達はもう知っている」を歌っているのは誰？",
     "questionEn": "Who sang \"Bokutachi wa Mou Shitteiru\"?",
+    "questionRomaji": "\"Bokutachi wa Mou Shitteiru\" wo utatte iru no wa dare?",
     "correctAnswerJp": "松澤由美",
     "correctAnswerEn": "Matsuzawa Yumi",
-    "wrongAnswersJp": [
-      "片霧烈火",
-      "島みやえい子",
-      "anNina"
-    ],
-    "wrongAnswersEn": [
-      "Katakiri Rekka",
-      "Shimamiya Eiko",
-      "anNina"
-    ],
+    "correctAnswerRomaji": "Matsuzawa Yumi",
+    "wrongAnswersJp": ["片霧烈火","島みやえい子","anNina"],
+    "wrongAnswersEn": ["Katakiri Rekka","Shimamiya Eiko","anNina"],
+    "wrongAnswersRomaji": ["Katakiri Rekka","Shimamiya Eiko","anNina"],
     "questionImage": "quiz_images/qlv5_50.png"
   },
   {
@@ -5706,18 +4206,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「side effect」とは何を示す言葉？",
     "questionEn": "What does the term \"side effect\" refer to?",
+    "questionRomaji": "\"side effect\" to wa nani wo shimesu kotoba?",
     "correctAnswerJp": "副作用",
     "correctAnswerEn": "Side effects",
-    "wrongAnswersJp": [
-      "虚言",
-      "妄想",
-      "輪廻"
-    ],
-    "wrongAnswersEn": [
-      "Lies",
-      "Delusion",
-      "Reincarnation"
-    ],
+    "correctAnswerRomaji": "fukusayou",
+    "wrongAnswersJp": ["虚言","妄想","輪廻"],
+    "wrongAnswersEn": ["Lies","Delusion","Reincarnation"],
+    "wrongAnswersRomaji": ["kyogen","mousou","rinne"],
     "questionImage": "quiz_images/qlv5_51.png"
   },
   {
@@ -5725,18 +4220,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "「アセンション」とは何を示す言葉？",
     "questionEn": "What does the word \"Ascension\" refer to?",
+    "questionRomaji": "\"Ascension\" to wa nani wo shimesu kotoba?",
     "correctAnswerJp": "運気による変化",
     "correctAnswerEn": "Changes due to luck",
-    "wrongAnswersJp": [
-      "疑心暗鬼",
-      "平行世界",
-      "信念を貫くこと"
-    ],
-    "wrongAnswersEn": [
-      "Paranoia",
-      "Parallel worlds",
-      "Sticking to one's beliefs"
-    ],
+    "correctAnswerRomaji": "unki ni yoru henka",
+    "wrongAnswersJp": ["疑心暗鬼","平行世界","信念を貫くこと"],
+    "wrongAnswersEn": ["Paranoia","Parallel worlds","Sticking to one's beliefs"],
+    "wrongAnswersRomaji": ["gishin anki","heikou sekai","shinnen wo tsuranuku koto"],
     "questionImage": "quiz_images/qlv5_52.png"
   },
   {
@@ -5744,18 +4234,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "この文字、なんて読む？　軒昂",
     "questionEn": "How do you read this word? Kenkou (high-spirited)",
+    "questionRomaji": "kono moji, nante yomu? Kenkou",
     "correctAnswerJp": "けんこう",
     "correctAnswerEn": "Kenkou",
-    "wrongAnswersJp": [
-      "こうよう",
-      "こうふん",
-      "のきあがり"
-    ],
-    "wrongAnswersEn": [
-      "Kouyou",
-      "Koufun",
-      "Nokiagari"
-    ],
+    "correctAnswerRomaji": "kenkou",
+    "wrongAnswersJp": ["こうよう","こうふん","のきあがり"],
+    "wrongAnswersEn": ["Kouyou","Koufun","Nokiagari"],
+    "wrongAnswersRomaji": ["kouyou","koufun","nokiagari"],
     "questionImage": "quiz_images/qlv5_53.png"
   },
   {
@@ -5763,18 +4248,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "この文字、なんて読む？　弛緩",
     "questionEn": "How do you read this word? Shikan (relaxation)",
+    "questionRomaji": "kono moji, nante yomu? Shikan",
     "correctAnswerJp": "しかん",
     "correctAnswerEn": "Shikan",
-    "wrongAnswersJp": [
-      "しゆる",
-      "ゆるゆる",
-      "たるむ"
-    ],
-    "wrongAnswersEn": [
-      "Shiyuru",
-      "Yuruyuru",
-      "Tarumu"
-    ],
+    "correctAnswerRomaji": "shikan",
+    "wrongAnswersJp": ["しゆる","ゆるゆる","たるむ"],
+    "wrongAnswersEn": ["Shiyuru","Yuruyuru","Tarumu"],
+    "wrongAnswersRomaji": ["shiyuru","yuruyuru","tarumu"],
     "questionImage": "quiz_images/qlv5_54.png"
   },
   {
@@ -5782,18 +4262,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "この文字、なんて読む？　蹂躙",
     "questionEn": "How do you read this word? Juurin (trampling)",
+    "questionRomaji": "kono moji, nante yomu? Juurin",
     "correctAnswerJp": "じゅうりん",
     "correctAnswerEn": "Juurin",
-    "wrongAnswersJp": [
-      "とうしゅう",
-      "じゅうそく",
-      "そくそく"
-    ],
-    "wrongAnswersEn": [
-      "Toushuu",
-      "Juusoku",
-      "Sokusoku"
-    ],
+    "correctAnswerRomaji": "juurin",
+    "wrongAnswersJp": ["とうしゅう","じゅうそく","そくそく"],
+    "wrongAnswersEn": ["Toushuu","Juusoku","Sokusoku"],
+    "wrongAnswersRomaji": ["toushuu","juusoku","sokusoku"],
     "questionImage": "quiz_images/qlv5_55.png"
   },
   {
@@ -5801,18 +4276,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "荒川龍ノ介",
     "correctAnswerEn": "Arakawa Ryuunosuke",
-    "wrongAnswersJp": [
-      "荒川龍一",
-      "畠山一馬",
-      "黒澤工"
-    ],
-    "wrongAnswersEn": [
-      "Arakawa Ryuuichi (alt.)",
-      "Hatakeyama Kazuma (alt.)",
-      "Kurosawa Kou (alt.)"
-    ],
+    "correctAnswerRomaji": "Arakawa Ryuunosuke",
+    "wrongAnswersJp": ["荒川龍一","畠山一馬","黒澤工"],
+    "wrongAnswersEn": ["Arakawa Ryuuichi (alt.)","Hatakeyama Kazuma (alt.)","Kurosawa Kou (alt.)"],
+    "wrongAnswersRomaji": ["Arakawa Ryuuichi","Hatakeyama Kazuma","Kurosawa Kou"],
     "questionImage": "quiz_images/qlv5_56.png"
   },
   {
@@ -5820,18 +4290,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "采",
     "correctAnswerEn": "Aya",
-    "wrongAnswersJp": [
-      "彩",
-      "舟",
-      "稲"
-    ],
-    "wrongAnswersEn": [
-      "Aya",
-      "Fune",
-      "Ine"
-    ],
+    "correctAnswerRomaji": "Aya",
+    "wrongAnswersJp": ["彩","舟","稲"],
+    "wrongAnswersEn": ["Aya","Fune","Ine"],
+    "wrongAnswersRomaji": ["Aya","Fune","Ine"],
     "questionImage": "quiz_images/qlv5_57.png"
   },
   {
@@ -5839,18 +4304,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "ウネ",
     "correctAnswerEn": "Une",
-    "wrongAnswersJp": [
-      "フネ",
-      "イネ",
-      "クネ"
-    ],
-    "wrongAnswersEn": [
-      "Fune",
-      "Ine",
-      "Kune"
-    ],
+    "correctAnswerRomaji": "Une",
+    "wrongAnswersJp": ["フネ","イネ","クネ"],
+    "wrongAnswersEn": ["Fune","Ine","Kune"],
+    "wrongAnswersRomaji": ["Fune","Ine","Kune"],
     "questionImage": "quiz_images/qlv5_58.png"
   },
   {
@@ -5858,18 +4318,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "田村媛命",
     "correctAnswerEn": "Tamura Hime no Mikoto",
-    "wrongAnswersJp": [
-      "村田姫",
-      "田村みこと",
-      "田村姫命"
-    ],
-    "wrongAnswersEn": [
-      "Murata Hime (alt.)",
-      "Tamura Mikoto (alt.)",
-      "Tamura Hime no Mikoto (alt.)"
-    ],
+    "correctAnswerRomaji": "Tamura Hime no Mikoto",
+    "wrongAnswersJp": ["村田姫","田村みこと","田村姫命"],
+    "wrongAnswersEn": ["Murata Hime (alt.)","Tamura Mikoto (alt.)","Tamura Hime no Mikoto (alt.)"],
+    "wrongAnswersRomaji": ["Murata Hime","Tamura Mikoto","Tamura Hime no Mikoto"],
     "questionImage": "quiz_images/qlv5_59.png"
   },
   {
@@ -5877,18 +4332,13 @@ export const entries: Entry[] = [
     "level": 5,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "荒川",
     "correctAnswerEn": "Arakawa",
-    "wrongAnswersJp": [
-      "小日向",
-      "右代宮",
-      "前原"
-    ],
-    "wrongAnswersEn": [
-      "Kohinata",
-      "Ushiromiya",
-      "Maebara"
-    ],
+    "correctAnswerRomaji": "Arakawa",
+    "wrongAnswersJp": ["小日向","右代宮","前原"],
+    "wrongAnswersEn": ["Kohinata","Ushiromiya","Maebara"],
+    "wrongAnswersRomaji": ["Kohinata","Ushiromiya","Maebara"],
     "questionImage": "quiz_images/qlv5_60.png"
   },
   {
@@ -5896,18 +4346,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "神姦し編、圭一たちが最初に目指した場所は何処？",
     "questionEn": "In Kamikanshi, where did Keiichi and the others head to first?",
+    "questionRomaji": "Kamikanshi-hen, Keiichi-tachi ga saisho ni mezashita basho wa doko?",
     "correctAnswerJp": "園崎組事務所",
     "correctAnswerEn": "Sonozaki Group office",
-    "wrongAnswersJp": [
-      "入江診療所",
-      "鬼ヶ淵沼",
-      "古手神社"
-    ],
-    "wrongAnswersEn": [
-      "Irie Clinic",
-      "Onigafuchi Swamp",
-      "Furude Shrine"
-    ],
+    "correctAnswerRomaji": "Sonozaki-gumi jimusho",
+    "wrongAnswersJp": ["入江診療所","鬼ヶ淵沼","古手神社"],
+    "wrongAnswersEn": ["Irie Clinic","Onigafuchi Swamp","Furude Shrine"],
+    "wrongAnswersRomaji": ["Irie shinryoujo","Onigafuchi numa","Furude jinja"],
     "questionImage": "quiz_images/qlv6_01.png"
   },
   {
@@ -5915,18 +4360,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "神姦し編、レナが見つけてきた武器はどの立て看板？",
     "questionEn": "In Kamikanshi, which standing sign did Rena find as a weapon?",
+    "questionRomaji": "Kamikanshi-hen, Rena ga mitsukete kita buki wa dono tate kanban?",
     "correctAnswerJp": "駐輪禁止",
     "correctAnswerEn": "No bicycle parking",
-    "wrongAnswersJp": [
-      "駐車禁止",
-      "一時停止",
-      "進入禁止"
-    ],
-    "wrongAnswersEn": [
-      "No car parking",
-      "Stop sign",
-      "No entry"
-    ],
+    "correctAnswerRomaji": "chuurin kinshi",
+    "wrongAnswersJp": ["駐車禁止","一時停止","進入禁止"],
+    "wrongAnswersEn": ["No car parking","Stop sign","No entry"],
+    "wrongAnswersRomaji": ["chuusha kinshi","ichiji teishi","shinnyuu kinshi"],
     "questionImage": "quiz_images/qlv6_02.png"
   },
   {
@@ -5934,18 +4374,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "鬼曝し編、コミカライズ版の連載誌は？",
     "questionEn": "What magazine serialized the manga version of the Onisarashi chapter?",
+    "questionRomaji": "Onisarashi-hen, komikalize-ban no rensai-shi wa?",
     "correctAnswerJp": "コンプエース",
     "correctAnswerEn": "Comp Ace",
-    "wrongAnswersJp": [
-      "ヤングエース",
-      "電撃大王",
-      "ヤングガンガン"
-    ],
-    "wrongAnswersEn": [
-      "Young Ace",
-      "Dengeki Daiou",
-      "Young Gangan"
-    ],
+    "correctAnswerRomaji": "Konpu Esu",
+    "wrongAnswersJp": ["ヤングエース","電撃大王","ヤングガンガン"],
+    "wrongAnswersEn": ["Young Ace","Dengeki Daiou","Young Gangan"],
+    "wrongAnswersRomaji": ["Yangu Esu","Dengeki Daiou","Yangu Gangan"],
     "questionImage": "quiz_images/qlv6_03.png"
   },
   {
@@ -5953,18 +4388,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "雛見沢停留所、コミカライズ版の連載誌は？",
     "questionEn": "What magazine serialized the manga version of Hinamizawa Bus Stop?",
+    "questionRomaji": "Hinamizawa Teiryuujo, komikalize-ban no rensai-shi wa?",
     "correctAnswerJp": "ビッグガンガン",
     "correctAnswerEn": "Big Gangan",
-    "wrongAnswersJp": [
-      "ヤングガンガン",
-      "ガンガンJOKER",
-      "Gファンタジー"
-    ],
-    "wrongAnswersEn": [
-      "Young Gangan",
-      "Gangan JOKER",
-      "G Fantasy"
-    ],
+    "correctAnswerRomaji": "Biggu Gangan",
+    "wrongAnswersJp": ["ヤングガンガン","ガンガンJOKER","Gファンタジー"],
+    "wrongAnswersEn": ["Young Gangan","Gangan JOKER","G Fantasy"],
+    "wrongAnswersRomaji": ["Yangu Gangan","Gangan JOKER","G Fantajii"],
     "questionImage": "quiz_images/qlv6_04.png"
   },
   {
@@ -5972,18 +4402,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "「ひとつのいのち」を歌ったのは誰？",
     "questionEn": "Who sang \"Hitotsu no Inochi\"?",
+    "questionRomaji": "\"hitotsu no inochi\" wo utatta no wa dare?",
     "correctAnswerJp": "上間江望",
     "correctAnswerEn": "Uema Enozomu",
-    "wrongAnswersJp": [
-      "神代海凪",
-      "神園しのぶ",
-      "桐原歩鳥"
-    ],
-    "wrongAnswersEn": [
-      "Kamishiro Minagi",
-      "Kamizono Shinobu",
-      "Kirihara Hotori"
-    ],
+    "correctAnswerRomaji": "Uema Enozomu",
+    "wrongAnswersJp": ["神代海凪","神園しのぶ","桐原歩鳥"],
+    "wrongAnswersEn": ["Kamishiro Minagi","Kamizono Shinobu","Kirihara Hotori"],
+    "wrongAnswersRomaji": ["Kamishiro Minagi","Kamizono Shinobu","Kirihara Hotori"],
     "questionImage": "quiz_images/qlv6_05.png"
   },
   {
@@ -5991,18 +4416,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "限定版ドラマCDでメイド調教を受けたのは誰？",
     "questionEn": "Who underwent maid training in the limited edition drama CD?",
+    "questionRomaji": "genteiban dorama CD de meido choukyou wo uketa no wa dare?",
     "correctAnswerJp": "鉄平",
     "correctAnswerEn": "Teppei",
-    "wrongAnswersJp": [
-      "入江",
-      "羽入",
-      "采"
-    ],
-    "wrongAnswersEn": [
-      "Irie",
-      "Hanyuu",
-      "Aya"
-    ],
+    "correctAnswerRomaji": "Teppei",
+    "wrongAnswersJp": ["入江","羽入","采"],
+    "wrongAnswersEn": ["Irie","Hanyuu","Aya"],
+    "wrongAnswersRomaji": ["Irie","Hanyuu","Aya"],
     "questionImage": "quiz_images/qlv6_06.png"
   },
   {
@@ -6010,18 +4430,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "TVアニメ版「ひぐらしのなく頃に」、エンディングを歌ったのは誰？",
     "questionEn": "Who sang the ending theme of the TV anime \"Higurashi no Naku Koro ni\"?",
+    "questionRomaji": "TV anime-ban \"Higurashi no Naku Koro ni\", ending wo utatta no wa dare?",
     "correctAnswerJp": "片霧烈火",
     "correctAnswerEn": "Katakiri Rekka",
-    "wrongAnswersJp": [
-      "相原優気",
-      "天弄御魂",
-      "篝"
-    ],
-    "wrongAnswersEn": [
-      "Aihara Yuuki",
-      "Tenrou Mitama",
-      "Kagari"
-    ],
+    "correctAnswerRomaji": "Katakiri Rekka",
+    "wrongAnswersJp": ["相原優気","天弄御魂","篝"],
+    "wrongAnswersEn": ["Aihara Yuuki","Tenrou Mitama","Kagari"],
+    "wrongAnswersRomaji": ["Aihara Yuuki","Tenrou Mitama","Kagari"],
     "questionImage": "quiz_images/qlv6_07.png"
   },
   {
@@ -6029,18 +4444,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "TVアニメ版「ひぐらしのなく頃に解」、エンディング曲はどれ？",
     "questionEn": "Which song was the ending theme of the TV anime \"Higurashi no Naku Koro ni Kai\"?",
+    "questionRomaji": "TV anime-ban \"Higurashi no Naku Koro ni Kai\", ending-kyoku wa dore?",
     "correctAnswerJp": "対象a",
     "correctAnswerEn": "Subject a",
-    "wrongAnswersJp": [
-      "対象r",
-      "魔王k",
-      "検体s"
-    ],
-    "wrongAnswersEn": [
-      "Subject r",
-      "Demon Lord k",
-      "Specimen s"
-    ],
+    "correctAnswerRomaji": "taishou a",
+    "wrongAnswersJp": ["対象r","魔王k","検体s"],
+    "wrongAnswersEn": ["Subject r","Demon Lord k","Specimen s"],
+    "wrongAnswersRomaji": ["taishou r","maou k","kentai s"],
     "questionImage": "quiz_images/qlv6_08.png"
   },
   {
@@ -6048,18 +4458,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "「when they」の後には何が来る？",
     "questionEn": "What comes after \"when they\"?",
+    "questionRomaji": "\"when they\" no ato ni wa nani ga kuru?",
     "correctAnswerJp": "cry",
     "correctAnswerEn": "cry",
-    "wrongAnswersJp": [
-      "laugh",
-      "die",
-      "sleep"
-    ],
-    "wrongAnswersEn": [
-      "laugh",
-      "die",
-      "sleep"
-    ],
+    "correctAnswerRomaji": "cry",
+    "wrongAnswersJp": ["laugh","die","sleep"],
+    "wrongAnswersEn": ["laugh","die","sleep"],
+    "wrongAnswersRomaji": ["laugh","die","sleep"],
     "questionImage": "quiz_images/qlv6_09.png"
   },
   {
@@ -6067,18 +4472,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ドラマCD「君恋し編」で、圭一に「キュン?」としたのは誰？",
     "questionEn": "In the drama CD \"Kimikoishi Chapter,\" who got butterflies for Keiichi?",
+    "questionRomaji": "dorama CD \"Kimikoishi-hen\" de, Keiichi ni \"kyun?\" to shita no wa dare?",
     "correctAnswerJp": "園崎お魎",
     "correctAnswerEn": "Sonozaki Oryou",
-    "wrongAnswersJp": [
-      "園崎詩音",
-      "園崎茜",
-      "園崎魅音"
-    ],
-    "wrongAnswersEn": [
-      "Sonozaki Shion",
-      "Sonozaki Akane",
-      "Sonozaki Mion"
-    ],
+    "correctAnswerRomaji": "Sonozaki Oryou",
+    "wrongAnswersJp": ["園崎詩音","園崎茜","園崎魅音"],
+    "wrongAnswersEn": ["Sonozaki Shion","Sonozaki Akane","Sonozaki Mion"],
+    "wrongAnswersRomaji": ["Sonozaki Shion","Sonozaki Akane","Sonozaki Mion"],
     "questionImage": "quiz_images/qlv6_10.png"
   },
   {
@@ -6086,18 +4486,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "羞晒し編、呪いの掛かったアイテムは何？",
     "questionEn": "In Hajisarashi, what was the cursed item?",
+    "questionRomaji": "Hajisarashi-hen, noroi no kakatta aitemu wa nani?",
     "correctAnswerJp": "海水パンツ",
     "correctAnswerEn": "Swim trunks",
-    "wrongAnswersJp": [
-      "メガホン",
-      "バット",
-      "カーテンのシャー"
-    ],
-    "wrongAnswersEn": [
-      "Megaphone",
-      "Bat",
-      "Curtain swoosh"
-    ],
+    "correctAnswerRomaji": "kaisui pantsu",
+    "wrongAnswersJp": ["メガホン","バット","カーテンのシャー"],
+    "wrongAnswersEn": ["Megaphone","Bat","Curtain swoosh"],
+    "wrongAnswersRomaji": ["megahon","batto","kaaten no shaa"],
     "questionImage": "quiz_images/qlv6_11.png"
   },
   {
@@ -6105,18 +4500,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "なにかとクローズアップされる「雲雀13」、口癖は何？",
     "questionEn": "What is the catchphrase of \"Hibari 13,\" who often gets the spotlight?",
+    "questionRomaji": "nanika to kuroozu appu sareru \"Hibari 13\", kuchiguse wa nani?",
     "correctAnswerJp": "クール",
     "correctAnswerEn": "Cool",
-    "wrongAnswersJp": [
-      "ホット",
-      "シット",
-      "すったらん"
-    ],
-    "wrongAnswersEn": [
-      "Hot",
-      "Shit",
-      "Suttaran"
-    ],
+    "correctAnswerRomaji": "kuuru",
+    "wrongAnswersJp": ["ホット","シット","すったらん"],
+    "wrongAnswersEn": ["Hot","Shit","Suttaran"],
+    "wrongAnswersRomaji": ["hotto","shitto","suttaran"],
     "questionImage": "quiz_images/qlv6_12.png"
   },
   {
@@ -6124,18 +4514,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "部活メンバー、「口先の魔術師」は誰？",
     "questionEn": "Which club member is known as the \"Magician of Words\"?",
+    "questionRomaji": "bukatsu menbaa, \"kuchisaki no majutsushi\" wa dare?",
     "correctAnswerJp": "前原圭一",
     "correctAnswerEn": "Maebara Keiichi",
-    "wrongAnswersJp": [
-      "前原Ｋ",
-      "前原佳一",
-      "北条悟史"
-    ],
-    "wrongAnswersEn": [
-      "Maebara K",
-      "Maebara Keiichi (alt.)",
-      "Houjou Satoshi"
-    ],
+    "correctAnswerRomaji": "Maebara Keiichi",
+    "wrongAnswersJp": ["前原Ｋ","前原佳一","北条悟史"],
+    "wrongAnswersEn": ["Maebara K","Maebara Keiichi (alt.)","Houjou Satoshi"],
+    "wrongAnswersRomaji": ["Maebara K","Maebara Keiichi","Houjou Satoshi"],
     "questionImage": "quiz_images/qlv6_13.png"
   },
   {
@@ -6143,18 +4528,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "部活メンバー、「かぁいいモード」は誰？",
     "questionEn": "Which club member is known for \"Cute Mode\"?",
+    "questionRomaji": "bukatsu menbaa, \"kaaii moodo\" wa dare?",
     "correctAnswerJp": "竜宮レナ",
     "correctAnswerEn": "Ryuuguu Rena",
-    "wrongAnswersJp": [
-      "龍宮レナ",
-      "竜宮０７",
-      "竜宮れな"
-    ],
-    "wrongAnswersEn": [
-      "Ryuuguu Rena",
-      "Ryuuguu 07",
-      "Ryuuguu Rena"
-    ],
+    "correctAnswerRomaji": "Ryuuguu Rena",
+    "wrongAnswersJp": ["龍宮レナ","竜宮０７","竜宮れな"],
+    "wrongAnswersEn": ["Ryuuguu Rena","Ryuuguu 07","Ryuuguu Rena"],
+    "wrongAnswersRomaji": ["Ryuuguu Rena","Ryuuguu 07","Ryuuguu Rena"],
     "questionImage": "quiz_images/qlv6_14.png"
   },
   {
@@ -6162,18 +4542,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "部活メンバー、「トラップ使い」は誰？",
     "questionEn": "Which club member is known as the \"Trap Master\"?",
+    "questionRomaji": "bukatsu menbaa, \"torappu tsukai\" wa dare?",
     "correctAnswerJp": "北条沙都子",
     "correctAnswerEn": "Houjou Satoko",
-    "wrongAnswersJp": [
-      "北城沙都子",
-      "北条聡子",
-      "北條紗都子"
-    ],
-    "wrongAnswersEn": [
-      "Houjou Satoko (alt.)",
-      "Houjou Satoko (alt.)",
-      "Houjou Satoko (alt.)"
-    ],
+    "correctAnswerRomaji": "Houjou Satoko",
+    "wrongAnswersJp": ["北城沙都子","北条聡子","北條紗都子"],
+    "wrongAnswersEn": ["Houjou Satoko (alt.)","Houjou Satoko (alt.)","Houjou Satoko (alt.)"],
+    "wrongAnswersRomaji": ["Houjou Satoko","Houjou Satoko","Houjou Satoko"],
     "questionImage": "quiz_images/qlv6_15.png"
   },
   {
@@ -6181,18 +4556,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "部活メンバー、「萌え落とし」は誰？",
     "questionEn": "Which club member is known for \"Moe Takedowns\"?",
+    "questionRomaji": "bukatsu menbaa, \"moe otoshi\" wa dare?",
     "correctAnswerJp": "古手梨花",
     "correctAnswerEn": "Furude Rika",
-    "wrongAnswersJp": [
-      "古手利花",
-      "古出梨花",
-      "フレデリカ"
-    ],
-    "wrongAnswersEn": [
-      "Furude Rika (alt.)",
-      "Furude Rika (alt.)",
-      "Frederica"
-    ],
+    "correctAnswerRomaji": "Furude Rika",
+    "wrongAnswersJp": ["古手利花","古出梨花","フレデリカ"],
+    "wrongAnswersEn": ["Furude Rika (alt.)","Furude Rika (alt.)","Frederica"],
+    "wrongAnswersRomaji": ["Furude Rika","Furude Rika","Furederika"],
     "questionImage": "quiz_images/qlv6_16.png"
   },
   {
@@ -6200,18 +4570,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "部活メンバー、「期待の新人」は誰？",
     "questionEn": "Which club member is known as the \"Promising Newcomer\"?",
+    "questionRomaji": "bukatsu menbaa, \"kitai no shinjin\" wa dare?",
     "correctAnswerJp": "古手羽入",
     "correctAnswerEn": "Furude Hanyuu",
-    "wrongAnswersJp": [
-      "古出羽生",
-      "古手ハイリューン",
-      "古手羽生"
-    ],
-    "wrongAnswersEn": [
-      "Furude Hanyuu (alt.)",
-      "Furude Highryuun",
-      "Furude Hanyuu (alt.)"
-    ],
+    "correctAnswerRomaji": "Furude Hanyuu",
+    "wrongAnswersJp": ["古出羽生","古手ハイリューン","古手羽生"],
+    "wrongAnswersEn": ["Furude Hanyuu (alt.)","Furude Highryuun","Furude Hanyuu (alt.)"],
+    "wrongAnswersRomaji": ["Furude Hanyuu","Furude Hairyuun","Furude Hanyuu"],
     "questionImage": "quiz_images/qlv6_17.png"
   },
   {
@@ -6219,18 +4584,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "小此木が言う三拍子に含まれない物は？",
     "questionEn": "Which of these is NOT one of the three qualities Okonogi mentions?",
+    "questionRomaji": "Okonogi ga iu sanbyoushi ni fukumarenai mono wa?",
     "correctAnswerJp": "潜水",
     "correctAnswerEn": "Diving",
-    "wrongAnswersJp": [
-      "戦略",
-      "戦術",
-      "戦闘"
-    ],
-    "wrongAnswersEn": [
-      "Strategy",
-      "Tactics",
-      "Combat"
-    ],
+    "correctAnswerRomaji": "sensui",
+    "wrongAnswersJp": ["戦略","戦術","戦闘"],
+    "wrongAnswersEn": ["Strategy","Tactics","Combat"],
+    "wrongAnswersRomaji": ["senryaku","senjutsu","sentou"],
     "questionImage": "quiz_images/qlv6_18.png"
   },
   {
@@ -6238,18 +4598,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ドラマCD「君恋し編」、恋の病は「何」でも治らないと言った？",
     "questionEn": "In the drama CD \"Kimigakoishi chapter,\" it was said that lovesickness can't be cured even by what?",
+    "questionRomaji": "dorama CD \"Kimigakoishi-hen\", koi no yamai wa \"nani\" demo naoranai to itta?",
     "correctAnswerJp": "草津の湯",
     "correctAnswerEn": "Kusatsu hot spring",
-    "wrongAnswersJp": [
-      "イケメン",
-      "少女漫画",
-      "手料理"
-    ],
-    "wrongAnswersEn": [
-      "Handsome guy",
-      "Shoujo manga",
-      "Home cooking"
-    ],
+    "correctAnswerRomaji": "Kusatsu no yu",
+    "wrongAnswersJp": ["イケメン","少女漫画","手料理"],
+    "wrongAnswersEn": ["Handsome guy","Shoujo manga","Home cooking"],
+    "wrongAnswersRomaji": ["ikemen","shoujo manga","teryouri"],
     "questionImage": "quiz_images/qlv6_19.png"
   },
   {
@@ -6257,18 +4612,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ひぐらしのなく頃に10周年記念作品はどれ？",
     "questionEn": "Which work was the Higurashi no Naku Koro ni 10th anniversary title?",
+    "questionRomaji": "Higurashi no Naku Koro ni 10-shuunen kinen sakuhin wa dore?",
     "correctAnswerJp": "煌",
     "correctAnswerEn": "Sparkle",
-    "wrongAnswersJp": [
-      "粋",
-      "絆",
-      "拡"
-    ],
-    "wrongAnswersEn": [
-      "Stylish",
-      "Bond",
-      "Expand"
-    ],
+    "correctAnswerRomaji": "Kou",
+    "wrongAnswersJp": ["粋","絆","拡"],
+    "wrongAnswersEn": ["Stylish","Bond","Expand"],
+    "wrongAnswersRomaji": ["Iki","Kizuna","Kaku"],
     "questionImage": "quiz_images/qlv6_20.png"
   },
   {
@@ -6276,18 +4626,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "北条悟史がアルバイトで買ったプレゼントは何？",
     "questionEn": "What present did Satoshi Houjou buy with his part-time job earnings?",
+    "questionRomaji": "Houjou Satoshi ga arubaito de katta purezento wa nani?",
     "correctAnswerJp": "ぬいぐるみ",
     "correctAnswerEn": "Stuffed animal",
-    "wrongAnswersJp": [
-      "自転車",
-      "ゲーム機",
-      "ランドセル"
-    ],
-    "wrongAnswersEn": [
-      "Bicycle",
-      "Game console",
-      "School bag"
-    ],
+    "correctAnswerRomaji": "nuigurumi",
+    "wrongAnswersJp": ["自転車","ゲーム機","ランドセル"],
+    "wrongAnswersEn": ["Bicycle","Game console","School bag"],
+    "wrongAnswersRomaji": ["jitensha","geemu-ki","randoseru"],
     "questionImage": "quiz_images/qlv6_21.png"
   },
   {
@@ -6295,18 +4640,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "沙都子が知恵に言い放った悪口はどれ？",
     "questionEn": "Which insult did Satoko hurl at Chie?",
+    "questionRomaji": "Satoko ga Chie ni ii hanatta waruguchi wa dore?",
     "correctAnswerJp": "カレー独身貴族",
     "correctAnswerEn": "Curry bachelor",
-    "wrongAnswersJp": [
-      "パン屋の小娘",
-      "知恵サマー",
-      "インドに帰れ"
-    ],
-    "wrongAnswersEn": [
-      "Bakery girl",
-      "Chie Summer",
-      "Go back to India"
-    ],
+    "correctAnswerRomaji": "karee dokushin kizoku",
+    "wrongAnswersJp": ["パン屋の小娘","知恵サマー","インドに帰れ"],
+    "wrongAnswersEn": ["Bakery girl","Chie Summer","Go back to India"],
+    "wrongAnswersRomaji": ["pan-ya no komusume","Chie samaa","Indo ni kaere"],
     "questionImage": "quiz_images/qlv6_22.png"
   },
   {
@@ -6314,18 +4654,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "鬼曝し編、その後を書いた物語はどれ？",
     "questionEn": "Which story is a sequel to the Onisarashi chapter?",
+    "questionRomaji": "Onisarashi-hen, sono go wo kaita monogatari wa dore?",
     "correctAnswerJp": "鬼曝し編アフター",
     "correctAnswerEn": "Onisarashi-hen After",
-    "wrongAnswersJp": [
-      "裏返し編",
-      "現壊し編",
-      "燕返し編"
-    ],
-    "wrongAnswersEn": [
-      "Uragaeshi-hen",
-      "Utsutsukowashi-hen",
-      "Tsubamegaeshi-hen"
-    ],
+    "correctAnswerRomaji": "Onisarashi-hen Afutaa",
+    "wrongAnswersJp": ["裏返し編","現壊し編","燕返し編"],
+    "wrongAnswersEn": ["Uragaeshi-hen","Utsutsukowashi-hen","Tsubamegaeshi-hen"],
+    "wrongAnswersRomaji": ["Uragaeshi-hen","Utsutsukowashi-hen","Tsubamegaeshi-hen"],
     "questionImage": "quiz_images/qlv6_23.png"
   },
   {
@@ -6333,18 +4668,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "現壊し編、ヒロインは詩音と誰？",
     "questionEn": "In Someutsushi, the heroines are Shion and who?",
+    "questionRomaji": "Someutsushi-hen, hiroin wa Shion to dare?",
     "correctAnswerJp": "瑞穂",
     "correctAnswerEn": "Mizuho",
-    "wrongAnswersJp": [
-      "ゆかり",
-      "シスターマリア",
-      "咲"
-    ],
-    "wrongAnswersEn": [
-      "Yukari",
-      "Sister Maria",
-      "Saki"
-    ],
+    "correctAnswerRomaji": "Mizuho",
+    "wrongAnswersJp": ["ゆかり","シスターマリア","咲"],
+    "wrongAnswersEn": ["Yukari","Sister Maria","Saki"],
+    "wrongAnswersRomaji": ["Yukari","Shisutaa Maria","Saki"],
     "questionImage": "quiz_images/qlv6_24.png"
   },
   {
@@ -6352,18 +4682,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "現壊し編、登場した刑事は誰？",
     "questionEn": "In Someutsushi, which detective appeared?",
+    "questionRomaji": "Someutsushi-hen, toujou shita keiji wa dare?",
     "correctAnswerJp": "大石",
     "correctAnswerEn": "Oishi",
-    "wrongAnswersJp": [
-      "赤坂",
-      "巴",
-      "反町"
-    ],
-    "wrongAnswersEn": [
-      "Akasaka",
-      "Tomoe",
-      "Sorimachi"
-    ],
+    "correctAnswerRomaji": "Oishi",
+    "wrongAnswersJp": ["赤坂","巴","反町"],
+    "wrongAnswersEn": ["Akasaka","Tomoe","Sorimachi"],
+    "wrongAnswersRomaji": ["Akasaka","Tomoe","Sorimachi"],
     "questionImage": "quiz_images/qlv6_25.png"
   },
   {
@@ -6371,18 +4696,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "宵越し編、コミカライズ版の連載誌は？",
     "questionEn": "What magazine serialized the manga version of Yoigoshi?",
+    "questionRomaji": "Yoigoshi-hen, komikalize-ban no rensai-shi wa?",
     "correctAnswerJp": "Gファンタジー",
     "correctAnswerEn": "G Fantasy",
-    "wrongAnswersJp": [
-      "ヤングガンガン",
-      "コンプエース",
-      "ビッグガンガン"
-    ],
-    "wrongAnswersEn": [
-      "Young Gangan",
-      "Comp Ace",
-      "Big Gangan"
-    ],
+    "correctAnswerRomaji": "G Fantajii",
+    "wrongAnswersJp": ["ヤングガンガン","コンプエース","ビッグガンガン"],
+    "wrongAnswersEn": ["Young Gangan","Comp Ace","Big Gangan"],
+    "wrongAnswersRomaji": ["Yangu Gangan","Konpu Esu","Biggu Gangan"],
     "questionImage": "quiz_images/qlv6_26.png"
   },
   {
@@ -6390,18 +4710,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "罰恋し編で羽入は何のコスプレをさせられた？",
     "questionEn": "In Batsukoishi, what was Hanyuu made to cosplay as?",
+    "questionRomaji": "Batsukoishi-hen de Hanyuu wa nani no kosupure wo saserareta?",
     "correctAnswerJp": "さくたろう",
     "correctAnswerEn": "Sakutarou",
-    "wrongAnswersJp": [
-      "メイド服",
-      "巫女",
-      "ねこ耳スク水"
-    ],
-    "wrongAnswersEn": [
-      "Maid outfit",
-      "Shrine maiden",
-      "Cat ears & school swimsuit"
-    ],
+    "correctAnswerRomaji": "Sakutarou",
+    "wrongAnswersJp": ["メイド服","巫女","ねこ耳スク水"],
+    "wrongAnswersEn": ["Maid outfit","Shrine maiden","Cat ears & school swimsuit"],
+    "wrongAnswersRomaji": ["meido-fuku","miko","neko-mimi suku-mizu"],
     "questionImage": "quiz_images/qlv6_27.png"
   },
   {
@@ -6409,18 +4724,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ひぐらしのなく頃に、文庫版はどこから出版された？",
     "questionEn": "What publisher released the paperback edition of Higurashi no Naku Koro ni?",
+    "questionRomaji": "Higurashi no Naku Koro ni, bunko-ban wa doko kara shuppan sareta?",
     "correctAnswerJp": "星海社文庫",
     "correctAnswerEn": "Seikaisha Bunko",
-    "wrongAnswersJp": [
-      "スニーカー文庫",
-      "電撃文庫",
-      "ＧＡ文庫"
-    ],
-    "wrongAnswersEn": [
-      "Sneaker Bunko",
-      "Dengeki Bunko",
-      "GA Bunko"
-    ],
+    "correctAnswerRomaji": "Seikaisha Bunko",
+    "wrongAnswersJp": ["スニーカー文庫","電撃文庫","ＧＡ文庫"],
+    "wrongAnswersEn": ["Sneaker Bunko","Dengeki Bunko","GA Bunko"],
+    "wrongAnswersRomaji": ["Suniikaa Bunko","Dengeki Bunko","GA Bunko"],
     "questionImage": "quiz_images/qlv6_28.png"
   },
   {
@@ -6428,18 +4738,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一が母親から託かったレナへのお礼は？",
     "questionEn": "What thank-you gift did Keiichi's mother ask him to give Rena?",
+    "questionRomaji": "Keiichi ga hahaoya kara azukatta Rena e no orei wa?",
     "correctAnswerJp": "お漬物ありがとう",
     "correctAnswerEn": "Thanks for the pickles",
-    "wrongAnswersJp": [
-      "カレーありがとう",
-      "おでんありがとう",
-      "煮物ありがとう"
-    ],
-    "wrongAnswersEn": [
-      "Thanks for the curry",
-      "Thanks for the oden",
-      "Thanks for the simmered dish"
-    ],
+    "correctAnswerRomaji": "otsukemono arigatou",
+    "wrongAnswersJp": ["カレーありがとう","おでんありがとう","煮物ありがとう"],
+    "wrongAnswersEn": ["Thanks for the curry","Thanks for the oden","Thanks for the simmered dish"],
+    "wrongAnswersRomaji": ["karee arigatou","oden arigatou","nimono arigatou"],
     "questionImage": "quiz_images/qlv6_29.png"
   },
   {
@@ -6447,18 +4752,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "この中で一番年をとっているのは誰？",
     "questionEn": "Among these, who is the oldest?",
+    "questionRomaji": "kono naka de ichiban toshi wo totte iru no wa dare?",
     "correctAnswerJp": "夏美",
     "correctAnswerEn": "Natsumi",
-    "wrongAnswersJp": [
-      "圭一",
-      "レナ",
-      "魅音"
-    ],
-    "wrongAnswersEn": [
-      "Keiichi",
-      "Rena",
-      "Mion"
-    ],
+    "correctAnswerRomaji": "Natsumi",
+    "wrongAnswersJp": ["圭一","レナ","魅音"],
+    "wrongAnswersEn": ["Keiichi","Rena","Mion"],
+    "wrongAnswersRomaji": ["Keiichi","Rena","Mion"],
     "questionImage": "quiz_images/qlv6_30.png"
   },
   {
@@ -6466,18 +4766,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "公由夏美、引っ越し先はどこ？",
     "questionEn": "Where did Natsumi Kimiyoshi move to?",
+    "questionRomaji": "Kimiyoshi Natsumi, hikkoshi-saki wa doko?",
     "correctAnswerJp": "垣内",
     "correctAnswerEn": "Kakiuchi",
-    "wrongAnswersJp": [
-      "興宮",
-      "穀倉",
-      "高津戸"
-    ],
-    "wrongAnswersEn": [
-      "Okinomiya",
-      "Kokusou",
-      "Takatsudo"
-    ],
+    "correctAnswerRomaji": "Kakiuchi",
+    "wrongAnswersJp": ["興宮","穀倉","高津戸"],
+    "wrongAnswersEn": ["Okinomiya","Kokusou","Takatsudo"],
+    "wrongAnswersRomaji": ["Okinomiya","Kokusou","Takatsudo"],
     "questionImage": "quiz_images/qlv6_31.png"
   },
   {
@@ -6485,18 +4780,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "エンジェルモートで開催されるイベントは何？",
     "questionEn": "What event is held at Angel Mort?",
+    "questionRomaji": "Enjeru Mooto de kaisai sareru ibento wa nani?",
     "correctAnswerJp": "デザートフェスタ",
     "correctAnswerEn": "Dessert Festa",
-    "wrongAnswersJp": [
-      "苺祭",
-      "肉フェス",
-      "すったて鍋合戦"
-    ],
-    "wrongAnswersEn": [
-      "Strawberry Festival",
-      "Meat Festival",
-      "Suttate hot pot battle"
-    ],
+    "correctAnswerRomaji": "dezaato fesuta",
+    "wrongAnswersJp": ["苺祭","肉フェス","すったて鍋合戦"],
+    "wrongAnswersEn": ["Strawberry Festival","Meat Festival","Suttate hot pot battle"],
+    "wrongAnswersRomaji": ["ichigo matsuri","niku fesu","suttate nabe gassen"],
     "questionImage": "quiz_images/qlv6_32.png"
   },
   {
@@ -6504,18 +4794,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "魅音が集めているのはカードゲームと何ゲーム？",
     "questionEn": "Besides card games, what other type of games does Mion collect?",
+    "questionRomaji": "Mion ga atsumete iru no wa kaado geemu to nani geemu?",
     "correctAnswerJp": "ボードゲーム",
     "correctAnswerEn": "Board game",
-    "wrongAnswersJp": [
-      "テレビゲーム",
-      "ＬＳＩゲーム",
-      "知育ゲーム"
-    ],
-    "wrongAnswersEn": [
-      "Video game",
-      "LSI game",
-      "Educational game"
-    ],
+    "correctAnswerRomaji": "boodo geemu",
+    "wrongAnswersJp": ["テレビゲーム","ＬＳＩゲーム","知育ゲーム"],
+    "wrongAnswersEn": ["Video game","LSI game","Educational game"],
+    "wrongAnswersRomaji": ["terebi geemu","LSI geemu","chiiku geemu"],
     "questionImage": "quiz_images/qlv6_33.png"
   },
   {
@@ -6523,18 +4808,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "沙都子のトラップ、魅音の声でギリギリ避けたのは？",
     "questionEn": "Which of Satoko's traps was barely dodged thanks to Mion's warning?",
+    "questionRomaji": "Satoko no torappu, Mion no koe de girigiri saketa no wa?",
     "correctAnswerJp": "すずり",
     "correctAnswerEn": "Inkstone",
-    "wrongAnswersJp": [
-      "バケツ",
-      "黒板消し",
-      "濡れた雑巾"
-    ],
-    "wrongAnswersEn": [
-      "Bucket",
-      "Blackboard eraser",
-      "Wet rag"
-    ],
+    "correctAnswerRomaji": "suzuri",
+    "wrongAnswersJp": ["バケツ","黒板消し","濡れた雑巾"],
+    "wrongAnswersEn": ["Bucket","Blackboard eraser","Wet rag"],
+    "wrongAnswersRomaji": ["baketsu","kokuban keshi","nureta zoukin"],
     "questionImage": "quiz_images/qlv6_34.png"
   },
   {
@@ -6542,18 +4822,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "悪戯を謝らない沙都子に圭一は何をした？",
     "questionEn": "What did Keiichi do to Satoko when she wouldn't apologize for her prank?",
+    "questionRomaji": "itazura wo ayamaranai Satoko ni Keiichi wa nani wo shita?",
     "correctAnswerJp": "デコピン",
     "correctAnswerEn": "Forehead flick",
-    "wrongAnswersJp": [
-      "しっぺ",
-      "頭突き",
-      "くすぐり"
-    ],
-    "wrongAnswersEn": [
-      "Flick",
-      "Headbutt",
-      "Tickling"
-    ],
+    "correctAnswerRomaji": "dekopin",
+    "wrongAnswersJp": ["しっぺ","頭突き","くすぐり"],
+    "wrongAnswersEn": ["Flick","Headbutt","Tickling"],
+    "wrongAnswersRomaji": ["shippe","zutsuki","kusuguri"],
     "questionImage": "quiz_images/qlv6_35.png"
   },
   {
@@ -6561,18 +4836,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ゴミ山で圭一に声を掛けた富竹、職業はなんと名乗った？",
     "questionEn": "When Tomitake spoke to Keiichi at the junkyard, what did he say his profession was?",
+    "questionRomaji": "gomi-yama de Keiichi ni koe wo kaketa Tomitake, shokugyou wa nanto nanoita?",
     "correctAnswerJp": "カメラマン",
     "correctAnswerEn": "Cameraman",
-    "wrongAnswersJp": [
-      "フリーター",
-      "建設省職員",
-      "時報役"
-    ],
-    "wrongAnswersEn": [
-      "Freeter",
-      "Ministry of Construction worker",
-      "Timekeeper"
-    ],
+    "correctAnswerRomaji": "kameraman",
+    "wrongAnswersJp": ["フリーター","建設省職員","時報役"],
+    "wrongAnswersEn": ["Freeter","Ministry of Construction worker","Timekeeper"],
+    "wrongAnswersRomaji": ["furiitaa","kensetsu-shou shokuin","jihou-yaku"],
     "questionImage": "quiz_images/qlv6_36.png"
   },
   {
@@ -6580,18 +4850,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ゲーム中の鷹野の第一声は？",
     "questionEn": "What is Takano's first line of dialogue in the game?",
+    "questionRomaji": "geemu-chuu no Takano no daiissei wa?",
     "correctAnswerJp": "こんにちは",
     "correctAnswerEn": "Hello",
-    "wrongAnswersJp": [
-      "鷹野よ",
-      "こんばんは",
-      "あら、詩音ちゃん"
-    ],
-    "wrongAnswersEn": [
-      "It's Takano",
-      "Good evening",
-      "Oh, Shion-chan"
-    ],
+    "correctAnswerRomaji": "konnichiwa",
+    "wrongAnswersJp": ["鷹野よ","こんばんは","あら、詩音ちゃん"],
+    "wrongAnswersEn": ["It's Takano","Good evening","Oh, Shion-chan"],
+    "wrongAnswersRomaji": ["Takano yo","konbanwa","ara, Shion-chan"],
     "questionImage": "quiz_images/qlv6_37.png"
   },
   {
@@ -6599,18 +4864,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一が詩音と初めて会ったのはどこ？",
     "questionEn": "Where did Keiichi first meet Shion?",
+    "questionRomaji": "Keiichi ga Shion to hajimete atta no wa doko?",
     "correctAnswerJp": "エンジェルモート",
     "correctAnswerEn": "Angel Mort",
-    "wrongAnswersJp": [
-      "セブンスマート",
-      "園崎家",
-      "古手神社"
-    ],
-    "wrongAnswersEn": [
-      "Seven Smart",
-      "Sonozaki household",
-      "Furude Shrine"
-    ],
+    "correctAnswerRomaji": "Enjeru Mooto",
+    "wrongAnswersJp": ["セブンスマート","園崎家","古手神社"],
+    "wrongAnswersEn": ["Seven Smart","Sonozaki household","Furude Shrine"],
+    "wrongAnswersRomaji": ["Sebunsu Maato","Sonozaki-ke","Furude jinja"],
     "questionImage": "quiz_images/qlv6_38.png"
   },
   {
@@ -6618,18 +4878,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "初めて圭一をエンジェルモートに連れて行ったのは誰？",
     "questionEn": "Who took Keiichi to Angel Mort for the first time?",
+    "questionRomaji": "hajimete Keiichi wo Enjeru Mooto ni tsurete itta no wa dare?",
     "correctAnswerJp": "圭一の父",
     "correctAnswerEn": "Keiichi's father",
-    "wrongAnswersJp": [
-      "レナ",
-      "魅音",
-      "富竹"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Mion",
-      "Tomitake"
-    ],
+    "correctAnswerRomaji": "Keiichi no chichi",
+    "wrongAnswersJp": ["レナ","魅音","富竹"],
+    "wrongAnswersEn": ["Rena","Mion","Tomitake"],
+    "wrongAnswersRomaji": ["Rena","Mion","Tomitake"],
     "questionImage": "quiz_images/qlv6_39.png"
   },
   {
@@ -6637,18 +4892,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一の父、何が目的でエンジェルモートに通っていた？",
     "questionEn": "What was Keiichi's father's reason for frequenting Angel Mort?",
+    "questionRomaji": "Keiichi no chichi, nani ga mokuteki de Enjeru Mooto ni kayotte ita?",
     "correctAnswerJp": "制服",
     "correctAnswerEn": "Uniform",
-    "wrongAnswersJp": [
-      "Ｖ．Ｇ．",
-      "スイーツ",
-      "ランチ"
-    ],
-    "wrongAnswersEn": [
-      "V.G.",
-      "Sweets",
-      "Lunch"
-    ],
+    "correctAnswerRomaji": "seifuku",
+    "wrongAnswersJp": ["Ｖ．Ｇ．","スイーツ","ランチ"],
+    "wrongAnswersEn": ["V.G.","Sweets","Lunch"],
+    "wrongAnswersRomaji": ["V.G.","suiitsu","ranchi"],
     "questionImage": "quiz_images/qlv6_40.png"
   },
   {
@@ -6656,18 +4906,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一の父、誰に叩かれた事がないと言っていた？",
     "questionEn": "Who did Keiichi's father claim to have never been hit by?",
+    "questionRomaji": "Keiichi no chichi, dare ni tatakare ta koto ga nai to itte ita?",
     "correctAnswerJp": "父さん",
     "correctAnswerEn": "Dad",
-    "wrongAnswersJp": [
-      "母さん",
-      "息子",
-      "女王様"
-    ],
-    "wrongAnswersEn": [
-      "Mom",
-      "Son",
-      "Queen"
-    ],
+    "correctAnswerRomaji": "tou-san",
+    "wrongAnswersJp": ["母さん","息子","女王様"],
+    "wrongAnswersEn": ["Mom","Son","Queen"],
+    "wrongAnswersRomaji": ["kaa-san","musuko","joou-sama"],
     "questionImage": "quiz_images/qlv6_41.png"
   },
   {
@@ -6675,18 +4920,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "レナと圭一、夕飯の買い物中に出会ったのは誰？",
     "questionEn": "Who did Rena and Keiichi run into while shopping for dinner?",
+    "questionRomaji": "Rena to Keiichi, yuuhan no kaimono-chuu ni deatta no wa dare?",
     "correctAnswerJp": "リナ",
     "correctAnswerEn": "Rina",
-    "wrongAnswersJp": [
-      "リサ",
-      "リタ",
-      "メイシェ"
-    ],
-    "wrongAnswersEn": [
-      "Lisa",
-      "Rita",
-      "Meishe"
-    ],
+    "correctAnswerRomaji": "Rina",
+    "wrongAnswersJp": ["リサ","リタ","メイシェ"],
+    "wrongAnswersEn": ["Lisa","Rita","Meishe"],
+    "wrongAnswersRomaji": ["Risa","Rita","Meishe"],
     "questionImage": "quiz_images/qlv6_42.png"
   },
   {
@@ -6694,18 +4934,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "レナが前原家で作ったのは何カレー？",
     "questionEn": "What kind of curry did Rena make at the Maebara household?",
+    "questionRomaji": "Rena ga Maebara-ke de tsukutta no wa nani karee?",
     "correctAnswerJp": "ビーフカレー",
     "correctAnswerEn": "Beef curry",
-    "wrongAnswersJp": [
-      "ポークカレー",
-      "カツカレー",
-      "シーフードカレー"
-    ],
-    "wrongAnswersEn": [
-      "Pork curry",
-      "Katsu curry",
-      "Seafood curry"
-    ],
+    "correctAnswerRomaji": "biifu karee",
+    "wrongAnswersJp": ["ポークカレー","カツカレー","シーフードカレー"],
+    "wrongAnswersEn": ["Pork curry","Katsu curry","Seafood curry"],
+    "wrongAnswersRomaji": ["pooku karee","katsu karee","shiifuudo karee"],
     "questionImage": "quiz_images/qlv6_43.png"
   },
   {
@@ -6713,18 +4948,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "綿流し祭、圭一たちが出店で食べなかった物は？",
     "questionEn": "At the Watanagashi Festival, what did Keiichi and friends NOT eat at the food stalls?",
+    "questionRomaji": "Watanagashi matsuri, Keiichi-tachi ga mise de tabenakatta mono wa?",
     "correctAnswerJp": "ジャガバター",
     "correctAnswerEn": "Butter potato",
-    "wrongAnswersJp": [
-      "たこ焼き",
-      "かき氷",
-      "綿アメ"
-    ],
-    "wrongAnswersEn": [
-      "Takoyaki",
-      "Shaved ice",
-      "Cotton candy"
-    ],
+    "correctAnswerRomaji": "jagabaataa",
+    "wrongAnswersJp": ["たこ焼き","かき氷","綿アメ"],
+    "wrongAnswersEn": ["Takoyaki","Shaved ice","Cotton candy"],
+    "wrongAnswersRomaji": ["takoyaki","kakigoori","wata ame"],
     "questionImage": "quiz_images/qlv6_44.png"
   },
   {
@@ -6732,18 +4962,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一がレナに見せたのは何のキーホルダー？",
     "questionEn": "What kind of keychain did Keiichi show Rena?",
+    "questionRomaji": "Keiichi ga Rena ni miseta no wa nani no kiihoorudaa?",
     "correctAnswerJp": "オットセイ",
     "correctAnswerEn": "Fur seal",
-    "wrongAnswersJp": [
-      "猫",
-      "山羊",
-      "イルカ"
-    ],
-    "wrongAnswersEn": [
-      "Cat",
-      "Goat",
-      "Dolphin"
-    ],
+    "correctAnswerRomaji": "ottose",
+    "wrongAnswersJp": ["猫","山羊","イルカ"],
+    "wrongAnswersEn": ["Cat","Goat","Dolphin"],
+    "wrongAnswersRomaji": ["neko","yagi","iruka"],
     "questionImage": "quiz_images/qlv6_45.png"
   },
   {
@@ -6751,18 +4976,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "富竹を入部させる為に、魅音が認定したのは何？",
     "questionEn": "What did Mion certify Tomitake as in order to let him join the club?",
+    "questionRomaji": "Tomitake wo nyuubu saseru tame ni, Mion ga nintei shita no wa nani?",
     "correctAnswerJp": "名誉市民",
     "correctAnswerEn": "Honorary citizen",
-    "wrongAnswersJp": [
-      "特別メンバー",
-      "一日市民",
-      "特待生"
-    ],
-    "wrongAnswersEn": [
-      "Special member",
-      "Citizen for a day",
-      "Honor student"
-    ],
+    "correctAnswerRomaji": "meiyo shimin",
+    "wrongAnswersJp": ["特別メンバー","一日市民","特待生"],
+    "wrongAnswersEn": ["Special member","Citizen for a day","Honor student"],
+    "wrongAnswersRomaji": ["tokubetsu menbaa","ichinichi shimin","tokutaisei"],
     "questionImage": "quiz_images/qlv6_46.png"
   },
   {
@@ -6770,18 +4990,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一が射的ゲームで獲得した景品は何のヌイグルミ？",
     "questionEn": "What stuffed animal did Keiichi win at the shooting game?",
+    "questionRomaji": "Keiichi ga shateki geemu de kakutoku shita keihin wa nani no nuigurumi?",
     "correctAnswerJp": "クマ",
     "correctAnswerEn": "Bear",
-    "wrongAnswersJp": [
-      "ライオン",
-      "オットセイ",
-      "ペンギン"
-    ],
-    "wrongAnswersEn": [
-      "Lion",
-      "Fur seal",
-      "Penguin"
-    ],
+    "correctAnswerRomaji": "kuma",
+    "wrongAnswersJp": ["ライオン","オットセイ","ペンギン"],
+    "wrongAnswersEn": ["Lion","Fur seal","Penguin"],
+    "wrongAnswersRomaji": ["raion","ottose","pengin"],
     "questionImage": "quiz_images/qlv6_47.png"
   },
   {
@@ -6789,18 +5004,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "雛見沢でのお祭り、町内会の人が丸めて配っている物は？",
     "questionEn": "At the Hinamizawa festival, what do the neighborhood association members roll up and hand out?",
+    "questionRomaji": "Hinamizawa de no omatsuri, chounaikai no hito ga marumete kubatte iru mono wa?",
     "correctAnswerJp": "綿",
     "correctAnswerEn": "Cotton",
-    "wrongAnswersJp": [
-      "餅",
-      "水飴",
-      "てるてる坊主"
-    ],
-    "wrongAnswersEn": [
-      "Mochi",
-      "Mizuame",
-      "Teru-teru bouzu"
-    ],
+    "correctAnswerRomaji": "wata",
+    "wrongAnswersJp": ["餅","水飴","てるてる坊主"],
+    "wrongAnswersEn": ["Mochi","Mizuame","Teru-teru bouzu"],
+    "wrongAnswersRomaji": ["mochi","mizuame","teru-teru bouzu"],
     "questionImage": "quiz_images/qlv6_48.png"
   },
   {
@@ -6808,18 +5018,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "梨花の父親の職業は？",
     "questionEn": "What is Rika's father's occupation?",
+    "questionRomaji": "Rika no chichioya no shokugyou wa?",
     "correctAnswerJp": "神主",
     "correctAnswerEn": "Shinto priest",
-    "wrongAnswersJp": [
-      "行司",
-      "住職",
-      "小料理屋"
-    ],
-    "wrongAnswersEn": [
-      "Referee",
-      "Buddhist priest",
-      "Small restaurant owner"
-    ],
+    "correctAnswerRomaji": "kannushi",
+    "wrongAnswersJp": ["行司","住職","小料理屋"],
+    "wrongAnswersEn": ["Referee","Buddhist priest","Small restaurant owner"],
+    "wrongAnswersRomaji": ["gyouji","juushoku","koryouri-ya"],
     "questionImage": "quiz_images/qlv6_49.png"
   },
   {
@@ -6827,18 +5032,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "診療所の鷹野三四、何を用意して待つと言った？",
     "questionEn": "At the clinic, what did Takano Miyo say she would have ready and waiting?",
+    "questionRomaji": "shinryoujo no Takano Miyo, nani wo youi shite matsu to itta?",
     "correctAnswerJp": "太めの注射針",
     "correctAnswerEn": "Thick injection needle",
-    "wrongAnswersJp": [
-      "苦くないお薬",
-      "痛くない注射針",
-      "熱いほうじ茶"
-    ],
-    "wrongAnswersEn": [
-      "Medicine that isn't bitter",
-      "Painless injection needle",
-      "Hot hojicha tea"
-    ],
+    "correctAnswerRomaji": "futome no chuusha-bari",
+    "wrongAnswersJp": ["苦くないお薬","痛くない注射針","熱いほうじ茶"],
+    "wrongAnswersEn": ["Medicine that isn't bitter","Painless injection needle","Hot hojicha tea"],
+    "wrongAnswersRomaji": ["nigarakunai okusuri","itakunai chuusha-bari","atsui houjicha"],
     "questionImage": "quiz_images/qlv6_50.png"
   },
   {
@@ -6846,18 +5046,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "ダム反対同盟の事務所があったのは何処？",
     "questionEn": "Where was the Dam Opposition Alliance office located?",
+    "questionRomaji": "Damu Hantai Doumei no jimusho ga atta no wa doko?",
     "correctAnswerJp": "古手神社",
     "correctAnswerEn": "Furude Shrine",
-    "wrongAnswersJp": [
-      "園崎家",
-      "雛見沢分校",
-      "公由家"
-    ],
-    "wrongAnswersEn": [
-      "Sonozaki household",
-      "Hinamizawa Branch School",
-      "Kimiyoshi household"
-    ],
+    "correctAnswerRomaji": "Furude jinja",
+    "wrongAnswersJp": ["園崎家","雛見沢分校","公由家"],
+    "wrongAnswersEn": ["Sonozaki household","Hinamizawa Branch School","Kimiyoshi household"],
+    "wrongAnswersRomaji": ["Sonozaki-ke","Hinamizawa bunkou","Kimiyoshi-ke"],
     "questionImage": "quiz_images/qlv6_51.png"
   },
   {
@@ -6865,18 +5060,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一が「オヤシロさま」の話を聞いた時、居なかったのは誰？",
     "questionEn": "Who was absent when Keiichi heard the story of Oyashiro-sama?",
+    "questionRomaji": "Keiichi ga \"Oyashiro-sama\" no hanashi wo kiita toki, inakatta no wa dare?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "富竹",
-      "鷹野",
-      "詩音"
-    ],
-    "wrongAnswersEn": [
-      "Tomitake",
-      "Takano",
-      "Shion"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["富竹","鷹野","詩音"],
+    "wrongAnswersEn": ["Tomitake","Takano","Shion"],
+    "wrongAnswersRomaji": ["Tomitake","Takano","Shion"],
     "questionImage": "quiz_images/qlv6_52.png"
   },
   {
@@ -6884,18 +5074,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "圭一が知恵先生を怒らせたカレーに対する一言は？",
     "questionEn": "What remark about curry made Keiichi anger Ms. Chie?",
+    "questionRomaji": "Keiichi ga Chie-sensei wo okoraseta karee ni taisuru hitokoto wa?",
     "correctAnswerJp": "ジャンクフード",
     "correctAnswerEn": "Junk food",
-    "wrongAnswersJp": [
-      "スローフード",
-      "ファーストフード",
-      "ソウルフード"
-    ],
-    "wrongAnswersEn": [
-      "Slow food",
-      "Fast food",
-      "Soul food"
-    ],
+    "correctAnswerRomaji": "janku fuudo",
+    "wrongAnswersJp": ["スローフード","ファーストフード","ソウルフード"],
+    "wrongAnswersEn": ["Slow food","Fast food","Soul food"],
+    "wrongAnswersRomaji": ["suroo fuudo","faasuto fuudo","souru fuudo"],
     "questionImage": "quiz_images/qlv6_53.png"
   },
   {
@@ -6903,18 +5088,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "この文字、なんて読む？　呵責",
     "questionEn": "How do you read this word? Kashaku (remorse)",
+    "questionRomaji": "kono moji, nante yomu? Kashaku",
     "correctAnswerJp": "かしゃく",
     "correctAnswerEn": "Kashaku",
-    "wrongAnswersJp": [
-      "かせき",
-      "かっせき",
-      "どなりぜめ"
-    ],
-    "wrongAnswersEn": [
-      "Kaseki",
-      "Kasseki",
-      "Donarizeme"
-    ],
+    "correctAnswerRomaji": "kashaku",
+    "wrongAnswersJp": ["かせき","かっせき","どなりぜめ"],
+    "wrongAnswersEn": ["Kaseki","Kasseki","Donarizeme"],
+    "wrongAnswersRomaji": ["kaseki","kasseki","donarizeme"],
     "questionImage": "quiz_images/qlv6_54.png"
   },
   {
@@ -6922,18 +5102,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "この文字、なんて読む？　入水",
     "questionEn": "How do you read this word? Juusui (drowning)",
+    "questionRomaji": "kono moji, nante yomu? Juusui",
     "correctAnswerJp": "じゅすい",
     "correctAnswerEn": "Jusui",
-    "wrongAnswersJp": [
-      "にゅうすい",
-      "いりみず",
-      "いりすい"
-    ],
-    "wrongAnswersEn": [
-      "Nyuusui",
-      "Irimizu",
-      "Irisui"
-    ],
+    "correctAnswerRomaji": "jusui",
+    "wrongAnswersJp": ["にゅうすい","いりみず","いりすい"],
+    "wrongAnswersEn": ["Nyuusui","Irimizu","Irisui"],
+    "wrongAnswersRomaji": ["nyuusui","irimizu","irisui"],
     "questionImage": "quiz_images/qlv6_55.png"
   },
   {
@@ -6941,18 +5116,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "この文字、なんて読む？　絨毯",
     "questionEn": "How do you read this word? Juutan (carpet)",
+    "questionRomaji": "kono moji, nante yomu? Juutan",
     "correctAnswerJp": "じゅうたん",
     "correctAnswerEn": "Juutan",
-    "wrongAnswersJp": [
-      "じゅうだん",
-      "けむしろ",
-      "せんい"
-    ],
-    "wrongAnswersEn": [
-      "Juudan",
-      "Kemushiro",
-      "Sen'i"
-    ],
+    "correctAnswerRomaji": "juutan",
+    "wrongAnswersJp": ["じゅうだん","けむしろ","せんい"],
+    "wrongAnswersEn": ["Juudan","Kemushiro","Sen'i"],
+    "wrongAnswersRomaji": ["juudan","kemushiro","sen'i"],
     "questionImage": "quiz_images/qlv6_56.png"
   },
   {
@@ -6960,18 +5130,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "この文字、なんて読む？　卑劣漢",
     "questionEn": "How do you read this word? Hiretsu-kan (scoundrel)",
+    "questionRomaji": "kono moji, nante yomu? Hiretsukan",
     "correctAnswerJp": "ひれつかん",
     "correctAnswerEn": "Hiretsukan",
-    "wrongAnswersJp": [
-      "くず",
-      "ひれつおとこ",
-      "ひじゃくかん"
-    ],
-    "wrongAnswersEn": [
-      "Scum",
-      "Hiretsu otoko",
-      "Hijakukan"
-    ],
+    "correctAnswerRomaji": "hiretsukan",
+    "wrongAnswersJp": ["くず","ひれつおとこ","ひじゃくかん"],
+    "wrongAnswersEn": ["Scum","Hiretsu otoko","Hijakukan"],
+    "wrongAnswersRomaji": ["kuzu","hiretsu otoko","hijakukan"],
     "questionImage": "quiz_images/qlv6_57.png"
   },
   {
@@ -6979,18 +5144,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "詩音",
-      "美音",
-      "海音"
-    ],
-    "wrongAnswersEn": [
-      "Shion",
-      "Mion (alt.)",
-      "Mion (alt.)"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["詩音","美音","海音"],
+    "wrongAnswersEn": ["Shion","Mion (alt.)","Mion (alt.)"],
+    "wrongAnswersRomaji": ["Shion","Mion","Mion"],
     "questionImage": "quiz_images/qlv6_58.png"
   },
   {
@@ -6998,18 +5158,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "利香",
-      "理香",
-      "花梨"
-    ],
-    "wrongAnswersEn": [
-      "Rika (alt.)",
-      "Rika (alt.)",
-      "Karin"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["利香","理香","花梨"],
+    "wrongAnswersEn": ["Rika (alt.)","Rika (alt.)","Karin"],
+    "wrongAnswersRomaji": ["Rika","Rika","Karin"],
     "questionImage": "quiz_images/qlv6_59.png"
   },
   {
@@ -7017,18 +5172,13 @@ export const entries: Entry[] = [
     "level": 6,
     "questionJp": "このキャラは誰？",
     "questionEn": "Who is this character?",
+    "questionRomaji": "kono kyara wa dare?",
     "correctAnswerJp": "吉村",
     "correctAnswerEn": "Yoshimura",
-    "wrongAnswersJp": [
-      "吉岡",
-      "有村",
-      "荒川"
-    ],
-    "wrongAnswersEn": [
-      "Yoshioka",
-      "Arimura",
-      "Arakawa"
-    ],
+    "correctAnswerRomaji": "Yoshimura",
+    "wrongAnswersJp": ["吉岡","有村","荒川"],
+    "wrongAnswersEn": ["Yoshioka","Arimura","Arakawa"],
+    "wrongAnswersRomaji": ["Yoshioka","Arimura","Arakawa"],
     "questionImage": "quiz_images/qlv6_60.png"
   },
   {
@@ -7036,18 +5186,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一が飯ごうで炊くごはん、何仕込み？",
     "questionEn": "When Keiichi cooks rice in a mess tin, what style of preparation is it?",
+    "questionRomaji": "Keiichi ga hangou de taku gohan, nani jikomi?",
     "correctAnswerJp": "デイキャンプ",
     "correctAnswerEn": "Day camp",
-    "wrongAnswersJp": [
-      "ブートキャンプ",
-      "ゆるキャン",
-      "オートキャンプ"
-    ],
-    "wrongAnswersEn": [
-      "Boot camp",
-      "Laid-Back Camp",
-      "Auto camping"
-    ],
+    "correctAnswerRomaji": "dei kyanpu",
+    "wrongAnswersJp": ["ブートキャンプ","ゆるキャン","オートキャンプ"],
+    "wrongAnswersEn": ["Boot camp","Laid-Back Camp","Auto camping"],
+    "wrongAnswersRomaji": ["buuto kyanpu","yuru kyan","ootoo kyanpu"],
     "questionImage": "quiz_images/qlv7_01.png"
   },
   {
@@ -7055,18 +5200,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "梨花が真似た蛇の鳴き声は何？",
     "questionEn": "What sound did Rika make when imitating a snake?",
+    "questionRomaji": "Rika ga maneta hebi no nakigoe wa nani?",
     "correctAnswerJp": "がおー",
     "correctAnswerEn": "Rawr",
-    "wrongAnswersJp": [
-      "シャアアア",
-      "にょろにょろ",
-      "ゲロゲロ"
-    ],
-    "wrongAnswersEn": [
-      "Shaaa",
-      "Slither slither",
-      "Ribbit ribbit"
-    ],
+    "correctAnswerRomaji": "gaoo",
+    "wrongAnswersJp": ["シャアアア","にょろにょろ","ゲロゲロ"],
+    "wrongAnswersEn": ["Shaaa","Slither slither","Ribbit ribbit"],
+    "wrongAnswersRomaji": ["shaaa","nyoronyoro","gero gero"],
     "questionImage": "quiz_images/qlv7_02.png"
   },
   {
@@ -7074,18 +5214,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "カレー勝負、魅音が仕込んだのは何？",
     "questionEn": "In the curry contest, what did Mion sneak in?",
+    "questionRomaji": "karee shoubu, Mion ga shikonda no wa nani?",
     "correctAnswerJp": "ハンバーグ",
     "correctAnswerEn": "Hamburg steak",
-    "wrongAnswersJp": [
-      "ロースカツ",
-      "エビフライ",
-      "ウスターソース"
-    ],
-    "wrongAnswersEn": [
-      "Loin cutlet",
-      "Fried shrimp",
-      "Worcestershire sauce"
-    ],
+    "correctAnswerRomaji": "hanbaagu",
+    "wrongAnswersJp": ["ロースカツ","エビフライ","ウスターソース"],
+    "wrongAnswersEn": ["Loin cutlet","Fried shrimp","Worcestershire sauce"],
+    "wrongAnswersRomaji": ["roosukatsu","ebi furai","Usutaa soosu"],
     "questionImage": "quiz_images/qlv7_03.png"
   },
   {
@@ -7093,18 +5228,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "カレー勝負、圭一のおにぎりは何点だった？",
     "questionEn": "In the curry contest, how many points did Keiichi's rice ball get?",
+    "questionRomaji": "karee shoubu, Keiichi no onigiri wa nanten datta?",
     "correctAnswerJp": "100点",
     "correctAnswerEn": "100 points",
-    "wrongAnswersJp": [
-      "10点",
-      "0点",
-      "及第点"
-    ],
-    "wrongAnswersEn": [
-      "10 points",
-      "0 points",
-      "Passing grade"
-    ],
+    "correctAnswerRomaji": "100-ten",
+    "wrongAnswersJp": ["10点","0点","及第点"],
+    "wrongAnswersEn": ["10 points","0 points","Passing grade"],
+    "wrongAnswersRomaji": ["10-ten","0-ten","kyuudai-ten"],
     "questionImage": "quiz_images/qlv7_04.png"
   },
   {
@@ -7112,18 +5242,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "空腹の圭一、詩音が差し入れた物は？",
     "questionEn": "When Keiichi was hungry, what did Shion bring him?",
+    "questionRomaji": "kuufuku no Keiichi, Shion ga sashiireta mono wa?",
     "correctAnswerJp": "手作り弁当",
     "correctAnswerEn": "Homemade bento",
-    "wrongAnswersJp": [
-      "カップ麺",
-      "おはぎ",
-      "ホールケーキ"
-    ],
-    "wrongAnswersEn": [
-      "Cup noodles",
-      "Ohagi",
-      "Whole cake"
-    ],
+    "correctAnswerRomaji": "tezukuri bentou",
+    "wrongAnswersJp": ["カップ麺","おはぎ","ホールケーキ"],
+    "wrongAnswersEn": ["Cup noodles","Ohagi","Whole cake"],
+    "wrongAnswersRomaji": ["kappu men","ohagi","hooru keeki"],
     "questionImage": "quiz_images/qlv7_05.png"
   },
   {
@@ -7131,18 +5256,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "雛見沢分校、チャイム代わりの振鈴は誰が鳴らしている？",
     "questionEn": "At Hinamizawa Branch School, who rings the hand bell in place of a chime?",
+    "questionRomaji": "Hinamizawa bunkou, chaimu kawari no furin wa dare ga narashite iru?",
     "correctAnswerJp": "校長",
     "correctAnswerEn": "Principal",
-    "wrongAnswersJp": [
-      "知恵",
-      "校医",
-      "日直"
-    ],
-    "wrongAnswersEn": [
-      "Chie",
-      "School doctor",
-      "Student on duty"
-    ],
+    "correctAnswerRomaji": "kouchou",
+    "wrongAnswersJp": ["知恵","校医","日直"],
+    "wrongAnswersEn": ["Chie","School doctor","Student on duty"],
+    "wrongAnswersRomaji": ["Chie","kooui","nitchoku"],
     "questionImage": "quiz_images/qlv7_06.png"
   },
   {
@@ -7150,18 +5270,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一が作ったオットセイのキーホルダー、色は何色？",
     "questionEn": "What color was the fur seal keychain Keiichi made?",
+    "questionRomaji": "Keiichi ga tsukutta ottose no kiihoorudaa, iro wa nani-iro?",
     "correctAnswerJp": "青",
     "correctAnswerEn": "Blue",
-    "wrongAnswersJp": [
-      "黄",
-      "黒",
-      "茶"
-    ],
-    "wrongAnswersEn": [
-      "Yellow",
-      "Black",
-      "Brown"
-    ],
+    "correctAnswerRomaji": "ao",
+    "wrongAnswersJp": ["黄","黒","茶"],
+    "wrongAnswersEn": ["Yellow","Black","Brown"],
+    "wrongAnswersRomaji": ["ki","kuro","cha"],
     "questionImage": "quiz_images/qlv7_07.png"
   },
   {
@@ -7169,18 +5284,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一が興宮に行くときの移動手段は？",
     "questionEn": "How does Keiichi get to Okinomiya?",
+    "questionRomaji": "Keiichi ga Okinomiya ni iku toki no idou shudan wa?",
     "correctAnswerJp": "自転車",
     "correctAnswerEn": "Bicycle",
-    "wrongAnswersJp": [
-      "ローラースケート",
-      "徒歩",
-      "小走り"
-    ],
-    "wrongAnswersEn": [
-      "Roller skates",
-      "On foot",
-      "Light jog"
-    ],
+    "correctAnswerRomaji": "jitensha",
+    "wrongAnswersJp": ["ローラースケート","徒歩","小走り"],
+    "wrongAnswersEn": ["Roller skates","On foot","Light jog"],
+    "wrongAnswersRomaji": ["rooraa sukeeto","toho","kobashiri"],
     "questionImage": "quiz_images/qlv7_08.png"
   },
   {
@@ -7188,18 +5298,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "興宮で考え事をしていた圭一、何にぶつかってしまった？",
     "questionEn": "While lost in thought in Okinomiya, what did Keiichi bump into?",
+    "questionRomaji": "Okinomiya de kangaegoto wo shite ita Keiichi, nani ni butsukatte shimatta?",
     "correctAnswerJp": "バイク",
     "correctAnswerEn": "Motorcycle",
-    "wrongAnswersJp": [
-      "自転車",
-      "工事の看板",
-      "スポーツカー"
-    ],
-    "wrongAnswersEn": [
-      "Bicycle",
-      "Construction sign",
-      "Sports car"
-    ],
+    "correctAnswerRomaji": "baiku",
+    "wrongAnswersJp": ["自転車","工事の看板","スポーツカー"],
+    "wrongAnswersEn": ["Bicycle","Construction sign","Sports car"],
+    "wrongAnswersRomaji": ["jitensha","kouji no kanban","supootsu kaa"],
     "questionImage": "quiz_images/qlv7_09.png"
   },
   {
@@ -7207,18 +5312,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "大石に連行された不良、詩音が投げた台詞は？",
     "questionEn": "When the delinquent was hauled away by Oishi, what line did Shion throw at him?",
+    "questionRomaji": "Oishi ni renkou sareta furyou, Shion ga nageta serifu wa?",
     "correctAnswerJp": "おととい来やがれ",
     "correctAnswerEn": "Get lost!",
-    "wrongAnswersJp": [
-      "目障りだ、失せろ",
-      "凄い漢だ",
-      "私一人で充分だ"
-    ],
-    "wrongAnswersEn": [
-      "You're an eyesore, get lost",
-      "What a man!",
-      "I alone am enough"
-    ],
+    "correctAnswerRomaji": "ototoi ki yagare",
+    "wrongAnswersJp": ["目障りだ、失せろ","凄い漢だ","私一人で充分だ"],
+    "wrongAnswersEn": ["You're an eyesore, get lost","What a man!","I alone am enough"],
+    "wrongAnswersRomaji": ["mezawari da, usero","sugoi otoko da","watashi hitori de juubun da"],
     "questionImage": "quiz_images/qlv7_10.png"
   },
   {
@@ -7226,18 +5326,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "詩音に迫る不良、圭一はなんと言いくるめようとした？",
     "questionEn": "When delinquents were closing in on Shion, what did Keiichi try to talk his way out of?",
+    "questionRomaji": "Shion ni semaru furyou, Keiichi wa nanto iikurumeyou to shita?",
     "correctAnswerJp": "着衣の重要性",
     "correctAnswerEn": "The importance of clothing",
-    "wrongAnswersJp": [
-      "水着の重要性",
-      "メイド服の重要性",
-      "ねこ耳の重要性"
-    ],
-    "wrongAnswersEn": [
-      "The importance of swimsuits",
-      "The importance of maid outfits",
-      "The importance of cat ears"
-    ],
+    "correctAnswerRomaji": "chakui no juuyousei",
+    "wrongAnswersJp": ["水着の重要性","メイド服の重要性","ねこ耳の重要性"],
+    "wrongAnswersEn": ["The importance of swimsuits","The importance of maid outfits","The importance of cat ears"],
+    "wrongAnswersRomaji": ["mizugi no juuyousei","meido-fuku no juuyousei","neko-mimi no juuyousei"],
     "questionImage": "quiz_images/qlv7_11.png"
   },
   {
@@ -7245,18 +5340,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一に助けられた詩音、何を奢ってくれた？",
     "questionEn": "After Keiichi helped Shion, what did she treat him to?",
+    "questionRomaji": "Keiichi ni tasukerareta Shion, nani wo ogotte kureta?",
     "correctAnswerJp": "アイスコーヒー",
     "correctAnswerEn": "Iced coffee",
-    "wrongAnswersJp": [
-      "オムライス",
-      "苺ショート",
-      "うどんの出汁"
-    ],
-    "wrongAnswersEn": [
-      "Omurice",
-      "Strawberry shortcake",
-      "Udon broth"
-    ],
+    "correctAnswerRomaji": "aisu koohii",
+    "wrongAnswersJp": ["オムライス","苺ショート","うどんの出汁"],
+    "wrongAnswersEn": ["Omurice","Strawberry shortcake","Udon broth"],
+    "wrongAnswersRomaji": ["omuraisu","ichigo shooto","udon no dashi"],
     "questionImage": "quiz_images/qlv7_12.png"
   },
   {
@@ -7264,18 +5354,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "デザートフェスタ、運ばれてきたのは「南国風シナモンの」何？",
     "questionEn": "During the dessert festival, what \"tropical cinnamon\" dish was brought out?",
+    "questionRomaji": "dezaato fesuta, hakobarete kita no wa \"nangoku-fuu shinamon no\" nani?",
     "correctAnswerJp": "アバンチュール",
     "correctAnswerEn": "Aventure",
-    "wrongAnswersJp": [
-      "レッセフェール",
-      "スリール",
-      "ジョリフィーユ"
-    ],
-    "wrongAnswersEn": [
-      "Laissez-faire",
-      "Sourire",
-      "Jolie Fille"
-    ],
+    "correctAnswerRomaji": "Abanchuuru",
+    "wrongAnswersJp": ["レッセフェール","スリール","ジョリフィーユ"],
+    "wrongAnswersEn": ["Laissez-faire","Sourire","Jolie Fille"],
+    "wrongAnswersRomaji": ["Ressefeeru","Suriiru","Jorifiiyu"],
     "questionImage": "quiz_images/qlv7_13.png"
   },
   {
@@ -7283,18 +5368,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "デザートフェスタ、料理をこぼされたズボンの値段は？",
     "questionEn": "During the dessert festival, how much were the pants that got food spilled on them?",
+    "questionRomaji": "dezaato fesuta, ryouri wo kobosa reta zubon no nedan wa?",
     "correctAnswerJp": "1,800円",
     "correctAnswerEn": "1,800 yen",
-    "wrongAnswersJp": [
-      "2,980円",
-      "49,800円",
-      "980円"
-    ],
-    "wrongAnswersEn": [
-      "2,980 yen",
-      "49,800 yen",
-      "980 yen"
-    ],
+    "correctAnswerRomaji": "1,800-en",
+    "wrongAnswersJp": ["2,980円","49,800円","980円"],
+    "wrongAnswersEn": ["2,980 yen","49,800 yen","980 yen"],
+    "wrongAnswersRomaji": ["2,980-en","49,800-en","980-en"],
     "questionImage": "quiz_images/qlv7_14.png"
   },
   {
@@ -7302,18 +5382,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "デザートフェスタ、店内に響いたのは何コール？",
     "questionEn": "During the dessert festival, what chant echoed through the restaurant?",
+    "questionRomaji": "dezaato fesuta, tennai ni hibiiita no wa nani kooru?",
     "correctAnswerJp": "フキフキ！",
     "correctAnswerEn": "Wipe wipe!",
-    "wrongAnswersJp": [
-      "ヌギヌギ！",
-      "ブギウギ！",
-      "ブリキー！"
-    ],
-    "wrongAnswersEn": [
-      "Strip strip!",
-      "Boogie woogie!",
-      "Blicky!"
-    ],
+    "correctAnswerRomaji": "Fukifuki!",
+    "wrongAnswersJp": ["ヌギヌギ！","ブギウギ！","ブリキー！"],
+    "wrongAnswersEn": ["Strip strip!","Boogie woogie!","Blicky!"],
+    "wrongAnswersRomaji": ["Nuginugi!","Bugi Ugi!","Burikii!"],
     "questionImage": "quiz_images/qlv7_15.png"
   },
   {
@@ -7321,18 +5396,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "デザートフェスタ、ピンチに陥った圭一、誰に助けを求めた？",
     "questionEn": "During the dessert festival, when Keiichi was in a pinch, who did he ask for help?",
+    "questionRomaji": "dezaato fesuta, pinchi ni ochiitta Keiichi, dare ni tasuke wo motometa?",
     "correctAnswerJp": "部活メンバー",
     "correctAnswerEn": "Club members",
-    "wrongAnswersJp": [
-      "父親",
-      "暗黒四天王",
-      "校長"
-    ],
-    "wrongAnswersEn": [
-      "Father",
-      "Dark Four Heavenly Kings",
-      "Principal"
-    ],
+    "correctAnswerRomaji": "bukatsu menbaa",
+    "wrongAnswersJp": ["父親","暗黒四天王","校長"],
+    "wrongAnswersEn": ["Father","Dark Four Heavenly Kings","Principal"],
+    "wrongAnswersRomaji": ["chichioya","ankoku shitennou","kouchou"],
     "questionImage": "quiz_images/qlv7_16.png"
   },
   {
@@ -7340,18 +5410,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "両親の上京中、圭一のご飯を作りに来てくれたのは誰？",
     "questionEn": "While his parents were away in Tokyo, who came to cook for Keiichi?",
+    "questionRomaji": "ryoushin no joukyou-chuu, Keiichi no gohan wo tsukuri ni kite kureta no wa dare?",
     "correctAnswerJp": "沙都子と梨花",
     "correctAnswerEn": "Satoko and Rika",
-    "wrongAnswersJp": [
-      "レナと魅音",
-      "魅音と詩音",
-      "富竹と鷹野"
-    ],
-    "wrongAnswersEn": [
-      "Rena and Mion",
-      "Mion and Shion",
-      "Tomitake and Takano"
-    ],
+    "correctAnswerRomaji": "Satoko to Rika",
+    "wrongAnswersJp": ["レナと魅音","魅音と詩音","富竹と鷹野"],
+    "wrongAnswersEn": ["Rena and Mion","Mion and Shion","Tomitake and Takano"],
+    "wrongAnswersRomaji": ["Rena to Mion","Mion to Shion","Tomitake to Takano"],
     "questionImage": "quiz_images/qlv7_17.png"
   },
   {
@@ -7359,18 +5424,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "沙都子、寝る前に何分歯を磨けと言った？",
     "questionEn": "How many minutes did Satoko say you should brush your teeth before bed?",
+    "questionRomaji": "Satoko, neru mae ni nani-fun ha wo migake to itta?",
     "correctAnswerJp": "5分以上",
     "correctAnswerEn": "Over 5 minutes",
-    "wrongAnswersJp": [
-      "1分以内",
-      "3分以上",
-      "気の済むまで"
-    ],
-    "wrongAnswersEn": [
-      "Within 1 minute",
-      "Over 3 minutes",
-      "Until satisfied"
-    ],
+    "correctAnswerRomaji": "5-fun ijou",
+    "wrongAnswersJp": ["1分以内","3分以上","気の済むまで"],
+    "wrongAnswersEn": ["Within 1 minute","Over 3 minutes","Until satisfied"],
+    "wrongAnswersRomaji": ["1-pun inai","3-pun ijou","ki no sumu made"],
     "questionImage": "quiz_images/qlv7_18.png"
   },
   {
@@ -7378,18 +5438,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "沙都子、兄の事をなんと呼んでいる？",
     "questionEn": "What does Satoko call her brother?",
+    "questionRomaji": "Satoko, ani no koto wo nanto yonde iru?",
     "correctAnswerJp": "にーにー",
     "correctAnswerEn": "Nii-nii",
-    "wrongAnswersJp": [
-      "あにぃ",
-      "にいや",
-      "あにしゃん"
-    ],
-    "wrongAnswersEn": [
-      "Anii",
-      "Niiya",
-      "Anishan"
-    ],
+    "correctAnswerRomaji": "nii-nii",
+    "wrongAnswersJp": ["あにぃ","にいや","あにしゃん"],
+    "wrongAnswersEn": ["Anii","Niiya","Anishan"],
+    "wrongAnswersRomaji": ["anii","niiya","anishan"],
     "questionImage": "quiz_images/qlv7_19.png"
   },
   {
@@ -7397,18 +5452,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "弁当勝負、レナの作ったお弁当は？",
     "questionEn": "In the bento contest, what bento did Rena make?",
+    "questionRomaji": "bentou shoubu, Rena no tsukutta obentou wa?",
     "correctAnswerJp": "そぼろ弁当",
     "correctAnswerEn": "Soboro bento",
-    "wrongAnswersJp": [
-      "肉巻きお握り",
-      "熊肉重",
-      "サンドイッチ"
-    ],
-    "wrongAnswersEn": [
-      "Meat-wrapped onigiri",
-      "Bear meat rice bowl",
-      "Sandwich"
-    ],
+    "correctAnswerRomaji": "soboro bentou",
+    "wrongAnswersJp": ["肉巻きお握り","熊肉重","サンドイッチ"],
+    "wrongAnswersEn": ["Meat-wrapped onigiri","Bear meat rice bowl","Sandwich"],
+    "wrongAnswersRomaji": ["niku-maki onigiri","kuma-niku juu","sandoicchi"],
     "questionImage": "quiz_images/qlv7_20.png"
   },
   {
@@ -7416,18 +5466,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "弁当勝負、圭一のお弁当に足りない物は何？",
     "questionEn": "In the bento contest, what was Keiichi's bento lacking?",
+    "questionRomaji": "bentou shoubu, Keiichi no obentou ni tarinai mono wa nani?",
     "correctAnswerJp": "彩り",
     "correctAnswerEn": "Color variety",
-    "wrongAnswersJp": [
-      "炭水化物",
-      "緑黄色野菜",
-      "バランス"
-    ],
-    "wrongAnswersEn": [
-      "Carbohydrates",
-      "Green and yellow vegetables",
-      "Balance"
-    ],
+    "correctAnswerRomaji": "irodori",
+    "wrongAnswersJp": ["炭水化物","緑黄色野菜","バランス"],
+    "wrongAnswersEn": ["Carbohydrates","Green and yellow vegetables","Balance"],
+    "wrongAnswersRomaji": ["tansuikabutsu","ryokuoushoku yasai","baransu"],
     "questionImage": "quiz_images/qlv7_21.png"
   },
   {
@@ -7435,18 +5480,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "弁当勝負、魅音からビリを宣言されたのは誰？",
     "questionEn": "In the bento contest, who did Mion declare to be in last place?",
+    "questionRomaji": "bentou shoubu, Mion kara biri wo sengen sareta no wa dare?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "沙都子",
-      "圭一",
-      "沙都子＆梨花"
-    ],
-    "wrongAnswersEn": [
-      "Satoko",
-      "Keiichi",
-      "Satoko & Rika"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["沙都子","圭一","沙都子＆梨花"],
+    "wrongAnswersEn": ["Satoko","Keiichi","Satoko & Rika"],
+    "wrongAnswersRomaji": ["Satoko","Keiichi","Satoko & Rika"],
     "questionImage": "quiz_images/qlv7_22.png"
   },
   {
@@ -7454,18 +5494,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一が沙都子にリクエストした料理は何？",
     "questionEn": "What dish did Keiichi request Satoko to make?",
+    "questionRomaji": "Keiichi ga Satoko ni rikuesuto shita ryouri wa nani?",
     "correctAnswerJp": "野菜炒め",
     "correctAnswerEn": "Stir-fried vegetables",
-    "wrongAnswersJp": [
-      "チースー飯",
-      "五目うま煮ご飯",
-      "酢豚"
-    ],
-    "wrongAnswersEn": [
-      "Cheesu rice",
-      "Gomoku rice",
-      "Sweet and sour pork"
-    ],
+    "correctAnswerRomaji": "yasai itame",
+    "wrongAnswersJp": ["チースー飯","五目うま煮ご飯","酢豚"],
+    "wrongAnswersEn": ["Cheesu rice","Gomoku rice","Sweet and sour pork"],
+    "wrongAnswersRomaji": ["chiisuu meshi","gomoku umani gohan","subuta"],
     "questionImage": "quiz_images/qlv7_23.png"
   },
   {
@@ -7473,18 +5508,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "沙都子との食事中、席を立った圭一は何処へ行くと言った？",
     "questionEn": "During a meal with Satoko, where did Keiichi say he was going when he left his seat?",
+    "questionRomaji": "Satoko to no shokuji-chuu, seki wo tatta Keiichi wa doko e iku to itta?",
     "correctAnswerJp": "トイレ",
     "correctAnswerEn": "Toilet",
-    "wrongAnswersJp": [
-      "せっちん",
-      "厠",
-      "お便所"
-    ],
-    "wrongAnswersEn": [
-      "Setchin",
-      "Outhouse",
-      "Restroom"
-    ],
+    "correctAnswerRomaji": "toire",
+    "wrongAnswersJp": ["せっちん","厠","お便所"],
+    "wrongAnswersEn": ["Setchin","Outhouse","Restroom"],
+    "wrongAnswersRomaji": ["setchin","kawaya","obenjo"],
     "questionImage": "quiz_images/qlv7_24.png"
   },
   {
@@ -7492,18 +5522,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一の両親が家を空けた期間は？",
     "questionEn": "How long were Keiichi's parents away from home?",
+    "questionRomaji": "Keiichi no ryoushin ga ie wo aketa kikan wa?",
     "correctAnswerJp": "二晩",
     "correctAnswerEn": "Two nights",
-    "wrongAnswersJp": [
-      "七日",
-      "半日",
-      "一ヶ月"
-    ],
-    "wrongAnswersEn": [
-      "Seven days",
-      "Half a day",
-      "One month"
-    ],
+    "correctAnswerRomaji": "futaban",
+    "wrongAnswersJp": ["七日","半日","一ヶ月"],
+    "wrongAnswersEn": ["Seven days","Half a day","One month"],
+    "wrongAnswersRomaji": ["nanoka","hannichi","ikkagetsu"],
     "questionImage": "quiz_images/qlv7_25.png"
   },
   {
@@ -7511,18 +5536,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一の家で開かれていたのは何？",
     "questionEn": "What was held at Keiichi's house?",
+    "questionRomaji": "Keiichi no ie de hirakarete ita no wa nani?",
     "correctAnswerJp": "パーティー",
     "correctAnswerEn": "Party",
-    "wrongAnswersJp": [
-      "オフ会",
-      "三者面談",
-      "親族会議"
-    ],
-    "wrongAnswersEn": [
-      "Offline meetup",
-      "Three-way meeting",
-      "Family council"
-    ],
+    "correctAnswerRomaji": "paatii",
+    "wrongAnswersJp": ["オフ会","三者面談","親族会議"],
+    "wrongAnswersEn": ["Offline meetup","Three-way meeting","Family council"],
+    "wrongAnswersRomaji": ["ofu-kai","sanshamondaan","shinzoku kaigi"],
     "questionImage": "quiz_images/qlv7_26.png"
   },
   {
@@ -7530,18 +5550,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "興宮小学校のグランドに呼び出された圭一、何を持ってきた？",
     "questionEn": "When called out to the Okinomiya Elementary School grounds, what did Keiichi bring?",
+    "questionRomaji": "Okinomiya shougakkou no gurando ni yobidasareta Keiichi, nani wo motte kita?",
     "correctAnswerJp": "ゴルフクラブ",
     "correctAnswerEn": "Golf club",
-    "wrongAnswersJp": [
-      "金属バット",
-      "鉄パイプ",
-      "水鉄砲"
-    ],
-    "wrongAnswersEn": [
-      "Metal bat",
-      "Iron pipe",
-      "Water gun"
-    ],
+    "correctAnswerRomaji": "gorufu kurabu",
+    "wrongAnswersJp": ["金属バット","鉄パイプ","水鉄砲"],
+    "wrongAnswersEn": ["Metal bat","Iron pipe","Water gun"],
+    "wrongAnswersRomaji": ["kinzoku batto","tetsu paipu","mizudeppou"],
     "questionImage": "quiz_images/qlv7_27.png"
   },
   {
@@ -7549,18 +5564,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "沙都子、遅れてきた圭一を何に例えた？",
     "questionEn": "What did Satoko compare the late-arriving Keiichi to?",
+    "questionRomaji": "Satoko, okurete kita Keiichi wo nani ni tatoe ta?",
     "correctAnswerJp": "ガソリンスタンド",
     "correctAnswerEn": "Gas station",
-    "wrongAnswersJp": [
-      "スーパー",
-      "市民プール",
-      "野球場"
-    ],
-    "wrongAnswersEn": [
-      "Supermarket",
-      "Public pool",
-      "Baseball stadium"
-    ],
+    "correctAnswerRomaji": "gasorin sutando",
+    "wrongAnswersJp": ["スーパー","市民プール","野球場"],
+    "wrongAnswersEn": ["Supermarket","Public pool","Baseball stadium"],
+    "wrongAnswersRomaji": ["suupaa","shimin puuru","yakyuujou"],
     "questionImage": "quiz_images/qlv7_28.png"
   },
   {
@@ -7568,18 +5578,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "興宮タイタンズ、亀田君の異名は？",
     "questionEn": "On the Okinomiya Titans, what was Kameda's nickname?",
+    "questionRomaji": "Okinomiya Taitanzu, Kameda-kun no iimyou wa?",
     "correctAnswerJp": "弾丸直球",
     "correctAnswerEn": "Bullet fastball",
-    "wrongAnswersJp": [
-      "ひげそり投法",
-      "フォークの神様",
-      "ケンカ投法"
-    ],
-    "wrongAnswersEn": [
-      "Razor pitching",
-      "God of the forkball",
-      "Brawler pitching"
-    ],
+    "correctAnswerRomaji": "dangan chokkyuu",
+    "wrongAnswersJp": ["ひげそり投法","フォークの神様","ケンカ投法"],
+    "wrongAnswersEn": ["Razor pitching","God of the forkball","Brawler pitching"],
+    "wrongAnswersRomaji": ["higesori touhou","fooku no kamisama","kenka touhou"],
     "questionImage": "quiz_images/qlv7_29.png"
   },
   {
@@ -7587,18 +5592,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "前原圭一、喧嘩と勘違いしたのは何？",
     "questionEn": "What did Keiichi Maebara mistake for a fight?",
+    "questionRomaji": "Maebara Keiichi, kenka to kanchigai shita no wa nani?",
     "correctAnswerJp": "野球",
     "correctAnswerEn": "Baseball",
-    "wrongAnswersJp": [
-      "サッカー",
-      "バスケットボール",
-      "ポケバイレース"
-    ],
-    "wrongAnswersEn": [
-      "Soccer",
-      "Basketball",
-      "Pocket bike race"
-    ],
+    "correctAnswerRomaji": "yakyuu",
+    "wrongAnswersJp": ["サッカー","バスケットボール","ポケバイレース"],
+    "wrongAnswersEn": ["Soccer","Basketball","Pocket bike race"],
+    "wrongAnswersRomaji": ["sakkaa","basuketto booru","pokebai reesu"],
     "questionImage": "quiz_images/qlv7_30.png"
   },
   {
@@ -7606,18 +5606,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "亀田に迫る圭一、何を例えに屈服させた？",
     "questionEn": "When Keiichi cornered Kameda, what analogy did he use to make him submit?",
+    "questionRomaji": "Kameda ni semaru Keiichi, nani wo tatoe ni kufuku saseta?",
     "correctAnswerJp": "焼き肉食い放題",
     "correctAnswerEn": "All-you-can-eat yakiniku",
-    "wrongAnswersJp": [
-      "デカ盛り食堂",
-      "スイーツ食い放題",
-      "アイドル握手会"
-    ],
-    "wrongAnswersEn": [
-      "Mega-portion diner",
-      "All-you-can-eat sweets",
-      "Idol handshake event"
-    ],
+    "correctAnswerRomaji": "yakiniku kuihodai",
+    "wrongAnswersJp": ["デカ盛り食堂","スイーツ食い放題","アイドル握手会"],
+    "wrongAnswersEn": ["Mega-portion diner","All-you-can-eat sweets","Idol handshake event"],
+    "wrongAnswersRomaji": ["deka mori shokudo","suiitsu kuihodai","aidoru akushukai"],
     "questionImage": "quiz_images/qlv7_31.png"
   },
   {
@@ -7625,18 +5620,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "亀田が好きな食べ物は？",
     "questionEn": "What is Kameda's favorite food?",
+    "questionRomaji": "Kameda ga suki na tabemono wa?",
     "correctAnswerJp": "洋菓子",
     "correctAnswerEn": "Western confections",
-    "wrongAnswersJp": [
-      "骨付きカルビ",
-      "ロース",
-      "ちゃんこ鍋"
-    ],
-    "wrongAnswersEn": [
-      "Bone-in short ribs",
-      "Loin",
-      "Chankonabe"
-    ],
+    "correctAnswerRomaji": "yogashi",
+    "wrongAnswersJp": ["骨付きカルビ","ロース","ちゃんこ鍋"],
+    "wrongAnswersEn": ["Bone-in short ribs","Loin","Chankonabe"],
+    "wrongAnswersRomaji": ["honetsuki karubi","roosu","chankonabe"],
     "questionImage": "quiz_images/qlv7_32.png"
   },
   {
@@ -7644,18 +5634,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "興宮タイタンズ戦、最後は何で決着がついた？",
     "questionEn": "In the game against the Okinomiya Titans, how was the match decided in the end?",
+    "questionRomaji": "Okinomiya Taitanzu sen, saigo wa nani de ketchaku ga tsuita?",
     "correctAnswerJp": "ホームラン",
     "correctAnswerEn": "Home run",
-    "wrongAnswersJp": [
-      "満塁ホームラン",
-      "犠牲フライ",
-      "ツーベースヒット"
-    ],
-    "wrongAnswersEn": [
-      "Grand slam",
-      "Sacrifice fly",
-      "Double"
-    ],
+    "correctAnswerRomaji": "hoomuran",
+    "wrongAnswersJp": ["満塁ホームラン","犠牲フライ","ツーベースヒット"],
+    "wrongAnswersEn": ["Grand slam","Sacrifice fly","Double"],
+    "wrongAnswersRomaji": ["manrui hoomuran","gisei furai","tsuubeesu hitto"],
     "questionImage": "quiz_images/qlv7_33.png"
   },
   {
@@ -7663,18 +5648,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "興宮タイタンズ戦、監督が約束したご褒美は？",
     "questionEn": "In the game against the Okinomiya Titans, what reward did the coach promise?",
+    "questionRomaji": "Okinomiya Taitanzu sen, kantoku ga yakusoku shita gohoubi wa?",
     "correctAnswerJp": "バーベキュー大会",
     "correctAnswerEn": "Barbecue party",
-    "wrongAnswersJp": [
-      "焼き芋大会",
-      "お寿司食べ放題",
-      "スイーツ食べ放題"
-    ],
-    "wrongAnswersEn": [
-      "Roasted sweet potato party",
-      "All-you-can-eat sushi",
-      "All-you-can-eat sweets"
-    ],
+    "correctAnswerRomaji": "baabekyuu taikai",
+    "wrongAnswersJp": ["焼き芋大会","お寿司食べ放題","スイーツ食べ放題"],
+    "wrongAnswersEn": ["Roasted sweet potato party","All-you-can-eat sushi","All-you-can-eat sweets"],
+    "wrongAnswersRomaji": ["yakiimo taikai","osushi tabehodai","suiitsu tabehodai"],
     "questionImage": "quiz_images/qlv7_34.png"
   },
   {
@@ -7682,18 +5662,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "監督の名前を間違えていた圭一、なんと言った？",
     "questionEn": "When Keiichi got the Director's name wrong, what did he call him?",
+    "questionRomaji": "Kantoku no namae wo machigaete ita Keiichi, nanto itta?",
     "correctAnswerJp": "入谷",
     "correctAnswerEn": "Iritani",
-    "wrongAnswersJp": [
-      "入山",
-      "入川",
-      "入岡"
-    ],
-    "wrongAnswersEn": [
-      "Iriyama",
-      "Irikawa",
-      "Irioka"
-    ],
+    "correctAnswerRomaji": "Iritani",
+    "wrongAnswersJp": ["入山","入川","入岡"],
+    "wrongAnswersEn": ["Iriyama","Irikawa","Irioka"],
+    "wrongAnswersRomaji": ["Iriyama","Irikawa","Irioka"],
     "questionImage": "quiz_images/qlv7_35.png"
   },
   {
@@ -7701,18 +5676,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "北条悟史、雛見沢に居ない理由はなんとされていた？",
     "questionEn": "What was the stated reason for Satoshi Houjou's absence from Hinamizawa?",
+    "questionRomaji": "Houjou Satoshi, Hinamizawa ni inai riyuu wa nanto sarete ita?",
     "correctAnswerJp": "転校",
     "correctAnswerEn": "Transfer schools",
-    "wrongAnswersJp": [
-      "入院",
-      "事故死",
-      "留学"
-    ],
-    "wrongAnswersEn": [
-      "Hospitalization",
-      "Accidental death",
-      "Study abroad"
-    ],
+    "correctAnswerRomaji": "tenkou",
+    "wrongAnswersJp": ["入院","事故死","留学"],
+    "wrongAnswersEn": ["Hospitalization","Accidental death","Study abroad"],
+    "wrongAnswersRomaji": ["nyuuin","jikoshi","ryuugaku"],
     "questionImage": "quiz_images/qlv7_36.png"
   },
   {
@@ -7720,18 +5690,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "古手梨花、村の何とされている？",
     "questionEn": "Rika Furude is considered the village's what?",
+    "questionRomaji": "Furude Rika, mura no nani to sarete iru?",
     "correctAnswerJp": "マスコット",
     "correctAnswerEn": "Mascot",
-    "wrongAnswersJp": [
-      "生き字引",
-      "祟り",
-      "良心"
-    ],
-    "wrongAnswersEn": [
-      "Walking encyclopedia",
-      "Curse",
-      "Conscience"
-    ],
+    "correctAnswerRomaji": "masukotto",
+    "wrongAnswersJp": ["生き字引","祟り","良心"],
+    "wrongAnswersEn": ["Walking encyclopedia","Curse","Conscience"],
+    "wrongAnswersRomaji": ["ikijibiki","tatari","ryoushin"],
     "questionImage": "quiz_images/qlv7_37.png"
   },
   {
@@ -7739,18 +5704,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "入江監督、沙都子を養子に迎えどうしたいと言った？",
     "questionEn": "Coach Irie said he wanted to adopt Satoko and do what?",
+    "questionRomaji": "Irie kantoku, Satoko wo youshi ni mukae dou shitai to itta?",
     "correctAnswerJp": "可憐なメイド",
     "correctAnswerEn": "Lovely maid",
-    "wrongAnswersJp": [
-      "魔法少女",
-      "女神",
-      "村のアイドル"
-    ],
-    "wrongAnswersEn": [
-      "Magical girl",
-      "Goddess",
-      "Village idol"
-    ],
+    "correctAnswerRomaji": "karen na meido",
+    "wrongAnswersJp": ["魔法少女","女神","村のアイドル"],
+    "wrongAnswersEn": ["Magical girl","Goddess","Village idol"],
+    "wrongAnswersRomaji": ["mahou shoujo","megami","mura no aidoru"],
     "questionImage": "quiz_images/qlv7_38.png"
   },
   {
@@ -7758,18 +5718,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "園崎詩音、雛見沢ファイターズの何？",
     "questionEn": "What is Shion Sonozaki's role on the Hinamizawa Fighters?",
+    "questionRomaji": "Sonozaki Shion, Hinamizawa Faitaazu no nani?",
     "correctAnswerJp": "幽霊マネージャー",
     "correctAnswerEn": "Ghost manager",
-    "wrongAnswersJp": [
-      "幻の控え投手",
-      "ピンチヒッター",
-      "真の監督"
-    ],
-    "wrongAnswersEn": [
-      "Phantom relief pitcher",
-      "Pinch hitter",
-      "True coach"
-    ],
+    "correctAnswerRomaji": "yuurei maneejaa",
+    "wrongAnswersJp": ["幻の控え投手","ピンチヒッター","真の監督"],
+    "wrongAnswersEn": ["Phantom relief pitcher","Pinch hitter","True coach"],
+    "wrongAnswersRomaji": ["maboroshi no hikae toushu","pinchi hittaa","shin no kantoku"],
     "questionImage": "quiz_images/qlv7_39.png"
   },
   {
@@ -7777,18 +5732,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "富田と岡村、ボールが何処に挟まったと言っていた？",
     "questionEn": "Where did Tomita and Okamura say the ball got stuck?",
+    "questionRomaji": "Tomita to Okamura, booru ga doko ni hasamatta to itte ita?",
     "correctAnswerJp": "２階の雨どい",
     "correctAnswerEn": "Second-floor rain gutter",
-    "wrongAnswersJp": [
-      "物置の屋根",
-      "重機の隙間",
-      "側溝の奥"
-    ],
-    "wrongAnswersEn": [
-      "Storage shed roof",
-      "Gap between heavy machinery",
-      "Deep in the gutter"
-    ],
+    "correctAnswerRomaji": "2-kai no amadoi",
+    "wrongAnswersJp": ["物置の屋根","重機の隙間","側溝の奥"],
+    "wrongAnswersEn": ["Storage shed roof","Gap between heavy machinery","Deep in the gutter"],
+    "wrongAnswersRomaji": ["monooki no yane","juuki no sukima","sokkou no oku"],
     "questionImage": "quiz_images/qlv7_40.png"
   },
   {
@@ -7796,18 +5746,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "分校に来た大石、圭一を沙都子の何と揶揄した？",
     "questionEn": "When Oishi came to the school, what did he teasingly call Keiichi in relation to Satoko?",
+    "questionRomaji": "Bunkkou ni kita Oishi, Keiichi wo Satoko no nani to yayu shita?",
     "correctAnswerJp": "マネージャー",
     "correctAnswerEn": "Manager",
-    "wrongAnswersJp": [
-      "彼氏",
-      "お兄さん",
-      "保護者"
-    ],
-    "wrongAnswersEn": [
-      "Boyfriend",
-      "Big brother",
-      "Guardian"
-    ],
+    "correctAnswerRomaji": "maneejaa",
+    "wrongAnswersJp": ["彼氏","お兄さん","保護者"],
+    "wrongAnswersEn": ["Boyfriend","Big brother","Guardian"],
+    "wrongAnswersRomaji": ["kareshi","oniisan","hogosha"],
     "questionImage": "quiz_images/qlv7_41.png"
   },
   {
@@ -7815,18 +5760,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "分校に来た大石、圭一の家を何と揶揄した？",
     "questionEn": "When Oishi came to the school, how did he poke fun at Keiichi's house?",
+    "questionRomaji": "Bunkkou ni kita Oishi, Keiichi no ie wo nani to yayu shita?",
     "correctAnswerJp": "前原屋敷",
     "correctAnswerEn": "Maebara Mansion",
-    "wrongAnswersJp": [
-      "前原ホテル",
-      "前原庭園",
-      "前原豪邸"
-    ],
-    "wrongAnswersEn": [
-      "Maebara Hotel",
-      "Maebara Garden",
-      "Maebara Mansion (alt.)"
-    ],
+    "correctAnswerRomaji": "Maebara yashiki",
+    "wrongAnswersJp": ["前原ホテル","前原庭園","前原豪邸"],
+    "wrongAnswersEn": ["Maebara Hotel","Maebara Garden","Maebara Mansion (alt.)"],
+    "wrongAnswersRomaji": ["Maebara hoteru","Maebara teien","Maebara goutei"],
     "questionImage": "quiz_images/qlv7_42.png"
   },
   {
@@ -7834,18 +5774,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "力尽くで圭一に詰め寄る大石、制止したのは誰？",
     "questionEn": "When Oishi forcefully confronted Keiichi, who stopped him?",
+    "questionRomaji": "Chikara zuku de Keiichi ni tsumeyoru Oishi, seishi shita no wa dare?",
     "correctAnswerJp": "入江",
     "correctAnswerEn": "Irie",
-    "wrongAnswersJp": [
-      "詩音",
-      "知恵",
-      "魅音"
-    ],
-    "wrongAnswersEn": [
-      "Shion",
-      "Chie",
-      "Mion"
-    ],
+    "correctAnswerRomaji": "Irie",
+    "wrongAnswersJp": ["詩音","知恵","魅音"],
+    "wrongAnswersEn": ["Shion","Chie","Mion"],
+    "wrongAnswersRomaji": ["Shion","Chie","Mion"],
     "questionImage": "quiz_images/qlv7_43.png"
   },
   {
@@ -7853,18 +5788,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "大石刑事、雛見沢では「オヤシロさま」の「何」と噂されている？",
     "questionEn": "In Hinamizawa, Detective Oishi is rumored to be Oyashiro-sama's what?",
+    "questionRomaji": "Oishi keiji, Hinamizawa de wa \"Oyashiro-sama\" no \"nani\" to uwasa sarete iru?",
     "correctAnswerJp": "使い",
     "correctAnswerEn": "Messenger",
-    "wrongAnswersJp": [
-      "生まれ変わり",
-      "影",
-      "しもべ"
-    ],
-    "wrongAnswersEn": [
-      "Reincarnation",
-      "Shadow",
-      "Servant"
-    ],
+    "correctAnswerRomaji": "tsukai",
+    "wrongAnswersJp": ["生まれ変わり","影","しもべ"],
+    "wrongAnswersEn": ["Reincarnation","Shadow","Servant"],
+    "wrongAnswersRomaji": ["umarekawari","kage","shimobe"],
     "questionImage": "quiz_images/qlv7_44.png"
   },
   {
@@ -7872,18 +5802,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "セブンスマートで出会った夏美、誰の知り合い？",
     "questionEn": "Natsumi, who they met at Seven Mart, is an acquaintance of whom?",
+    "questionRomaji": "Sebunsu Maato de deatta Natsumi, dare no shiriai?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "レナ",
-      "沙都子",
-      "圭一"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Satoko",
-      "Keiichi"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["レナ","沙都子","圭一"],
+    "wrongAnswersEn": ["Rena","Satoko","Keiichi"],
+    "wrongAnswersRomaji": ["Rena","Satoko","Keiichi"],
     "questionImage": "quiz_images/qlv7_45.png"
   },
   {
@@ -7891,18 +5816,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "綿流し祭、圭一の両親が行きそびれた理由は？",
     "questionEn": "At the Watanagashi Festival, why did Keiichi's parents end up not going?",
+    "questionRomaji": "Watanagashi matsuri, Keiichi no ryoushin ga iki sobi reta riyuu wa?",
     "correctAnswerJp": "父が起きなかった",
     "correctAnswerEn": "Dad wouldn't wake up",
-    "wrongAnswersJp": [
-      "母が熱を出した",
-      "新刊が落ちた",
-      "エジプト旅行中"
-    ],
-    "wrongAnswersEn": [
-      "Mom had a fever",
-      "The new issue was dropped",
-      "On a trip to Egypt"
-    ],
+    "correctAnswerRomaji": "chichi ga okinakatta",
+    "wrongAnswersJp": ["母が熱を出した","新刊が落ちた","エジプト旅行中"],
+    "wrongAnswersEn": ["Mom had a fever","The new issue was dropped","On a trip to Egypt"],
+    "wrongAnswersRomaji": ["haha ga netsu wo dashita","shinkan ga ochita","Ejiputo ryokou chuu"],
     "questionImage": "quiz_images/qlv7_46.png"
   },
   {
@@ -7910,18 +5830,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "本格推理ゲームに挑んだ圭一、自分をなんと呼称した？",
     "questionEn": "When Keiichi took on the serious mystery game, what did he call himself?",
+    "questionRomaji": "Honkaku suiri geemu ni idonda Keiichi, jibun wo nanto koushou shita?",
     "correctAnswerJp": "シャーロック前原",
     "correctAnswerEn": "Sherlock Maebara",
-    "wrongAnswersJp": [
-      "アルセーヌ前原",
-      "前原コゴロウ",
-      "江戸川ケーイチ"
-    ],
-    "wrongAnswersEn": [
-      "Arsene Maebara",
-      "Maebara Kogorou",
-      "Edogawa Keiichi"
-    ],
+    "correctAnswerRomaji": "Shaarokku Maebara",
+    "wrongAnswersJp": ["アルセーヌ前原","前原コゴロウ","江戸川ケーイチ"],
+    "wrongAnswersEn": ["Arsene Maebara","Maebara Kogorou","Edogawa Keiichi"],
+    "wrongAnswersRomaji": ["Aruseenu Maebara","Maebara Kogorou","Edogawa Keepichi"],
     "questionImage": "quiz_images/qlv7_47.png"
   },
   {
@@ -7929,18 +5844,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一が手を止めた犯人カード、何と書いてあった？",
     "questionEn": "What was written on the culprit card that made Keiichi stop?",
+    "questionRomaji": "Keiichi ga te wo tometa hannin kaado, nani to kaite atta?",
     "correctAnswerJp": "悟史",
     "correctAnswerEn": "Satoshi",
-    "wrongAnswersJp": [
-      "詩音",
-      "オニカクシ",
-      "オヤシロサマ"
-    ],
-    "wrongAnswersEn": [
-      "Shion",
-      "Onikakushi",
-      "Oyashiro-sama"
-    ],
+    "correctAnswerRomaji": "Satoshi",
+    "wrongAnswersJp": ["詩音","オニカクシ","オヤシロサマ"],
+    "wrongAnswersEn": ["Shion","Onikakushi","Oyashiro-sama"],
+    "wrongAnswersRomaji": ["Shion","Onikakushi","Oyashiro-sama"],
     "questionImage": "quiz_images/qlv7_48.png"
   },
   {
@@ -7948,18 +5858,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一宛の電話、大石はなんと名乗った？",
     "questionEn": "When calling Keiichi, what name did Oishi give?",
+    "questionRomaji": "Keiichi ate no denwa, Oishi wa nanto nanoitta?",
     "correctAnswerJp": "興宮書房の大石",
     "correctAnswerEn": "Oishi from Okinomiya Bookshop",
-    "wrongAnswersJp": [
-      "雛見沢分署の大石",
-      "捜査一課の目暮",
-      "胃腸の弱い永沢"
-    ],
-    "wrongAnswersEn": [
-      "Oishi from the Hinamizawa precinct",
-      "Inspector Megure from Div. 1",
-      "Nagasawa with the weak stomach"
-    ],
+    "correctAnswerRomaji": "Okinomiya Shobou no Oishi",
+    "wrongAnswersJp": ["雛見沢分署の大石","捜査一課の目暮","胃腸の弱い永沢"],
+    "wrongAnswersEn": ["Oishi from the Hinamizawa precinct","Inspector Megure from Div. 1","Nagasawa with the weak stomach"],
+    "wrongAnswersRomaji": ["Hinamizawa bun-sho no Oishi","sousa ikka no Megure","ichou no yowai Nagasawa"],
     "questionImage": "quiz_images/qlv7_49.png"
   },
   {
@@ -7967,18 +5872,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "鬼隠し、世間で言う何？",
     "questionEn": "What is the demon's spiriting away commonly referred to as?",
+    "questionRomaji": "Onikakushi, seken de iu nani?",
     "correctAnswerJp": "神隠し",
     "correctAnswerEn": "Spirited away",
-    "wrongAnswersJp": [
-      "金縛り",
-      "幽体離脱",
-      "記憶喪失"
-    ],
-    "wrongAnswersEn": [
-      "Sleep paralysis",
-      "Astral projection",
-      "Amnesia"
-    ],
+    "correctAnswerRomaji": "kamikakushi",
+    "wrongAnswersJp": ["金縛り","幽体離脱","記憶喪失"],
+    "wrongAnswersEn": ["Sleep paralysis","Astral projection","Amnesia"],
+    "wrongAnswersRomaji": ["kanashibari","yuutai ridatsu","kioku soushitsu"],
     "questionImage": "quiz_images/qlv7_50.png"
   },
   {
@@ -7986,18 +5886,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "鬼隠し、三年目の犠牲者は誰？",
     "questionEn": "Who was the victim in the third year of the demon's spiriting away?",
+    "questionRomaji": "Onikakushi, san-nenme no giseisha wa dare?",
     "correctAnswerJp": "梨花の両親",
     "correctAnswerEn": "Rika's parents",
-    "wrongAnswersJp": [
-      "沙都子の叔母",
-      "悟史",
-      "現場監督"
-    ],
-    "wrongAnswersEn": [
-      "Satoko's aunt",
-      "Satoshi",
-      "Construction foreman"
-    ],
+    "correctAnswerRomaji": "Rika no ryoushin",
+    "wrongAnswersJp": ["沙都子の叔母","悟史","現場監督"],
+    "wrongAnswersEn": ["Satoko's aunt","Satoshi","Construction foreman"],
+    "wrongAnswersRomaji": ["Satoko no oba","Satoshi","genba kantoku"],
     "questionImage": "quiz_images/qlv7_51.png"
   },
   {
@@ -8005,18 +5900,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "鬼隠し、一年目の犠牲者は誰？",
     "questionEn": "Who was the victim in the first year of the demon's spiriting away?",
+    "questionRomaji": "Onikakushi, ichi-nenme no giseisha wa dare?",
     "correctAnswerJp": "現場監督",
     "correctAnswerEn": "Construction foreman",
-    "wrongAnswersJp": [
-      "梨花の父親",
-      "梨花の母親",
-      "分校の先生"
-    ],
-    "wrongAnswersEn": [
-      "Rika's father",
-      "Rika's mother",
-      "Branch school teacher"
-    ],
+    "correctAnswerRomaji": "genba kantoku",
+    "wrongAnswersJp": ["梨花の父親","梨花の母親","分校の先生"],
+    "wrongAnswersEn": ["Rika's father","Rika's mother","Branch school teacher"],
+    "wrongAnswersRomaji": ["Rika no chichioya","Rika no hahaoya","bunkkou no sensei"],
     "questionImage": "quiz_images/qlv7_52.png"
   },
   {
@@ -8024,18 +5914,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "魅音が持ってきたおはぎ、何に包まれていた？",
     "questionEn": "What was Mion's ohagi wrapped in when she brought it?",
+    "questionRomaji": "Mion ga motte kita ohagi, nani ni tsutsumarete ita?",
     "correctAnswerJp": "新聞紙",
     "correctAnswerEn": "Newspaper",
-    "wrongAnswersJp": [
-      "包装紙",
-      "ラップ",
-      "タッパー"
-    ],
-    "wrongAnswersEn": [
-      "Wrapping paper",
-      "Plastic wrap",
-      "Tupperware"
-    ],
+    "correctAnswerRomaji": "shinbunshi",
+    "wrongAnswersJp": ["包装紙","ラップ","タッパー"],
+    "wrongAnswersEn": ["Wrapping paper","Plastic wrap","Tupperware"],
+    "wrongAnswersRomaji": ["housoshi","rappu","tappaa"],
     "questionImage": "quiz_images/qlv7_53.png"
   },
   {
@@ -8043,18 +5928,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "悟史と圭一、共に突然持ち歩くようになったのは何？",
     "questionEn": "What did both Satoshi and Keiichi suddenly start carrying around?",
+    "questionRomaji": "Satoshi to Keiichi, tomo ni totsuzen mochiaru you ni natta no wa nani?",
     "correctAnswerJp": "バット",
     "correctAnswerEn": "Bat",
-    "wrongAnswersJp": [
-      "ゴルフクラブ",
-      "鉄パイプ",
-      "ぬいぐるみ"
-    ],
-    "wrongAnswersEn": [
-      "Golf club",
-      "Iron pipe",
-      "Stuffed animal"
-    ],
+    "correctAnswerRomaji": "batto",
+    "wrongAnswersJp": ["ゴルフクラブ","鉄パイプ","ぬいぐるみ"],
+    "wrongAnswersEn": ["Golf club","Iron pipe","Stuffed animal"],
+    "wrongAnswersRomaji": ["gorufu kurabu","tetsu paipu","nuigurumi"],
     "questionImage": "quiz_images/qlv7_54.png"
   },
   {
@@ -8062,18 +5942,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "大石が足りないと感じた警邏車、何人乗っていた？",
     "questionEn": "The patrol car Oishi felt was short-staffed -- how many people were riding in it?",
+    "questionRomaji": "Oishi ga tarinai to kanjita keirasha, nan-nin notte ita?",
     "correctAnswerJp": "2人",
     "correctAnswerEn": "2 people",
-    "wrongAnswersJp": [
-      "4人",
-      "5人",
-      "1人"
-    ],
-    "wrongAnswersEn": [
-      "4 people",
-      "5 people",
-      "1 person"
-    ],
+    "correctAnswerRomaji": "2-nin",
+    "wrongAnswersJp": ["4人","5人","1人"],
+    "wrongAnswersEn": ["4 people","5 people","1 person"],
+    "wrongAnswersRomaji": ["4-nin","5-nin","1-nin"],
     "questionImage": "quiz_images/qlv7_55.png"
   },
   {
@@ -8081,18 +5956,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "鬼隠し編、圭一が最後に伝えた言葉は何？",
     "questionEn": "In the Onikakushi chapter, what were Keiichi's final words?",
+    "questionRomaji": "Onikakushi-hen, Keiichi ga saigo ni tsutaeta kotoba wa nani?",
     "correctAnswerJp": "ごめんなさい",
     "correctAnswerEn": "I'm sorry",
-    "wrongAnswersJp": [
-      "喉が痒い…",
-      "嘘だ！",
-      "俺じゃない…"
-    ],
-    "wrongAnswersEn": [
-      "My throat itches...",
-      "That's a lie!",
-      "It wasn't me..."
-    ],
+    "correctAnswerRomaji": "gomennasai",
+    "wrongAnswersJp": ["喉が痒い…","嘘だ！","俺じゃない…"],
+    "wrongAnswersEn": ["My throat itches...","That's a lie!","It wasn't me..."],
+    "wrongAnswersRomaji": ["nodo ga kayui...","uso da!","ore ja nai..."],
     "questionImage": "quiz_images/qlv7_56.png"
   },
   {
@@ -8100,18 +5970,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "圭一を轢き逃げたワゴン車、色は何？",
     "questionEn": "What color was the van that hit Keiichi in the hit-and-run?",
+    "questionRomaji": "Keiichi wo hiki nigeta wagon-sha, iro wa nani?",
     "correctAnswerJp": "白",
     "correctAnswerEn": "White",
-    "wrongAnswersJp": [
-      "黒",
-      "ツートン",
-      "グレー"
-    ],
-    "wrongAnswersEn": [
-      "Black",
-      "Two-tone",
-      "Gray"
-    ],
+    "correctAnswerRomaji": "shiro",
+    "wrongAnswersJp": ["黒","ツートン","グレー"],
+    "wrongAnswersEn": ["Black","Two-tone","Gray"],
+    "wrongAnswersRomaji": ["kuro","tsuu ton","guree"],
     "questionImage": "quiz_images/qlv7_57.png"
   },
   {
@@ -8119,18 +5984,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "コンシューマ版「奉」、主題歌は何？",
     "questionEn": "What is the theme song of the console version of \"Hou\"?",
+    "questionRomaji": "Konshyuuma-ban \"Hou\", shudaika wa nani?",
     "correctAnswerJp": "僕達はもう知ってる",
     "correctAnswerEn": "We already know",
-    "wrongAnswersJp": [
-      "君は何も知らない",
-      "僕らの雛見沢",
-      "僕はきっと知ってる"
-    ],
-    "wrongAnswersEn": [
-      "You don't know anything",
-      "Our Hinamizawa",
-      "I surely know"
-    ],
+    "correctAnswerRomaji": "bokutachi wa mou shitteru",
+    "wrongAnswersJp": ["君は何も知らない","僕らの雛見沢","僕はきっと知ってる"],
+    "wrongAnswersEn": ["You don't know anything","Our Hinamizawa","I surely know"],
+    "wrongAnswersRomaji": ["kimi wa nani mo shiranai","bokura no Hinamizawa","boku wa kitto shitteru"],
     "questionImage": "quiz_images/qlv7_58.png"
   },
   {
@@ -8138,18 +5998,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "原作版「奉」、主題歌は何？",
     "questionEn": "What is the theme song of the original Hou?",
+    "questionRomaji": "Gensaku-ban \"Hou\", shudaika wa nani?",
     "correctAnswerJp": "あの日へ",
     "correctAnswerEn": "To that day",
-    "wrongAnswersJp": [
-      "光へ",
-      "あの日ね",
-      "汝、奉り給え"
-    ],
-    "wrongAnswersEn": [
-      "To the light",
-      "That day, huh",
-      "Thou, make thy offering"
-    ],
+    "correctAnswerRomaji": "ano hi e",
+    "wrongAnswersJp": ["光へ","あの日ね","汝、奉り給え"],
+    "wrongAnswersEn": ["To the light","That day, huh","Thou, make thy offering"],
+    "wrongAnswersRomaji": ["hikari e","ano hi ne","nanji, matsuri tamae"],
     "questionImage": "quiz_images/qlv7_59.png"
   },
   {
@@ -8157,18 +6012,13 @@ export const entries: Entry[] = [
     "level": 7,
     "questionJp": "原作版から使用されている、daiの代表曲といえば？",
     "questionEn": "What is dai's signature track, used since the original version?",
+    "questionRomaji": "Gensaku-ban kara shiyou sarete iru, dai no daihyoukyoku to ieba?",
     "correctAnswerJp": "you",
     "correctAnswerEn": "you",
-    "wrongAnswersJp": [
-      "me",
-      "hope",
-      "Answer"
-    ],
-    "wrongAnswersEn": [
-      "me",
-      "hope",
-      "Answer"
-    ],
+    "correctAnswerRomaji": "you",
+    "wrongAnswersJp": ["me","hope","Answer"],
+    "wrongAnswersEn": ["me","hope","Answer"],
+    "wrongAnswersRomaji": ["me","hope","Answer"],
     "questionImage": "quiz_images/qlv7_60.png"
   },
   {
@@ -8176,18 +6026,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "縁日の焼きそば、今年は何入りと言っていた?",
     "questionEn": "At the festival, what did they say was in this year's yakisoba?",
+    "questionRomaji": "Ennichi no yakisoba, kotoshi wa nani-iri to itte ita?",
     "correctAnswerJp": "イカリング",
     "correctAnswerEn": "Calamari rings",
-    "wrongAnswersJp": [
-      "豚肉",
-      "タマネギ",
-      "飛騨牛"
-    ],
-    "wrongAnswersEn": [
-      "Pork",
-      "Onion",
-      "Hida beef"
-    ],
+    "correctAnswerRomaji": "ika ringu",
+    "wrongAnswersJp": ["豚肉","タマネギ","飛騨牛"],
+    "wrongAnswersEn": ["Pork","Onion","Hida beef"],
+    "wrongAnswersRomaji": ["butaniku","tamanegi","Hida-gyuu"],
     "questionImage": "quiz_images/qlv8_01.png"
   },
   {
@@ -8195,18 +6040,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "たこ焼き屋台のオヤジ、拘りのタコの産地は?",
     "questionEn": "Where does the takoyaki stand owner insist his octopus comes from?",
+    "questionRomaji": "Takoyaki yatai no oyaji, kodawari no tako no sanchi wa?",
     "correctAnswerJp": "明石",
     "correctAnswerEn": "Akashi",
-    "wrongAnswersJp": [
-      "モーリタニア",
-      "三原",
-      "日間賀島"
-    ],
-    "wrongAnswersEn": [
-      "Mauritania",
-      "Mihara",
-      "Himakajima"
-    ],
+    "correctAnswerRomaji": "Akashi",
+    "wrongAnswersJp": ["モーリタニア","三原","日間賀島"],
+    "wrongAnswersEn": ["Mauritania","Mihara","Himakajima"],
+    "wrongAnswersRomaji": ["Moooritania","Mihara","Himakajima"],
     "questionImage": "quiz_images/qlv8_02.png"
   },
   {
@@ -8214,18 +6054,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "縁日の金魚すくい、金魚を見た詩音はなんと言った?",
     "questionEn": "At the goldfish scooping booth, what did Shion say when she saw the goldfish?",
+    "questionRomaji": "Ennichi no kingyo sukui, kingyo wo mita Shion wa nanto itta?",
     "correctAnswerJp": "実に美味しそう！",
     "correctAnswerEn": "Looks truly delicious!",
-    "wrongAnswersJp": [
-      "お姉と分けっこ",
-      "とっても可愛い！！",
-      "活きがいい！"
-    ],
-    "wrongAnswersEn": [
-      "Sharing with big sis",
-      "So cute!!",
-      "So lively!"
-    ],
+    "correctAnswerRomaji": "jitsu ni oishisou!",
+    "wrongAnswersJp": ["お姉と分けっこ","とっても可愛い！！","活きがいい！"],
+    "wrongAnswersEn": ["Sharing with big sis","So cute!!","So lively!"],
+    "wrongAnswersRomaji": ["onee to wakekko","tottemo kawaii!!","iki ga ii!"],
     "questionImage": "quiz_images/qlv8_03.png"
   },
   {
@@ -8233,18 +6068,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祭を抜け出した圭一と詩音、暗闇で出会ったのは?",
     "questionEn": "Keiichi and Shion snuck out of the festival — who did they meet in the dark?",
+    "questionRomaji": "Matsuri wo nuke dashita Keiichi to Shion, kurayami de deatta no wa?",
     "correctAnswerJp": "富竹と鷹野",
     "correctAnswerEn": "Tomitake and Takano",
-    "wrongAnswersJp": [
-      "大石と熊谷",
-      "知恵と入江",
-      "沙都子と悟史"
-    ],
-    "wrongAnswersEn": [
-      "Oishi and Kumagai",
-      "Chie and Irie",
-      "Satoko and Satoshi"
-    ],
+    "correctAnswerRomaji": "Tomitake to Takano",
+    "wrongAnswersJp": ["大石と熊谷","知恵と入江","沙都子と悟史"],
+    "wrongAnswersEn": ["Oishi and Kumagai","Chie and Irie","Satoko and Satoshi"],
+    "wrongAnswersRomaji": ["Oishi to Kumagai","Chie to Irie","Satoko to Satoshi"],
     "questionImage": "quiz_images/qlv8_04.png"
   },
   {
@@ -8252,18 +6082,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "境内の裏に居た鷹野、何が綺麗な夜と言った?",
     "questionEn": "Takano was behind the shrine grounds. What did she say was beautiful that night?",
+    "questionRomaji": "Keidai no ura ni ita Takano, nani ga kirei na yoru to itta?",
     "correctAnswerJp": "お月様",
     "correctAnswerEn": "The moon",
-    "wrongAnswersJp": [
-      "蛍火",
-      "花火",
-      "演舞"
-    ],
-    "wrongAnswersEn": [
-      "Firefly light",
-      "Fireworks",
-      "Dance performance"
-    ],
+    "correctAnswerRomaji": "otsukisama",
+    "wrongAnswersJp": ["蛍火","花火","演舞"],
+    "wrongAnswersEn": ["Firefly light","Fireworks","Dance performance"],
+    "wrongAnswersRomaji": ["hotarubi","hanabi","enbu"],
     "questionImage": "quiz_images/qlv8_05.png"
   },
   {
@@ -8271,18 +6096,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "富竹と鷹野、金庫破りをしようとしたのは何処?",
     "questionEn": "Where did Tomitake and Takano try to break into a safe?",
+    "questionRomaji": "Tomitake to Takano, kinko yaburi wo shiyou to shita no wa doko?",
     "correctAnswerJp": "祭具殿",
     "correctAnswerEn": "Saiguden",
-    "wrongAnswersJp": [
-      "賽銭箱",
-      "酒蔵",
-      "社務所"
-    ],
-    "wrongAnswersEn": [
-      "Offertory box",
-      "Sake storehouse",
-      "Shrine office"
-    ],
+    "correctAnswerRomaji": "Saiguden",
+    "wrongAnswersJp": ["賽銭箱","酒蔵","社務所"],
+    "wrongAnswersEn": ["Offertory box","Sake storehouse","Shrine office"],
+    "wrongAnswersRomaji": ["saisenbako","sakagura","shamusho"],
     "questionImage": "quiz_images/qlv8_06.png"
   },
   {
@@ -8290,18 +6110,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祭具殿に忍び込んだ圭一達、中で見た物は?",
     "questionEn": "When Keiichi and the others snuck into the ritual storehouse, what did they see inside?",
+    "questionRomaji": "Saiguden ni shinobi konda Keiichi-tachi, naka de mita mono wa?",
     "correctAnswerJp": "拷問器具",
     "correctAnswerEn": "Torture instruments",
-    "wrongAnswersJp": [
-      "大人向けの雑誌",
-      "御神輿",
-      "ランディ君人形"
-    ],
-    "wrongAnswersEn": [
-      "Adult magazine",
-      "Portable shrine",
-      "Randy-kun doll"
-    ],
+    "correctAnswerRomaji": "goumon kigu",
+    "wrongAnswersJp": ["大人向けの雑誌","御神輿","ランディ君人形"],
+    "wrongAnswersEn": ["Adult magazine","Portable shrine","Randy-kun doll"],
+    "wrongAnswersRomaji": ["otona muke no zasshi","omikoshi","Randi-kun ningyou"],
     "questionImage": "quiz_images/qlv8_07.png"
   },
   {
@@ -8309,18 +6124,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "底なしの鬼ヶ淵沼、何処に繋がると言われていた?",
     "questionEn": "Where was the bottomless Onigafuchi Swamp said to be connected to?",
+    "questionRomaji": "Sokonashi no Onigafuchi-numa, doko ni tsunagaru to iwarete ita?",
     "correctAnswerJp": "鬼の国",
     "correctAnswerEn": "Land of Demons",
-    "wrongAnswersJp": [
-      "夢の国",
-      "黄泉の国",
-      "黄金郷"
-    ],
-    "wrongAnswersEn": [
-      "Land of Dreams",
-      "Land of the Dead",
-      "Golden Land"
-    ],
+    "correctAnswerRomaji": "oni no kuni",
+    "wrongAnswersJp": ["夢の国","黄泉の国","黄金郷"],
+    "wrongAnswersEn": ["Land of Dreams","Land of the Dead","Golden Land"],
+    "wrongAnswersRomaji": ["yume no kuni","yomi no kuni","ougonkyou"],
     "questionImage": "quiz_images/qlv8_08.png"
   },
   {
@@ -8328,18 +6138,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祭具殿の侵入に気づいた梨花、なにが忍び込んだと言った?",
     "questionEn": "When Rika noticed the intrusion into the ritual storehouse, what did she say had snuck in?",
+    "questionRomaji": "Saiguden no shinnyuu ni kidzuita Rika, nani ga shinobi konda to itta?",
     "correctAnswerJp": "猫さん",
     "correctAnswerEn": "Cat-san",
-    "wrongAnswersJp": [
-      "圭一",
-      "鷹野",
-      "ワンワン"
-    ],
-    "wrongAnswersEn": [
-      "Keiichi",
-      "Takano",
-      "Woof woof"
-    ],
+    "correctAnswerRomaji": "neko-san",
+    "wrongAnswersJp": ["圭一","鷹野","ワンワン"],
+    "wrongAnswersEn": ["Keiichi","Takano","Woof woof"],
+    "wrongAnswersRomaji": ["Keiichi","Takano","wan-wan"],
     "questionImage": "quiz_images/qlv8_09.png"
   },
   {
@@ -8347,18 +6152,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "綿流し編、会合の後、行方不明になったのは誰?",
     "questionEn": "In Watanagashi, who went missing after the meeting?",
+    "questionRomaji": "Watanagashi-hen, kaigou no ato, yukue fumei ni natta no wa dare?",
     "correctAnswerJp": "村長",
     "correctAnswerEn": "Village chief",
-    "wrongAnswersJp": [
-      "詩音の父",
-      "詩音の母",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Shion's father",
-      "Shion's mother",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "sonchou",
+    "wrongAnswersJp": ["詩音の父","詩音の母","梨花"],
+    "wrongAnswersEn": ["Shion's father","Shion's mother","Rika"],
+    "wrongAnswersRomaji": ["Shion no chichi","Shion no haha","Rika"],
     "questionImage": "quiz_images/qlv8_10.png"
   },
   {
@@ -8366,18 +6166,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "綿流し編、梨花を心配した圭一、誰に電話を掛けた?",
     "questionEn": "In Watanagashi, worried about Rika, who did Keiichi call?",
+    "questionRomaji": "Watanagashi-hen, Rika wo shinpai shita Keiichi, dare ni denwa wo kaketa?",
     "correctAnswerJp": "レナ",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "詩音",
-      "沙都子",
-      "魅音"
-    ],
-    "wrongAnswersEn": [
-      "Shion",
-      "Satoko",
-      "Mion"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["詩音","沙都子","魅音"],
+    "wrongAnswersEn": ["Shion","Satoko","Mion"],
+    "wrongAnswersRomaji": ["Shion","Satoko","Mion"],
     "questionImage": "quiz_images/qlv8_11.png"
   },
   {
@@ -8385,18 +6180,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "梨花の住まいを訪ねた圭一、レナはなんと言った?",
     "questionEn": "What did Keiichi and Rena say when they visited Rika's home?",
+    "questionRomaji": "Rika no sumai wo tazuneta Keiichi, Rena wa nanto itta?",
     "correctAnswerJp": "神社の裏手の小屋",
     "correctAnswerEn": "Shed behind the shrine",
-    "wrongAnswersJp": [
-      "沙都子の家の隣",
-      "神社の集会所",
-      "興宮のホテル"
-    ],
-    "wrongAnswersEn": [
-      "Next to Satoko's house",
-      "Shrine meeting hall",
-      "Hotel in Okinomiya"
-    ],
+    "correctAnswerRomaji": "jinja no urate no koya",
+    "wrongAnswersJp": ["沙都子の家の隣","神社の集会所","興宮のホテル"],
+    "wrongAnswersEn": ["Next to Satoko's house","Shrine meeting hall","Hotel in Okinomiya"],
+    "wrongAnswersRomaji": ["Satoko no ie no tonari","jinja no shuukaijo","Okinomiya no hoteru"],
     "questionImage": "quiz_images/qlv8_12.png"
   },
   {
@@ -8404,18 +6194,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "元気の無い圭一、炊き出しの味噌汁をどうした?",
     "questionEn": "When a depressed Keiichi was given relief miso soup, what did he do with it?",
+    "questionRomaji": "Genki no nai Keiichi, takidashi no misoshiru wo dou shita?",
     "correctAnswerJp": "断った",
     "correctAnswerEn": "Refused",
-    "wrongAnswersJp": [
-      "飲み干した",
-      "おかわりした",
-      "頭から被った"
-    ],
-    "wrongAnswersEn": [
-      "Drank it all",
-      "Had seconds",
-      "Poured it over his head"
-    ],
+    "correctAnswerRomaji": "kotowatta",
+    "wrongAnswersJp": ["飲み干した","おかわりした","頭から被った"],
+    "wrongAnswersEn": ["Drank it all","Had seconds","Poured it over his head"],
+    "wrongAnswersRomaji": ["nomi hoshita","okawari shita","atama kara kabutta"],
     "questionImage": "quiz_images/qlv8_13.png"
   },
   {
@@ -8423,18 +6208,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "園崎本家、自宅周辺に配置したのは何?",
     "questionEn": "What was placed around the main Sonozaki residence?",
+    "questionRomaji": "Sonozaki honke, jitaku shuhei ni haichi shita no wa nani?",
     "correctAnswerJp": "監視カメラ",
     "correctAnswerEn": "Surveillance camera",
-    "wrongAnswersJp": [
-      "沙都子のトラップ",
-      "飛び出し坊や",
-      "ペットボトル"
-    ],
-    "wrongAnswersEn": [
-      "Satoko's trap",
-      "Pop-out boy sign",
-      "Plastic bottle"
-    ],
+    "correctAnswerRomaji": "kanshi kamera",
+    "wrongAnswersJp": ["沙都子のトラップ","飛び出し坊や","ペットボトル"],
+    "wrongAnswersEn": ["Satoko's trap","Pop-out boy sign","Plastic bottle"],
+    "wrongAnswersRomaji": ["Satoko no torappu","tobidashi bouya","petto botoru"],
     "questionImage": "quiz_images/qlv8_14.png"
   },
   {
@@ -8442,18 +6222,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "園崎本家、庭では何が採れると噂されている?",
     "questionEn": "What is rumored to grow in the garden of the main Sonozaki estate?",
+    "questionRomaji": "Sonozaki honke, niwa de wa nani ga toreru to uwasa sarete iru?",
     "correctAnswerJp": "松茸",
     "correctAnswerEn": "Matsutake mushroom",
-    "wrongAnswersJp": [
-      "タラの芽",
-      "タマゴタケ",
-      "トリュフ"
-    ],
-    "wrongAnswersEn": [
-      "Aralia sprouts",
-      "Caesar's mushroom",
-      "Truffle"
-    ],
+    "correctAnswerRomaji": "matsutake",
+    "wrongAnswersJp": ["タラの芽","タマゴタケ","トリュフ"],
+    "wrongAnswersEn": ["Aralia sprouts","Caesar's mushroom","Truffle"],
+    "wrongAnswersRomaji": ["tara no me","tamagotake","toriyufu"],
     "questionImage": "quiz_images/qlv8_15.png"
   },
   {
@@ -8461,18 +6236,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "園崎家所有の森、その入山料はいくら?",
     "questionEn": "How much is the entry fee for the forest owned by the Sonozaki family?",
+    "questionRomaji": "Sonozaki-ke shoyu no mori, sono nyuuzan-ryou wa ikura?",
     "correctAnswerJp": "百万円",
     "correctAnswerEn": "One million yen",
-    "wrongAnswersJp": [
-      "無料",
-      "米一俵",
-      "五百円"
-    ],
-    "wrongAnswersEn": [
-      "Free",
-      "One bale of rice",
-      "500 yen"
-    ],
+    "correctAnswerRomaji": "hyakuman-en",
+    "wrongAnswersJp": ["無料","米一俵","五百円"],
+    "wrongAnswersEn": ["Free","One bale of rice","500 yen"],
+    "wrongAnswersRomaji": ["muryou","kome ippyou","gohyaku-en"],
     "questionImage": "quiz_images/qlv8_16.png"
   },
   {
@@ -8480,18 +6250,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "綿流し編、魅音と名乗る者に宿ったのは何?",
     "questionEn": "In Watanagashi, what possessed the person claiming to be Mion?",
+    "questionRomaji": "Watanagashi-hen, Mion to nanoru mono ni yadotta no wa nani?",
     "correctAnswerJp": "鬼",
     "correctAnswerEn": "Demon",
-    "wrongAnswersJp": [
-      "オヤシロさま",
-      "悟史",
-      "宇宙人"
-    ],
-    "wrongAnswersEn": [
-      "Oyashiro-sama",
-      "Satoshi",
-      "Alien"
-    ],
+    "correctAnswerRomaji": "oni",
+    "wrongAnswersJp": ["オヤシロさま","悟史","宇宙人"],
+    "wrongAnswersEn": ["Oyashiro-sama","Satoshi","Alien"],
+    "wrongAnswersRomaji": ["Oyashiro-sama","Satoshi","uchuujin"],
     "questionImage": "quiz_images/qlv8_17.png"
   },
   {
@@ -8499,18 +6264,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "園崎家、次期頭首は?",
     "questionEn": "Who is the next head of the Sonozaki family?",
+    "questionRomaji": "Sonozaki-ke, jiki toushu wa?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "詩音",
-      "眞音",
-      "瑠音"
-    ],
-    "wrongAnswersEn": [
-      "Shion",
-      "Maon",
-      "Ruon"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["詩音","眞音","瑠音"],
+    "wrongAnswersEn": ["Shion","Maon","Ruon"],
+    "wrongAnswersRomaji": ["Shion","Maon","Ruon"],
     "questionImage": "quiz_images/qlv8_18.png"
   },
   {
@@ -8518,18 +6278,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祟殺し編、沙都子はなんと言って学校を休んだ?",
     "questionEn": "In Curse Killing, what excuse did Satoko give for missing school?",
+    "questionRomaji": "Tatarigoroshi-hen, Satoko wa nanto itte gakkou wo yasunda?",
     "correctAnswerJp": "風邪",
     "correctAnswerEn": "Cold",
-    "wrongAnswersJp": [
-      "頭痛",
-      "骨折",
-      "麻疹"
-    ],
-    "wrongAnswersEn": [
-      "Headache",
-      "Fracture",
-      "Measles"
-    ],
+    "correctAnswerRomaji": "kaze",
+    "wrongAnswersJp": ["頭痛","骨折","麻疹"],
+    "wrongAnswersEn": ["Headache","Fracture","Measles"],
+    "wrongAnswersRomaji": ["zutsuu","kossetsu","hashika"],
     "questionImage": "quiz_images/qlv8_19.png"
   },
   {
@@ -8537,18 +6292,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祟殺し編、帰ってきた沙都子の血縁は誰?",
     "questionEn": "In Curse Killing, which of Satoko's relatives came back?",
+    "questionRomaji": "Tatarigoroshi-hen, kaette kita Satoko no ketsuen wa dare?",
     "correctAnswerJp": "叔父",
     "correctAnswerEn": "Uncle",
-    "wrongAnswersJp": [
-      "叔母",
-      "兄",
-      "両親"
-    ],
-    "wrongAnswersEn": [
-      "Aunt",
-      "Brother",
-      "Parents"
-    ],
+    "correctAnswerRomaji": "oji",
+    "wrongAnswersJp": ["叔母","兄","両親"],
+    "wrongAnswersEn": ["Aunt","Brother","Parents"],
+    "wrongAnswersRomaji": ["oba","ani","ryoushin"],
     "questionImage": "quiz_images/qlv8_20.png"
   },
   {
@@ -8556,18 +6306,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "北条鉄平、沙都子の父親の何にあたる?",
     "questionEn": "What is Teppei Houjou's relation to Satoko's father?",
+    "questionRomaji": "Houjou Teppei, Satoko no chichioya no nani ni ataru?",
     "correctAnswerJp": "弟",
     "correctAnswerEn": "Younger brother",
-    "wrongAnswersJp": [
-      "兄",
-      "従兄弟",
-      "叔父"
-    ],
-    "wrongAnswersEn": [
-      "Brother",
-      "Cousin",
-      "Uncle"
-    ],
+    "correctAnswerRomaji": "otouto",
+    "wrongAnswersJp": ["兄","従兄弟","叔父"],
+    "wrongAnswersEn": ["Brother","Cousin","Uncle"],
+    "wrongAnswersRomaji": ["ani","itoko","oji"],
     "questionImage": "quiz_images/qlv8_21.png"
   },
   {
@@ -8575,18 +6320,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "鉄平の麻雀仲間は誰?",
     "questionEn": "Who are Teppei's mahjong buddies?",
+    "questionRomaji": "Teppei no maajan nakama wa dare?",
     "correctAnswerJp": "椿",
     "correctAnswerEn": "Tsubaki",
-    "wrongAnswersJp": [
-      "赤坂",
-      "各務",
-      "大石"
-    ],
-    "wrongAnswersEn": [
-      "Akasaka",
-      "Kagami",
-      "Oishi"
-    ],
+    "correctAnswerRomaji": "Tsubaki",
+    "wrongAnswersJp": ["赤坂","各務","大石"],
+    "wrongAnswersEn": ["Akasaka","Kagami","Oishi"],
+    "wrongAnswersRomaji": ["Akasaka","Kagami","Oishi"],
     "questionImage": "quiz_images/qlv8_22.png"
   },
   {
@@ -8594,18 +6334,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祟殺し編、圭一が沙都子の家で鉢合わせたのは誰?",
     "questionEn": "In Curse Killing, who did Keiichi run into at Satoko's house?",
+    "questionRomaji": "Tatarigoroshi-hen, Keiichi ga Satoko no ie de hachiawasetа no wa dare?",
     "correctAnswerJp": "監督",
     "correctAnswerEn": "Coach",
-    "wrongAnswersJp": [
-      "大石",
-      "村長",
-      "知恵"
-    ],
-    "wrongAnswersEn": [
-      "Oishi",
-      "Village chief",
-      "Chie"
-    ],
+    "correctAnswerRomaji": "kantoku",
+    "wrongAnswersJp": ["大石","村長","知恵"],
+    "wrongAnswersEn": ["Oishi","Village chief","Chie"],
+    "wrongAnswersRomaji": ["Oishi","sonchou","Chie"],
     "questionImage": "quiz_images/qlv8_23.png"
   },
   {
@@ -8613,18 +6348,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祟殺し編、豹変した沙都子、圭一をどこから突き飛ばした?",
     "questionEn": "In Curse Killing, when Satoko snapped, where did she push Keiichi off from?",
+    "questionRomaji": "Tatarigoroshi-hen, hyouhen shita Satoko, Keiichi wo doko kara tsuki tobashita?",
     "correctAnswerJp": "吊り橋",
     "correctAnswerEn": "Suspension bridge",
-    "wrongAnswersJp": [
-      "崖",
-      "屋上",
-      "歩道"
-    ],
-    "wrongAnswersEn": [
-      "Cliff",
-      "Rooftop",
-      "Sidewalk"
-    ],
+    "correctAnswerRomaji": "tsuribashi",
+    "wrongAnswersJp": ["崖","屋上","歩道"],
+    "wrongAnswersEn": ["Cliff","Rooftop","Sidewalk"],
+    "wrongAnswersRomaji": ["gake","okujou","hodou"],
     "questionImage": "quiz_images/qlv8_24.png"
   },
   {
@@ -8632,18 +6362,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祭具殿に忍び込んだ幼少時の沙都子、身代わりとなって罰を受けたのは?",
     "questionEn": "When young Satoko snuck into the ritual storehouse, who took the punishment in her place?",
+    "questionRomaji": "Saiguden ni shinobi konda youshou-ji no Satoko, migawari to natte batsu wo uketa no wa?",
     "correctAnswerJp": "梨花",
     "correctAnswerEn": "Rika",
-    "wrongAnswersJp": [
-      "魅音",
-      "悟史",
-      "沙都子の母"
-    ],
-    "wrongAnswersEn": [
-      "Mion",
-      "Satoshi",
-      "Satoko's mother"
-    ],
+    "correctAnswerRomaji": "Rika",
+    "wrongAnswersJp": ["魅音","悟史","沙都子の母"],
+    "wrongAnswersEn": ["Mion","Satoshi","Satoko's mother"],
+    "wrongAnswersRomaji": ["Mion","Satoshi","Satoko no haha"],
     "questionImage": "quiz_images/qlv8_25.png"
   },
   {
@@ -8651,18 +6376,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祟殺し編、入江の死因とされた物は?",
     "questionEn": "In Curse Killing, what was listed as Irie's cause of death?",
+    "questionRomaji": "Tatarigoroshi-hen, Irie no shiин to sareta mono wa?",
     "correctAnswerJp": "睡眠薬",
     "correctAnswerEn": "Sleeping pills",
-    "wrongAnswersJp": [
-      "交通事故",
-      "多臓器不全",
-      "窒息"
-    ],
-    "wrongAnswersEn": [
-      "Traffic accident",
-      "Multiple organ failure",
-      "Suffocation"
-    ],
+    "correctAnswerRomaji": "suiminyaku",
+    "wrongAnswersJp": ["交通事故","多臓器不全","窒息"],
+    "wrongAnswersEn": ["Traffic accident","Multiple organ failure","Suffocation"],
+    "wrongAnswersRomaji": ["koutsuu jiko","tazouки fuzen","chissoku"],
     "questionImage": "quiz_images/qlv8_26.png"
   },
   {
@@ -8670,18 +6390,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "祟殺し編、病気の沙都子を連れ出した圭一、沙都子はどんな姿だった?",
     "questionEn": "In Curse Killing, when Keiichi took the sick Satoko out, what state was she in?",
+    "questionRomaji": "Tatarigoroshi-hen, byouki no Satoko wo tsuredashita Keiichi, Satoko wa donna sugata datta?",
     "correctAnswerJp": "バスタオル",
     "correctAnswerEn": "Bath towel",
-    "wrongAnswersJp": [
-      "パジャマ",
-      "レインコート",
-      "普段着"
-    ],
-    "wrongAnswersEn": [
-      "Pajamas",
-      "Raincoat",
-      "Casual clothes"
-    ],
+    "correctAnswerRomaji": "basu taoru",
+    "wrongAnswersJp": ["パジャマ","レインコート","普段着"],
+    "wrongAnswersEn": ["Pajamas","Raincoat","Casual clothes"],
+    "wrongAnswersRomaji": ["pajama","rein kooto","fudan gi"],
     "questionImage": "quiz_images/qlv8_27.png"
   },
   {
@@ -8689,18 +6404,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "雛見沢村のガスによる大災害が起きたのはいつ?",
     "questionEn": "When did the great gas disaster occur in Hinamizawa Village?",
+    "questionRomaji": "Hinamizawa-mura no gasu ni yoru dai-saigai ga okita no wa itsu?",
     "correctAnswerJp": "6月22日未明",
     "correctAnswerEn": "Early morning, June 22nd",
-    "wrongAnswersJp": [
-      "6月27日未明",
-      "10月4日未明",
-      "7月26日未明"
-    ],
-    "wrongAnswersEn": [
-      "Early morning, June 27th",
-      "Early morning, October 4th",
-      "Early morning, July 26th"
-    ],
+    "correctAnswerRomaji": "6-gatsu 22-nichi mimei",
+    "wrongAnswersJp": ["6月27日未明","10月4日未明","7月26日未明"],
+    "wrongAnswersEn": ["Early morning, June 27th","Early morning, October 4th","Early morning, July 26th"],
+    "wrongAnswersRomaji": ["6-gatsu 27-nichi mimei","10-gatsu 4-nichi mimei","7-gatsu 26-nichi mimei"],
     "questionImage": "quiz_images/qlv8_28.png"
   },
   {
@@ -8708,18 +6418,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "暇潰し編、舞台となった時代はいつ?",
     "questionEn": "In Himatsubushi, when does the story take place?",
+    "questionRomaji": "Himatsubushi-hen, butai to natta jidai wa itsu?",
     "correctAnswerJp": "昭和53年",
     "correctAnswerEn": "Showa 53 (1978)",
-    "wrongAnswersJp": [
-      "昭和60年",
-      "昭和47年",
-      "平成元年"
-    ],
-    "wrongAnswersEn": [
-      "Showa 60 (1985)",
-      "Showa 47 (1972)",
-      "Heisei 1 (1989)"
-    ],
+    "correctAnswerRomaji": "Shouwa 53-nen",
+    "wrongAnswersJp": ["昭和60年","昭和47年","平成元年"],
+    "wrongAnswersEn": ["Showa 60 (1985)","Showa 47 (1972)","Heisei 1 (1989)"],
+    "wrongAnswersRomaji": ["Shouwa 60-nen","Shouwa 47-nen","Heisei gan-nen"],
     "questionImage": "quiz_images/qlv8_29.png"
   },
   {
@@ -8727,18 +6432,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "暇潰し編、雛見沢ダム建設に関わる建設大臣は誰?",
     "questionEn": "In Himatsubushi, who is the Construction Minister involved with the Hinamizawa Dam project?",
+    "questionRomaji": "Himatsubushi-hen, Hinamizawa damu kensetsu ni kakawaru kensetsu daijin wa dare?",
     "correctAnswerJp": "犬飼",
     "correctAnswerEn": "Inukai",
-    "wrongAnswersJp": [
-      "羊飼",
-      "牛飼",
-      "馴鹿"
-    ],
-    "wrongAnswersEn": [
-      "Hitsujikai",
-      "Ushikai",
-      "Tonakai"
-    ],
+    "correctAnswerRomaji": "Inukai",
+    "wrongAnswersJp": ["羊飼","牛飼","馴鹿"],
+    "wrongAnswersEn": ["Hitsujikai","Ushikai","Tonakai"],
+    "wrongAnswersRomaji": ["Hitsujikai","Ushikai","Tonakai"],
     "questionImage": "quiz_images/qlv8_30.png"
   },
   {
@@ -8746,18 +6446,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "赤坂の妻の名前は?",
     "questionEn": "What is the name of Akasaka's wife?",
+    "questionRomaji": "Akasaka no tsuma no namae wa?",
     "correctAnswerJp": "雪絵",
     "correctAnswerEn": "Yukie",
-    "wrongAnswersJp": [
-      "美幸",
-      "美雪",
-      "梨花"
-    ],
-    "wrongAnswersEn": [
-      "Miyuki",
-      "Miyuki",
-      "Rika"
-    ],
+    "correctAnswerRomaji": "Yukie",
+    "wrongAnswersJp": ["美幸","美雪","梨花"],
+    "wrongAnswersEn": ["Miyuki","Miyuki","Rika"],
+    "wrongAnswersRomaji": ["Miyuki","Miyuki","Rika"],
     "questionImage": "quiz_images/qlv8_31.png"
   },
   {
@@ -8765,18 +6460,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "全職員招集を受けた赤坂、緊張感を持つため何を思った?",
     "questionEn": "When Akasaka was called to an all-staff assembly, what did he think about to stay on edge?",
+    "questionRomaji": "Zen shokuin shoushu wo uketa Akasaka, kinchоukan wo motsu tame nani wo omotta?",
     "correctAnswerJp": "精神を鋭利に",
     "correctAnswerEn": "Sharpen your mind",
-    "wrongAnswersJp": [
-      "感覚を研ぎ澄ませ",
-      "空間を把握しろ",
-      "アンテナを張れ"
-    ],
-    "wrongAnswersEn": [
-      "Hone your senses",
-      "Grasp the space",
-      "Keep your antenna up"
-    ],
+    "correctAnswerRomaji": "seishin wo eirii ni",
+    "wrongAnswersJp": ["感覚を研ぎ澄ませ","空間を把握しろ","アンテナを張れ"],
+    "wrongAnswersEn": ["Hone your senses","Grasp the space","Keep your antenna up"],
+    "wrongAnswersRomaji": ["kankaku wo togisuмase","kuukan wo haaku shiro","antenna wo hare"],
     "questionImage": "quiz_images/qlv8_32.png"
   },
   {
@@ -8784,18 +6474,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "情報屋を利用する赤坂、謝礼の区分は?",
     "questionEn": "When Akasaka uses informants, what is the classification of his payment?",
+    "questionRomaji": "Jouhouya wo riyou suru Akasaka, sharei no kubun wa?",
     "correctAnswerJp": "甲乙丙",
     "correctAnswerEn": "Ko-Otsu-Hei",
-    "wrongAnswersJp": [
-      "大中小",
-      "松竹梅",
-      "イロハ"
-    ],
-    "wrongAnswersEn": [
-      "Large-Medium-Small",
-      "Pine-Bamboo-Plum",
-      "Iroha"
-    ],
+    "correctAnswerRomaji": "kou-otsu-hei",
+    "wrongAnswersJp": ["大中小","松竹梅","イロハ"],
+    "wrongAnswersEn": ["Large-Medium-Small","Pine-Bamboo-Plum","Iroha"],
+    "wrongAnswersRomaji": ["dai-chuu-shou","shou-chiku-bai","iroha"],
     "questionImage": "quiz_images/qlv8_33.png"
   },
   {
@@ -8803,18 +6488,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "鬼ヶ淵村、何が住むと言われている?",
     "questionEn": "What is said to dwell in Onigafuchi Village?",
+    "questionRomaji": "Onigafuchi-mura, nani ga sumu to iwarete iru?",
     "correctAnswerJp": "人食い鬼",
     "correctAnswerEn": "Man-eating demon",
-    "wrongAnswersJp": [
-      "かまいたち",
-      "烏天狗",
-      "悪戯狸"
-    ],
-    "wrongAnswersEn": [
-      "Kamaitachi",
-      "Karasu-tengu",
-      "Mischievous tanuki"
-    ],
+    "correctAnswerRomaji": "hito-kui oni",
+    "wrongAnswersJp": ["かまいたち","烏天狗","悪戯狸"],
+    "wrongAnswersEn": ["Kamaitachi","Karasu-tengu","Mischievous tanuki"],
+    "wrongAnswersRomaji": ["kamaitachi","karasu-tengu","itazura tanuki"],
     "questionImage": "quiz_images/qlv8_34.png"
   },
   {
@@ -8822,18 +6502,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "暇潰し編、雛見沢を訪れた赤坂は何処に泊まっていた?",
     "questionEn": "In Himatsubushi, where was Akasaka staying when he visited Hinamizawa?",
+    "questionRomaji": "Himatsubushi-hen, Hinamizawa wo otozureta Akasaka wa doko ni tomatte ita?",
     "correctAnswerJp": "安いホテル",
     "correctAnswerEn": "Cheap hotel",
-    "wrongAnswersJp": [
-      "キャンプ",
-      "民宿",
-      "興宮署"
-    ],
-    "wrongAnswersEn": [
-      "Camping",
-      "Guest house",
-      "Okinomiya Police Station"
-    ],
+    "correctAnswerRomaji": "yasui hoteru",
+    "wrongAnswersJp": ["キャンプ","民宿","興宮署"],
+    "wrongAnswersEn": ["Camping","Guest house","Okinomiya Police Station"],
+    "wrongAnswersRomaji": ["kyanpu","minshuku","Okinomiya-sho"],
     "questionImage": "quiz_images/qlv8_35.png"
   },
   {
@@ -8841,18 +6516,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "大石との麻雀勝負、ピンチになった赤坂が取った行動は?",
     "questionEn": "During the mahjong match against Oishi, what did Akasaka do when he was in a pinch?",
+    "questionRomaji": "Oishi to no maajan shoubu, pinchi ni natta Akasaka ga totta koudou wa?",
     "correctAnswerJp": "クシャミ",
     "correctAnswerEn": "Sneeze",
-    "wrongAnswersJp": [
-      "イカサマ",
-      "急用で帰った",
-      "失神"
-    ],
-    "wrongAnswersEn": [
-      "Cheating",
-      "Left on urgent business",
-      "Fainting"
-    ],
+    "correctAnswerRomaji": "kushami",
+    "wrongAnswersJp": ["イカサマ","急用で帰った","失神"],
+    "wrongAnswersEn": ["Cheating","Left on urgent business","Fainting"],
+    "wrongAnswersRomaji": ["ikasama","kyuuyou de kaetta","shisshin"],
     "questionImage": "quiz_images/qlv8_36.png"
   },
   {
@@ -8860,18 +6530,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "麻雀を嗜む赤坂、若い頃に暴れまわったのは早稲田と何処?",
     "questionEn": "Akasaka, a mahjong enthusiast — in his youth, he raised hell at Waseda and where else?",
+    "questionRomaji": "Maajan wo tashinamu Akasaka, wakai koro ni abaremawatta no wa Waseda to doko?",
     "correctAnswerJp": "高田馬場",
     "correctAnswerEn": "Takadanobaba",
-    "wrongAnswersJp": [
-      "八丁堀",
-      "門前仲町",
-      "浦安"
-    ],
-    "wrongAnswersEn": [
-      "Hatchoubori",
-      "Monzennakachou",
-      "Urayasu"
-    ],
+    "correctAnswerRomaji": "Takadanobaba",
+    "wrongAnswersJp": ["八丁堀","門前仲町","浦安"],
+    "wrongAnswersEn": ["Hatchoubori","Monzennakachou","Urayasu"],
+    "wrongAnswersRomaji": ["Hatchoubori","Monzennakachou","Urayasu"],
     "questionImage": "quiz_images/qlv8_37.png"
   },
   {
@@ -8879,18 +6544,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "誘拐犯のヒントを得た大石、向かったのは何処?",
     "questionEn": "After getting a lead on the kidnapper, where did Oishi head to?",
+    "questionRomaji": "Yuukaihan no hinto wo eta Oishi, mukatta no wa doko?",
     "correctAnswerJp": "営林署の器材小屋",
     "correctAnswerEn": "Forestry office equipment shed",
-    "wrongAnswersJp": [
-      "分校の資材置き場",
-      "谷河内の廃屋",
-      "園崎家の地下"
-    ],
-    "wrongAnswersEn": [
-      "Branch school storage area",
-      "Abandoned house in Yagouchi",
-      "Sonozaki household basement"
-    ],
+    "correctAnswerRomaji": "eirin-sho no kizai-goya",
+    "wrongAnswersJp": ["分校の資材置き場","谷河内の廃屋","園崎家の地下"],
+    "wrongAnswersEn": ["Branch school storage area","Abandoned house in Yagouchi","Sonozaki household basement"],
+    "wrongAnswersRomaji": ["bunkkou no shizai okiba","Yagouchi no haioku","Sonozaki-ke no chika"],
     "questionImage": "quiz_images/qlv8_38.png"
   },
   {
@@ -8898,18 +6558,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "目明し編、脱走しようとした詩音、7本の鍵への期待値は?",
     "questionEn": "In Eye Opening, when Shion tried to escape, what was the expected number of the 7 keys?",
+    "questionRomaji": "Meakashi-hen, dassou shiyou to shita Shion, 7-hon no kagi e no kitaichi wa?",
     "correctAnswerJp": "3.5本",
     "correctAnswerEn": "3.5",
-    "wrongAnswersJp": [
-      "2.5本",
-      "1本",
-      "7本"
-    ],
-    "wrongAnswersEn": [
-      "2.5",
-      "1",
-      "7"
-    ],
+    "correctAnswerRomaji": "3.5-hon",
+    "wrongAnswersJp": ["2.5本","1本","7本"],
+    "wrongAnswersEn": ["2.5","1","7"],
+    "wrongAnswersRomaji": ["2.5-hon","1-hon","7-hon"],
     "questionImage": "quiz_images/qlv8_39.png"
   },
   {
@@ -8917,18 +6572,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "目明し編、脱走に成功した詩音、何を食べたいと言った?",
     "questionEn": "In Eye Opening, after Shion successfully escaped, what did she say she wanted to eat?",
+    "questionRomaji": "Meakashi-hen, dassou ni seikоu shita Shion, nani wo tabetai to itta?",
     "correctAnswerJp": "銀シャリ",
     "correctAnswerEn": "Silver rice",
-    "wrongAnswersJp": [
-      "焼肉",
-      "ハンバーガー",
-      "麦飯"
-    ],
-    "wrongAnswersEn": [
-      "Grilled meat",
-      "Hamburger",
-      "Barley rice"
-    ],
+    "correctAnswerRomaji": "gin-shari",
+    "wrongAnswersJp": ["焼肉","ハンバーガー","麦飯"],
+    "wrongAnswersEn": ["Grilled meat","Hamburger","Barley rice"],
+    "wrongAnswersRomaji": ["yakiniku","hanbaagaa","mugigohan"],
     "questionImage": "quiz_images/qlv8_40.png"
   },
   {
@@ -8936,18 +6586,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "入江が例えた悟史の打率は?",
     "questionEn": "What batting average did Irie compare Satoshi's to?",
+    "questionRomaji": "Irie ga tatoe ta Satoshi no daritsu wa?",
     "correctAnswerJp": "煎餅の値引き率",
     "correctAnswerEn": "Rice cracker discount rate",
-    "wrongAnswersJp": [
-      "餃子のうまさ",
-      "赤い物の速度",
-      "外来の自己負担額"
-    ],
-    "wrongAnswersEn": [
-      "Tastiness of gyoza",
-      "Speed of red things",
-      "Outpatient co-pay amount"
-    ],
+    "correctAnswerRomaji": "senbei no nebiki-ritsu",
+    "wrongAnswersJp": ["餃子のうまさ","赤い物の速度","外来の自己負担額"],
+    "wrongAnswersEn": ["Tastiness of gyoza","Speed of red things","Outpatient co-pay amount"],
+    "wrongAnswersRomaji": ["gyouza no uмasa","akai mono no sokudo","gairai no jiko futangaku"],
     "questionImage": "quiz_images/qlv8_41.png"
   },
   {
@@ -8955,18 +6600,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "目明し編、園崎本家に呼び出された詩音を出迎えたのは誰?",
     "questionEn": "In Eye Opening, who greeted Shion when she was summoned to the Sonozaki main house?",
+    "questionRomaji": "Meakashi-hen, Sonozaki honke ni yobidasa reta Shion wo demuketa no wa dare?",
     "correctAnswerJp": "魅音",
     "correctAnswerEn": "Mion",
-    "wrongAnswersJp": [
-      "沁子",
-      "茜",
-      "葛西"
-    ],
-    "wrongAnswersEn": [
-      "Shinko",
-      "Akane",
-      "Kasai"
-    ],
+    "correctAnswerRomaji": "Mion",
+    "wrongAnswersJp": ["沁子","茜","葛西"],
+    "wrongAnswersEn": ["Shinko","Akane","Kasai"],
+    "wrongAnswersRomaji": ["Shinko","Akane","Kasai"],
     "questionImage": "quiz_images/qlv8_42.png"
   },
   {
@@ -8974,18 +6614,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "目明し編、大石は誰のアリバイを調べていた?",
     "questionEn": "In Eye Opening, whose alibi was Oishi investigating?",
+    "questionRomaji": "Meakashi-hen, Oishi wa dare no aribai wo shirabete ita?",
     "correctAnswerJp": "悟史",
     "correctAnswerEn": "Satoshi",
-    "wrongAnswersJp": [
-      "詩音",
-      "沙都子",
-      "鉄平"
-    ],
-    "wrongAnswersEn": [
-      "Shion",
-      "Satoko",
-      "Teppei"
-    ],
+    "correctAnswerRomaji": "Satoshi",
+    "wrongAnswersJp": ["詩音","沙都子","鉄平"],
+    "wrongAnswersEn": ["Shion","Satoko","Teppei"],
+    "wrongAnswersRomaji": ["Shion","Satoko","Teppei"],
     "questionImage": "quiz_images/qlv8_43.png"
   },
   {
@@ -8993,18 +6628,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "沙都子に克服させたい野菜、ナス、ピーマン、もう１つは何?",
     "questionEn": "Vegetables they want Satoko to overcome: eggplant, green pepper, and what else?",
+    "questionRomaji": "Satoko ni kokufuku sasetai yasai, nasu, piiman, mou hitotsu wa nani?",
     "correctAnswerJp": "アスパラガス",
     "correctAnswerEn": "Asparagus",
-    "wrongAnswersJp": [
-      "レンコン",
-      "トマト",
-      "ブロッコリー"
-    ],
-    "wrongAnswersEn": [
-      "Lotus root",
-      "Tomato",
-      "Broccoli"
-    ],
+    "correctAnswerRomaji": "asuparagasu",
+    "wrongAnswersJp": ["レンコン","トマト","ブロッコリー"],
+    "wrongAnswersEn": ["Lotus root","Tomato","Broccoli"],
+    "wrongAnswersRomaji": ["renkon","tomato","burokkorii"],
     "questionImage": "quiz_images/qlv8_44.png"
   },
   {
@@ -9012,18 +6642,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "催眠スプレーを吹き付ける梨花、詩音は何で対抗した?",
     "questionEn": "When Rika sprayed hypnosis spray, what did Shion use to counter it?",
+    "questionRomaji": "Saimin supuree wo fukitsukeru Rika, Shion wa nani de taikou shita?",
     "correctAnswerJp": "スタンガン",
     "correctAnswerEn": "Stun gun",
-    "wrongAnswersJp": [
-      "バット",
-      "包丁",
-      "高枝切りばさみ"
-    ],
-    "wrongAnswersEn": [
-      "Bat",
-      "Kitchen knife",
-      "Long-reach pruning shears"
-    ],
+    "correctAnswerRomaji": "sutan gan",
+    "wrongAnswersJp": ["バット","包丁","高枝切りばさみ"],
+    "wrongAnswersEn": ["Bat","Kitchen knife","Long-reach pruning shears"],
+    "wrongAnswersRomaji": ["batto","houchou","takaeda kiri basami"],
     "questionImage": "quiz_images/qlv8_45.png"
   },
   {
@@ -9031,18 +6656,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "古手神社の至宝は何?",
     "questionEn": "What is the treasure of Furude Shrine?",
+    "questionRomaji": "Furude-jinja no shihou wa nani?",
     "correctAnswerJp": "フワラズの勾玉",
     "correctAnswerEn": "Fuwarazu's magatama",
-    "wrongAnswersJp": [
-      "魔法の鏡",
-      "オヤシロステッキ",
-      "ニパニパワー"
-    ],
-    "wrongAnswersEn": [
-      "Magic mirror",
-      "Oyashiro Stick",
-      "Nipa Nipa Power"
-    ],
+    "correctAnswerRomaji": "Fuwarazu no magatama",
+    "wrongAnswersJp": ["魔法の鏡","オヤシロステッキ","ニパニパワー"],
+    "wrongAnswersEn": ["Magic mirror","Oyashiro Stick","Nipa Nipa Power"],
+    "wrongAnswersRomaji": ["mahou no kagami","Oyashiro sutekki","Nipa Nipa Pawaa"],
     "questionImage": "quiz_images/qlv8_46.png"
   },
   {
@@ -9050,18 +6670,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "昼壊し編、宝探しの休憩でレナが差し入れた物は?",
     "questionEn": "In Hirukowashi, what did Rena bring as refreshments during the treasure hunt break?",
+    "questionRomaji": "Hirukowashi-hen, takarasagashi no kyuukei de Rena ga sashiireta mono wa?",
     "correctAnswerJp": "クッキー",
     "correctAnswerEn": "Cookies",
-    "wrongAnswersJp": [
-      "お弁当",
-      "カップケーキ",
-      "おはぎ"
-    ],
-    "wrongAnswersEn": [
-      "Bento",
-      "Cupcake",
-      "Ohagi"
-    ],
+    "correctAnswerRomaji": "kukkii",
+    "wrongAnswersJp": ["お弁当","カップケーキ","おはぎ"],
+    "wrongAnswersEn": ["Bento","Cupcake","Ohagi"],
+    "wrongAnswersRomaji": ["obentou","kappu keeki","ohagi"],
     "questionImage": "quiz_images/qlv8_47.png"
   },
   {
@@ -9069,18 +6684,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "フワラズの勾玉、白の勾玉を最初に拾ったのは誰?",
     "questionEn": "Who was the first to pick up the white magatama of Fuwarazu?",
+    "questionRomaji": "Fuwarazu no magatama, shiro no magatama wo saisho ni hirotta no wa dare?",
     "correctAnswerJp": "富竹",
     "correctAnswerEn": "Tomitake",
-    "wrongAnswersJp": [
-      "レナ",
-      "鷹野",
-      "圭一"
-    ],
-    "wrongAnswersEn": [
-      "Rena",
-      "Takano",
-      "Keiichi"
-    ],
+    "correctAnswerRomaji": "Tomitake",
+    "wrongAnswersJp": ["レナ","鷹野","圭一"],
+    "wrongAnswersEn": ["Rena","Takano","Keiichi"],
+    "wrongAnswersRomaji": ["Rena","Takano","Keiichi"],
     "questionImage": "quiz_images/qlv8_48.png"
   },
   {
@@ -9088,18 +6698,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "フワラズの勾玉、赤の勾玉を持っていたのは誰?",
     "questionEn": "Who had the red magatama of Fuwarazu?",
+    "questionRomaji": "Fuwarazu no magatama, aka no magatama wo motte ita no wa dare?",
     "correctAnswerJp": "レナ",
     "correctAnswerEn": "Rena",
-    "wrongAnswersJp": [
-      "鷹野",
-      "富竹",
-      "入江"
-    ],
-    "wrongAnswersEn": [
-      "Takano",
-      "Tomitake",
-      "Irie"
-    ],
+    "correctAnswerRomaji": "Rena",
+    "wrongAnswersJp": ["鷹野","富竹","入江"],
+    "wrongAnswersEn": ["Takano","Tomitake","Irie"],
+    "wrongAnswersRomaji": ["Takano","Tomitake","Irie"],
     "questionImage": "quiz_images/qlv8_49.png"
   },
   {
@@ -9107,18 +6712,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "梨花が持つ通称「妖気探知機」はどんな形?",
     "questionEn": "What shape is the device Rika carries, known as the \"Supernatural Detector\"?",
+    "questionRomaji": "Rika ga motsu tsuushou \"youki tanchi-ki\" wa donna katachi?",
     "correctAnswerJp": "方位磁石",
     "correctAnswerEn": "Compass",
-    "wrongAnswersJp": [
-      "腕時計",
-      "ペンデュラム",
-      "カーナビ"
-    ],
-    "wrongAnswersEn": [
-      "Wristwatch",
-      "Pendulum",
-      "Car navigation"
-    ],
+    "correctAnswerRomaji": "houigajishaku",
+    "wrongAnswersJp": ["腕時計","ペンデュラム","カーナビ"],
+    "wrongAnswersEn": ["Wristwatch","Pendulum","Car navigation"],
+    "wrongAnswersRomaji": ["udedokei","pendyuramu","kaa-nabi"],
     "questionImage": "quiz_images/qlv8_50.png"
   },
   {
@@ -9126,18 +6726,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "昼壊し編、レナの部屋に置かれていた本はどれ?",
     "questionEn": "In Hirukowashi, which book was in Rena's room?",
+    "questionRomaji": "Hirukowashi-hen, Rena no heya ni oka rete ita hon wa dore?",
     "correctAnswerJp": "現代メイド理論",
     "correctAnswerEn": "Modern Maid Theory",
-    "wrongAnswersJp": [
-      "近代メイド図鑑",
-      "メイドマガジン",
-      "メイド＆タイツ"
-    ],
-    "wrongAnswersEn": [
-      "Modern Maid Encyclopedia",
-      "Maid Magazine",
-      "Maid & Tights"
-    ],
+    "correctAnswerRomaji": "gendai meido riron",
+    "wrongAnswersJp": ["近代メイド図鑑","メイドマガジン","メイド＆タイツ"],
+    "wrongAnswersEn": ["Modern Maid Encyclopedia","Maid Magazine","Maid & Tights"],
+    "wrongAnswersRomaji": ["kindai meido zukan","meido magajin","meido & taitsu"],
     "questionImage": "quiz_images/qlv8_51.png"
   },
   {
@@ -9145,18 +6740,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "入江の言う三大属性、「甘えっ子」「ツンデレ」あと一つは?",
     "questionEn": "According to Irie's three great attributes, \"clingy,\" \"tsundere,\" and what else?",
+    "questionRomaji": "Irie no iu sandai zokusei, \"amaekko\" \"tsundere\" ato hitotsu wa?",
     "correctAnswerJp": "意外に家庭的",
     "correctAnswerEn": "Surprisingly domestic",
-    "wrongAnswersJp": [
-      "ポニーテール",
-      "義理の妹",
-      "実は男の娘"
-    ],
-    "wrongAnswersEn": [
-      "Ponytail",
-      "Sister-in-law",
-      "Actually a trap"
-    ],
+    "correctAnswerRomaji": "igai ni kateiteki",
+    "wrongAnswersJp": ["ポニーテール","義理の妹","実は男の娘"],
+    "wrongAnswersEn": ["Ponytail","Sister-in-law","Actually a trap"],
+    "wrongAnswersRomaji": ["ponii teeru","giri no imouto","jitsu wa otokonoko"],
     "questionImage": "quiz_images/qlv8_52.png"
   },
   {
@@ -9164,18 +6754,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "昼壊し編、レナの投球に苦戦する圭一、誰と交代した?",
     "questionEn": "In Hirukowashi, Keiichi struggled against Rena's pitching. Who did he swap in?",
+    "questionRomaji": "Hirukowashi-hen, Rena no toukyuu ni kusen suru Keiichi, dare to koutai shita?",
     "correctAnswerJp": "沙都子",
     "correctAnswerEn": "Satoko",
-    "wrongAnswersJp": [
-      "悟史",
-      "魅音",
-      "監督"
-    ],
-    "wrongAnswersEn": [
-      "Satoshi",
-      "Mion",
-      "Coach"
-    ],
+    "correctAnswerRomaji": "Satoko",
+    "wrongAnswersJp": ["悟史","魅音","監督"],
+    "wrongAnswersEn": ["Satoshi","Mion","Coach"],
+    "wrongAnswersRomaji": ["Satoshi","Mion","kantoku"],
     "questionImage": "quiz_images/qlv8_53.png"
   },
   {
@@ -9183,18 +6768,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "罪滅し編、クラスメイト全員が参加した競技は何?",
     "questionEn": "In Atonement, what was the event that all the classmates participated in?",
+    "questionRomaji": "Tsumihoroboshi-hen, kurасumeito zen-in ga sanka shita kyougi wa nani?",
     "correctAnswerJp": "水鉄砲対決",
     "correctAnswerEn": "Water gun battle",
-    "wrongAnswersJp": [
-      "わんこそば対決",
-      "流しそうめん対決",
-      "缶蹴り"
-    ],
-    "wrongAnswersEn": [
-      "Wankosoba contest",
-      "Flowing somen contest",
-      "Kick the can"
-    ],
+    "correctAnswerRomaji": "mizu-deppou taiketsu",
+    "wrongAnswersJp": ["わんこそば対決","流しそうめん対決","缶蹴り"],
+    "wrongAnswersEn": ["Wankosoba contest","Flowing somen contest","Kick the can"],
+    "wrongAnswersRomaji": ["wankosoba taiketsu","nagashi soumen taiketsu","kan-keri"],
     "questionImage": "quiz_images/qlv8_54.png"
   },
   {
@@ -9202,18 +6782,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "水鉄砲対決、その結果は?",
     "questionEn": "What was the result of the water gun showdown?",
+    "questionRomaji": "Mizu-deppou taiketsu, sono kekka wa?",
     "correctAnswerJp": "引き分け",
     "correctAnswerEn": "Draw",
-    "wrongAnswersJp": [
-      "圭一の勝利",
-      "レナの勝利",
-      "梨花の勝利"
-    ],
-    "wrongAnswersEn": [
-      "Keiichi's victory",
-      "Rena's victory",
-      "Rika's victory"
-    ],
+    "correctAnswerRomaji": "hikiwake",
+    "wrongAnswersJp": ["圭一の勝利","レナの勝利","梨花の勝利"],
+    "wrongAnswersEn": ["Keiichi's victory","Rena's victory","Rika's victory"],
+    "wrongAnswersRomaji": ["Keiichi no shouri","Rena no shouri","Rika no shouri"],
     "questionImage": "quiz_images/qlv8_55.png"
   },
   {
@@ -9221,18 +6796,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "罪滅し編ラスト、圭一は何を宣言した?",
     "questionEn": "At the end of Atonement, what did Keiichi declare?",
+    "questionRomaji": "Tsumihoroboshi-hen rasuto, Keiichi wa nani wo sengen shita?",
     "correctAnswerJp": "勝利宣言",
     "correctAnswerEn": "Victory declaration",
-    "wrongAnswersJp": [
-      "敗北宣言",
-      "リベンジ宣言",
-      "プロポーズ"
-    ],
-    "wrongAnswersEn": [
-      "Defeat declaration",
-      "Revenge declaration",
-      "Proposal"
-    ],
+    "correctAnswerRomaji": "shouri sengen",
+    "wrongAnswersJp": ["敗北宣言","リベンジ宣言","プロポーズ"],
+    "wrongAnswersEn": ["Defeat declaration","Revenge declaration","Proposal"],
+    "wrongAnswersRomaji": ["haiboku sengen","ribenji sengen","puropoozu"],
     "questionImage": "quiz_images/qlv8_56.png"
   },
   {
@@ -9240,18 +6810,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "罪滅し編、レナが学校に撒いたのは何?",
     "questionEn": "In Atonement, what did Rena scatter around the school?",
+    "questionRomaji": "Tsumihoroboshi-hen, Rena ga gakkou ni maita no wa nani?",
     "correctAnswerJp": "ガソリン",
     "correctAnswerEn": "Gasoline",
-    "wrongAnswersJp": [
-      "除草剤",
-      "石灰岩",
-      "灯油"
-    ],
-    "wrongAnswersEn": [
-      "Herbicide",
-      "Limestone",
-      "Kerosene"
-    ],
+    "correctAnswerRomaji": "gasorin",
+    "wrongAnswersJp": ["除草剤","石灰岩","灯油"],
+    "wrongAnswersEn": ["Herbicide","Limestone","Kerosene"],
+    "wrongAnswersRomaji": ["josouzai","sekkaigan","touyu"],
     "questionImage": "quiz_images/qlv8_57.png"
   },
   {
@@ -9259,18 +6824,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "エンジェルモートの衣装サイズが合わない梨花、何を着た?",
     "questionEn": "When the Angel Mort costume didn't fit Rika, what did she wear instead?",
+    "questionRomaji": "Enjeru Mooto no ishou saizu ga awanai Rika, nani wo kita?",
     "correctAnswerJp": "スクール水着",
     "correctAnswerEn": "School swimsuit",
-    "wrongAnswersJp": [
-      "メイド服",
-      "巫女服",
-      "魔法少女"
-    ],
-    "wrongAnswersEn": [
-      "Maid outfit",
-      "Shrine maiden outfit",
-      "Magical girl"
-    ],
+    "correctAnswerRomaji": "sukuuru mizugi",
+    "wrongAnswersJp": ["メイド服","巫女服","魔法少女"],
+    "wrongAnswersEn": ["Maid outfit","Shrine maiden outfit","Magical girl"],
+    "wrongAnswersRomaji": ["meido fuku","miko fuku","mahou shoujo"],
     "questionImage": "quiz_images/qlv8_58.png"
   },
   {
@@ -9278,18 +6838,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "梨花の罰ゲーム衣装の素晴らしさを解いたのは誰?",
     "questionEn": "Who explained how wonderful Rika's punishment game outfit was?",
+    "questionRomaji": "Rika no batsu-geemu ishou no subarashisa wo toita no wa dare?",
     "correctAnswerJp": "富田と岡村",
     "correctAnswerEn": "Tomita and Okamura",
-    "wrongAnswersJp": [
-      "荒川と利根川",
-      "花田と藤田",
-      "大石と富竹"
-    ],
-    "wrongAnswersEn": [
-      "Arakawa and Tonegawa",
-      "Hanada and Fujita",
-      "Oishi and Tomitake"
-    ],
+    "correctAnswerRomaji": "Tomita to Okamura",
+    "wrongAnswersJp": ["荒川と利根川","花田と藤田","大石と富竹"],
+    "wrongAnswersEn": ["Arakawa and Tonegawa","Hanada and Fujita","Oishi and Tomitake"],
+    "wrongAnswersRomaji": ["Arakawa to Tonegawa","Hanada to Fujita","Oishi to Tomitake"],
     "questionImage": "quiz_images/qlv8_59.png"
   },
   {
@@ -9297,18 +6852,13 @@ export const entries: Entry[] = [
     "level": 8,
     "questionJp": "喫茶店で葛西が頼んだ物は何?",
     "questionEn": "What did Kasai order at the coffee shop?",
+    "questionRomaji": "Kissaten de Kasai ga tanonda mono wa nani?",
     "correctAnswerJp": "日替わりデザート",
     "correctAnswerEn": "Daily dessert special",
-    "wrongAnswersJp": [
-      "日替わりランチ",
-      "オムライス",
-      "ナポリタン"
-    ],
-    "wrongAnswersEn": [
-      "Daily lunch special",
-      "Omurice",
-      "Napolitan"
-    ],
+    "correctAnswerRomaji": "higawari dezaato",
+    "wrongAnswersJp": ["日替わりランチ","オムライス","ナポリタン"],
+    "wrongAnswersEn": ["Daily lunch special","Omurice","Napolitan"],
+    "wrongAnswersRomaji": ["higawari ranchi","omuraisu","Napooritan"],
     "questionImage": "quiz_images/qlv8_60.png"
   }
 ];

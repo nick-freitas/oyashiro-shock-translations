@@ -15,6 +15,7 @@ function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProp
         <div className="question-number">{entry.level} - {index + 1}</div>
         <div className="question-en">{entry.questionEn}</div>
         <div className="question-ja">{entry.questionJp}</div>
+        <div className="question-romaji">{entry.questionRomaji}</div>
       </div>
 
       <div className="screenshot-col">
@@ -30,6 +31,7 @@ function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProp
         <div className="option-item correct">
           <div className="option-en">{entry.correctAnswerEn}</div>
           <div className="option-ja">{entry.correctAnswerJp}</div>
+          <div className="option-romaji">{entry.correctAnswerRomaji}</div>
         </div>
       </div>
 
@@ -38,6 +40,7 @@ function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProp
           <div key={i} className="option-item">
             <div className="option-en">{entry.wrongAnswersEn[i]}</div>
             <div className="option-ja">{wrongJp}</div>
+            <div className="option-romaji">{entry.wrongAnswersRomaji[i]}</div>
           </div>
         ))}
       </div>
