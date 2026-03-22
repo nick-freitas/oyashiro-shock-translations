@@ -26,9 +26,13 @@ export default function App() {
   }, []);
 
   const filtered = useMemo(() => {
-    const byLevel = selectedLevel === null ? entries.filter((e: Entry) => e.level !== 0) : entries.filter((e: Entry) => e.level === selectedLevel);
+    const byLevel =
+      selectedLevel === null
+        ? entries.filter((e: Entry) => e.level !== 0)
+        : entries.filter((e: Entry) => e.level === selectedLevel);
     if (starFilter === "all") return byLevel;
-    if (starFilter === "important") return byLevel.filter((e) => marks.has(e.id));
+    if (starFilter === "important")
+      return byLevel.filter((e) => marks.has(e.id));
     return byLevel.filter((e) => !marks.has(e.id));
   }, [selectedLevel, starFilter, marks]);
 

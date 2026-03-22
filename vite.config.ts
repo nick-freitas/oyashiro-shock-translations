@@ -36,7 +36,8 @@ export default defineConfig({
       manifest: {
         name: "おやしろさまショック",
         short_name: "おやしろ",
-        description: "新・クイズ・ショック — Oyashiro-sama Shock quiz reference",
+        description:
+          "新・クイズ・ショック — Oyashiro-sama Shock quiz reference",
         theme_color: "#1c1b22",
         background_color: "#1c1b22",
         display: "standalone",

@@ -16,7 +16,13 @@ const STAR_ICONS: Record<StarFilter, string> = {
   unimportant: "☆",
 };
 
-export function SectionTabs({ levels, selectedLevel, onSelectLevel, starFilter, onToggleStarFilter }: SectionTabsProps) {
+export function SectionTabs({
+  levels,
+  selectedLevel,
+  onSelectLevel,
+  starFilter,
+  onToggleStarFilter,
+}: SectionTabsProps) {
   return (
     <nav className="section-tabs">
       <button
@@ -40,7 +46,13 @@ export function SectionTabs({ levels, selectedLevel, onSelectLevel, starFilter, 
       <button
         className={`section-tab star-filter${starFilter !== "all" ? " active" : ""}`}
         onClick={onToggleStarFilter}
-        title={starFilter === "all" ? "Showing all" : starFilter === "important" ? "Showing starred only" : "Showing unstarred only"}
+        title={
+          starFilter === "all"
+            ? "Showing all"
+            : starFilter === "important"
+              ? "Showing starred only"
+              : "Showing unstarred only"
+        }
         type="button"
       >
         {STAR_ICONS[starFilter]}

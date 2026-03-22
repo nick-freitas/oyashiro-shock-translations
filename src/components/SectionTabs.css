@@ -41,7 +41,7 @@
 }
 
 .section-tab.active::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 4px;

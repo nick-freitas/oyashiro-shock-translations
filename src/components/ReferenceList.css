@@ -122,7 +122,7 @@
 }
 
 .option-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 14px;
@@ -186,15 +186,35 @@
     padding: 20px 16px;
   }
 
-  .question-col { grid-column: 1; grid-row: 1; }
-  .screenshot-col { grid-column: 1; grid-row: 2; }
-  .correct-answer { grid-column: 1; grid-row: 3; }
-  .wrong-answers { grid-column: 1; grid-row: 4; }
+  .question-col {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .screenshot-col {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .correct-answer {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .wrong-answers {
+    grid-column: 1;
+    grid-row: 4;
+  }
 
-  .question-en { font-size: 33px; }
-  .question-ja { font-size: 22px; }
-  .option-en { font-size: 28px; }
-  .option-ja { font-size: 19px; }
+  .question-en {
+    font-size: 33px;
+  }
+  .question-ja {
+    font-size: 22px;
+  }
+  .option-en {
+    font-size: 28px;
+  }
+  .option-ja {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -202,8 +222,12 @@
     padding: 16px 12px;
   }
 
-  .question-en { font-size: 30px; }
-  .option-en { font-size: 26px; }
+  .question-en {
+    font-size: 30px;
+  }
+  .option-en {
+    font-size: 26px;
+  }
 }
 
 /* ===== ROW ACTIONS ===== */

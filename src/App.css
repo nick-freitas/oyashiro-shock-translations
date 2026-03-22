@@ -13,17 +13,20 @@
   --accent-gold-bright: #c8b060;
   --border-row: #2a2930;
   --sidebar-width: 140px;
-  --font-ja: 'Zen Old Mincho', 'Noto Serif JP', serif;
-  --font-en: 'Cormorant', serif;
+  --font-ja: "Zen Old Mincho", "Noto Serif JP", serif;
+  --font-en: "Cormorant", serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -55,9 +58,16 @@ body {
   scrollbar-color: #2a2930 var(--bg);
 }
 
-.main-content::-webkit-scrollbar { width: 6px; }
-.main-content::-webkit-scrollbar-track { background: var(--bg); }
-.main-content::-webkit-scrollbar-thumb { background: #2a2930; border-radius: 3px; }
+.main-content::-webkit-scrollbar {
+  width: 6px;
+}
+.main-content::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+.main-content::-webkit-scrollbar-thumb {
+  background: #2a2930;
+  border-radius: 3px;
+}
 
 /* ===== FIXED RIGHT SIDEBAR ===== */
 .title-sidebar {
@@ -118,7 +128,6 @@ body {
   letter-spacing: 0.2em;
 }
 
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   :root {
@@ -132,7 +141,6 @@ body {
   .sidebar-subtitle {
     display: none;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -143,7 +151,4 @@ body {
   .sidebar-title {
     font-size: 33px;
   }
-
 }
-
-

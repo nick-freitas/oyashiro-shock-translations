@@ -8,11 +8,18 @@ interface EntryRowProps {
   onToggleImportant: () => void;
 }
 
-function EntryRow({ entry, index, isImportant, onToggleImportant }: EntryRowProps) {
+function EntryRow({
+  entry,
+  index,
+  isImportant,
+  onToggleImportant,
+}: EntryRowProps) {
   return (
     <div className={`quiz-row${isImportant ? " important" : ""}`}>
       <div className="question-col">
-        <div className="question-number">{entry.level} - {index + 1}</div>
+        <div className="question-number">
+          {entry.level} - {index + 1}
+        </div>
         <div className="question-en">{entry.questionEn}</div>
         <div className="question-ja">{entry.questionJp}</div>
         <div className="question-romaji">{entry.questionRomaji}</div>
@@ -65,7 +72,11 @@ interface ReferenceListProps {
   onToggleImportant: (id: string) => void;
 }
 
-export function ReferenceList({ entries, importantMarks, onToggleImportant }: ReferenceListProps) {
+export function ReferenceList({
+  entries,
+  importantMarks,
+  onToggleImportant,
+}: ReferenceListProps) {
   return (
     <main>
       {entries.map((entry, idx) => (
