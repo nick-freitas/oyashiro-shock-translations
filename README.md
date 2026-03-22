@@ -31,3 +31,7 @@ Runs at `http://localhost:5174`.
 npm run build
 npm run preview
 ```
+
+## License
+
+MIT
