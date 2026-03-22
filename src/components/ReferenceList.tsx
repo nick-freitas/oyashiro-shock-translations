@@ -27,7 +27,7 @@ function EntryRow({
 
       <div className="screenshot-col">
         <img
-          src={`/${entry.questionImage}`}
+          src={`${import.meta.env.BASE_URL}${entry.questionImage}`}
           alt={entry.questionEn}
           className="screenshot-img"
           loading="lazy"

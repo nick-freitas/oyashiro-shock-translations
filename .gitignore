@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 .superpowers/
-public/quiz_images/
+.playwright-mcp/
