@@ -1,0 +1,74 @@
+/* ===== SECTION TABS SIDEBAR ===== */
+.section-tabs {
+  width: 44px;
+  min-width: 44px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: var(--bg-sidebar);
+  border-left: 1px solid var(--border-row);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.section-tab {
+  width: 100%;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--text-en-sub);
+  font-family: var(--font-en);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: color 0.2s ease;
+  padding: 0;
+}
+
+.section-tab:hover {
+  color: var(--accent-gold);
+}
+
+.section-tab.active {
+  color: var(--accent-gold-bright);
+}
+
+.section-tab.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  background: var(--accent-gold-bright);
+  border-radius: 0 2px 2px 0;
+}
+
+/* ===== TAB DIVIDER ===== */
+.tab-divider {
+  width: 24px;
+  border: none;
+  border-top: 1px solid var(--border-row);
+  margin: 4px 0 6px;
+}
+
+/* ===== STAR FILTER ===== */
+.star-filter {
+  margin-top: auto;
+  font-size: 22px;
+}
+
+.star-filter.active {
+  color: var(--accent-gold-bright);
+}
+
+.star-filter.active::before {
+  display: none;
+}
