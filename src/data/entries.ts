@@ -872,9 +872,9 @@ export const entries: Entry[] = [
   {
     "id": "qlv1_53_62",
     "level": 1,
-    "questionJp": "このキャラは誰？",
-    "questionEn": "Who is this character?",
-    "questionRomaji": "kono kyara wa dare?",
+    "questionJp": "このキャラを演じた声優さんは？",
+    "questionEn": "Who is the voice actor that played this character?",
+    "questionRomaji": "kono kyara wo enjita seiyuu-san wa?",
     "correctAnswerJp": "保志総一朗",
     "correctAnswerEn": "Hoshi Souichirou",
     "correctAnswerRomaji": "Hoshi Souichirou",

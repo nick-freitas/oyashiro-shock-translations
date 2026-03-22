@@ -4,8 +4,8 @@ export type StarFilter = "all" | "important" | "unimportant";
 
 interface SectionTabsProps {
   levels: number[];
-  selectedLevel: number;
-  onSelectLevel: (level: number) => void;
+  selectedLevel: number | null;
+  onSelectLevel: (level: number | null) => void;
   starFilter: StarFilter;
   onToggleStarFilter: () => void;
 }
@@ -19,6 +19,14 @@ const STAR_ICONS: Record<StarFilter, string> = {
 export function SectionTabs({ levels, selectedLevel, onSelectLevel, starFilter, onToggleStarFilter }: SectionTabsProps) {
   return (
     <nav className="section-tabs">
+      <button
+        className={`section-tab${selectedLevel === null ? " active" : ""}`}
+        onClick={() => onSelectLevel(null)}
+        type="button"
+      >
+        A
+      </button>
+      <hr className="tab-divider" />
       {levels.map((level) => (
         <button
           key={level}
