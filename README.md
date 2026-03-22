@@ -12,6 +12,10 @@ Each entry includes the original Japanese text, English translation, romaji read
 - Trilingual display: Japanese, English, and romaji
 - Offline support (PWA) — works without internet after first visit
 
+## Credits
+
+Quiz data sourced from [HigurashiENX-OyashiroShock](https://github.com/masagrator/HigurashiENX-OyashiroShock/tree/master) by masagrator. This project wouldn't exist without that work.
+
 ## Development
 
 ```sh
