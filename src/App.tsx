@@ -8,6 +8,7 @@ import type { StarFilter } from "./components/SectionTabs";
 import "./App.css";
 
 const LEVELS = [...new Set(entries.map((e) => e.level))].sort((a, b) => a - b);
+const CYCLE: StarFilter[] = ["all", "important", "unimportant"];
 
 export default function App() {
   const [selectedLevel, setSelectedLevel] = useState<number | null>(null);
@@ -20,7 +21,6 @@ export default function App() {
     mainRef.current?.scrollTo(0, 0);
   }, []);
 
-  const CYCLE: StarFilter[] = ["all", "important", "unimportant"];
   const handleToggleStarFilter = useCallback(() => {
     setStarFilter((prev) => CYCLE[(CYCLE.indexOf(prev) + 1) % CYCLE.length]);
   }, []);
